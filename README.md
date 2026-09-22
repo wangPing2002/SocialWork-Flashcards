@@ -1,85 +1,71 @@
-# 社会工作考研闪卡 Android
+# 社会工作闪卡
 
-一个面向社会工作考研复习的离线 Android 闪卡应用。当前内置 **306 张规范题干卡片 / 51 个知识点**，题库来自本项目已经整理的教材与历年真题学习资料。
+面向社会工作考研复习的 Android 离线闪卡应用。当前题库延续上一版扩充内容，并重新设计了学习逻辑、首页、复习页、卡片库、统计页和应用图标。
 
-## 功能
+## V2 UI / 学习逻辑更新
 
-- 真题/教材习题式规范题干
-- 固定尺寸复习卡片，点击后显示答案
-- `不清楚 / 熟悉` 两档快速反馈
-- 每张卡保留最近 10 次反馈及时间
-- 薄弱卡提高出现权重，并可在当日重复 2—3 次
-- 艾宾浩斯式间隔复习
-- 每日复习量、新学量分别自定义（默认 30 / 15）
-- 例子、完整答案、最近 10 次记录按需打开
-- 卡片库按“教材章节 / 真题理论专题”组织
-- 搜索题目与知识点
-- 掌握 / 熟悉 / 模糊 / 未学习统计
-- 薄弱卡 Top 10
-- 完全离线；学习记录只保存在手机本地
+- App 显示名称统一为 **社会工作闪卡**。
+- 原“每日复习量 + 每日新学量”合并为一个 **每日学习量**。
+- 首页提供 **开始学习** 与 **继续学习** 两个并列入口。
+- 学习进度会保存，退出或切换页面后可从上次中断位置继续。
+- **复习只会从已经学习过的卡片中抽取**；未学习卡只会作为首次学习内容进入学习队列。
+- 已学习卡允许重复复习；最近 10 次中多次“不清楚”的卡片会提高优先级，并可在同一学习队列中重复出现 2—3 次。
+- 卡片继续保留“例子 / 完整答案 / 最近10次”三个按需入口，避免把长内容挤在主卡面。
+- 卡片库按“社会工作原理 / 社会工作实务 / 督导与管理 / 个案工作 / 小组工作 / 社区工作”展示学习进度。
+- 统计页提供最近 7 天学习趋势、掌握分布与薄弱卡片 TOP 10。
+- 新增薄荷绿教育/关怀主题应用图标。
 
-## GitHub 自动生成 APK（推荐）
+## 每日学习量
 
-把整个仓库上传到 GitHub 后：
+在“我的”页面只需设置一个数字，例如 30：
 
-1. 打开仓库的 **Actions** 页面。
-2. 第一次如有提示，启用 GitHub Actions。
-3. 每次 push 到 `main` 或 `master`，`Build Android APK` 工作流会自动运行。
-4. 构建完成后进入该次 Workflow，在 **Artifacts** 下载 `seu-socialwork-flashcards-debug-apk`。
-5. 解压后得到 `app-debug.apk`，传到 Android 手机即可安装。
+- 当天尚有学习额度时，“开始学习”生成当天剩余数量的智能学习队列；
+- 当天目标已完成后，再次开始学习会进入加练；
+- “继续学习”不会重新抽卡，而是读取上次未完成的队列和位置。
 
-也可以在 GitHub Actions 里手动点击 **Run workflow**。
+## 智能复习原则
 
-## 发布正式版本
+每张卡保留最近 10 次“熟悉 / 不清楚”记录。排序综合考虑：
 
-项目还包含 `.github/workflows/release-apk.yml`。创建版本标签即可自动生成 GitHub Release：
+1. 是否已经学习；
+2. 是否达到间隔复习时间；
+3. 最近 10 次中“不清楚”的比例；
+4. 最近连续“不清楚”的次数；
+5. 距离到期时间。
 
-```bash
-git tag v1.0.0
-git push origin v1.0.0
-```
+复习内容严格来自已学习卡片。未学习卡不会伪装成“复习卡”。
 
-GitHub 会自动构建 APK 并附加到 Release 页面。当前 Release 使用 debug 签名，适合个人学习和测试；如果未来公开分发，可再配置正式 keystore。
+## GitHub Actions 自动构建 APK
 
-## 上传到 GitHub
+项目已经使用 GitHub 当前 Runner 可用的 Android SDK 绝对路径方案，不依赖 `android-actions/setup-android@v3`。
 
-在项目根目录运行：
+Push 到 `main` 后：
 
-```bash
-git init
-git add .
-git commit -m "feat: initial Android flashcard app"
-git branch -M main
-git remote add origin https://github.com/YOUR_NAME/YOUR_REPO.git
-git push -u origin main
-```
+1. 打开 GitHub 仓库 → **Actions**；
+2. 进入 **Build Android APK**；
+3. 构建成功后在页面底部 **Artifacts** 下载 `socialwork-flashcards-debug-apk`；
+4. 解压即可得到 `app-debug.apk`。
 
-如果 Git 还没有配置身份：
+发布版本可使用：
 
 ```bash
-git config --global user.name "你的 GitHub 用户名"
-git config --global user.email "你的 GitHub 邮箱"
+git tag v2.0.0
+git push origin v2.0.0
 ```
 
-## Android Studio
+随后 GitHub Releases 会自动生成对应 APK。
 
-也可以直接用 Android Studio 打开项目根目录。项目使用：
+## 关键文件
 
-- Java 17
-- Android Gradle Plugin 8.7.3
-- compileSdk / targetSdk 35
-- minSdk 24
-- 纯 Android Framework Java，无第三方 UI/数据库依赖
+```text
+app/src/main/assets/cards.json        闪卡题库
+app/src/main/assets/details.json      例子与完整答案
+app/src/main/java/.../MainActivity.java  UI 与页面交互
+app/src/main/java/.../ReviewEngine.java  智能选卡/复习算法
+app/src/main/java/.../StudyStore.java    学习记录与会话进度
+app/src/main/res/mipmap-*/ic_launcher.png 应用图标
+```
 
-> 仓库没有提交官方 Gradle Wrapper 二进制文件；GitHub Actions 会自动安装 Gradle 8.10.2。Android Studio 可使用本机/IDE 管理的 Gradle，或在本机执行 `gradle wrapper --gradle-version 8.10.2` 后生成标准 wrapper。
+## 数据隐私
 
-## 题库文件
-
-- `app/src/main/assets/cards.json`：碎片化记忆卡
-- `app/src/main/assets/details.json`：例子、名词解释、简答、论述/案例完整答案
-
-以后只需要更新这两个文件，就可以在不重写 UI 的情况下升级题库。
-
-## 数据与隐私
-
-应用不申请网络权限。熟悉度、最近 10 次历史、每日进度等全部使用 `SharedPreferences` 保存在手机本地。
+学习进度、最近 10 次记录、每日学习量和中断会话全部保存在 Android 本机 `SharedPreferences`，不需要账号，也不会上传学习数据。

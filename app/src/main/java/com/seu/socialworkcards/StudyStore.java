@@ -31,12 +31,54 @@ public class StudyStore {
             sp.edit().putString("card_"+id,o.toString()).apply();
         }catch(Exception ignored){}
     }
-    public int reviewGoal(){return Math.max(5,Math.min(300,sp.getInt("reviewGoal",30)));}
-    public int newGoal(){return Math.max(0,Math.min(200,sp.getInt("newGoal",15)));}
-    public void setGoals(int r,int n){sp.edit().putInt("reviewGoal",r).putInt("newGoal",n).apply();}
+
+    public int dailyGoal(){
+        if(sp.contains("dailyGoal")) return Math.max(5,Math.min(300,sp.getInt("dailyGoal",30)));
+        // Migrate gently from the old split setting: keep the former review amount as the unified default.
+        return Math.max(5,Math.min(300,sp.getInt("reviewGoal",30)));
+    }
+    public void setDailyGoal(int n){sp.edit().putInt("dailyGoal",Math.max(5,Math.min(300,n))).apply();}
+
     String today(){return new SimpleDateFormat("yyyy-MM-dd",Locale.getDefault()).format(new Date());}
-    public int todayReview(){return sp.getInt("day_r_"+today(),0);} public int todayNew(){return sp.getInt("day_n_"+today(),0);}
-    public void incToday(boolean wasNew){String k=wasNew?"day_n_":"day_r_";sp.edit().putInt(k+today(),sp.getInt(k+today(),0)+1).apply();}
+    String dayKey(Date d){return new SimpleDateFormat("yyyy-MM-dd",Locale.getDefault()).format(d);}
+
+    public int todayDone(){
+        String k="day_done_"+today();
+        if(sp.contains(k)) return sp.getInt(k,0);
+        // Preserve progress from previous versions that tracked review/new separately.
+        return sp.getInt("day_r_"+today(),0)+sp.getInt("day_n_"+today(),0);
+    }
+    public void incToday(){String k="day_done_"+today();sp.edit().putInt(k,todayDone()+1).apply();}
+    public int dayDone(Date d){
+        String key=dayKey(d); String k="day_done_"+key;
+        if(sp.contains(k)) return sp.getInt(k,0);
+        return sp.getInt("day_r_"+key,0)+sp.getInt("day_n_"+key,0);
+    }
     public int totalReviews(){return sp.getInt("totalReviews",0);} public void incTotal(){sp.edit().putInt("totalReviews",totalReviews()+1).apply();}
+
+    public int streakDays(){
+        Calendar cal=Calendar.getInstance(); int streak=0;
+        for(int i=0;i<365;i++){
+            if(dayDone(cal.getTime())>0) streak++; else if(i==0){ /* today may not have started yet */ } else break;
+            cal.add(Calendar.DAY_OF_YEAR,-1);
+        }
+        return streak;
+    }
+
+    public void saveSession(List<Card> cards,int index){
+        try{
+            JSONArray a=new JSONArray(); for(Card c:cards)a.put(c.id);
+            sp.edit().putString("session_ids",a.toString()).putInt("session_index",Math.max(0,index)).apply();
+        }catch(Exception ignored){}
+    }
+    public List<String> sessionIds(){
+        List<String> out=new ArrayList<>();
+        try{JSONArray a=new JSONArray(sp.getString("session_ids","[]"));for(int i=0;i<a.length();i++)out.add(a.optString(i));}catch(Exception ignored){}
+        return out;
+    }
+    public int sessionIndex(){return Math.max(0,sp.getInt("session_index",0));}
+    public boolean hasActiveSession(){List<String> ids=sessionIds();return !ids.isEmpty()&&sessionIndex()<ids.size();}
+    public void clearSession(){sp.edit().remove("session_ids").remove("session_index").apply();}
+
     public void clearAll(){sp.edit().clear().apply();}
 }
