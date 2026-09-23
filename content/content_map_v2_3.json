@@ -1,0 +1,4743 @@
+{
+  "project_version_before": "2.2.0",
+  "stage": "V2.3 内容重构阶段一：真题—知识点映射与题库审查",
+  "current_cards": 490,
+  "current_topics": 95,
+  "exam_records_mapped": 210,
+  "priority_knowledge_points": [
+    {
+      "knowledge_point": "医务社会工作",
+      "exam_count": 13,
+      "years": [
+        2016,
+        2019,
+        2020,
+        2021,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "小组工作",
+      "exam_count": 12,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2023,
+        2024,
+        2025
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "老年社会工作",
+      "exam_count": 12,
+      "years": [
+        2016,
+        2017,
+        2019,
+        2020,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社会福利",
+      "exam_count": 11,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2021,
+        2023,
+        2024,
+        2025
+      ],
+      "question_types": [
+        "名词解释",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "专业伦理",
+      "exam_count": 11,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2025,
+        2026
+      ],
+      "question_types": [
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "家庭社会工作",
+      "exam_count": 10,
+      "years": [
+        2015,
+        2019,
+        2021,
+        2023,
+        2024,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社区工作",
+      "exam_count": 10,
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2021,
+        2023,
+        2025,
+        2026
+      ],
+      "question_types": [
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "妇女社会工作",
+      "exam_count": 9,
+      "years": [
+        2015,
+        2017,
+        2020,
+        2021,
+        2023,
+        2026
+      ],
+      "question_types": [
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "个案工作",
+      "exam_count": 8,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2020,
+        2023,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社会政策",
+      "exam_count": 6,
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2026
+      ],
+      "question_types": [
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "“第三条道路”社会政策思想"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "青少年社会工作",
+      "exam_count": 6,
+      "years": [
+        2017,
+        2018,
+        2024,
+        2025
+      ],
+      "question_types": [
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社会工作过程",
+      "exam_count": 6,
+      "years": [
+        2018,
+        2020,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "第一章 社会工作服务的内涵"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "儿童社会工作",
+      "exam_count": 6,
+      "years": [
+        2019,
+        2020,
+        2023,
+        2024,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社区照顾",
+      "exam_count": 6,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2023,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "社区照顾理论/模式"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "人类行为与社会环境",
+      "exam_count": 5,
+      "years": [
+        2015,
+        2017,
+        2019
+      ],
+      "question_types": [
+        "名词解释",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "第五章 人类行为与社会环境"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "社会工作者角色",
+      "exam_count": 5,
+      "years": [
+        2015,
+        2017,
+        2018,
+        2021,
+        2023
+      ],
+      "question_types": [
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "专业价值",
+      "exam_count": 5,
+      "years": [
+        2016,
+        2019,
+        2021,
+        2024,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "女性主义",
+      "exam_count": 4,
+      "years": [
+        2016,
+        2020,
+        2021,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "女性主义社会工作与自由女性主义"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "社会支持理论",
+      "exam_count": 4,
+      "years": [
+        2017,
+        2023,
+        2024
+      ],
+      "question_types": [
+        "名词解释",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "社会支持理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "增权",
+      "exam_count": 4,
+      "years": [
+        2018,
+        2020,
+        2021
+      ],
+      "question_types": [
+        "名词解释",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "增权/赋能理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "残疾人社会工作",
+      "exam_count": 4,
+      "years": [
+        2019,
+        2022,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "综合",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "实证主义",
+      "exam_count": 3,
+      "years": [
+        2015,
+        2017,
+        2019
+      ],
+      "question_types": [
+        "名词解释",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "实证主义"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "社会工作研究",
+      "exam_count": 3,
+      "years": [
+        2016,
+        2018,
+        2024
+      ],
+      "question_types": [
+        "名词解释",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "理性情绪治疗",
+      "exam_count": 3,
+      "years": [
+        2016,
+        2017,
+        2020
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "ABC理论与理性情绪治疗（REBT）"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "矫正社会工作",
+      "exam_count": 3,
+      "years": [
+        2016,
+        2024,
+        2026
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "企业社会工作",
+      "exam_count": 3,
+      "years": [
+        2016,
+        2022
+      ],
+      "question_types": [
+        "简答",
+        "综合"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "企业社会工作服务"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "社会学习理论",
+      "exam_count": 3,
+      "years": [
+        2017,
+        2019,
+        2024
+      ],
+      "question_types": [
+        "名词解释",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "班杜拉社会学习理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "学校社会工作",
+      "exam_count": 3,
+      "years": [
+        2017,
+        2021
+      ],
+      "question_types": [
+        "案例"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "危机介入",
+      "exam_count": 3,
+      "years": [
+        2017,
+        2018,
+        2019
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "危机介入理论/模式"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "结构家庭治疗",
+      "exam_count": 3,
+      "years": [
+        2018,
+        2019,
+        2020
+      ],
+      "question_types": [
+        "名词解释",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "结构家庭治疗"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "家庭暴力",
+      "exam_count": 3,
+      "years": [
+        2020,
+        2021,
+        2023
+      ],
+      "question_types": [
+        "案例",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "任务中心模式",
+      "exam_count": 3,
+      "years": [
+        2021,
+        2022,
+        2024
+      ],
+      "question_types": [
+        "名词解释",
+        "简答",
+        "综合"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "任务中心模式"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "社会救助",
+      "exam_count": 3,
+      "years": [
+        2021,
+        2023,
+        2025
+      ],
+      "question_types": [
+        "名词解释",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "项目评估",
+      "exam_count": 2,
+      "years": [
+        2015,
+        2025
+      ],
+      "question_types": [
+        "名词解释",
+        "案例"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "项目成效评估"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "循证社会工作",
+      "exam_count": 2,
+      "years": [
+        2016,
+        2020
+      ],
+      "question_types": [
+        "名词解释",
+        "简答"
+      ],
+      "priority": "B",
+      "current_app_topics": [
+        "循证社会工作/以证据为基础的实践"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "人文主义",
+      "exam_count": 2,
+      "years": [
+        2016,
+        2018
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "B",
+      "current_app_topics": [
+        "人道主义与人本主义",
+        "人本治疗模式"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "小组互动模式",
+      "exam_count": 2,
+      "years": [
+        2017,
+        2019
+      ],
+      "question_types": [
+        "名词解释",
+        "简答"
+      ],
+      "priority": "B",
+      "current_app_topics": [
+        "小组互动/互惠模式"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "标签理论",
+      "exam_count": 2,
+      "years": [
+        2018,
+        2021
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "B",
+      "current_app_topics": [
+        "标签理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "反贫困社会工作",
+      "exam_count": 2,
+      "years": [
+        2018,
+        2020
+      ],
+      "question_types": [
+        "论述"
+      ],
+      "priority": "B",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "心理社会治疗",
+      "exam_count": 2,
+      "years": [
+        2018,
+        2019
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "B",
+      "current_app_topics": [
+        "心理社会治疗模式"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "抗逆力理论",
+      "exam_count": 2,
+      "years": [
+        2018,
+        2024
+      ],
+      "question_types": [
+        "案例",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "抗逆力理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "社会建构主义",
+      "exam_count": 2,
+      "years": [
+        2019,
+        2023
+      ],
+      "question_types": [
+        "名词解释",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "社会建构主义与建构主义范式"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "机构照顾",
+      "exam_count": 2,
+      "years": [
+        2020,
+        2023
+      ],
+      "question_types": [
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "农村社会工作",
+      "exam_count": 2,
+      "years": [
+        2020,
+        2022
+      ],
+      "question_types": [
+        "综合",
+        "论述"
+      ],
+      "priority": "B",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社会工作",
+      "exam_count": 2,
+      "years": [
+        2021,
+        2024
+      ],
+      "question_types": [
+        "名词解释",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "第一章 社会工作服务的内涵"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "临终关怀",
+      "exam_count": 2,
+      "years": [
+        2023
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "行为治疗",
+      "exam_count": 2,
+      "years": [
+        2025
+      ],
+      "question_types": [
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "行为主义与行为治疗"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "人道主义",
+      "exam_count": 1,
+      "years": [
+        2015
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "人道主义与人本主义"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "社会工作哲学基础",
+      "exam_count": 1,
+      "years": [
+        2015
+      ],
+      "question_types": [
+        "简答"
+      ],
+      "priority": "C",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "价值",
+      "exam_count": 1,
+      "years": [
+        2015
+      ],
+      "question_types": [
+        "简答"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "灾害社会工作",
+      "exam_count": 1,
+      "years": [
+        2015
+      ],
+      "question_types": [
+        "论述"
+      ],
+      "priority": "C",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "范式",
+      "exam_count": 1,
+      "years": [
+        2016
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "社会建构主义与建构主义范式"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "睦邻组织运动",
+      "exam_count": 1,
+      "years": [
+        2016
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "失范理论",
+      "exam_count": 1,
+      "years": [
+        2016
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "失范理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "社会工作理论",
+      "exam_count": 1,
+      "years": [
+        2016
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社会工作发展",
+      "exam_count": 1,
+      "years": [
+        2016
+      ],
+      "question_types": [
+        "简答"
+      ],
+      "priority": "C",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "小组社会目标模式",
+      "exam_count": 1,
+      "years": [
+        2016
+      ],
+      "question_types": [
+        "简答"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "小组社会目标模式"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "社会工作专业化",
+      "exam_count": 1,
+      "years": [
+        2016
+      ],
+      "question_types": [
+        "论述"
+      ],
+      "priority": "C",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "就业",
+      "exam_count": 1,
+      "years": [
+        2016
+      ],
+      "question_types": [
+        "简答"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "新就业社会群体",
+        "新就业社会群体的问题与需求"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "ABC理论",
+      "exam_count": 1,
+      "years": [
+        2017
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "ABC理论与理性情绪治疗（REBT）"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "认知发展理论",
+      "exam_count": 1,
+      "years": [
+        2017
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "皮亚杰认知发展理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "社会资本",
+      "exam_count": 1,
+      "years": [
+        2017
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "社会资本理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "精神分析",
+      "exam_count": 1,
+      "years": [
+        2018
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "精神分析取向：本我、自我、超我"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "社会排斥",
+      "exam_count": 1,
+      "years": [
+        2018
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "第三条道路",
+      "exam_count": 1,
+      "years": [
+        2019
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "“第三条道路”社会政策思想"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "Y理论",
+      "exam_count": 1,
+      "years": [
+        2019
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "Y理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "科层制",
+      "exam_count": 1,
+      "years": [
+        2019
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "科层制理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "行为主义",
+      "exam_count": 1,
+      "years": [
+        2019
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "行为主义与行为治疗"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "人本治疗",
+      "exam_count": 1,
+      "years": [
+        2019
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "人本治疗模式"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "后现代主义",
+      "exam_count": 1,
+      "years": [
+        2019
+      ],
+      "question_types": [
+        "简答"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "后现代主义视角"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "批判理论",
+      "exam_count": 1,
+      "years": [
+        2019
+      ],
+      "question_types": [
+        "简答"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "批判理论（马尔库塞专题）"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "社会工作行政",
+      "exam_count": 1,
+      "years": [
+        2019
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社会工作督导",
+      "exam_count": 1,
+      "years": [
+        2019
+      ],
+      "question_types": [
+        "简答"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "社会工作服务督导",
+        "社会工作督导基本原则",
+        "社会工作督导三大功能"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "小组治疗模式",
+      "exam_count": 1,
+      "years": [
+        2020
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "小组治疗模式与小组中心模式"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "社会投资理论",
+      "exam_count": 1,
+      "years": [
+        2020
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "社会投资理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "诊断学派",
+      "exam_count": 1,
+      "years": [
+        2020
+      ],
+      "question_types": [
+        "简答"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "诊断学派与《社会诊断》"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "个案管理",
+      "exam_count": 1,
+      "years": [
+        2020
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "预估",
+      "exam_count": 1,
+      "years": [
+        2020
+      ],
+      "question_types": [
+        "案例"
+      ],
+      "priority": "C",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "符号互动理论",
+      "exam_count": 1,
+      "years": [
+        2021
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "符号互动理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "优势视角",
+      "exam_count": 1,
+      "years": [
+        2021
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "优势视角"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "专业关系",
+      "exam_count": 1,
+      "years": [
+        2021
+      ],
+      "question_types": [
+        "简答"
+      ],
+      "priority": "C",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "叙事治疗",
+      "exam_count": 1,
+      "years": [
+        2022
+      ],
+      "question_types": [
+        "综合"
+      ],
+      "priority": "C",
+      "current_app_topics": [
+        "叙事治疗模式"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "小组行为模式",
+      "exam_count": 1,
+      "years": [
+        2023
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "B",
+      "current_app_topics": [
+        "小组行为模式"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "家庭抗逆力",
+      "exam_count": 1,
+      "years": [
+        2023
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "B",
+      "current_app_topics": [
+        "家庭抗逆力"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "社会保障",
+      "exam_count": 1,
+      "years": [
+        2024
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "B",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社会撤离理论",
+      "exam_count": 1,
+      "years": [
+        2024
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "B",
+      "current_app_topics": [
+        "社会撤离理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "认知理论",
+      "exam_count": 1,
+      "years": [
+        2025
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "B",
+      "current_app_topics": [
+        "一般认知理论（认知—行为取向）"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "连续性理论",
+      "exam_count": 1,
+      "years": [
+        2025
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "B",
+      "current_app_topics": [
+        "连续性理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "家庭系统理论",
+      "exam_count": 1,
+      "years": [
+        2025
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "B",
+      "current_app_topics": [
+        "家庭系统理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "军队社会工作",
+      "exam_count": 1,
+      "years": [
+        2025
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "B",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "家庭生命周期理论",
+      "exam_count": 1,
+      "years": [
+        2025
+      ],
+      "question_types": [
+        "简答"
+      ],
+      "priority": "B",
+      "current_app_topics": [
+        "家庭生命周期理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "项目设计",
+      "exam_count": 1,
+      "years": [
+        2025
+      ],
+      "question_types": [
+        "案例"
+      ],
+      "priority": "B",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "成本效益分析",
+      "exam_count": 1,
+      "years": [
+        2025
+      ],
+      "question_types": [
+        "案例"
+      ],
+      "priority": "B",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "沟通理论",
+      "exam_count": 1,
+      "years": [
+        2026
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "B",
+      "current_app_topics": [
+        "沟通理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "社会交换理论",
+      "exam_count": 1,
+      "years": [
+        2026
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "B",
+      "current_app_topics": [
+        "社会交换理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "健康促进",
+      "exam_count": 1,
+      "years": [
+        2026
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "B",
+      "current_app_topics": [
+        "健康促进理论/理念"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "社会工作方法",
+      "exam_count": 1,
+      "years": [
+        2026
+      ],
+      "question_types": [
+        "论述"
+      ],
+      "priority": "B",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    }
+  ],
+  "exam_question_map": [
+    {
+      "year": 2015,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "人道主义",
+      "tags": [
+        "人道主义"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "人道主义与人本主义"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2015,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "实证主义",
+      "tags": [
+        "实证主义"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "实证主义"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2015,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "人类行为",
+      "tags": [
+        "人类行为与社会环境"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第五章 人类行为与社会环境"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2015,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "个案工作",
+      "tags": [
+        "个案工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2015,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "项目评估",
+      "tags": [
+        "项目评估"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "项目成效评估"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2015,
+      "subject": "331",
+      "type": "简答",
+      "question": "社会福利的内涵",
+      "tags": [
+        "社会福利"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2015,
+      "subject": "331",
+      "type": "简答",
+      "question": "社会工作的哲学基础",
+      "tags": [
+        "社会工作哲学基础",
+        "价值"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2015,
+      "subject": "331",
+      "type": "简答",
+      "question": "人类行为与社会环境的基本关系",
+      "tags": [
+        "人类行为与社会环境"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第五章 人类行为与社会环境"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2015,
+      "subject": "331",
+      "type": "简答",
+      "question": "小组工作的主要功能",
+      "tags": [
+        "小组工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2015,
+      "subject": "331",
+      "type": "简答",
+      "question": "社会工作者的角色",
+      "tags": [
+        "社会工作者角色"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2015,
+      "subject": "331",
+      "type": "论述",
+      "question": "社会福利模式",
+      "tags": [
+        "社会福利"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2015,
+      "subject": "331",
+      "type": "论述",
+      "question": "社会工作的行为守则",
+      "tags": [
+        "专业伦理"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2015,
+      "subject": "437",
+      "type": "论述",
+      "question": "家庭为本和妇女为本原则",
+      "tags": [
+        "家庭社会工作",
+        "妇女社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2015,
+      "subject": "437",
+      "type": "论述",
+      "question": "灾后救助",
+      "tags": [
+        "灾害社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2016,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "范式",
+      "tags": [
+        "范式"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "社会建构主义与建构主义范式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2016,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "汤因比馆",
+      "tags": [
+        "睦邻组织运动"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2016,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "社会福利三分法",
+      "tags": [
+        "社会福利"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2016,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "以证据为基础的实践",
+      "tags": [
+        "循证社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "循证社会工作/以证据为基础的实践"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2016,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "人文主义",
+      "tags": [
+        "人文主义"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "人道主义与人本主义",
+        "人本治疗模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2016,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "失范",
+      "tags": [
+        "失范理论"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "失范理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2016,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "自由女性主义",
+      "tags": [
+        "女性主义"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "女性主义社会工作与自由女性主义"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2016,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "干预理论",
+      "tags": [
+        "社会工作理论"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2016,
+      "subject": "331",
+      "type": "简答",
+      "question": "如何理解社会工作是一种道德实践？",
+      "tags": [
+        "专业价值",
+        "专业伦理"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2016,
+      "subject": "331",
+      "type": "简答",
+      "question": "简述伊丽莎白《济贫法》对社会工作发展的意义。",
+      "tags": [
+        "社会工作发展"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2016,
+      "subject": "331",
+      "type": "简答",
+      "question": "简述个案工作的理论基础。",
+      "tags": [
+        "个案工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2016,
+      "subject": "331",
+      "type": "简答",
+      "question": "小组工作中社会目标模式的理论基础及其模式特点。",
+      "tags": [
+        "小组社会目标模式"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "小组社会目标模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2016,
+      "subject": "331",
+      "type": "简答",
+      "question": "简述社会政策的一般过程。",
+      "tags": [
+        "社会政策"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "“第三条道路”社会政策思想"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2016,
+      "subject": "331",
+      "type": "简答",
+      "question": "简述量化研究和质性研究的区别。",
+      "tags": [
+        "社会工作研究"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2016,
+      "subject": "331",
+      "type": "论述",
+      "question": "老年人会经历哪些生理变化？社会工作者如何帮助和照顾失能老人？",
+      "tags": [
+        "老年社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2016,
+      "subject": "331",
+      "type": "论述",
+      "question": "结合现实，谈谈如何实现中国社会工作专业化的道路？",
+      "tags": [
+        "社会工作专业化"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2016,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "理性情绪疗法",
+      "tags": [
+        "理性情绪治疗"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "ABC理论与理性情绪治疗（REBT）"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2016,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "回顾法",
+      "tags": [
+        "老年社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2016,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "社区矫正",
+      "tags": [
+        "矫正社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2016,
+      "subject": "437",
+      "type": "简答",
+      "question": "我国平等就业原则",
+      "tags": [
+        "就业",
+        "企业社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "企业社会工作服务",
+        "企业社会工作服务的主要内容",
+        "企业社会工作服务的主要方法",
+        "企业社会工作服务的功能",
+        "新就业社会群体",
+        "新就业社会群体的问题与需求"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2016,
+      "subject": "437",
+      "type": "简答",
+      "question": "企业社会工作中的“内置”和“外包”模式",
+      "tags": [
+        "企业社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "企业社会工作服务",
+        "企业社会工作服务的主要内容",
+        "企业社会工作服务的主要方法",
+        "企业社会工作服务的功能"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2016,
+      "subject": "437",
+      "type": "案例",
+      "question": "从个案、小组和社区三个层面说明癌症疾病中医务社会工作的常用方法",
+      "tags": [
+        "医务社会工作",
+        "个案工作",
+        "小组工作",
+        "社区工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2017,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "ABC理论",
+      "tags": [
+        "ABC理论",
+        "理性情绪治疗"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "ABC理论与理性情绪治疗（REBT）"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2017,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "班杜拉社会学习理论",
+      "tags": [
+        "社会学习理论"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "班杜拉社会学习理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2017,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "实证主义",
+      "tags": [
+        "实证主义"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "实证主义"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2017,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "皮亚杰的认知理论",
+      "tags": [
+        "认知发展理论"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "皮亚杰认知发展理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2017,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "社会支持和社会资本",
+      "tags": [
+        "社会支持理论",
+        "社会资本"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "社会支持理论",
+        "社会资本理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2017,
+      "subject": "331",
+      "type": "简答",
+      "question": "青少年时期特点及相关理论基础",
+      "tags": [
+        "青少年社会工作",
+        "人类行为与社会环境"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第五章 人类行为与社会环境"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2017,
+      "subject": "331",
+      "type": "简答",
+      "question": "社会工作中的伦理决定和伦理困境",
+      "tags": [
+        "专业伦理"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2017,
+      "subject": "331",
+      "type": "简答",
+      "question": "社会工作在专业实践中的角色",
+      "tags": [
+        "社会工作者角色"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2017,
+      "subject": "331",
+      "type": "简答",
+      "question": "举例说明社会环境对人类行为的影响",
+      "tags": [
+        "人类行为与社会环境"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第五章 人类行为与社会环境"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2017,
+      "subject": "331",
+      "type": "简答",
+      "question": "小组互动模式的理论基础和模式特点",
+      "tags": [
+        "小组互动模式"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "小组互动/互惠模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2017,
+      "subject": "331",
+      "type": "论述",
+      "question": "社会福利制度相关理论如何影响社会政策走向，并说明社会工作与社会福利制度关系",
+      "tags": [
+        "社会福利",
+        "社会政策"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "“第三条道路”社会政策思想"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2017,
+      "subject": "331",
+      "type": "论述",
+      "question": "社区定义、社区工作定义及社区工作模式",
+      "tags": [
+        "社区工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2017,
+      "subject": "437",
+      "type": "案例",
+      "question": "农村留守妇女：从个人、小组、社区三个层面提出干预策略",
+      "tags": [
+        "妇女社会工作",
+        "个案工作",
+        "小组工作",
+        "社区工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2017,
+      "subject": "437",
+      "type": "案例",
+      "question": "校园暴力：社会工作如何介入",
+      "tags": [
+        "学校社会工作",
+        "危机介入"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "危机介入理论/模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2017,
+      "subject": "437",
+      "type": "案例",
+      "question": "就业压力学生的心理辅导",
+      "tags": [
+        "学校社会工作",
+        "个案工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2017,
+      "subject": "437",
+      "type": "案例",
+      "question": "评价和改进社区养老政策",
+      "tags": [
+        "老年社会工作",
+        "社会政策"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "“第三条道路”社会政策思想"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2018,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "本我、自我、超我",
+      "tags": [
+        "精神分析"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "精神分析取向：本我、自我、超我"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2018,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "社会排斥",
+      "tags": [
+        "社会排斥"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2018,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "增权",
+      "tags": [
+        "增权"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "增权/赋能理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2018,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "焦点小组",
+      "tags": [
+        "社会工作研究"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2018,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "标签理论",
+      "tags": [
+        "标签理论"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "标签理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2018,
+      "subject": "331",
+      "type": "简答",
+      "question": "社会福利的功能",
+      "tags": [
+        "社会福利"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2018,
+      "subject": "331",
+      "type": "简答",
+      "question": "危机介入原则",
+      "tags": [
+        "危机介入"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "危机介入理论/模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2018,
+      "subject": "331",
+      "type": "简答",
+      "question": "社区对人的作用",
+      "tags": [
+        "社区工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2018,
+      "subject": "331",
+      "type": "简答",
+      "question": "社会政策的决策模式",
+      "tags": [
+        "社会政策"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "“第三条道路”社会政策思想"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2018,
+      "subject": "331",
+      "type": "简答",
+      "question": "社会工作实践中的介入策略",
+      "tags": [
+        "社会工作过程"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第一章 社会工作服务的内涵"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2018,
+      "subject": "331",
+      "type": "论述",
+      "question": "结合小组相关理论及实践说明社会工作者在小组中的角色",
+      "tags": [
+        "小组工作",
+        "社会工作者角色"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2018,
+      "subject": "331",
+      "type": "论述",
+      "question": "结合贫穷理论说明社会工作在扶贫方面的作用",
+      "tags": [
+        "反贫困社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2018,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "心理社会治疗模式",
+      "tags": [
+        "心理社会治疗"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "心理社会治疗模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2018,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "人本主义",
+      "tags": [
+        "人文主义"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "人道主义与人本主义",
+        "人本治疗模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2018,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "增权赋能理论",
+      "tags": [
+        "增权"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "增权/赋能理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2018,
+      "subject": "437",
+      "type": "简答",
+      "question": "米纽秦病态家庭结构类型及打破技巧",
+      "tags": [
+        "结构家庭治疗"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "结构家庭治疗"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2018,
+      "subject": "437",
+      "type": "简答",
+      "question": "社会工作伦理",
+      "tags": [
+        "专业伦理"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2018,
+      "subject": "437",
+      "type": "案例",
+      "question": "抗逆力理论介入问题少年",
+      "tags": [
+        "抗逆力理论",
+        "青少年社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "抗逆力理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2019,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "第三条道路",
+      "tags": [
+        "第三条道路"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "“第三条道路”社会政策思想"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2019,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "Y理论",
+      "tags": [
+        "Y理论"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "Y理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2019,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "科层制",
+      "tags": [
+        "科层制"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "科层制理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2019,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "行为主义",
+      "tags": [
+        "行为主义"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "行为主义与行为治疗"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2019,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "人本治疗模式",
+      "tags": [
+        "人本治疗"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "人本治疗模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2019,
+      "subject": "331",
+      "type": "简答",
+      "question": "科学主义范式和建构主义范式对社会工作的不同看法",
+      "tags": [
+        "实证主义",
+        "社会建构主义"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "实证主义",
+        "社会建构主义与建构主义范式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2019,
+      "subject": "331",
+      "type": "简答",
+      "question": "柏克莱关于老人人格和适应的分类",
+      "tags": [
+        "老年社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2019,
+      "subject": "331",
+      "type": "简答",
+      "question": "后现代的主要特征",
+      "tags": [
+        "后现代主义"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "后现代主义视角"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2019,
+      "subject": "331",
+      "type": "简答",
+      "question": "马尔库塞的批判学说",
+      "tags": [
+        "批判理论"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "批判理论（马尔库塞专题）"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2019,
+      "subject": "331",
+      "type": "简答",
+      "question": "社会政策中的社会公正、需求和权利价值观",
+      "tags": [
+        "社会政策",
+        "专业价值"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范",
+        "“第三条道路”社会政策思想"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2019,
+      "subject": "331",
+      "type": "论述",
+      "question": "对比涂尔干和斯宾塞关于福利的观点",
+      "tags": [
+        "社会福利"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2019,
+      "subject": "331",
+      "type": "论述",
+      "question": "儿童发展与社会环境：如何帮助儿童应付成就压力",
+      "tags": [
+        "儿童社会工作",
+        "人类行为与社会环境"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第五章 人类行为与社会环境"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2019,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "移情和反移情",
+      "tags": [
+        "心理社会治疗"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "心理社会治疗模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2019,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "危机介入模式",
+      "tags": [
+        "危机介入"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "危机介入理论/模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2019,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "社区照顾",
+      "tags": [
+        "社区照顾"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "社区照顾理论/模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2019,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "社会康复",
+      "tags": [
+        "残疾人社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2019,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "发展性社会福利",
+      "tags": [
+        "社会福利"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2019,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "互惠模式小组",
+      "tags": [
+        "小组互动模式"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "小组互动/互惠模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2019,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "政府购买服务",
+      "tags": [
+        "社会工作行政"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2019,
+      "subject": "437",
+      "type": "简答",
+      "question": "结构家庭治疗法的基本假设与介入策略",
+      "tags": [
+        "结构家庭治疗"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "结构家庭治疗"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2019,
+      "subject": "437",
+      "type": "简答",
+      "question": "社区领袖及培育社会领袖的策略技巧",
+      "tags": [
+        "社区工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2019,
+      "subject": "437",
+      "type": "简答",
+      "question": "社会工作督导的基本原则与功能",
+      "tags": [
+        "社会工作督导"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "社会工作服务督导",
+        "社会工作督导基本原则",
+        "社会工作督导三大功能",
+        "社会工作督导对象",
+        "社会工作督导的三类内容",
+        "社会工作督导方式",
+        "社会工作督导过程",
+        "社会工作督导技巧"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2019,
+      "subject": "437",
+      "type": "简答",
+      "question": "社会学习理论及其对小组工作的启示",
+      "tags": [
+        "社会学习理论",
+        "小组工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "班杜拉社会学习理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2019,
+      "subject": "437",
+      "type": "案例",
+      "question": "医务社会工作中的伦理困境与伦理抉择",
+      "tags": [
+        "医务社会工作",
+        "专业伦理"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2019,
+      "subject": "437",
+      "type": "案例",
+      "question": "小组冲突类型、影响及领导者干预策略",
+      "tags": [
+        "小组工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2019,
+      "subject": "437",
+      "type": "案例",
+      "question": "残疾儿童及家庭的困难、需要与介入方案",
+      "tags": [
+        "残疾人社会工作",
+        "家庭社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2020,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "社会工作的互动过程",
+      "tags": [
+        "社会工作过程"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第一章 社会工作服务的内涵"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2020,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "小组治疗模式和小组中心模式",
+      "tags": [
+        "小组治疗模式"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "小组治疗模式与小组中心模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2020,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "增能",
+      "tags": [
+        "增权"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "增权/赋能理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2020,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "结构理论的家庭治疗",
+      "tags": [
+        "结构家庭治疗"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "结构家庭治疗"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2020,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "社会投资理论",
+      "tags": [
+        "社会投资理论"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "社会投资理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2020,
+      "subject": "331",
+      "type": "简答",
+      "question": "个案工作的诊断学派和治疗学派的区别和联系",
+      "tags": [
+        "诊断学派",
+        "个案工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "诊断学派与《社会诊断》"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2020,
+      "subject": "331",
+      "type": "简答",
+      "question": "比较我国机构照顾和社区照顾的特点",
+      "tags": [
+        "社区照顾",
+        "机构照顾"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "社区照顾理论/模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2020,
+      "subject": "331",
+      "type": "简答",
+      "question": "女性主义社会工作的基本原则",
+      "tags": [
+        "女性主义"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "女性主义社会工作与自由女性主义"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2020,
+      "subject": "331",
+      "type": "论述",
+      "question": "农村反贫困社会工作的主要策略",
+      "tags": [
+        "农村社会工作",
+        "反贫困社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2020,
+      "subject": "331",
+      "type": "论述",
+      "question": "儿童福利服务基本模式及残疾儿童、农村留守儿童服务措施",
+      "tags": [
+        "儿童社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2020,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "理性情绪治疗模式",
+      "tags": [
+        "理性情绪治疗"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "ABC理论与理性情绪治疗（REBT）"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2020,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "小组动力",
+      "tags": [
+        "小组工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2020,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "个案管理",
+      "tags": [
+        "个案管理"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2020,
+      "subject": "437",
+      "type": "简答",
+      "question": "居家养老模式及社区照顾策略",
+      "tags": [
+        "老年社会工作",
+        "社区照顾"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "社区照顾理论/模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2020,
+      "subject": "437",
+      "type": "简答",
+      "question": "循证社会工作及评价",
+      "tags": [
+        "循证社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "循证社会工作/以证据为基础的实践"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2020,
+      "subject": "437",
+      "type": "案例",
+      "question": "家庭暴力伦理困境及介入服务计划",
+      "tags": [
+        "家庭暴力",
+        "专业伦理",
+        "妇女社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2020,
+      "subject": "437",
+      "type": "案例",
+      "question": "住院儿童及家长需要、服务方案与预估",
+      "tags": [
+        "医务社会工作",
+        "儿童社会工作",
+        "预估"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2021,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "任务中心模式",
+      "tags": [
+        "任务中心模式"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "任务中心模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2021,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "符号互动理论",
+      "tags": [
+        "符号互动理论"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "符号互动理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2021,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "社会福利",
+      "tags": [
+        "社会福利"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2021,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "优势视角",
+      "tags": [
+        "优势视角"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "优势视角"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2021,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "标签理论",
+      "tags": [
+        "标签理论"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "标签理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2021,
+      "subject": "331",
+      "type": "简答",
+      "question": "小组功能",
+      "tags": [
+        "小组工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2021,
+      "subject": "331",
+      "type": "简答",
+      "question": "社会工作的专业价值",
+      "tags": [
+        "专业价值"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2021,
+      "subject": "331",
+      "type": "简答",
+      "question": "家庭社会工作的功能（任务）",
+      "tags": [
+        "家庭社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2021,
+      "subject": "331",
+      "type": "简答",
+      "question": "社区工作三模式",
+      "tags": [
+        "社区工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2021,
+      "subject": "331",
+      "type": "论述",
+      "question": "医务社会工作有关健康理论与社会工作者角色",
+      "tags": [
+        "医务社会工作",
+        "社会工作者角色"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2021,
+      "subject": "331",
+      "type": "论述",
+      "question": "社会性别主流化及妇联/社会工作机构落实",
+      "tags": [
+        "女性主义",
+        "妇女社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "女性主义社会工作与自由女性主义"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2021,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "社区照顾",
+      "tags": [
+        "社区照顾"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "社区照顾理论/模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2021,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "社会救助",
+      "tags": [
+        "社会救助"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2021,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "社会工作",
+      "tags": [
+        "社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第一章 社会工作服务的内涵",
+        "第二章 社会工作服务发展的基本原则",
+        "第三章 开展社会工作服务应重点掌握的相关政治理论",
+        "第四章 社会工作服务专业价值观与道德规范",
+        "循证社会工作/以证据为基础的实践",
+        "女性主义社会工作与自由女性主义",
+        "社会工作服务管理",
+        "社会工作服务项目",
+        "社会工作服务项目管理五维框架",
+        "社会工作服务机构管理",
+        "社会工作服务机构人力资源管理",
+        "社会工作服务机构资源筹措",
+        "社会工作服务督导",
+        "社会工作督导对象",
+        "社会工作督导三大功能",
+        "社会工作督导的三类内容",
+        "社会工作督导方式",
+        "社会工作督导过程",
+        "社会工作督导技巧",
+        "社会工作督导基本原则",
+        "企业社会工作服务",
+        "企业社会工作服务的主要内容",
+        "企业社会工作服务的主要方法",
+        "企业社会工作服务的功能",
+        "基层治理领域社会工作服务内容",
+        "基层治理领域社会工作服务方法",
+        "退役军人事务社会工作服务"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2021,
+      "subject": "437",
+      "type": "简答",
+      "question": "赋权理论及如何介入家庭暴力",
+      "tags": [
+        "增权",
+        "家庭暴力"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "增权/赋能理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2021,
+      "subject": "437",
+      "type": "简答",
+      "question": "专业关系的重要性及建立技巧",
+      "tags": [
+        "专业关系"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2021,
+      "subject": "437",
+      "type": "案例",
+      "question": "癌症患者知情与治疗意见冲突：伦理困境、解决与介入",
+      "tags": [
+        "医务社会工作",
+        "专业伦理"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2021,
+      "subject": "437",
+      "type": "案例",
+      "question": "校园暴力原因、社会工作介入与方案设计",
+      "tags": [
+        "学校社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2022,
+      "subject": "331",
+      "type": "综合",
+      "question": "残疾人社会工作：社会责任论和个人责任论",
+      "tags": [
+        "残疾人社会工作"
+      ],
+      "source_confidence": "medium",
+      "note": "真题文件为回忆版摘要",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2022,
+      "subject": "331",
+      "type": "综合",
+      "question": "农村社会工作价值观",
+      "tags": [
+        "农村社会工作"
+      ],
+      "source_confidence": "medium",
+      "note": "真题文件为回忆版摘要",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2022,
+      "subject": "331",
+      "type": "综合",
+      "question": "任务中心模式",
+      "tags": [
+        "任务中心模式"
+      ],
+      "source_confidence": "medium",
+      "note": "真题文件为回忆版摘要",
+      "current_app_topics": [
+        "任务中心模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2022,
+      "subject": "437",
+      "type": "综合",
+      "question": "企业社会工作",
+      "tags": [
+        "企业社会工作"
+      ],
+      "source_confidence": "medium",
+      "note": "真题文件为回忆版摘要",
+      "current_app_topics": [
+        "企业社会工作服务",
+        "企业社会工作服务的主要内容",
+        "企业社会工作服务的主要方法",
+        "企业社会工作服务的功能"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2022,
+      "subject": "437",
+      "type": "综合",
+      "question": "叙事治疗模式",
+      "tags": [
+        "叙事治疗"
+      ],
+      "source_confidence": "medium",
+      "note": "真题文件为回忆版摘要",
+      "current_app_topics": [
+        "叙事治疗模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2023,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "社会建构主义",
+      "tags": [
+        "社会建构主义"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "社会建构主义与建构主义范式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2023,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "家庭冲突",
+      "tags": [
+        "家庭社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2023,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "小组工作的行为模式",
+      "tags": [
+        "小组行为模式"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "小组行为模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2023,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "临终关怀",
+      "tags": [
+        "医务社会工作",
+        "临终关怀"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2023,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "社会支持理论",
+      "tags": [
+        "社会支持理论"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "社会支持理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2023,
+      "subject": "331",
+      "type": "简答",
+      "question": "古代中国社会福利的思想脉络",
+      "tags": [
+        "社会福利"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2023,
+      "subject": "331",
+      "type": "简答",
+      "question": "社区工作者的六个角色",
+      "tags": [
+        "社区工作",
+        "社会工作者角色"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2023,
+      "subject": "331",
+      "type": "简答",
+      "question": "小组工作中有效促进沟通的技巧",
+      "tags": [
+        "小组工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2023,
+      "subject": "331",
+      "type": "简答",
+      "question": "个案工作中接案的注意事项",
+      "tags": [
+        "个案工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2023,
+      "subject": "331",
+      "type": "简答",
+      "question": "老年个案工作的原则",
+      "tags": [
+        "老年社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2023,
+      "subject": "331",
+      "type": "论述",
+      "question": "广义女性社会工作的含义及家庭社会工作中保护女性权益",
+      "tags": [
+        "妇女社会工作",
+        "家庭社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2023,
+      "subject": "331",
+      "type": "论述",
+      "question": "结合社会学理论开展特殊儿童社会救助工作",
+      "tags": [
+        "儿童社会工作",
+        "社会救助"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2023,
+      "subject": "331",
+      "type": "论述",
+      "question": "社区照顾和机构照顾哪个更适合我国养老",
+      "tags": [
+        "社区照顾",
+        "机构照顾",
+        "老年社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "社区照顾理论/模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2023,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "综合介入",
+      "tags": [
+        "社会工作过程"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第一章 社会工作服务的内涵"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2023,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "临终关怀",
+      "tags": [
+        "临终关怀"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2023,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "家庭抗逆力",
+      "tags": [
+        "家庭抗逆力"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "家庭抗逆力"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2023,
+      "subject": "437",
+      "type": "简答",
+      "question": "妇女暴力的干预原则和策略",
+      "tags": [
+        "妇女社会工作",
+        "家庭暴力"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2023,
+      "subject": "437",
+      "type": "简答",
+      "question": "社区社会工作提供的社会支持网络",
+      "tags": [
+        "社区工作",
+        "社会支持理论"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "社会支持理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2023,
+      "subject": "437",
+      "type": "案例",
+      "question": "家庭看护者压力：问题困境、服务计划与减压",
+      "tags": [
+        "家庭社会工作",
+        "老年社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2023,
+      "subject": "437",
+      "type": "案例",
+      "question": "不孕不育女性：问题困境、服务计划与服务策略",
+      "tags": [
+        "妇女社会工作",
+        "医务社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2024,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "社会保障",
+      "tags": [
+        "社会保障"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2024,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "社会学习理论",
+      "tags": [
+        "社会学习理论"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [
+        "班杜拉社会学习理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2024,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "工作过程论",
+      "tags": [
+        "社会工作过程"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [
+        "第一章 社会工作服务的内涵"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2024,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "儿童福利政策",
+      "tags": [
+        "儿童社会工作"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2024,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "社会撤离理论",
+      "tags": [
+        "社会撤离理论"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [
+        "社会撤离理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2024,
+      "subject": "331",
+      "type": "简答",
+      "question": "中国社会工作的专业价值",
+      "tags": [
+        "专业价值"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2024,
+      "subject": "331",
+      "type": "简答",
+      "question": "社会福利的功能",
+      "tags": [
+        "社会福利"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2024,
+      "subject": "331",
+      "type": "简答",
+      "question": "任务中心模式解决问题的类别",
+      "tags": [
+        "任务中心模式"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [
+        "任务中心模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2024,
+      "subject": "331",
+      "type": "简答",
+      "question": "青少年福利需要",
+      "tags": [
+        "青少年社会工作"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2024,
+      "subject": "331",
+      "type": "简答",
+      "question": "小组工作的阶段",
+      "tags": [
+        "小组工作"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2024,
+      "subject": "331",
+      "type": "论述",
+      "question": "社会问题和社会工作实践的关系",
+      "tags": [
+        "社会工作"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [
+        "第一章 社会工作服务的内涵",
+        "第二章 社会工作服务发展的基本原则",
+        "第三章 开展社会工作服务应重点掌握的相关政治理论",
+        "第四章 社会工作服务专业价值观与道德规范",
+        "循证社会工作/以证据为基础的实践",
+        "女性主义社会工作与自由女性主义",
+        "社会工作服务管理",
+        "社会工作服务项目",
+        "社会工作服务项目管理五维框架",
+        "社会工作服务机构管理",
+        "社会工作服务机构人力资源管理",
+        "社会工作服务机构资源筹措",
+        "社会工作服务督导",
+        "社会工作督导对象",
+        "社会工作督导三大功能",
+        "社会工作督导的三类内容",
+        "社会工作督导方式",
+        "社会工作督导过程",
+        "社会工作督导技巧",
+        "社会工作督导基本原则",
+        "企业社会工作服务",
+        "企业社会工作服务的主要内容",
+        "企业社会工作服务的主要方法",
+        "企业社会工作服务的功能",
+        "基层治理领域社会工作服务内容",
+        "基层治理领域社会工作服务方法",
+        "退役军人事务社会工作服务"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2024,
+      "subject": "331",
+      "type": "论述",
+      "question": "医务社会工作如何改善社区居民心理健康",
+      "tags": [
+        "医务社会工作"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2024,
+      "subject": "331",
+      "type": "论述",
+      "question": "家庭结构、婚姻方式、家庭生活方式变化与家庭社会工作作用",
+      "tags": [
+        "家庭社会工作"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2024,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "基线测量方法",
+      "tags": [
+        "社会工作研究"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2024,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "社区矫正",
+      "tags": [
+        "矫正社会工作"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2024,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "社会支持网络",
+      "tags": [
+        "社会支持理论"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [
+        "社会支持理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2024,
+      "subject": "437",
+      "type": "简答",
+      "question": "慢性疾病患者及家属的服务需求与阿尔茨海默症患者家庭服务",
+      "tags": [
+        "医务社会工作",
+        "老年社会工作"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2024,
+      "subject": "437",
+      "type": "简答",
+      "question": "抗逆力理论及其用于激烈学业竞争、心理异常高中生",
+      "tags": [
+        "抗逆力理论",
+        "青少年社会工作"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定",
+      "current_app_topics": [
+        "抗逆力理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2025,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "社会救助",
+      "tags": [
+        "社会救助"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2025,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "认知理论",
+      "tags": [
+        "认知理论"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [
+        "一般认知理论（认知—行为取向）"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2025,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "学习小组",
+      "tags": [
+        "小组工作"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2025,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "连续性理论",
+      "tags": [
+        "连续性理论"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [
+        "连续性理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2025,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "家庭系统",
+      "tags": [
+        "家庭系统理论"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定；原图未显示年份标题",
+      "current_app_topics": [
+        "家庭系统理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2025,
+      "subject": "331",
+      "type": "简答",
+      "question": "社会工作过程模式内容",
+      "tags": [
+        "社会工作过程"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定",
+      "current_app_topics": [
+        "第一章 社会工作服务的内涵"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2025,
+      "subject": "331",
+      "type": "简答",
+      "question": "社会福利系统各部分功能",
+      "tags": [
+        "社会福利"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2025,
+      "subject": "331",
+      "type": "简答",
+      "question": "社会工作伦理对当事人的伦理责任",
+      "tags": [
+        "专业伦理"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2025,
+      "subject": "331",
+      "type": "简答",
+      "question": "行为治疗个案工作的过程",
+      "tags": [
+        "行为治疗"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定",
+      "current_app_topics": [
+        "行为主义与行为治疗"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2025,
+      "subject": "331",
+      "type": "简答",
+      "question": "社区工作的具体目标",
+      "tags": [
+        "社区工作"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2025,
+      "subject": "331",
+      "type": "论述",
+      "question": "老年社会工作小组工作原则",
+      "tags": [
+        "老年社会工作",
+        "小组工作"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2025,
+      "subject": "331",
+      "type": "论述",
+      "question": "医务社会工作领域社会工作者的知识基础",
+      "tags": [
+        "医务社会工作"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2025,
+      "subject": "331",
+      "type": "论述",
+      "question": "青少年福利需要及促进青少年群体健康发展",
+      "tags": [
+        "青少年社会工作"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2025,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "军队社会工作",
+      "tags": [
+        "军队社会工作"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2025,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "出院安置服务",
+      "tags": [
+        "医务社会工作"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2025,
+      "subject": "437",
+      "type": "简答",
+      "question": "用行为治疗矫正青少年行为",
+      "tags": [
+        "行为治疗",
+        "青少年社会工作"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定",
+      "current_app_topics": [
+        "行为主义与行为治疗"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2025,
+      "subject": "437",
+      "type": "简答",
+      "question": "家庭生命周期理论及优缺点",
+      "tags": [
+        "家庭生命周期理论"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定",
+      "current_app_topics": [
+        "家庭生命周期理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2025,
+      "subject": "437",
+      "type": "案例",
+      "question": "老年远程陪伴项目：需求/心理挑战、方案设计",
+      "tags": [
+        "老年社会工作",
+        "项目设计"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2025,
+      "subject": "437",
+      "type": "案例",
+      "question": "朝阳计划：成本效益分析与方案设计",
+      "tags": [
+        "项目评估",
+        "成本效益分析"
+      ],
+      "source_confidence": "medium",
+      "note": "年份按文件顺序推定",
+      "current_app_topics": [
+        "项目成效评估"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2026,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "个别化",
+      "tags": [
+        "专业价值"
+      ],
+      "source_confidence": "high",
+      "note": "原图明确标注“东南社工26原理”",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2026,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "沟通理论",
+      "tags": [
+        "沟通理论"
+      ],
+      "source_confidence": "high",
+      "note": "原图明确标注“东南社工26原理”",
+      "current_app_topics": [
+        "沟通理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2026,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "社会交换理论",
+      "tags": [
+        "社会交换理论"
+      ],
+      "source_confidence": "high",
+      "note": "原图明确标注“东南社工26原理”",
+      "current_app_topics": [
+        "社会交换理论"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2026,
+      "subject": "331",
+      "type": "名词解释",
+      "question": "健康促进",
+      "tags": [
+        "健康促进"
+      ],
+      "source_confidence": "high",
+      "note": "原图明确标注“东南社工26原理”",
+      "current_app_topics": [
+        "健康促进理论/理念"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2026,
+      "subject": "331",
+      "type": "简答",
+      "question": "社会工作伦理关系下对个案工作者的要求",
+      "tags": [
+        "专业伦理",
+        "个案工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2026,
+      "subject": "331",
+      "type": "简答",
+      "question": "社会工作者对社会工作专业的伦理责任",
+      "tags": [
+        "专业伦理"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2026,
+      "subject": "331",
+      "type": "简答",
+      "question": "儿童社会工作的功能",
+      "tags": [
+        "儿童社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2026,
+      "subject": "331",
+      "type": "简答",
+      "question": "政策与制度层面的医务社会工作内容",
+      "tags": [
+        "医务社会工作",
+        "社会政策"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "“第三条道路”社会政策思想"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2026,
+      "subject": "331",
+      "type": "论述",
+      "question": "结合社区中国式现代化，论社会工作介入方法",
+      "tags": [
+        "社区工作",
+        "社会工作方法"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2026,
+      "subject": "331",
+      "type": "论述",
+      "question": "男女平等思想本土困境与推进男女平等",
+      "tags": [
+        "妇女社会工作",
+        "女性主义"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "女性主义社会工作与自由女性主义"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2026,
+      "subject": "331",
+      "type": "论述",
+      "question": "家庭社会工作主要任务及推动家庭家风家教建设",
+      "tags": [
+        "家庭社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2026,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "社会观护",
+      "tags": [
+        "矫正社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "原图显示3题但仅能辨认出2题；不猜第三题",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2026,
+      "subject": "437",
+      "type": "名词解释",
+      "question": "预估",
+      "tags": [
+        "社会工作过程"
+      ],
+      "source_confidence": "high",
+      "note": "原图显示3题但仅能辨认出2题；不猜第三题",
+      "current_app_topics": [
+        "第一章 社会工作服务的内涵"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2026,
+      "subject": "437",
+      "type": "简答",
+      "question": "实用性社会性别需求和战略性社会性别需求，如何帮助失独家庭",
+      "tags": [
+        "妇女社会工作",
+        "家庭社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2026,
+      "subject": "437",
+      "type": "简答",
+      "question": "社会工作介入原则及帮助肿瘤患者照顾者",
+      "tags": [
+        "医务社会工作",
+        "家庭社会工作"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [],
+      "coverage": "missing_or_indirect"
+    },
+    {
+      "year": 2026,
+      "subject": "437",
+      "type": "案例",
+      "question": "高龄老人：需求分析、服务方案、社区照顾覆盖与改进",
+      "tags": [
+        "老年社会工作",
+        "社区照顾"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "社区照顾理论/模式"
+      ],
+      "coverage": "covered"
+    },
+    {
+      "year": 2026,
+      "subject": "437",
+      "type": "论述",
+      "question": "残疾人出行无障碍设施与合理便利：人权与伦理分析",
+      "tags": [
+        "残疾人社会工作",
+        "专业伦理"
+      ],
+      "source_confidence": "high",
+      "note": "",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "coverage": "covered"
+    }
+  ],
+  "rules": {
+    "core_reference_1": "王思斌《社会工作概论》（第4版）笔记和课后习题（含考研真题）详解",
+    "core_reference_2": "东南大学社会工作考研真题2015-2026年+(1)",
+    "design_principle": "核心资料主要用于确定题型、命题方式、重要知识点和答题结构；答案内容须再做教材/权威资料/外部文献核验。",
+    "accuracy_policy": "未能交叉核验的内容不进入正式 verified 题库；对年份或题目文字不确定的回忆版材料必须标注置信度，不猜测。"
+  },
+  "external_verification_registry": [
+    {
+      "topic": "社会工作定义、核心原则",
+      "source": "International Federation of Social Workers (IFSW), Global Definition of Social Work",
+      "url": "https://www.ifsw.org/what-is-social-work/global-definition-of-social-work/",
+      "use": "核对社会正义、人权、集体责任、尊重多样性、人与结构共同介入等原则"
+    },
+    {
+      "topic": "社会工作伦理",
+      "source": "IFSW Global Social Work Statement of Ethical Principles",
+      "url": "https://www.ifsw.org/global-social-work-statement-of-ethical-principles/",
+      "use": "核对人的尊严、人权、社会正义、多样性等伦理原则"
+    },
+    {
+      "topic": "专业伦理与核心价值",
+      "source": "National Association of Social Workers (NASW), Code of Ethics / Practice Standards",
+      "url": "https://www.socialworkers.org/About/Ethics/Code-of-Ethics",
+      "use": "核对服务、社会正义、人的尊严与价值、人际关系、诚信、胜任及自决/保密原则"
+    },
+    {
+      "topic": "优势视角",
+      "source": "University of Kansas School of Social Welfare, Principles of the Strengths Perspective",
+      "url": "https://socwel.ku.edu/principles-strengths-perspective",
+      "use": "核对优势、资源、合作、服务对象目标、希望和赋权等核心原则"
+    },
+    {
+      "topic": "任务中心/任务聚焦实践",
+      "source": "NCBI Bookshelf, Social work with adults experiencing complex needs",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK588598/",
+      "use": "核对共同界定问题、目标与行动、进展回顾、短期/聚焦等基本逻辑"
+    },
+    {
+      "topic": "标签理论",
+      "source": "Encyclopedia.com / sociology references on Becker & Lemert",
+      "url": "https://www.encyclopedia.com/social-sciences/encyclopedias-almanacs-transcripts-and-maps/juvenile-delinquency-theories",
+      "use": "核对社会反应、初级/次级偏差、标签影响自我概念等要点"
+    }
+  ]
+}

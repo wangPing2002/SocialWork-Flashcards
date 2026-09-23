@@ -1,0 +1,947 @@
+{
+  "A_priority_count": 40,
+  "B_priority_count": 22,
+  "missing_or_needs_rebuild_count": 37,
+  "top_A": [
+    {
+      "knowledge_point": "医务社会工作",
+      "exam_count": 13,
+      "years": [
+        2016,
+        2019,
+        2020,
+        2021,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "小组工作",
+      "exam_count": 12,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2023,
+        2024,
+        2025
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "老年社会工作",
+      "exam_count": 12,
+      "years": [
+        2016,
+        2017,
+        2019,
+        2020,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社会福利",
+      "exam_count": 11,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2021,
+        2023,
+        2024,
+        2025
+      ],
+      "question_types": [
+        "名词解释",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "专业伦理",
+      "exam_count": 11,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2025,
+        2026
+      ],
+      "question_types": [
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "家庭社会工作",
+      "exam_count": 10,
+      "years": [
+        2015,
+        2019,
+        2021,
+        2023,
+        2024,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社区工作",
+      "exam_count": 10,
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2021,
+        2023,
+        2025,
+        2026
+      ],
+      "question_types": [
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "妇女社会工作",
+      "exam_count": 9,
+      "years": [
+        2015,
+        2017,
+        2020,
+        2021,
+        2023,
+        2026
+      ],
+      "question_types": [
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "个案工作",
+      "exam_count": 8,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2020,
+        2023,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社会政策",
+      "exam_count": 6,
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2026
+      ],
+      "question_types": [
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "“第三条道路”社会政策思想"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "青少年社会工作",
+      "exam_count": 6,
+      "years": [
+        2017,
+        2018,
+        2024,
+        2025
+      ],
+      "question_types": [
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社会工作过程",
+      "exam_count": 6,
+      "years": [
+        2018,
+        2020,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "第一章 社会工作服务的内涵"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "儿童社会工作",
+      "exam_count": 6,
+      "years": [
+        2019,
+        2020,
+        2023,
+        2024,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社区照顾",
+      "exam_count": 6,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2023,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "社区照顾理论/模式"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "人类行为与社会环境",
+      "exam_count": 5,
+      "years": [
+        2015,
+        2017,
+        2019
+      ],
+      "question_types": [
+        "名词解释",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "第五章 人类行为与社会环境"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "社会工作者角色",
+      "exam_count": 5,
+      "years": [
+        2015,
+        2017,
+        2018,
+        2021,
+        2023
+      ],
+      "question_types": [
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "专业价值",
+      "exam_count": 5,
+      "years": [
+        2016,
+        2019,
+        2021,
+        2024,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "第四章 社会工作服务专业价值观与道德规范"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "女性主义",
+      "exam_count": 4,
+      "years": [
+        2016,
+        2020,
+        2021,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "女性主义社会工作与自由女性主义"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "社会支持理论",
+      "exam_count": 4,
+      "years": [
+        2017,
+        2023,
+        2024
+      ],
+      "question_types": [
+        "名词解释",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "社会支持理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "增权",
+      "exam_count": 4,
+      "years": [
+        2018,
+        2020,
+        2021
+      ],
+      "question_types": [
+        "名词解释",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "增权/赋能理论"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "残疾人社会工作",
+      "exam_count": 4,
+      "years": [
+        2019,
+        2022,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "综合",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "实证主义",
+      "exam_count": 3,
+      "years": [
+        2015,
+        2017,
+        2019
+      ],
+      "question_types": [
+        "名词解释",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "实证主义"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "社会工作研究",
+      "exam_count": 3,
+      "years": [
+        2016,
+        2018,
+        2024
+      ],
+      "question_types": [
+        "名词解释",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "理性情绪治疗",
+      "exam_count": 3,
+      "years": [
+        2016,
+        2017,
+        2020
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "A",
+      "current_app_topics": [
+        "ABC理论与理性情绪治疗（REBT）"
+      ],
+      "status": "已有直接专题"
+    },
+    {
+      "knowledge_point": "矫正社会工作",
+      "exam_count": 3,
+      "years": [
+        2016,
+        2024,
+        2026
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    }
+  ],
+  "high_value_missing_examples": [
+    {
+      "knowledge_point": "医务社会工作",
+      "exam_count": 13,
+      "years": [
+        2016,
+        2019,
+        2020,
+        2021,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "小组工作",
+      "exam_count": 12,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2023,
+        2024,
+        2025
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "老年社会工作",
+      "exam_count": 12,
+      "years": [
+        2016,
+        2017,
+        2019,
+        2020,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社会福利",
+      "exam_count": 11,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2021,
+        2023,
+        2024,
+        2025
+      ],
+      "question_types": [
+        "名词解释",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "家庭社会工作",
+      "exam_count": 10,
+      "years": [
+        2015,
+        2019,
+        2021,
+        2023,
+        2024,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社区工作",
+      "exam_count": 10,
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2021,
+        2023,
+        2025,
+        2026
+      ],
+      "question_types": [
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "妇女社会工作",
+      "exam_count": 9,
+      "years": [
+        2015,
+        2017,
+        2020,
+        2021,
+        2023,
+        2026
+      ],
+      "question_types": [
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "个案工作",
+      "exam_count": 8,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2020,
+        2023,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "青少年社会工作",
+      "exam_count": 6,
+      "years": [
+        2017,
+        2018,
+        2024,
+        2025
+      ],
+      "question_types": [
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "儿童社会工作",
+      "exam_count": 6,
+      "years": [
+        2019,
+        2020,
+        2023,
+        2024,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社会工作者角色",
+      "exam_count": 5,
+      "years": [
+        2015,
+        2017,
+        2018,
+        2021,
+        2023
+      ],
+      "question_types": [
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "残疾人社会工作",
+      "exam_count": 4,
+      "years": [
+        2019,
+        2022,
+        2026
+      ],
+      "question_types": [
+        "名词解释",
+        "案例",
+        "综合",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社会工作研究",
+      "exam_count": 3,
+      "years": [
+        2016,
+        2018,
+        2024
+      ],
+      "question_types": [
+        "名词解释",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "矫正社会工作",
+      "exam_count": 3,
+      "years": [
+        2016,
+        2024,
+        2026
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "学校社会工作",
+      "exam_count": 3,
+      "years": [
+        2017,
+        2021
+      ],
+      "question_types": [
+        "案例"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "家庭暴力",
+      "exam_count": 3,
+      "years": [
+        2020,
+        2021,
+        2023
+      ],
+      "question_types": [
+        "案例",
+        "简答"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社会救助",
+      "exam_count": 3,
+      "years": [
+        2021,
+        2023,
+        2025
+      ],
+      "question_types": [
+        "名词解释",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "反贫困社会工作",
+      "exam_count": 2,
+      "years": [
+        2018,
+        2020
+      ],
+      "question_types": [
+        "论述"
+      ],
+      "priority": "B",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "机构照顾",
+      "exam_count": 2,
+      "years": [
+        2020,
+        2023
+      ],
+      "question_types": [
+        "简答",
+        "论述"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "农村社会工作",
+      "exam_count": 2,
+      "years": [
+        2020,
+        2022
+      ],
+      "question_types": [
+        "综合",
+        "论述"
+      ],
+      "priority": "B",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "临终关怀",
+      "exam_count": 2,
+      "years": [
+        2023
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "A",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社会工作哲学基础",
+      "exam_count": 1,
+      "years": [
+        2015
+      ],
+      "question_types": [
+        "简答"
+      ],
+      "priority": "C",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "灾害社会工作",
+      "exam_count": 1,
+      "years": [
+        2015
+      ],
+      "question_types": [
+        "论述"
+      ],
+      "priority": "C",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "睦邻组织运动",
+      "exam_count": 1,
+      "years": [
+        2016
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    },
+    {
+      "knowledge_point": "社会工作理论",
+      "exam_count": 1,
+      "years": [
+        2016
+      ],
+      "question_types": [
+        "名词解释"
+      ],
+      "priority": "C",
+      "current_app_topics": [],
+      "status": "需新增或重构"
+    }
+  ]
+}
