@@ -15,15 +15,15 @@ public class MainActivity extends Activity {
     final int BG=Color.rgb(246,250,248), SURFACE=Color.WHITE, INK=Color.rgb(20,43,39), MUTED=Color.rgb(110,126,123);
     final int TEAL=Color.rgb(20,166,143), TEAL_DARK=Color.rgb(11,132,116), TEAL_SOFT=Color.rgb(229,247,242);
     final int LINE=Color.rgb(227,236,233), ORANGE=Color.rgb(231,111,47), ORANGE_SOFT=Color.rgb(255,242,232), RED=Color.rgb(224,78,82), RED_SOFT=Color.rgb(253,235,236), BLUE_SOFT=Color.rgb(233,245,255), PURPLE_SOFT=Color.rgb(240,238,255), GOLD_SOFT=Color.rgb(252,245,226);
-    CardRepository repo; StudyStore store; ReviewEngine engine; ContentFeedbackStore feedback;
+    CardRepository repo; StudyStore store; ReviewEngine engine; ContentFeedbackStore feedback; DataBackupManager backupManager;
     LinearLayout root,body,nav; List<Card> queue=new ArrayList<>(); int qIndex=0; boolean revealed=false;
-    String pendingExport=null; static final int EXPORT_FEEDBACK_REQ=91;
+    String pendingExport=null; static final int EXPORT_FEEDBACK_REQ=91, EXPORT_BACKUP_REQ=92, IMPORT_BACKUP_REQ=93;
 
     @Override public void onCreate(Bundle b){
         super.onCreate(b);
         getWindow().setStatusBarColor(BG);getWindow().setNavigationBarColor(Color.WHITE);
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-        try{feedback=new ContentFeedbackStore(this);repo=new CardRepository(this,feedback);store=new StudyStore(this);engine=new ReviewEngine(store);showHome();}
+        try{feedback=new ContentFeedbackStore(this);repo=new CardRepository(this,feedback);store=new StudyStore(this);engine=new ReviewEngine(store);backupManager=new DataBackupManager(this,store,feedback);showHome();}
         catch(Exception e){TextView t=new TextView(this);t.setPadding(24,24,24,24);t.setText("启动失败："+e);setContentView(t);}
     }
 
@@ -142,8 +142,9 @@ public class MainActivity extends Activity {
     void showSettings(){
         shell("我的","学习设置与数据","我的");LinearLayout s=box(SURFACE,18,20);s.setBackground(strokeShape(SURFACE,20,LINE));s.addView(tv("每日学习设置",19,INK,true));TextView desc=tv("统一设置每天希望完成的卡片数量。复习与新学习不再分别计数。",13,MUTED,false);margin(desc,0,6,0,10);s.addView(desc);EditText goal=new EditText(this);goal.setInputType(2);goal.setText(String.valueOf(store.dailyGoal()));goal.setHint("例如 30");goal.setBackground(strokeShape(Color.rgb(249,251,250),13,LINE));goal.setPadding(dp(12),0,dp(12),0);s.addView(goal,new LinearLayout.LayoutParams(-1,dp(50)));Button save=btn("保存每日学习量",TEAL,Color.WHITE);margin(save,0,10,0,0);save.setOnClickListener(v->{int g=parse(goal,30);store.setDailyGoal(g);Toast.makeText(this,"已保存为每天 "+store.dailyGoal()+" 张",Toast.LENGTH_SHORT).show();showSettings();});s.addView(save,new LinearLayout.LayoutParams(-1,dp(54)));body.addView(s);
         LinearLayout info=box(SURFACE,18,20);info.setBackground(strokeShape(SURFACE,20,LINE));margin(info,0,12,0,0);info.addView(tv("智能复习规则",18,INK,true));info.addView(tv("• 复习卡只能来自已学习内容\n• 已学习卡可重复复习\n• 每张卡保留最近10次熟悉/不清楚记录\n• 最近多次不清楚的卡片优先级更高\n• 薄弱卡在同一学习队列内可重复出现2—3次\n• 所有学习数据只保存在本机",14,MUTED,false));body.addView(info);
+        LinearLayout data=box(SURFACE,18,20);data.setBackground(strokeShape(SURFACE,20,LINE));margin(data,0,12,0,0);data.addView(tv("数据备份与恢复",18,INK,true));data.addView(tv("建议每次安装新版本前导出一次完整备份。备份包含学习进度、最近10次记录、每日学习量、未完成会话、本地修正和内容反馈。",13,MUTED,false));LinearLayout dr=new LinearLayout(this);dr.setOrientation(LinearLayout.HORIZONTAL);Button backup=btn("导出全部数据",TEAL,Color.WHITE),restore=btn("导入并恢复",TEAL_SOFT,TEAL_DARK);backup.setOnClickListener(v->exportBackup());restore.setOnClickListener(v->confirmImportBackup());dr.addView(backup,new LinearLayout.LayoutParams(0,dp(50),1));dr.addView(gap(8));dr.addView(restore,new LinearLayout.LayoutParams(0,dp(50),1));margin(dr,0,10,0,0);data.addView(dr);TextView guard=tv("升级保障：固定 applicationId + 固定 Release 签名 + 数据库只做迁移，不在升级时清空用户数据。",12,MUTED,false);margin(guard,0,10,0,0);data.addView(guard);body.addView(data);
         LinearLayout fb=box(SURFACE,18,20);fb.setBackground(strokeShape(SURFACE,20,LINE));margin(fb,0,12,0,0);fb.addView(tv("内容反馈数据",18,INK,true));fb.addView(tv("已记录 "+feedback.pendingCount()+" 条待校对内容。应用中的本地修正和错误标记不会自动发送给 ChatGPT；请导出 JSON 后在聊天中上传，我就能逐卡核对并回写题库。",13,MUTED,false));Button export=btn("导出内容反馈 JSON",TEAL,Color.WHITE);margin(export,0,10,0,0);export.setOnClickListener(v->exportFeedback());fb.addView(export,new LinearLayout.LayoutParams(-1,dp(52)));body.addView(fb);
-        Button reset=btn("清空学习进度",RED_SOFT,Color.rgb(150,70,70));margin(reset,0,16,0,0);reset.setOnClickListener(v->new AlertDialog.Builder(this).setTitle("确认清空？").setMessage("将删除所有卡片学习记录、最近10次记录和每日设置。").setNegativeButton("取消",null).setPositiveButton("清空",(d,w)->{store.clearAll();queue.clear();showSettings();}).show());body.addView(reset,new LinearLayout.LayoutParams(-1,dp(52)));
+        Button reset=btn("清空学习进度",RED_SOFT,Color.rgb(150,70,70));margin(reset,0,16,0,0);reset.setOnClickListener(v->new AlertDialog.Builder(this).setTitle("确认清空？").setMessage("将删除所有卡片学习记录、最近10次记录和每日设置。内容反馈与本地修正不会被此按钮删除。建议先导出完整备份。").setNegativeButton("取消",null).setPositiveButton("清空",(d,w)->{store.clearAll();queue.clear();showSettings();}).show());body.addView(reset,new LinearLayout.LayoutParams(-1,dp(52)));
     }
 
     void showExample(Card c){JSONObject d=repo.detail(c.topic);String x=d==null?"":d.optString("example");new AlertDialog.Builder(this).setTitle(c.topic+" · 例子").setMessage(x.isEmpty()?"当前资料没有单列例子。":x).setPositiveButton("关闭",null).show();}
@@ -187,12 +188,30 @@ public class MainActivity extends Activity {
         new AlertDialog.Builder(this).setTitle("选择要修改的扩展内容").setItems(labels,(x,which)->{EditText e=new EditText(this);e.setText(d==null?"":d.optString(keys[which],""));e.setMinLines(10);e.setGravity(Gravity.TOP);e.setPadding(dp(14),dp(10),dp(14),dp(10));new AlertDialog.Builder(this).setTitle(labels[which]).setView(e).setNegativeButton("取消",null).setPositiveButton("保存",(dd,ww)->{feedback.saveDetailOverride(c.topic,keys[which],e.getText().toString());Toast.makeText(this,"扩展内容已本地修正",Toast.LENGTH_SHORT).show();}).show();}).setNegativeButton("取消",null).show();
     }
 
+    void exportBackup(){
+        pendingExport=backupManager.exportAll();Intent i=new Intent(Intent.ACTION_CREATE_DOCUMENT);i.addCategory(Intent.CATEGORY_OPENABLE);i.setType("application/json");i.putExtra(Intent.EXTRA_TITLE,"社会工作闪卡_完整备份_"+new SimpleDateFormat("yyyyMMdd_HHmm",Locale.getDefault()).format(new Date())+".json");startActivityForResult(i,EXPORT_BACKUP_REQ);
+    }
+
+    void confirmImportBackup(){
+        new AlertDialog.Builder(this).setTitle("恢复完整备份").setMessage("恢复会用备份中的学习记录、设置、本地修正和内容反馈覆盖当前同类数据。建议先导出当前数据作为保险。是否继续？").setNegativeButton("取消",null).setPositiveButton("选择备份文件",(d,w)->{Intent i=new Intent(Intent.ACTION_OPEN_DOCUMENT);i.addCategory(Intent.CATEGORY_OPENABLE);i.setType("application/json");startActivityForResult(i,IMPORT_BACKUP_REQ);}).show();
+    }
+
+    String readText(android.net.Uri uri) throws Exception {
+        java.io.InputStream in=getContentResolver().openInputStream(uri);java.io.ByteArrayOutputStream out=new java.io.ByteArrayOutputStream();byte[] buf=new byte[8192];int n;while((n=in.read(buf))>0)out.write(buf,0,n);in.close();return out.toString("UTF-8");
+    }
+
     void exportFeedback(){
         pendingExport=feedback.exportBundle();Intent i=new Intent(Intent.ACTION_CREATE_DOCUMENT);i.addCategory(Intent.CATEGORY_OPENABLE);i.setType("application/json");i.putExtra(Intent.EXTRA_TITLE,"社会工作闪卡_内容反馈_"+new SimpleDateFormat("yyyyMMdd_HHmm",Locale.getDefault()).format(new Date())+".json");startActivityForResult(i,EXPORT_FEEDBACK_REQ);
     }
 
     @Override protected void onActivityResult(int requestCode,int resultCode,Intent data){
-        super.onActivityResult(requestCode,resultCode,data);if(requestCode==EXPORT_FEEDBACK_REQ&&resultCode==RESULT_OK&&data!=null&&data.getData()!=null&&pendingExport!=null){try{java.io.OutputStream out=getContentResolver().openOutputStream(data.getData());out.write(pendingExport.getBytes("UTF-8"));out.close();pendingExport=null;Toast.makeText(this,"反馈 JSON 已导出。把该文件上传到聊天即可继续校对。",Toast.LENGTH_LONG).show();}catch(Exception e){Toast.makeText(this,"导出失败："+e.getMessage(),Toast.LENGTH_LONG).show();}}
+        super.onActivityResult(requestCode,resultCode,data);
+        if(resultCode!=RESULT_OK||data==null||data.getData()==null)return;
+        if((requestCode==EXPORT_FEEDBACK_REQ||requestCode==EXPORT_BACKUP_REQ)&&pendingExport!=null){
+            try{java.io.OutputStream out=getContentResolver().openOutputStream(data.getData());out.write(pendingExport.getBytes("UTF-8"));out.close();boolean full=requestCode==EXPORT_BACKUP_REQ;pendingExport=null;Toast.makeText(this,full?"完整备份已导出。请妥善保存，可用于版本升级、换机或误卸载后的恢复。":"反馈 JSON 已导出。把该文件上传到聊天即可继续校对。",Toast.LENGTH_LONG).show();}catch(Exception e){Toast.makeText(this,"导出失败："+e.getMessage(),Toast.LENGTH_LONG).show();}
+        }else if(requestCode==IMPORT_BACKUP_REQ){
+            try{String raw=readText(data.getData());backupManager.importAll(raw,true);queue.clear();repo=new CardRepository(this,feedback);engine=new ReviewEngine(store);Toast.makeText(this,"备份恢复成功。学习进度、本地修正与反馈数据已载入。",Toast.LENGTH_LONG).show();showHome();}catch(Exception e){Toast.makeText(this,"恢复失败："+e.getMessage(),Toast.LENGTH_LONG).show();}
+        }
     }
 
     int parse(EditText e,int def){try{return Integer.parseInt(e.getText().toString());}catch(Exception x){return def;}}

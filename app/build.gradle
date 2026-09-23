@@ -10,14 +10,29 @@ android {
         applicationId 'com.seu.socialworkcards'
         minSdk 24
         targetSdk 35
-        versionCode 3
-        versionName '2.1.0'
+        versionCode 4
+        versionName '2.2.0'
+    }
+
+    signingConfigs {
+        release {
+            def storeFilePath = System.getenv('RELEASE_STORE_FILE')
+            if (storeFilePath != null && !storeFilePath.isBlank()) {
+                storeFile file(storeFilePath)
+                storePassword System.getenv('RELEASE_STORE_PASSWORD')
+                keyAlias System.getenv('RELEASE_KEY_ALIAS')
+                keyPassword System.getenv('RELEASE_KEY_PASSWORD')
+            }
+        }
     }
 
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            if (System.getenv('RELEASE_STORE_FILE') != null) {
+                signingConfig signingConfigs.release
+            }
         }
     }
 }

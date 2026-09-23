@@ -80,5 +80,48 @@ public class StudyStore {
     public boolean hasActiveSession(){List<String> ids=sessionIds();return !ids.isEmpty()&&sessionIndex()<ids.size();}
     public void clearSession(){sp.edit().remove("session_ids").remove("session_index").apply();}
 
+    public JSONObject exportJson(){
+        JSONObject root=new JSONObject();
+        try{
+            root.put("schemaVersion",1);
+            JSONObject data=new JSONObject();
+            for(Map.Entry<String,?> e:sp.getAll().entrySet()){
+                Object v=e.getValue();
+                JSONObject item=new JSONObject();
+                if(v instanceof String){item.put("type","string");item.put("value",v);}
+                else if(v instanceof Integer){item.put("type","int");item.put("value",v);}
+                else if(v instanceof Long){item.put("type","long");item.put("value",v);}
+                else if(v instanceof Boolean){item.put("type","boolean");item.put("value",v);}
+                else if(v instanceof Float){item.put("type","float");item.put("value",v);}
+                else if(v instanceof Set){item.put("type","stringSet");JSONArray a=new JSONArray();for(Object x:(Set<?>)v)a.put(String.valueOf(x));item.put("value",a);}
+                else continue;
+                data.put(e.getKey(),item);
+            }
+            root.put("preferences",data);
+        }catch(Exception ignored){}
+        return root;
+    }
+
+    public void importJson(JSONObject root, boolean replace){
+        JSONObject data=root==null?null:root.optJSONObject("preferences");
+        if(data==null)return;
+        SharedPreferences.Editor ed=sp.edit();
+        if(replace)ed.clear();
+        Iterator<String> keys=data.keys();
+        while(keys.hasNext()){
+            String k=keys.next();JSONObject item=data.optJSONObject(k);if(item==null)continue;
+            String t=item.optString("type");
+            try{
+                if("string".equals(t))ed.putString(k,item.optString("value",null));
+                else if("int".equals(t))ed.putInt(k,item.getInt("value"));
+                else if("long".equals(t))ed.putLong(k,item.getLong("value"));
+                else if("boolean".equals(t))ed.putBoolean(k,item.getBoolean("value"));
+                else if("float".equals(t))ed.putFloat(k,(float)item.getDouble("value"));
+                else if("stringSet".equals(t)){JSONArray a=item.optJSONArray("value");Set<String> set=new HashSet<>();if(a!=null)for(int i=0;i<a.length();i++)set.add(a.optString(i));ed.putStringSet(k,set);}
+            }catch(Exception ignored){}
+        }
+        ed.apply();
+    }
+
     public void clearAll(){sp.edit().clear().apply();}
 }

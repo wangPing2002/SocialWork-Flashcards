@@ -12,7 +12,7 @@ import java.util.*;
  */
 public class ContentFeedbackStore extends SQLiteOpenHelper {
     private static final String DB="content_feedback.db";
-    private static final int VERSION=1;
+    private static final int VERSION=2;
 
     public ContentFeedbackStore(Context c){ super(c,DB,null,VERSION); }
     @Override public void onCreate(SQLiteDatabase db){
@@ -22,7 +22,14 @@ public class ContentFeedbackStore extends SQLiteOpenHelper {
         db.execSQL("CREATE INDEX idx_reports_status ON reports(status)");
         db.execSQL("CREATE INDEX idx_reports_card ON reports(card_id)");
     }
-    @Override public void onUpgrade(SQLiteDatabase db,int oldV,int newV){}
+    @Override public void onUpgrade(SQLiteDatabase db,int oldV,int newV){
+        // Never drop user tables during app upgrades. Additive migrations only.
+        if(oldV<2){
+            db.execSQL("CREATE TABLE IF NOT EXISTS migration_log(version INTEGER PRIMARY KEY, migrated_at INTEGER)");
+            ContentValues v=new ContentValues();v.put("version",2);v.put("migrated_at",System.currentTimeMillis());
+            db.insertWithOnConflict("migration_log",null,v,SQLiteDatabase.CONFLICT_IGNORE);
+        }
+    }
 
     public void applyCardOverride(Card c){
         try(Cursor cur=getReadableDatabase().query("card_overrides",null,"card_id=?",new String[]{c.id},null,null,null)){
@@ -76,8 +83,39 @@ public class ContentFeedbackStore extends SQLiteOpenHelper {
     public JSONObject detailOverrides(){
         JSONObject all=new JSONObject();try(Cursor c=getReadableDatabase().rawQuery("SELECT * FROM detail_overrides",null)){while(c.moveToNext()){try{JSONObject o=new JSONObject();for(String k:new String[]{"example","name","simple","essay"}){int i=c.getColumnIndex(k);if(i>=0&&!c.isNull(i))o.put(k,c.getString(i));}o.put("updatedAt",c.getLong(c.getColumnIndexOrThrow("updated_at")));all.put(c.getString(c.getColumnIndexOrThrow("topic")),o);}catch(Exception ignored){}}}return all;
     }
+    public JSONObject exportAll(){
+        try{
+            JSONObject o=new JSONObject();
+            o.put("schemaVersion",2);
+            o.put("reports",reports());
+            o.put("cardOverrides",cardOverrides());
+            o.put("detailOverrides",detailOverrides());
+            return o;
+        }catch(Exception e){return new JSONObject();}
+    }
+
+    public void importAll(JSONObject root, boolean replace){
+        if(root==null)return;
+        SQLiteDatabase db=getWritableDatabase();
+        db.beginTransaction();
+        try{
+            if(replace){
+                db.delete("reports",null,null);
+                db.delete("card_overrides",null,null);
+                db.delete("detail_overrides",null,null);
+            }
+            JSONObject co=root.optJSONObject("cardOverrides");
+            if(co!=null){Iterator<String> it=co.keys();while(it.hasNext()){String cardId=it.next();JSONObject x=co.optJSONObject(cardId);if(x==null)continue;ContentValues v=new ContentValues();v.put("card_id",cardId);v.put("question",x.optString("question"));JSONArray a=x.optJSONArray("bullets");v.put("bullets_json",a==null?"[]":a.toString());v.put("tip",x.optString("tip"));v.put("origin",x.optString("origin"));v.put("updated_at",x.optLong("updatedAt",System.currentTimeMillis()));db.insertWithOnConflict("card_overrides",null,v,SQLiteDatabase.CONFLICT_REPLACE);}}
+            JSONObject dd=root.optJSONObject("detailOverrides");
+            if(dd!=null){Iterator<String> it=dd.keys();while(it.hasNext()){String topic=it.next();JSONObject x=dd.optJSONObject(topic);if(x==null)continue;ContentValues v=new ContentValues();v.put("topic",topic);for(String k:new String[]{"example","name","simple","essay"})if(x.has(k))v.put(k,x.optString(k));v.put("updated_at",x.optLong("updatedAt",System.currentTimeMillis()));db.insertWithOnConflict("detail_overrides",null,v,SQLiteDatabase.CONFLICT_REPLACE);}}
+            JSONArray rr=root.optJSONArray("reports");
+            if(rr!=null){for(int i=0;i<rr.length();i++){JSONObject x=rr.optJSONObject(i);if(x==null)continue;ContentValues v=new ContentValues();v.put("report_id",x.optString("reportId",UUID.randomUUID().toString()));v.put("card_id",x.optString("cardId"));v.put("topic",x.optString("topic"));v.put("kind",x.optString("kind"));v.put("question",x.optString("question"));JSONArray a=x.optJSONArray("answerBullets");v.put("answer_json",a==null?"[]":a.toString());v.put("origin",x.optString("origin"));v.put("type",x.optString("type"));v.put("note",x.optString("note"));v.put("created_at",x.optLong("createdAt",System.currentTimeMillis()));v.put("status",x.optString("status","pending"));db.insertWithOnConflict("reports",null,v,SQLiteDatabase.CONFLICT_REPLACE);}}
+            db.setTransactionSuccessful();
+        }finally{db.endTransaction();}
+    }
+
     public String exportBundle(){
-        try{JSONObject o=new JSONObject();o.put("schemaVersion",1);o.put("app","社会工作闪卡");o.put("appVersion","2.1.0");o.put("exportedAt",System.currentTimeMillis());o.put("usage","将此文件上传到 ChatGPT，可用于定位被标记的错误卡片和本地修订内容。应用本地数据库不会自动被 ChatGPT 读取。");o.put("reports",reports());o.put("cardOverrides",cardOverrides());o.put("detailOverrides",detailOverrides());return o.toString(2);}catch(Exception e){return "{}";}
+        try{JSONObject o=new JSONObject();o.put("schemaVersion",1);o.put("app","社会工作闪卡");o.put("appVersion","2.2.0");o.put("exportedAt",System.currentTimeMillis());o.put("usage","将此文件上传到 ChatGPT，可用于定位被标记的错误卡片和本地修订内容。应用本地数据库不会自动被 ChatGPT 读取。");o.put("reports",reports());o.put("cardOverrides",cardOverrides());o.put("detailOverrides",detailOverrides());return o.toString(2);}catch(Exception e){return "{}";}
     }
     public void clearFeedback(){SQLiteDatabase db=getWritableDatabase();db.delete("reports",null,null);db.delete("card_overrides",null,null);db.delete("detail_overrides",null,null);}
 }
