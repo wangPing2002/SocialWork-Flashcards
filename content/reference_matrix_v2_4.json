@@ -1,0 +1,76 @@
+{
+  "version": "2.4.0",
+  "policy": "核心资料决定题型与考点，2026人大教材补充/核验当前专业内容，权威网络资料用于概念边界交叉核验。",
+  "core_exam_sources": [
+    "王思斌《社会工作概论》（第4版）笔记和课后习题（含考研真题）详解",
+    "东南大学社会工作考研真题2015-2026年"
+  ],
+  "new_textbook_sources": [
+    "2026年社会工作者《中级实务》电子教材-人大版_1-186",
+    "2026年社会工作者《中级实务》电子教材-人大版_187-372",
+    "2026年社会工作者《中级综合》电子教材-人大版_1-161",
+    "2026年社会工作者《中级综合》电子教材-人大版_162-323"
+  ],
+  "external_authorities": [
+    {
+      "name": "IFSW Global Definition of Social Work",
+      "url": "https://www.ifsw.org/what-is-social-work/global-definition-of-social-work/",
+      "scope": "社会工作定义、人与环境/结构、参与、人权和社会正义"
+    },
+    {
+      "name": "IFSW Global Social Work Statement of Ethical Principles",
+      "url": "https://www.ifsw.org/global-social-work-statement-of-ethical-principles/",
+      "scope": "尊严、人权、社会正义、多样性、参与和伦理边界"
+    },
+    {
+      "name": "WHO Palliative Care",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/palliative-care",
+      "scope": "安宁/姑息照护、患者与家庭、身体/心理社会/精神痛苦、多学科支持"
+    },
+    {
+      "name": "WHO Community Mental Health Services",
+      "url": "https://www.who.int/publications/i/item/9789240025707",
+      "scope": "精神卫生的以人为中心、权利本位、社区服务、反污名"
+    },
+    {
+      "name": "CDC prevention framework",
+      "url": "https://stacks.cdc.gov/view/cdc/11422",
+      "scope": "初级/二级/三级预防概念边界"
+    },
+    {
+      "name": "OHCHR Convention on the Rights of Persons with Disabilities",
+      "url": "https://www.ohchr.org/en/instruments-mechanisms/instruments/convention-rights-persons-disabilities",
+      "scope": "无障碍、独立生活、社区融入与权利原则"
+    }
+  ],
+  "added_topics": [
+    "社会工作服务通用模式的四个基本系统",
+    "系统视角与“人在情境中”",
+    "社会工作服务通用过程六阶段",
+    "接案与专业关系",
+    "预估",
+    "计划与介入",
+    "评估与结案",
+    "个案管理",
+    "小组工作四阶段",
+    "小组沟通与冲突处理技巧",
+    "机构照顾与社区照顾",
+    "医务社会工作中的出院准备服务",
+    "家庭照护者支持与喘息服务",
+    "安宁疗护与哀伤辅导",
+    "公共卫生社会工作三级预防",
+    "精神卫生社会工作与去标签化",
+    "学校社会工作与校园暴力介入",
+    "防灾减灾救灾社会工作",
+    "未成年人司法社会工作与社会观护",
+    "社会工作服务项目管理五维框架",
+    "项目过程监测与质量控制",
+    "产出、成效与项目成效评估",
+    "量化研究与质性研究",
+    "志愿服务规范管理",
+    "家庭抗逆力",
+    "企业社会工作的内置与外包模式",
+    "新就业群体社会工作",
+    "退役军人事务社会工作"
+  ]
+}
