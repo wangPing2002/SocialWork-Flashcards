@@ -1,0 +1,17 @@
+{
+  "version": "2.4.2",
+  "versionCode": 8,
+  "cards": 254,
+  "topics": 67,
+  "examRecordsTotal": 216,
+  "topicsWithExplicitDirectExam": 56,
+  "topicsWithAnyDirectExam": 58,
+  "topicsWithoutDirectExam": 9,
+  "rules": [
+    "问题页不显示评价按钮或提示性工具；答案页才显示评价按钮",
+    "主考频只统计年份明确且直接命中专题的题目",
+    "2024/2025顺序推定年份单独展示且不计入主考频",
+    "相关知识点全部指向当前67个真实专题且不计入考频",
+    "未知、缺失、OCR不清的真题不补造"
+  ]
+}
