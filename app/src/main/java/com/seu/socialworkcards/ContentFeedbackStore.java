@@ -51,6 +51,8 @@ public class ContentFeedbackStore extends SQLiteOpenHelper {
     }
     public boolean hasCardOverride(String id){try(Cursor c=getReadableDatabase().rawQuery("SELECT 1 FROM card_overrides WHERE card_id=? LIMIT 1",new String[]{id})){return c.moveToFirst();}}
     public void clearCardOverride(String id){getWritableDatabase().delete("card_overrides","card_id=?",new String[]{id});}
+    public boolean hasDetailOverride(String topic){try(Cursor c=getReadableDatabase().rawQuery("SELECT 1 FROM detail_overrides WHERE topic=? LIMIT 1",new String[]{topic})){return c.moveToFirst();}}
+    public void clearDetailOverride(String topic){getWritableDatabase().delete("detail_overrides","topic=?",new String[]{topic});}
 
     public JSONObject mergeDetail(String topic,JSONObject base){
         JSONObject out;try{out=new JSONObject(base==null?"{}":base.toString());}catch(Exception e){out=new JSONObject();}
@@ -115,7 +117,7 @@ public class ContentFeedbackStore extends SQLiteOpenHelper {
     }
 
     public String exportBundle(){
-        try{JSONObject o=new JSONObject();o.put("schemaVersion",1);o.put("app","社会工作闪卡");o.put("appVersion","2.2.0");o.put("exportedAt",System.currentTimeMillis());o.put("usage","将此文件上传到 ChatGPT，可用于定位被标记的错误卡片和本地修订内容。应用本地数据库不会自动被 ChatGPT 读取。");o.put("reports",reports());o.put("cardOverrides",cardOverrides());o.put("detailOverrides",detailOverrides());return o.toString(2);}catch(Exception e){return "{}";}
+        try{JSONObject o=new JSONObject();o.put("schemaVersion",1);o.put("app","社会工作闪卡");o.put("appVersion","2.4.1");o.put("exportedAt",System.currentTimeMillis());o.put("usage","将此文件上传到 ChatGPT，可用于定位被标记的错误卡片和本地修订内容。应用本地数据库不会自动被 ChatGPT 读取。");o.put("reports",reports());o.put("cardOverrides",cardOverrides());o.put("detailOverrides",detailOverrides());return o.toString(2);}catch(Exception e){return "{}";}
     }
     public void clearFeedback(){SQLiteDatabase db=getWritableDatabase();db.delete("reports",null,null);db.delete("card_overrides",null,null);db.delete("detail_overrides",null,null);}
 }

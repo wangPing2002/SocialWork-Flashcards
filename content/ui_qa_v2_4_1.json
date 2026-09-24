@@ -1,0 +1,23 @@
+{
+  "release": "2.4.1",
+  "versionCode": 7,
+  "applicationId": "com.seu.socialworkcards",
+  "cards": 254,
+  "topics": 67,
+  "uniqueCardIds": 254,
+  "ui": {
+    "fixedStudyViewport": true,
+    "internalScrollableCardText": true,
+    "tapToReveal": true,
+    "moreMenu": true,
+    "favorite": true,
+    "libraryFavoriteFilter": true,
+    "correctionButtonsRemovedFromStudy": true
+  },
+  "dataSafety": {
+    "favoritesIncludedInSharedPreferencesBackup": true,
+    "clearProgressPreservesFavorites": true,
+    "keystoreIncluded": false,
+    "gitHistoryIncluded": false
+  }
+}

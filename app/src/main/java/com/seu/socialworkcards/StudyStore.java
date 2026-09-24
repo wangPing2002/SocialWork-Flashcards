@@ -56,6 +56,10 @@ public class StudyStore {
     }
     public int totalReviews(){return sp.getInt("totalReviews",0);} public void incTotal(){sp.edit().putInt("totalReviews",totalReviews()+1).apply();}
 
+    // Favorites are independent of spaced repetition and are included automatically in full backup.
+    public boolean isFavorite(String cardId){return sp.getBoolean("fav_"+cardId,false);}
+    public void setFavorite(String cardId,boolean favorite){SharedPreferences.Editor e=sp.edit();if(favorite)e.putBoolean("fav_"+cardId,true);else e.remove("fav_"+cardId);e.apply();}
+
     public int streakDays(){
         Calendar cal=Calendar.getInstance(); int streak=0;
         for(int i=0;i<365;i++){
@@ -123,5 +127,8 @@ public class StudyStore {
         ed.apply();
     }
 
-    public void clearAll(){sp.edit().clear().apply();}
+    public void clearAll(){
+        // Clear learning/session/settings data but preserve user favorites.
+        SharedPreferences.Editor ed=sp.edit();for(String k:sp.getAll().keySet())if(!k.startsWith("fav_"))ed.remove(k);ed.apply();
+    }
 }

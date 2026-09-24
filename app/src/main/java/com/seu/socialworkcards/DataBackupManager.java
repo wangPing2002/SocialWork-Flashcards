@@ -21,12 +21,12 @@ public class DataBackupManager {
             JSONObject root=new JSONObject();
             root.put("backupSchemaVersion",1);
             root.put("app","社会工作闪卡");
-            root.put("appVersion","2.2.0");
+            root.put("appVersion","2.4.1");
             root.put("applicationId","com.seu.socialworkcards");
             root.put("exportedAt",System.currentTimeMillis());
             root.put("study",study.exportJson());
             root.put("contentFeedback",feedback.exportAll());
-            root.put("note","包含学习进度、最近10次记录、每日学习量、未完成会话、本地修正和内容反馈。可用于换机或误卸载后的恢复。");
+            root.put("note","包含学习进度、最近10次记录、每日学习量、未完成会话、收藏、本地修正和内容反馈。可用于换机或误卸载后的恢复。");
             return root.toString(2);
         }catch(Exception e){
             return "{}";
