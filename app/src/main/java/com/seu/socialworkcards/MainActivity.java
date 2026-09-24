@@ -170,8 +170,19 @@ public class MainActivity extends Activity {
             .setNegativeButton("取消",null).setPositiveButton("恢复",(d,w)->{
                 List<String> ids=new ArrayList<>();for(Card x:queue)ids.add(x.id);
                 feedback.clearCardOverride(c.id);feedback.clearDetailOverride(c.topic);
-                repo=new CardRepository(this,feedback);List<Card> rebuilt=new ArrayList<>();for(String id:ids){Card x=repo.byId(id);if(x!=null)rebuilt.add(x);}queue=rebuilt;
-                if(qIndex>=queue.size())qIndex=Math.max(0,queue.size()-1);revealed=false;store.saveSession(queue,qIndex);Toast.makeText(this,"已恢复官方内容",Toast.LENGTH_SHORT).show();showStudy();
+                try{
+                    repo=new CardRepository(this,feedback);
+                    List<Card> rebuilt=new ArrayList<>();
+                    for(String id:ids){Card x=repo.byId(id);if(x!=null)rebuilt.add(x);}
+                    queue=rebuilt;
+                    if(qIndex>=queue.size())qIndex=Math.max(0,queue.size()-1);
+                    revealed=false;
+                    store.saveSession(queue,qIndex);
+                    Toast.makeText(this,"已恢复官方内容",Toast.LENGTH_SHORT).show();
+                    showStudy();
+                }catch(Exception e){
+                    Toast.makeText(this,"恢复官方内容失败："+e.getMessage(),Toast.LENGTH_LONG).show();
+                }
             }).show();
     }
     View historyMini(Card c){StudyStore.State s=store.state(c.id);LinearLayout wrap=new LinearLayout(this);wrap.setOrientation(LinearLayout.VERTICAL);TextView label=tv("最近10次",11,MUTED,false);margin(label,0,10,0,4);wrap.addView(label);LinearLayout row=new LinearLayout(this);row.setGravity(Gravity.CENTER);for(StudyStore.Rec r:s.history){TextView x=tv(r.ok?"熟":"模",10,r.ok?TEAL_DARK:ORANGE,true);x.setGravity(Gravity.CENTER);x.setBackground(shape(r.ok?TEAL_SOFT:ORANGE_SOFT,11));LinearLayout.LayoutParams p=new LinearLayout.LayoutParams(dp(31),dp(25));p.setMargins(dp(2),0,dp(2),0);row.addView(x,p);}wrap.addView(row);return wrap;}

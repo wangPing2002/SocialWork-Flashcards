@@ -36,6 +36,12 @@ Application ID：`com.seu.socialworkcards`
 
 ## V2.4.1
 
+### V2.4.1 构建修复
+
+- 修复 `MainActivity.restoreOfficialContent()` 中重新创建 `CardRepository` 时未处理受检异常，导致 Release 编译报 `unreported exception Exception; must be caught or declared to be thrown` 的问题。
+- 恢复官方内容失败时现在会显示错误提示，不再导致编译失败。
+
+
 ### 学习页可读性与收藏体验修正
 
 本版本不扩充题库，专门解决长答案显示不完整和学习页操作拥挤的问题。
