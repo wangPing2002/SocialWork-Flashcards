@@ -67,6 +67,12 @@ jobs:
           RELEASE_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
         run: gradle :app:assembleRelease --stacktrace
 
+
+      - name: Verify signed APK
+        run: |
+          "$ANDROID_SDK_ROOT/build-tools/35.0.0/apksigner" verify --verbose --print-certs app/build/outputs/apk/release/app-release.apk
+          "$ANDROID_SDK_ROOT/build-tools/35.0.0/aapt" dump badging app/build/outputs/apk/release/app-release.apk | head -n 5
+
       - name: Rename APK
         run: |
           cp app/build/outputs/apk/release/app-release.apk SocialWork-Flashcards-${GITHUB_REF_NAME}.apk

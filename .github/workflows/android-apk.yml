@@ -3,8 +3,7 @@ name: Build Android APK
 on:
   push:
     branches:
-      - main
-      - master
+      - '**'
   workflow_dispatch:
 
 jobs:
@@ -41,9 +40,17 @@ jobs:
           gradle-version: '8.10.2'
       - name: Build debug APK
         run: gradle :app:assembleDebug --stacktrace
+      - name: Inspect debug APK
+        run: |
+          "$ANDROID_SDK_ROOT/build-tools/35.0.0/aapt" dump badging app/build/outputs/apk/debug/app-debug.apk | head -n 5
+
+      - name: Rename debug APK
+        run: |
+          cp app/build/outputs/apk/debug/app-debug.apk SocialWork-Flashcards-dev-${GITHUB_SHA::7}.apk
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: socialwork-flashcards-debug-apk
-          path: app/build/outputs/apk/debug/app-debug.apk
+          name: socialwork-flashcards-dev-${{ github.sha }}
+          path: SocialWork-Flashcards-dev-*.apk
           if-no-files-found: error
