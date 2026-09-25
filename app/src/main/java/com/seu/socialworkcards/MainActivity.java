@@ -55,33 +55,37 @@ public class MainActivity extends Activity {
 
     void shell(String title,String subtitle,String active){
         root=new LinearLayout(this);root.setOrientation(LinearLayout.VERTICAL);root.setBackgroundColor(BG);setContentView(root);applySafeInsets(root);
-        LinearLayout h=new LinearLayout(this);h.setOrientation(LinearLayout.VERTICAL);h.setPadding(dp(20),dp(16),dp(20),dp(12));
+        LinearLayout h=new LinearLayout(this);h.setOrientation(LinearLayout.VERTICAL);h.setPadding(dp(18),dp(10),dp(18),dp(10));
         LinearLayout brand=new LinearLayout(this);brand.setGravity(Gravity.CENTER_VERTICAL);
-        TextView mark=tv("❤",15,Color.WHITE,true);mark.setGravity(Gravity.CENTER);mark.setBackground(shape(TEAL,14));brand.addView(mark,new LinearLayout.LayoutParams(dp(30),dp(30)));
-        TextView titleView=tv(title,30,INK,true);titleView.setPadding(dp(10),0,0,0);brand.addView(titleView,new LinearLayout.LayoutParams(-2,-2));
+        ImageView icon=new ImageView(this);icon.setImageResource(R.mipmap.ic_launcher_round);brand.addView(icon,new LinearLayout.LayoutParams(dp(42),dp(42)));
+        LinearLayout tWrap=new LinearLayout(this);tWrap.setOrientation(LinearLayout.VERTICAL);tWrap.setPadding(dp(12),0,0,0);
+        TextView titleView=tv(title,27,INK,true);tWrap.addView(titleView);
+        if(subtitle!=null&&!subtitle.isEmpty()){TextView s=tv(subtitle,14,MUTED,false);margin(s,0,4,0,0);tWrap.addView(s);}brand.addView(tWrap,new LinearLayout.LayoutParams(0,-2,1));
         h.addView(brand);
-        if(subtitle!=null&&!subtitle.isEmpty()){TextView s=tv(subtitle,14,MUTED,false);margin(s,0,6,0,0);h.addView(s);}root.addView(h);
-        ScrollView sv=new ScrollView(this);sv.setFillViewport(true);body=new LinearLayout(this);body.setOrientation(LinearLayout.VERTICAL);body.setPadding(dp(16),0,dp(16),dp(92));sv.addView(body);root.addView(sv,new LinearLayout.LayoutParams(-1,0,1));
-        nav=new LinearLayout(this);nav.setOrientation(LinearLayout.HORIZONTAL);nav.setGravity(Gravity.CENTER);nav.setPadding(dp(8),dp(6),dp(8),dp(9));nav.setBackgroundColor(Color.WHITE);
-        addNav("⌂\n学习","学习".equals(active),v->showHome());addNav("▣\n卡片库","卡片库".equals(active),v->showLibrary());addNav("▥\n统计","统计".equals(active),v->showStats());addNav("◯\n我的","我的".equals(active),v->showSettings());
-        root.addView(nav,new LinearLayout.LayoutParams(-1,dp(70)));
+        root.addView(h);
+        ScrollView sv=new ScrollView(this);sv.setFillViewport(true);sv.setClipToPadding(false);body=new LinearLayout(this);body.setOrientation(LinearLayout.VERTICAL);body.setPadding(dp(16),dp(2),dp(16),dp(94));sv.addView(body);root.addView(sv,new LinearLayout.LayoutParams(-1,0,1));
+        nav=new LinearLayout(this);nav.setOrientation(LinearLayout.HORIZONTAL);nav.setGravity(Gravity.CENTER);nav.setPadding(dp(8),dp(6),dp(8),dp(10));nav.setBackgroundColor(Color.WHITE);
+        addNav("⌂\n学习",active.equals("学习"),v->showHome());addNav("▣\n卡片库",active.equals("卡片库"),v->showLibrary());addNav("▥\n统计",active.equals("统计"),v->showStats());addNav("◯\n我的",active.equals("我的"),v->showSettings());
+        root.addView(nav,new LinearLayout.LayoutParams(-1,dp(72)));
     }
     void addNav(String label,boolean active,View.OnClickListener click){Button b=new Button(this);b.setText(label);b.setAllCaps(false);b.setTextSize(12);b.setTextColor(active?TEAL_DARK:MUTED);b.setTypeface(Typeface.DEFAULT,active?Typeface.BOLD:Typeface.NORMAL);b.setBackgroundColor(Color.TRANSPARENT);b.setGravity(Gravity.CENTER);b.setOnClickListener(click);nav.addView(b,new LinearLayout.LayoutParams(0,-1,1));}
+
 
     // Study screen uses a fixed viewport: header + fixed card area + fixed rating controls + navigation.
     // Only the card's text area scrolls, preventing long answers from pushing controls off-screen.
     void studyShell(){
         root=new LinearLayout(this);root.setOrientation(LinearLayout.VERTICAL);root.setBackgroundColor(BG);setContentView(root);applySafeInsets(root);
-        LinearLayout h=new LinearLayout(this);h.setOrientation(LinearLayout.VERTICAL);h.setPadding(dp(20),dp(16),dp(20),dp(10));
-        LinearLayout brand=new LinearLayout(this);brand.setGravity(Gravity.CENTER_VERTICAL);
-        TextView back=tv("‹",24,INK,true);back.setOnClickListener(v->onBackPressed());brand.addView(back,new LinearLayout.LayoutParams(dp(28),dp(28)));
-        TextView title=tv("学习中",28,INK,true);title.setPadding(dp(6),0,0,0);brand.addView(title,new LinearLayout.LayoutParams(-2,-2));
-        h.addView(brand);
-        TextView s=tv("专注回忆与理解：问题页纯回忆，答案页再做评价。",13,MUTED,false);margin(s,0,5,0,0);h.addView(s);root.addView(h);
+        LinearLayout h=new LinearLayout(this);h.setOrientation(LinearLayout.VERTICAL);h.setPadding(dp(18),dp(10),dp(18),dp(8));
+        LinearLayout top=new LinearLayout(this);top.setGravity(Gravity.CENTER_VERTICAL);
+        TextView back=tv("‹",26,INK,true);back.setOnClickListener(v->onBackPressed());top.addView(back,new LinearLayout.LayoutParams(dp(28),dp(28)));
+        TextView title=tv("学习中",24,INK,true);title.setGravity(Gravity.CENTER);top.addView(title,new LinearLayout.LayoutParams(0,-2,1));
+        TextView menu=tv("⋮",24,MUTED,true);top.addView(menu,new LinearLayout.LayoutParams(dp(28),dp(28)));
+        h.addView(top);
+        TextView s=tv("专注问题回忆，点击卡片内容区后再查看答案。",13,MUTED,false);margin(s,0,5,0,0);h.addView(s);root.addView(h);
         body=new LinearLayout(this);body.setOrientation(LinearLayout.VERTICAL);body.setPadding(dp(16),0,dp(16),dp(8));root.addView(body,new LinearLayout.LayoutParams(-1,0,1));
-        nav=new LinearLayout(this);nav.setOrientation(LinearLayout.HORIZONTAL);nav.setGravity(Gravity.CENTER);nav.setPadding(dp(8),dp(6),dp(8),dp(9));nav.setBackgroundColor(Color.WHITE);
+        nav=new LinearLayout(this);nav.setOrientation(LinearLayout.HORIZONTAL);nav.setGravity(Gravity.CENTER);nav.setPadding(dp(8),dp(6),dp(8),dp(10));nav.setBackgroundColor(Color.WHITE);
         addNav("⌂\n学习",true,v->showHome());addNav("▣\n卡片库",false,v->showLibrary());addNav("▥\n统计",false,v->showStats());addNav("◯\n我的",false,v->showSettings());
-        root.addView(nav,new LinearLayout.LayoutParams(-1,dp(70)));
+        root.addView(nav,new LinearLayout.LayoutParams(-1,dp(72)));
     }
     int learnedCount(){int n=0;for(Card c:repo.cards)if(engine.learned(c))n++;return n;}
     int masteryCount(String tag){int n=0;for(Card c:repo.cards)if(store.state(c.id).tag.equals(tag))n++;return n;}
@@ -89,24 +93,23 @@ public class MainActivity extends Activity {
 
     void showHome(){
         currentScreen="home";categoryOpenedFromStudy=false;
-        shell("社会工作闪卡","让社会工作学习更高效，也更温暖。","学习");
+        shell("社会工作闪卡","让社会工作学习更高效、更温暖。","学习");
 
-        LinearLayout hero=box(Color.rgb(238,249,246),18,24);margin(hero,0,2,0,12);
-        TextView quote=tv("“社会工作，让更多人被看见。”",20,Color.rgb(74,116,109),true);hero.addView(quote);
-        TextView quote2=tv("连接知识 · 理解社会 · 助人自助",13,TEAL_DARK,false);margin(quote2,0,8,0,0);hero.addView(quote2);
-        TextView slogan=tv("积累 · 理解 · 上岸",13,TEAL_DARK,true);slogan.setGravity(Gravity.RIGHT);margin(slogan,0,10,0,0);hero.addView(slogan);
+        LinearLayout hero=box(Color.rgb(238,249,246),18,28);margin(hero,0,0,0,12);
+        TextView quote=tv("“社会工作，\n让更多人被看见。”",20,Color.rgb(60,103,96),true);hero.addView(quote);
+        TextView quote2=tv("— 积累 · 理解 · 上岸",13,TEAL_DARK,true);margin(quote2,0,8,0,0);hero.addView(quote2);
         body.addView(hero);
 
         LinearLayout summary=box(SURFACE,18,24);summary.setBackground(strokeShape(SURFACE,24,LINE));
         LinearLayout top=new LinearLayout(this);top.setOrientation(LinearLayout.HORIZONTAL);top.setGravity(Gravity.CENTER_VERTICAL);
         LinearLayout left=new LinearLayout(this);left.setOrientation(LinearLayout.VERTICAL);left.addView(tv("今日学习量",18,INK,true));
-        LinearLayout nrow=new LinearLayout(this);nrow.setGravity(Gravity.BOTTOM);TextView n=tv(String.valueOf(store.dailyGoal()),48,TEAL_DARK,true);nrow.addView(n);TextView z=tv(" 张",15,TEAL_DARK,true);z.setPadding(0,0,0,dp(7));nrow.addView(z);left.addView(nrow);left.addView(tv("已完成 "+store.todayDone()+" / "+store.dailyGoal(),13,MUTED,false));
+        LinearLayout nrow=new LinearLayout(this);nrow.setGravity(Gravity.BOTTOM);TextView n=tv(String.valueOf(store.dailyGoal()),46,TEAL_DARK,true);nrow.addView(n);TextView z=tv("张",18,TEAL_DARK,true);z.setPadding(dp(4),0,0,dp(6));nrow.addView(z);left.addView(nrow);left.addView(tv("已完成 "+store.todayDone()+" / "+store.dailyGoal(),13,MUTED,false));
         top.addView(left,new LinearLayout.LayoutParams(0,-2,1));
         LinearLayout mini=new LinearLayout(this);mini.setOrientation(LinearLayout.HORIZONTAL);mini.addView(miniStat("已学习",learnedCount(),"张"),new LinearLayout.LayoutParams(0,-2,1));mini.addView(miniStat("待学习",repo.cards.size()-learnedCount(),"张"),new LinearLayout.LayoutParams(0,-2,1));mini.addView(miniStat("连续",store.streakDays(),"天"),new LinearLayout.LayoutParams(0,-2,1));top.addView(mini,new LinearLayout.LayoutParams(0,-2,2));summary.addView(top);
-        ProgressBar p=new ProgressBar(this,null,android.R.attr.progressBarStyleHorizontal);p.setMax(store.dailyGoal());p.setProgress(Math.min(store.todayDone(),store.dailyGoal()));p.getProgressDrawable().setTint(TEAL);margin(p,0,12,0,12);summary.addView(p,new LinearLayout.LayoutParams(-1,dp(7)));
+        ProgressBar p=new ProgressBar(this,null,android.R.attr.progressBarStyleHorizontal);p.setMax(Math.max(1,store.dailyGoal()));p.setProgress(Math.min(store.todayDone(),store.dailyGoal()));p.getProgressDrawable().setTint(TEAL);margin(p,0,12,0,12);summary.addView(p,new LinearLayout.LayoutParams(-1,dp(7)));
         LinearLayout buttons=new LinearLayout(this);buttons.setOrientation(LinearLayout.HORIZONTAL);
-        Button start=btn("▶  开始学习",TEAL,Color.WHITE);
-        Button cont=btn("▣  继续学习",Color.rgb(240,251,247),TEAL_DARK);cont.setBackground(strokeShape(Color.rgb(240,251,247),16,Color.rgb(176,228,215)));
+        Button start=btn("▶  开始学习",TEAL,Color.WHITE);start.setTextSize(18);
+        Button cont=btn("▣  继续学习",Color.rgb(239,249,246),TEAL_DARK);cont.setTextSize(18);cont.setBackground(strokeShape(Color.rgb(239,249,246),18,Color.rgb(176,228,215)));
         start.setOnClickListener(v->startNewSession());cont.setOnClickListener(v->continueSession());
         buttons.addView(start,new LinearLayout.LayoutParams(0,dp(58),1));buttons.addView(gap(10));buttons.addView(cont,new LinearLayout.LayoutParams(0,dp(58),1));summary.addView(buttons);
         TextView rule=tv("🎓  复习仅从已学习内容中抽取，薄弱卡可重复出现。",12,TEAL_DARK,false);rule.setBackground(shape(Color.rgb(237,249,246),12));rule.setPadding(dp(12),dp(9),dp(12),dp(9));margin(rule,0,12,0,0);summary.addView(rule);
@@ -332,28 +335,20 @@ public class MainActivity extends Activity {
 
         final String[] mode={"全部"};final Button[] filterButtons=new Button[4];String[] labels={"全部","已学习","未学习","★ 收藏"};
 
-        LinearLayout searchBox=box(SURFACE,12,14);searchBox.setBackground(strokeShape(SURFACE,16,LINE));
+        LinearLayout searchBox=box(SURFACE,12,16);searchBox.setBackground(strokeShape(SURFACE,18,LINE));
         LinearLayout searchRow=new LinearLayout(this);searchRow.setGravity(Gravity.CENTER_VERTICAL);
-        TextView searchIcon=tv("⌕",22,TEAL_DARK,true);searchIcon.setGravity(Gravity.CENTER);searchRow.addView(searchIcon,new LinearLayout.LayoutParams(dp(34),dp(46)));
+        TextView searchIcon=tv("⌕",22,MUTED,true);searchIcon.setGravity(Gravity.CENTER);searchRow.addView(searchIcon,new LinearLayout.LayoutParams(dp(34),dp(46)));
         EditText search=new EditText(this);search.setHint("搜索卡片、知识点或题目");search.setSingleLine(true);search.setTextSize(14);search.setBackgroundColor(Color.TRANSPARENT);search.setPadding(dp(4),0,dp(8),0);searchRow.addView(search,new LinearLayout.LayoutParams(0,dp(50),1));
-        TextView clear=tv("清除",12,MUTED,true);clear.setGravity(Gravity.CENTER);clear.setPadding(dp(10),0,dp(4),0);clear.setVisibility(View.GONE);clear.setOnClickListener(v->search.setText(""));searchRow.addView(clear,new LinearLayout.LayoutParams(dp(52),dp(46)));
+        TextView clear=tv("✕",12,Color.rgb(150,162,160),true);clear.setGravity(Gravity.CENTER);clear.setBackground(shape(Color.rgb(244,247,246),12));clear.setVisibility(View.GONE);clear.setOnClickListener(v->search.setText(""));searchRow.addView(clear,new LinearLayout.LayoutParams(dp(30),dp(30)));
         searchBox.addView(searchRow);body.addView(searchBox);
 
-        TextView searchTip=tv("支持模糊搜索、多关键词（空格分隔）、同义词联想和相关度排序",11,MUTED,false);
-        margin(searchTip,4,5,0,8);body.addView(searchTip);
-
-        LinearLayout filters=new LinearLayout(this);filters.setOrientation(LinearLayout.HORIZONTAL);
-        for(int i=0;i<labels.length;i++){final int idx=i;Button b=btn(labels[i],i==0?TEAL_SOFT:Color.rgb(247,249,248),i==0?TEAL_DARK:MUTED);b.setTextSize(13);filterButtons[i]=b;filters.addView(b,new LinearLayout.LayoutParams(0,dp(42),1));if(i<labels.length-1)filters.addView(gap(5));}
-        margin(filters,0,0,0,8);body.addView(filters);
-
-        TextView rule=tv("🎓  搜索可覆盖题目、知识点、答案要点与完整答案；筛选条件可与搜索同时使用。",12,TEAL_DARK,false);rule.setBackground(shape(TEAL_SOFT,14));rule.setPadding(dp(12),dp(9),dp(12),dp(9));margin(rule,0,0,0,8);body.addView(rule);
-
-        LinearLayout quality=box(SURFACE,14,16);quality.setBackground(strokeShape(SURFACE,16,LINE));LinearLayout qr=new LinearLayout(this);qr.setGravity(Gravity.CENTER_VERTICAL);LinearLayout qtxt=new LinearLayout(this);qtxt.setOrientation(LinearLayout.VERTICAL);qtxt.addView(tv("内容校对与反馈",16,INK,true));qtxt.addView(tv("待处理标记 "+feedback.pendingCount()+" 条 · 可本地修正，也可导出给我统一校对",11,MUTED,false));qr.addView(qtxt,new LinearLayout.LayoutParams(0,-2,1));Button exp=btn("导出反馈",TEAL_SOFT,TEAL_DARK);exp.setOnClickListener(v->exportFeedback());qr.addView(exp,new LinearLayout.LayoutParams(dp(105),dp(44)));quality.addView(qr);margin(quality,0,0,0,9);body.addView(quality);
+        LinearLayout filters=new LinearLayout(this);filters.setOrientation(LinearLayout.HORIZONTAL);margin(filters,0,10,0,10);
+        for(int i=0;i<labels.length;i++){final int idx=i;Button b=btn(labels[i],i==0?TEAL_SOFT:Color.rgb(247,249,248),i==0?TEAL_DARK:MUTED);b.setTextSize(13);filterButtons[i]=b;filters.addView(b,new LinearLayout.LayoutParams(0,dp(42),1));if(i<labels.length-1)filters.addView(gap(6));}
+        body.addView(filters);
 
         LinearLayout list=new LinearLayout(this);list.setOrientation(LinearLayout.VERTICAL);body.addView(list);
         final Runnable[] fill=new Runnable[1];fill[0]=()->{
             list.removeAllViews();String key=search.getText().toString().trim();clear.setVisibility(key.isEmpty()?View.GONE:View.VISIBLE);int total=0;
-
             if(!key.isEmpty()){
                 List<SearchHit> matches=new ArrayList<>();
                 for(Card c:repo.cards){
@@ -362,16 +357,11 @@ public class MainActivity extends Activity {
                     SearchHit hit=searchHit(c,key);
                     if(hit!=null){matches.add(hit);total++;}
                 }
-                Collections.sort(matches,(a,b)->{
-                    int d=Integer.compare(b.score,a.score);
-                    if(d!=0)return d;
-                    return a.card.question.compareTo(b.card.question);
-                });
-                TextView resultTitle=tv(total==0?"没有找到相关卡片":"找到 "+total+" 张相关卡片 · 已按相关度排序",13,total==0?MUTED:TEAL_DARK,true);margin(resultTitle,2,4,0,8);list.addView(resultTitle);
+                Collections.sort(matches,(a,b)->{int d=Integer.compare(b.score,a.score);if(d!=0)return d;return a.card.question.compareTo(b.card.question);});
+                TextView resultTitle=tv(total==0?"没有找到相关卡片":"找到 "+total+" 张相关卡片",13,total==0?MUTED:TEAL_DARK,true);margin(resultTitle,2,2,0,8);list.addView(resultTitle);
                 for(SearchHit h:matches)list.addView(searchCardRow(h,key));
                 return;
             }
-
             for(Map.Entry<String,List<Card>> e:categories().entrySet()){
                 List<Card> filtered=new ArrayList<>();
                 for(Card c:e.getValue()){
@@ -385,7 +375,6 @@ public class MainActivity extends Activity {
         for(int i=0;i<filterButtons.length;i++){final int idx=i;filterButtons[i].setOnClickListener(v->{mode[0]=idx==0?"全部":idx==1?"已学习":idx==2?"未学习":"收藏";for(int j=0;j<filterButtons.length;j++){filterButtons[j].setBackground(shape(j==idx?TEAL_SOFT:Color.rgb(247,249,248),15));filterButtons[j].setTextColor(j==idx?TEAL_DARK:MUTED);}fill[0].run();});}
         fill[0].run();search.addTextChangedListener(new android.text.TextWatcher(){public void beforeTextChanged(CharSequence s,int a,int b,int c){}public void onTextChanged(CharSequence s,int a,int b,int c){fill[0].run();}public void afterTextChanged(android.text.Editable e){}});
     }
-
     List<String> queryTokens(String raw){
         String x=raw==null?"":raw.trim().toLowerCase(Locale.ROOT);
         x=x.replaceAll("[，,。；;、/|]+"," ");
@@ -507,9 +496,39 @@ public class MainActivity extends Activity {
     void showStats(){
         currentScreen="stats";categoryOpenedFromStudy=false;
         shell("学习统计","学习数据一目了然，见证成长。","统计");
-        TextView trend=tv("学习趋势 · 近7天",19,INK,true);margin(trend,2,18,0,7);body.addView(trend);LinearLayout chart=box(SURFACE,16,18);chart.setBackground(strokeShape(SURFACE,18,LINE));chart.addView(makeWeekChart());body.addView(chart);
-        int mast=masteryCount("掌握"),fam=masteryCount("熟悉"),fuz=masteryCount("模糊"),un=repo.cards.size()-mast-fam-fuz;LinearLayout dist=box(SURFACE,16,18);margin(dist,0,12,0,0);dist.setBackground(strokeShape(SURFACE,18,LINE));dist.addView(tv("知识点掌握分布",18,INK,true));dist.addView(tv("掌握 "+mast+"    熟悉 "+fam+"    模糊 "+fuz+"    未学习 "+un,13,MUTED,false));body.addView(dist);
-        TextView weakTitle=tv("薄弱卡片 TOP 10",19,INK,true);margin(weakTitle,2,18,0,8);body.addView(weakTitle);List<Card> weak=new ArrayList<>();for(Card x:repo.cards)if(engine.learned(x))weak.add(x);weak.sort((a,b)->Double.compare(engine.difficulty(b),engine.difficulty(a)));for(int i=0;i<Math.min(10,weak.size());i++){Card x=weak.get(i);LinearLayout wr=box(SURFACE,12,14);wr.setBackground(strokeShape(SURFACE,14,LINE));LinearLayout line=new LinearLayout(this);line.setGravity(Gravity.CENTER_VERTICAL);TextView rank=tv(String.valueOf(i+1),12,i<3?Color.WHITE:MUTED,true);rank.setGravity(Gravity.CENTER);rank.setBackground(shape(i==0?RED:i==1?ORANGE:i==2?Color.rgb(235,174,51):Color.rgb(238,242,240),14));line.addView(rank,new LinearLayout.LayoutParams(dp(30),dp(30)));TextView qq=tv(x.question,14,INK,true);qq.setPadding(dp(10),0,dp(10),0);line.addView(qq,new LinearLayout.LayoutParams(0,-2,1));TextView pct=tv(Math.round(engine.difficulty(x)*100)+"%",12,i<3?ORANGE:MUTED,true);line.addView(pct);wr.addView(line);wr.setOnClickListener(v->{queue=engine.reviewOnlyQueue(Collections.singletonList(x),Math.min(3,store.dailyGoal()));qIndex=0;revealed=false;store.saveSession(queue,0);showStudy();});margin(wr,0,0,0,6);body.addView(wr);}TextView note=tv("🎓  智能复习：仅从已学习内容中抽取；多次不清楚的卡片会更频繁出现。",12,TEAL_DARK,false);note.setBackground(shape(TEAL_SOFT,14));note.setPadding(dp(12),dp(10),dp(12),dp(10));margin(note,0,12,0,0);body.addView(note);
+
+        LinearLayout overview=box(SURFACE,16,22);overview.setBackground(strokeShape(SURFACE,22,LINE));
+        LinearLayout tabs=new LinearLayout(this);tabs.setOrientation(LinearLayout.HORIZONTAL);
+        TextView t1=tv("学习总览",12,TEAL_DARK,true);t1.setGravity(Gravity.CENTER);t1.setBackground(strokeShape(TEAL_SOFT,13,Color.rgb(171,226,214)));tabs.addView(t1,new LinearLayout.LayoutParams(0,dp(36),1));tabs.addView(gap(6));
+        TextView t2=tv("专题统计",12,MUTED,false);t2.setGravity(Gravity.CENTER);t2.setBackground(shape(Color.rgb(247,249,248),13));tabs.addView(t2,new LinearLayout.LayoutParams(0,dp(36),1));tabs.addView(gap(6));
+        TextView t3=tv("学习记录",12,MUTED,false);t3.setGravity(Gravity.CENTER);t3.setBackground(shape(Color.rgb(247,249,248),13));tabs.addView(t3,new LinearLayout.LayoutParams(0,dp(36),1));
+        overview.addView(tabs);
+        LinearLayout metrics=new LinearLayout(this);metrics.setOrientation(LinearLayout.HORIZONTAL);margin(metrics,0,12,0,8);
+        metrics.addView(bigMetric("今日学习量",String.valueOf(store.dailyGoal()),"张"),new LinearLayout.LayoutParams(0,-2,1));
+        metrics.addView(bigMetric("已学习",String.valueOf(learnedCount()),"张"),new LinearLayout.LayoutParams(0,-2,1));
+        metrics.addView(bigMetric("待学习",String.valueOf(repo.cards.size()-learnedCount()),"张"),new LinearLayout.LayoutParams(0,-2,1));
+        metrics.addView(bigMetric("连续学习",String.valueOf(store.streakDays()),"天"),new LinearLayout.LayoutParams(0,-2,1));
+        overview.addView(metrics);
+        ProgressBar p=new ProgressBar(this,null,android.R.attr.progressBarStyleHorizontal);p.setMax(Math.max(1,store.dailyGoal()));p.setProgress(Math.min(store.todayDone(),store.dailyGoal()));p.getProgressDrawable().setTint(TEAL);overview.addView(p,new LinearLayout.LayoutParams(-1,dp(7)));
+        TextView finish=tv("已完成 "+store.todayDone()+" / "+store.dailyGoal(),12,MUTED,false);margin(finish,0,8,0,0);overview.addView(finish);
+        body.addView(overview);
+
+        TextView trend=tv("学习趋势",19,INK,true);margin(trend,2,18,0,7);body.addView(trend);
+        LinearLayout chart=box(SURFACE,16,18);chart.setBackground(strokeShape(SURFACE,18,LINE));chart.addView(makeWeekChart());body.addView(chart);
+
+        int mast=masteryCount("掌握"),fam=masteryCount("熟悉"),fuz=masteryCount("模糊"),un=repo.cards.size()-mast-fam-fuz;
+        LinearLayout dist=box(SURFACE,16,18);margin(dist,0,12,0,0);dist.setBackground(strokeShape(SURFACE,18,LINE));dist.addView(tv("知识掌握情况",18,INK,true));dist.addView(tv("掌握 "+mast+"    熟悉 "+fam+"    模糊 "+fuz+"    未学习 "+un,13,MUTED,false));body.addView(dist);
+
+        TextView weakTitle=tv("薄弱卡片 TOP 10",19,INK,true);margin(weakTitle,2,18,0,8);body.addView(weakTitle);
+        List<Card> weak=new ArrayList<>();for(Card x:repo.cards)if(engine.learned(x))weak.add(x);weak.sort((a,b)->Double.compare(engine.difficulty(b),engine.difficulty(a)));
+        for(int i=0;i<Math.min(10,weak.size());i++){
+            Card x=weak.get(i);LinearLayout wr=box(SURFACE,12,16);wr.setBackground(strokeShape(SURFACE,16,LINE));
+            LinearLayout line=new LinearLayout(this);line.setGravity(Gravity.CENTER_VERTICAL);
+            TextView rank=tv(String.valueOf(i+1),12,Color.WHITE,true);rank.setGravity(Gravity.CENTER);rank.setBackground(shape(i==0?RED:i==1?ORANGE:i==2?Color.rgb(235,174,51):Color.rgb(151,163,160),14));line.addView(rank,new LinearLayout.LayoutParams(dp(30),dp(30)));
+            TextView qq=tv(x.question,15,INK,true);qq.setPadding(dp(10),0,dp(10),0);line.addView(qq,new LinearLayout.LayoutParams(0,-2,1));
+            TextView pct=tv(Math.round(engine.difficulty(x)*100)+"%",12,ORANGE,true);line.addView(pct);
+            wr.addView(line);wr.setOnClickListener(v->{queue=engine.reviewOnlyQueue(Collections.singletonList(x),Math.min(3,store.dailyGoal()));qIndex=0;revealed=false;store.saveSession(queue,0);showStudy();});margin(wr,0,0,0,7);body.addView(wr);
+        }
     }
     View bigMetric(String label,String num,String unit){LinearLayout l=new LinearLayout(this);l.setOrientation(LinearLayout.VERTICAL);l.setGravity(Gravity.CENTER);TextView a=tv(label,11,MUTED,false);a.setGravity(Gravity.CENTER);l.addView(a);TextView b=tv(num,25,INK,true);b.setGravity(Gravity.CENTER);l.addView(b);TextView c=tv(unit,10,MUTED,false);c.setGravity(Gravity.CENTER);l.addView(c);return l;}
     View makeWeekChart(){LinearLayout outer=new LinearLayout(this);outer.setOrientation(LinearLayout.HORIZONTAL);outer.setGravity(Gravity.BOTTOM);Calendar cal=Calendar.getInstance();cal.add(Calendar.DAY_OF_YEAR,-6);int max=1;int[] vals=new int[7];String[] labs=new String[7];SimpleDateFormat f=new SimpleDateFormat("M/d",Locale.getDefault());for(int i=0;i<7;i++){Date d=cal.getTime();vals[i]=store.dayDone(d);labs[i]=f.format(d);max=Math.max(max,vals[i]);cal.add(Calendar.DAY_OF_YEAR,1);}for(int i=0;i<7;i++){LinearLayout col=new LinearLayout(this);col.setOrientation(LinearLayout.VERTICAL);col.setGravity(Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL);TextView val=tv(String.valueOf(vals[i]),10,MUTED,true);val.setGravity(Gravity.CENTER);col.addView(val);View bar=new View(this);bar.setBackground(shape(i==6?TEAL:Color.rgb(151,222,205),8));int h=dp(18+(int)(90.0*vals[i]/max));col.addView(bar,new LinearLayout.LayoutParams(dp(28),h));TextView lab=tv(labs[i],9,MUTED,false);lab.setGravity(Gravity.CENTER);col.addView(lab);outer.addView(col,new LinearLayout.LayoutParams(0,dp(145),1));}return outer;}
