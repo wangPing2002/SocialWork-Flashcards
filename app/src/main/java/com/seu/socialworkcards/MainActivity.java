@@ -303,25 +303,32 @@ public class MainActivity extends Activity {
     View historyMini(Card c){StudyStore.State s=store.state(c.id);LinearLayout wrap=new LinearLayout(this);wrap.setOrientation(LinearLayout.VERTICAL);TextView label=tv("最近10次",11,MUTED,false);margin(label,0,10,0,4);wrap.addView(label);LinearLayout row=new LinearLayout(this);row.setGravity(Gravity.CENTER);for(StudyStore.Rec r:s.history){TextView x=tv(r.ok?"熟":"模",10,r.ok?TEAL_DARK:ORANGE,true);x.setGravity(Gravity.CENTER);x.setBackground(shape(r.ok?TEAL_SOFT:ORANGE_SOFT,11));LinearLayout.LayoutParams p=new LinearLayout.LayoutParams(dp(31),dp(25));p.setMargins(dp(2),0,dp(2),0);row.addView(x,p);}wrap.addView(row);return wrap;}
     void rate(Card c,boolean ok){engine.rate(c,ok);qIndex++;revealed=false;answerTab=0;store.saveSession(queue,qIndex);showStudy();}
 
+    static class SearchHit {
+        Card card; int score; String reason;
+        SearchHit(Card card,int score,String reason){this.card=card;this.score=score;this.reason=reason;}
+    }
+
     void showLibrary(){
         currentScreen="library";categoryOpenedFromStudy=false;
         shell("卡片库","搜索与管理学习内容","卡片库");
 
         final String[] mode={"全部"};final Button[] filterButtons=new Button[4];String[] labels={"全部","已学习","未学习","★ 收藏"};
 
-        // 搜索置于页面最前面：输入后直接展示“卡片级”结果，而不是只留下专题卡片。
         LinearLayout searchBox=box(SURFACE,12,14);searchBox.setBackground(strokeShape(SURFACE,16,LINE));
         LinearLayout searchRow=new LinearLayout(this);searchRow.setGravity(Gravity.CENTER_VERTICAL);
         TextView searchIcon=tv("⌕",22,TEAL_DARK,true);searchIcon.setGravity(Gravity.CENTER);searchRow.addView(searchIcon,new LinearLayout.LayoutParams(dp(34),dp(46)));
-        EditText search=new EditText(this);search.setHint("搜索题目、知识点或答案要点");search.setSingleLine(true);search.setTextSize(14);search.setBackgroundColor(Color.TRANSPARENT);search.setPadding(dp(4),0,dp(8),0);searchRow.addView(search,new LinearLayout.LayoutParams(0,dp(50),1));
+        EditText search=new EditText(this);search.setHint("关键词搜索：危机 介入 / 赋能 / REBT");search.setSingleLine(true);search.setTextSize(14);search.setBackgroundColor(Color.TRANSPARENT);search.setPadding(dp(4),0,dp(8),0);searchRow.addView(search,new LinearLayout.LayoutParams(0,dp(50),1));
         TextView clear=tv("清除",12,MUTED,true);clear.setGravity(Gravity.CENTER);clear.setPadding(dp(10),0,dp(4),0);clear.setVisibility(View.GONE);clear.setOnClickListener(v->search.setText(""));searchRow.addView(clear,new LinearLayout.LayoutParams(dp(52),dp(46)));
         searchBox.addView(searchRow);body.addView(searchBox);
 
+        TextView searchTip=tv("支持多关键词（空格分隔）、部分词匹配、常用同义词和相关度排序",11,MUTED,false);
+        margin(searchTip,4,5,0,8);body.addView(searchTip);
+
         LinearLayout filters=new LinearLayout(this);filters.setOrientation(LinearLayout.HORIZONTAL);
         for(int i=0;i<labels.length;i++){final int idx=i;Button b=btn(labels[i],i==0?TEAL_SOFT:Color.rgb(247,249,248),i==0?TEAL_DARK:MUTED);b.setTextSize(13);filterButtons[i]=b;filters.addView(b,new LinearLayout.LayoutParams(0,dp(42),1));if(i<labels.length-1)filters.addView(gap(5));}
-        margin(filters,0,9,0,8);body.addView(filters);
+        margin(filters,0,0,0,8);body.addView(filters);
 
-        TextView rule=tv("🎓  可按题目、知识点和答案要点直接检索卡片；复习仍只从已学习内容中抽取。",12,TEAL_DARK,false);rule.setBackground(shape(TEAL_SOFT,14));rule.setPadding(dp(12),dp(9),dp(12),dp(9));margin(rule,0,0,0,8);body.addView(rule);
+        TextView rule=tv("🎓  搜索可覆盖题目、知识点、答案要点与完整答案；筛选条件可与搜索同时使用。",12,TEAL_DARK,false);rule.setBackground(shape(TEAL_SOFT,14));rule.setPadding(dp(12),dp(9),dp(12),dp(9));margin(rule,0,0,0,8);body.addView(rule);
 
         LinearLayout quality=box(SURFACE,14,16);quality.setBackground(strokeShape(SURFACE,16,LINE));LinearLayout qr=new LinearLayout(this);qr.setGravity(Gravity.CENTER_VERTICAL);LinearLayout qtxt=new LinearLayout(this);qtxt.setOrientation(LinearLayout.VERTICAL);qtxt.addView(tv("内容校对与反馈",16,INK,true));qtxt.addView(tv("待处理标记 "+feedback.pendingCount()+" 条 · 可本地修正，也可导出给我统一校对",11,MUTED,false));qr.addView(qtxt,new LinearLayout.LayoutParams(0,-2,1));Button exp=btn("导出反馈",TEAL_SOFT,TEAL_DARK);exp.setOnClickListener(v->exportFeedback());qr.addView(exp,new LinearLayout.LayoutParams(dp(105),dp(44)));quality.addView(qr);margin(quality,0,0,0,9);body.addView(quality);
 
@@ -330,13 +337,20 @@ public class MainActivity extends Activity {
             list.removeAllViews();String key=search.getText().toString().trim();clear.setVisibility(key.isEmpty()?View.GONE:View.VISIBLE);int total=0;
 
             if(!key.isEmpty()){
-                List<Card> matches=new ArrayList<>();
+                List<SearchHit> matches=new ArrayList<>();
                 for(Card c:repo.cards){
                     boolean pass="全部".equals(mode[0])||("已学习".equals(mode[0])&&engine.learned(c))||("未学习".equals(mode[0])&&!engine.learned(c))||("收藏".equals(mode[0])&&store.isFavorite(c.id));
-                    if(pass&&matchesCardSearch(c,key)){matches.add(c);total++;}
+                    if(!pass)continue;
+                    SearchHit hit=searchHit(c,key);
+                    if(hit!=null){matches.add(hit);total++;}
                 }
-                TextView resultTitle=tv(total==0?"没有找到相关卡片":"找到 "+total+" 张相关卡片",13,total==0?MUTED:TEAL_DARK,true);margin(resultTitle,2,4,0,8);list.addView(resultTitle);
-                for(Card c:matches)list.addView(searchCardRow(c));
+                Collections.sort(matches,(a,b)->{
+                    int d=Integer.compare(b.score,a.score);
+                    if(d!=0)return d;
+                    return a.card.question.compareTo(b.card.question);
+                });
+                TextView resultTitle=tv(total==0?"没有找到相关卡片":"找到 "+total+" 张相关卡片 · 已按相关度排序",13,total==0?MUTED:TEAL_DARK,true);margin(resultTitle,2,4,0,8);list.addView(resultTitle);
+                for(SearchHit h:matches)list.addView(searchCardRow(h,key));
                 return;
             }
 
@@ -354,22 +368,97 @@ public class MainActivity extends Activity {
         fill[0].run();search.addTextChangedListener(new android.text.TextWatcher(){public void beforeTextChanged(CharSequence s,int a,int b,int c){}public void onTextChanged(CharSequence s,int a,int b,int c){fill[0].run();}public void afterTextChanged(android.text.Editable e){}});
     }
 
-    boolean matchesCardSearch(Card c,String key){
-        String k=key.toLowerCase(Locale.ROOT);
-        if((c.question!=null&&c.question.toLowerCase(Locale.ROOT).contains(k))||(c.topic!=null&&c.topic.toLowerCase(Locale.ROOT).contains(k))||(c.kind!=null&&c.kind.toLowerCase(Locale.ROOT).contains(k))||(c.tip!=null&&c.tip.toLowerCase(Locale.ROOT).contains(k))||(c.origin!=null&&c.origin.toLowerCase(Locale.ROOT).contains(k)))return true;
-        for(String b:c.bullets)if(b!=null&&b.toLowerCase(Locale.ROOT).contains(k))return true;
-        JSONObject d=repo.detail(c.topic);
-        if(d!=null){String[] fields={"example","name","simple","essay"};for(String f:fields){String v=d.optString(f,"");if(v.toLowerCase(Locale.ROOT).contains(k))return true;}}
-        return false;
+    List<String> queryTokens(String raw){
+        String x=raw==null?"":raw.trim().toLowerCase(Locale.ROOT);
+        x=x.replaceAll("[，,。；;、/|]+"," ");
+        String[] parts=x.split("\\s+");
+        List<String> out=new ArrayList<>();
+        for(String p:parts)if(!p.isEmpty()&&!out.contains(p))out.add(p);
+        return out;
     }
 
-    View searchCardRow(Card c){
+    List<String> tokenVariants(String token){
+        LinkedHashSet<String> s=new LinkedHashSet<>();s.add(token);
+        String[][] pairs={
+            {"赋能","增权"},{"危机干预","危机介入"},{"临终关怀","安宁疗护"},
+            {"rebt","理性情绪治疗"},{"理性情绪疗法","理性情绪治疗"},
+            {"社会支持网络","社会支持"},{"韧性","抗逆力"}
+        };
+        for(String[] p:pairs){
+            if(token.contains(p[0])||p[0].contains(token)){s.add(p[1]);}
+            if(token.contains(p[1])||p[1].contains(token)){s.add(p[0]);}
+        }
+        return new ArrayList<>(s);
+    }
+
+    int containsAny(String text,List<String> variants){
+        if(text==null)return 0;String t=text.toLowerCase(Locale.ROOT);int longest=0;
+        for(String v:variants)if(!v.isEmpty()&&t.contains(v))longest=Math.max(longest,v.length());
+        return longest;
+    }
+
+    SearchHit searchHit(Card c,String raw){
+        List<String> tokens=queryTokens(raw);if(tokens.isEmpty())return null;
+        JSONObject d=repo.detail(c.topic);
+        int total=0;String bestReason="";int bestField=0;
+
+        for(String token:tokens){
+            List<String> vars=tokenVariants(token);
+            int tokenScore=0;String reason="";
+
+            int m=containsAny(c.question,vars);if(m>0){tokenScore=Math.max(tokenScore,120+m);reason="题目";}
+            m=containsAny(c.topic,vars);if(m>0&&90+m>tokenScore){tokenScore=90+m;reason="知识点";}
+            m=containsAny(c.kind,vars);if(m>0&&45+m>tokenScore){tokenScore=45+m;reason="卡片类型";}
+            for(String b:c.bullets){m=containsAny(b,vars);if(m>0&&70+m>tokenScore){tokenScore=70+m;reason="答案要点";}}
+            m=containsAny(c.tip,vars);if(m>0&&38+m>tokenScore){tokenScore=38+m;reason="记忆提示";}
+            m=containsAny(c.origin,vars);if(m>0&&24+m>tokenScore){tokenScore=24+m;reason="出处";}
+            if(d!=null){
+                String[] fields={"example","name","simple","essay"};
+                for(String f:fields){m=containsAny(d.optString(f,""),vars);if(m>0&&52+m>tokenScore){tokenScore=52+m;reason="扩展答案";}}
+            }
+
+            // 多关键词采用 AND 逻辑：每个关键词至少命中一个字段，避免结果过泛。
+            if(tokenScore==0)return null;
+            total+=tokenScore;
+            if(tokenScore>bestField){bestField=tokenScore;bestReason=reason;}
+        }
+
+        String full=raw.trim().toLowerCase(Locale.ROOT);
+        if(c.question!=null&&c.question.toLowerCase(Locale.ROOT).contains(full))total+=80;
+        if(c.topic!=null&&c.topic.toLowerCase(Locale.ROOT).contains(full))total+=60;
+        return new SearchHit(c,total,bestReason);
+    }
+
+    CharSequence highlightMatches(String text,String raw){
+        if(text==null)return "";
+        android.text.SpannableString s=new android.text.SpannableString(text);
+        String lower=text.toLowerCase(Locale.ROOT);
+        for(String token:queryTokens(raw)){
+            for(String v:tokenVariants(token)){
+                if(v.isEmpty())continue;
+                String vv=v.toLowerCase(Locale.ROOT);int from=0;
+                while(true){
+                    int at=lower.indexOf(vv,from);if(at<0)break;
+                    s.setSpan(new android.text.style.ForegroundColorSpan(TEAL_DARK),at,at+vv.length(),android.text.Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+                    s.setSpan(new android.text.style.StyleSpan(Typeface.BOLD),at,at+vv.length(),android.text.Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+                    from=at+vv.length();
+                }
+            }
+        }
+        return s;
+    }
+
+    View searchCardRow(SearchHit hit,String key){
+        Card c=hit.card;
         LinearLayout item=box(SURFACE,13,15);item.setBackground(strokeShape(SURFACE,16,LINE));
         LinearLayout row=new LinearLayout(this);row.setGravity(Gravity.CENTER_VERTICAL);
         LinearLayout text=new LinearLayout(this);text.setOrientation(LinearLayout.VERTICAL);
-        text.addView(tv(c.question,15,INK,true));
+
+        TextView title=tv("",15,INK,true);title.setText(highlightMatches(c.question,key));text.addView(title);
         String state=engine.learned(c)?store.state(c.id).tag:"未学习";
-        TextView meta=tv(c.topic+" · "+c.kind+" · "+state+(store.isFavorite(c.id)?" · ★ 收藏":""),11,MUTED,false);margin(meta,0,4,0,0);text.addView(meta);
+        TextView topic=tv("",11,MUTED,false);topic.setText(highlightMatches(c.topic+" · "+c.kind+" · "+state+(store.isFavorite(c.id)?" · ★ 收藏":""),key));margin(topic,0,4,0,0);text.addView(topic);
+        TextView reason=tv("匹配："+hit.reason,10,TEAL_DARK,true);margin(reason,0,4,0,0);text.addView(reason);
+
         row.addView(text,new LinearLayout.LayoutParams(0,-2,1));
         TextView arrow=tv("›",24,MUTED,false);arrow.setGravity(Gravity.CENTER);row.addView(arrow,new LinearLayout.LayoutParams(dp(30),dp(44)));
         item.addView(row);
