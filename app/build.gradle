@@ -10,8 +10,9 @@ android {
         applicationId 'com.seu.socialworkcards'
         minSdk 24
         targetSdk 35
-        versionCode 14
-        versionName '2.5.2'
+        versionCode 15
+        versionName '2.6.0'
+        manifestPlaceholders = [appLabel: '社会工作闪卡']
     }
 
     signingConfigs {
@@ -27,7 +28,14 @@ android {
     }
 
     buildTypes {
+        debug {
+            applicationIdSuffix '.dev'
+            versionNameSuffix '-dev'
+            manifestPlaceholders = [appLabel: '社会工作闪卡 Dev']
+        }
+
         release {
+            manifestPlaceholders = [appLabel: '社会工作闪卡']
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             if (System.getenv('RELEASE_STORE_FILE') != null) {
