@@ -2,7 +2,7 @@
 
 面向社会工作考研复习的 Android 离线闪卡应用。
 
-当前版本：**V2.5.0**  
+当前版本：**V2.6.0**  
 应用名称：**社会工作闪卡**  
 Application ID：`com.seu.socialworkcards`
 
@@ -990,6 +990,20 @@ app/src/main/assets/details.json
 ---
 
 # 13. 版本更新记录
+
+
+## V2.6.0 Phase 2A：连接 · 生长设计系统（首页与全局导航）
+
+在 Phase 1 完成 Dev/Release 包隔离后，本阶段开始全新 UI 重构。该版本不沿用 V2.5.x 的视觉试验，而以“连接 · 生长”为社会工作闪卡的品牌语言。
+
+- 新主色：深青绿 + 玉青 + 暖灰白，珊瑚色只作为少量温暖强调；
+- 主导航全部替换为 Android Vector Drawable，不再用 Unicode/Emoji 代替正式图标；
+- 首页重构为“今日任务 → 连接·生长提示 → 学习专题”，取消大面积宣传卡；
+- 学习页进入沉浸模式，不再显示四栏主导航；
+- 全局标题、卡片圆角、边框、留白与按钮尺寸建立统一规范；
+- 保留原题库、考频与真题、模糊搜索、收藏、反馈、备份、学习算法和返回逻辑。
+
+当前版本：`versionCode = 15`，`versionName = 2.6.0`。正式版包名 `com.seu.socialworkcards`，Debug 测试版包名 `com.seu.socialworkcards.dev`。
 
 ## V2.5.0
 
