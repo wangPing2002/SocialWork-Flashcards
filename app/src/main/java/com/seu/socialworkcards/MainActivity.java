@@ -72,12 +72,21 @@ int categoryIconRes(String n){if(n.equals("社会工作原理"))return R.drawabl
         v.post(v::requestApplyInsets);
     }
 
+    int pageIconRes(String active){if("卡片库".equals(active))return R.drawable.ic_nav_cards;if("统计".equals(active))return R.drawable.ic_nav_stats;if("我的".equals(active))return R.drawable.ic_nav_profile;return R.drawable.ic_nav_home;}
+
     void shell(String title,String subtitle,String active){
         root=new LinearLayout(this);root.setOrientation(LinearLayout.VERTICAL);root.setBackgroundColor(BG);setContentView(root);applySafeInsets(root);
 
-        LinearLayout header=new LinearLayout(this);header.setGravity(Gravity.CENTER_VERTICAL);header.setPadding(dp(18),dp(8),dp(18),dp(6));
-        ImageView mark=new ImageView(this);mark.setImageResource(R.drawable.ic_brand_hands);mark.setScaleType(ImageView.ScaleType.CENTER_CROP);header.addView(mark,new LinearLayout.LayoutParams(dp(46),dp(46)));
-        LinearLayout titles=new LinearLayout(this);titles.setOrientation(LinearLayout.VERTICAL);titles.setPadding(dp(12),0,0,0);titles.addView(tv(title,26,INK,true));if(subtitle!=null&&!subtitle.isEmpty()){TextView sub=tv(subtitle,13,MUTED,false);margin(sub,0,3,0,0);titles.addView(sub);}header.addView(titles,new LinearLayout.LayoutParams(0,-2,1));root.addView(header);
+        LinearLayout header=new LinearLayout(this);header.setGravity(Gravity.CENTER_VERTICAL);
+        boolean home="学习".equals(active);
+        header.setPadding(dp(18),home?dp(8):dp(5),dp(18),home?dp(6):dp(3));
+        if(home){
+            ImageView mark=new ImageView(this);mark.setImageResource(R.drawable.ic_brand_hands);mark.setScaleType(ImageView.ScaleType.CENTER_CROP);header.addView(mark,new LinearLayout.LayoutParams(dp(46),dp(46)));
+        }else{
+            LinearLayout mark=new LinearLayout(this);mark.setGravity(Gravity.CENTER);mark.setBackground(shape(TEAL_SOFT,14));mark.addView(iconView(pageIconRes(active),20,TEAL_DARK),new LinearLayout.LayoutParams(dp(22),dp(22)));header.addView(mark,new LinearLayout.LayoutParams(dp(38),dp(38)));
+        }
+        LinearLayout titles=new LinearLayout(this);titles.setOrientation(LinearLayout.VERTICAL);titles.setPadding(home?dp(12):dp(10),0,0,0);titles.addView(tv(title,home?26:23,INK,true));
+        if(subtitle!=null&&!subtitle.isEmpty()){TextView sub=tv(subtitle,home?13:12,MUTED,false);margin(sub,0,2,0,0);titles.addView(sub);}header.addView(titles,new LinearLayout.LayoutParams(0,-2,1));root.addView(header);
 
         ScrollView sv=new ScrollView(this);sv.setFillViewport(true);sv.setClipToPadding(false);body=new LinearLayout(this);body.setOrientation(LinearLayout.VERTICAL);body.setPadding(dp(16),dp(4),dp(16),dp(92));sv.addView(body);root.addView(sv,new LinearLayout.LayoutParams(-1,0,1));
 
@@ -362,7 +371,7 @@ void showLibrary(){
     TextView clear=tv("清除",11,MUTED,true);clear.setGravity(Gravity.CENTER);clear.setVisibility(View.GONE);clear.setOnClickListener(v->search.setText(""));searchRow.addView(clear,new LinearLayout.LayoutParams(dp(48),dp(40)));
     searchBox.addView(searchRow);body.addView(searchBox);
 
-    TextView searchTip=tv("多关键词用空格分隔 · 支持有限同义词联想",10,MUTED,false);margin(searchTip,4,5,0,10);body.addView(searchTip);
+    TextView searchTip=tv("支持多关键词与常用同义词",10,MUTED,false);margin(searchTip,4,5,0,10);body.addView(searchTip);
 
     LinearLayout filters=new LinearLayout(this);filters.setOrientation(LinearLayout.HORIZONTAL);
     for(int i=0;i<labels.length;i++){final int idx=i;TextView c=chip(labels[i],i==0);filterViews[i]=c;filters.addView(c,new LinearLayout.LayoutParams(0,dp(38),1));if(i<labels.length-1)filters.addView(gap(6));}
@@ -506,7 +515,8 @@ View topicRow(String name,List<Card> cards){
     LinearLayout txt=new LinearLayout(this);txt.setOrientation(LinearLayout.VERTICAL);txt.setPadding(dp(11),0,0,0);txt.addView(tv(name,17,INK,true));txt.addView(tv("已学习 "+learned+" / "+cards.size(),11,MUTED,false));top.addView(txt,new LinearLayout.LayoutParams(0,-2,1));
     String st=fuz>Math.max(2,learned/4)?"模糊较多":learned==0?"待学习":learned==cards.size()?"已学习":"继续学习";TextView status=tv(st,10,st.equals("模糊较多")?ORANGE:TEAL_DARK,true);status.setBackground(shape(st.equals("模糊较多")?ORANGE_SOFT:TEAL_SOFT,12));status.setPadding(dp(8),dp(4),dp(8),dp(4));top.addView(status);row.addView(top);
     ProgressBar pb=new ProgressBar(this,null,android.R.attr.progressBarStyleHorizontal);pb.setMax(Math.max(1,cards.size()));pb.setProgress(learned);pb.getProgressDrawable().setTint(TEAL);margin(pb,dp(59),7,0,4);row.addView(pb,new LinearLayout.LayoutParams(-1,dp(5)));
-    TextView small=tv("掌握 "+mast+"   熟悉 "+fam+"   模糊 "+fuz,10,MUTED,false);small.setPadding(dp(59),0,0,0);row.addView(small);row.setOnClickListener(v->showCategoryCards(name,cards));margin(row,0,0,0,8);return row;
+    String summary=learned==0?"尚未开始 · 共 "+cards.size()+" 张":"掌握 "+mast+"   熟悉 "+fam+"   模糊 "+fuz;
+    TextView small=tv(summary,10,MUTED,false);small.setPadding(dp(59),0,0,0);row.addView(small);row.setOnClickListener(v->showCategoryCards(name,cards));margin(row,0,0,0,8);return row;
 }
     void openCategory(String name,List<Card> cards){
         List<Card> learned=engine.reviewOnlyQueue(cards,Math.max(store.dailyGoal(),cards.size()));
@@ -551,7 +561,17 @@ void showStats(){
 }
 
     View bigMetric(String label,String num,String unit){LinearLayout l=new LinearLayout(this);l.setOrientation(LinearLayout.VERTICAL);l.setGravity(Gravity.CENTER);TextView a=tv(label,11,MUTED,false);a.setGravity(Gravity.CENTER);l.addView(a);TextView b=tv(num,25,INK,true);b.setGravity(Gravity.CENTER);l.addView(b);TextView c=tv(unit,10,MUTED,false);c.setGravity(Gravity.CENTER);l.addView(c);return l;}
-    View makeWeekChart(){LinearLayout outer=new LinearLayout(this);outer.setOrientation(LinearLayout.HORIZONTAL);outer.setGravity(Gravity.BOTTOM);Calendar cal=Calendar.getInstance();cal.add(Calendar.DAY_OF_YEAR,-6);int max=1;int[] vals=new int[7];String[] labs=new String[7];SimpleDateFormat f=new SimpleDateFormat("M/d",Locale.getDefault());for(int i=0;i<7;i++){Date d=cal.getTime();vals[i]=store.dayDone(d);labs[i]=f.format(d);max=Math.max(max,vals[i]);cal.add(Calendar.DAY_OF_YEAR,1);}for(int i=0;i<7;i++){LinearLayout col=new LinearLayout(this);col.setOrientation(LinearLayout.VERTICAL);col.setGravity(Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL);TextView val=tv(String.valueOf(vals[i]),10,MUTED,true);val.setGravity(Gravity.CENTER);col.addView(val);View bar=new View(this);bar.setBackground(shape(i==6?TEAL:Color.rgb(151,222,205),8));int h=dp(18+(int)(90.0*vals[i]/max));col.addView(bar,new LinearLayout.LayoutParams(dp(28),h));TextView lab=tv(labs[i],9,MUTED,false);lab.setGravity(Gravity.CENTER);col.addView(lab);outer.addView(col,new LinearLayout.LayoutParams(0,dp(145),1));}return outer;}
+    View makeWeekChart(){
+        Calendar cal=Calendar.getInstance();cal.add(Calendar.DAY_OF_YEAR,-6);int max=1,total=0;int[] vals=new int[7];String[] labs=new String[7];SimpleDateFormat f=new SimpleDateFormat("M/d",Locale.getDefault());
+        for(int i=0;i<7;i++){Date d=cal.getTime();vals[i]=store.dayDone(d);labs[i]=f.format(d);max=Math.max(max,vals[i]);total+=vals[i];cal.add(Calendar.DAY_OF_YEAR,1);}
+        if(total==0){
+            LinearLayout empty=new LinearLayout(this);empty.setOrientation(LinearLayout.VERTICAL);empty.setGravity(Gravity.CENTER);empty.setPadding(0,dp(18),0,dp(18));
+            TextView title=tv("还没有学习记录",14,INK,true);title.setGravity(Gravity.CENTER);empty.addView(title);
+            TextView note=tv("完成第一组卡片后，这里会显示近 7 天学习节奏。",11,MUTED,false);note.setGravity(Gravity.CENTER);margin(note,0,5,0,0);empty.addView(note);return empty;
+        }
+        LinearLayout outer=new LinearLayout(this);outer.setOrientation(LinearLayout.HORIZONTAL);outer.setGravity(Gravity.BOTTOM);
+        for(int i=0;i<7;i++){LinearLayout col=new LinearLayout(this);col.setOrientation(LinearLayout.VERTICAL);col.setGravity(Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL);TextView val=tv(String.valueOf(vals[i]),10,MUTED,true);val.setGravity(Gravity.CENTER);col.addView(val);View bar=new View(this);bar.setBackground(shape(i==6?TEAL:Color.rgb(151,222,205),8));int h=dp(10+(int)(62.0*vals[i]/max));col.addView(bar,new LinearLayout.LayoutParams(dp(24),h));TextView lab=tv(labs[i],9,MUTED,false);lab.setGravity(Gravity.CENTER);col.addView(lab);outer.addView(col,new LinearLayout.LayoutParams(0,dp(112),1));}return outer;
+    }
 
 
 void showSettings(){
@@ -561,8 +581,8 @@ void showSettings(){
     View learnTitle=sectionHeader("学习设置",null,null);margin(learnTitle,2,4,0,8);body.addView(learnTitle);
     LinearLayout goalCard=box(SURFACE,15,18);goalCard.setBackground(strokeShape(SURFACE,18,LINE));
     LinearLayout goalTop=new LinearLayout(this);goalTop.setGravity(Gravity.CENTER_VERTICAL);LinearLayout gt=new LinearLayout(this);gt.setOrientation(LinearLayout.VERTICAL);gt.addView(tv("每日学习量",16,INK,true));gt.addView(tv("每天计划完成的卡片数量",11,MUTED,false));goalTop.addView(gt,new LinearLayout.LayoutParams(0,-2,1));
-    EditText goal=new EditText(this);goal.setInputType(2);goal.setText(String.valueOf(store.dailyGoal()));goal.setGravity(Gravity.CENTER);goal.setTextSize(17);goal.setTextColor(INK);goal.setBackground(strokeShape(Color.rgb(249,251,250),13,LINE));goalTop.addView(goal,new LinearLayout.LayoutParams(dp(76),dp(46)));goalCard.addView(goalTop);
-    Button save=btn("保存设置",TEAL,Color.WHITE);margin(save,0,12,0,0);save.setOnClickListener(v->{int g=parse(goal,30);store.setDailyGoal(g);Toast.makeText(this,"已保存为每天 "+store.dailyGoal()+" 张",Toast.LENGTH_SHORT).show();showSettings();});goalCard.addView(save,new LinearLayout.LayoutParams(-1,dp(48)));body.addView(goalCard);
+    EditText goal=new EditText(this);goal.setInputType(2);goal.setText(String.valueOf(store.dailyGoal()));goal.setGravity(Gravity.CENTER);goal.setTextSize(17);goal.setTextColor(INK);goal.setBackground(strokeShape(Color.rgb(249,251,250),13,LINE));goalTop.addView(goal,new LinearLayout.LayoutParams(dp(68),dp(44)));goalTop.addView(gap(8));
+    Button save=btn("保存",TEAL,Color.WHITE);save.setTextSize(12);save.setOnClickListener(v->{int g=parse(goal,30);store.setDailyGoal(g);Toast.makeText(this,"已保存为每天 "+store.dailyGoal()+" 张",Toast.LENGTH_SHORT).show();showSettings();});goalTop.addView(save,new LinearLayout.LayoutParams(dp(74),dp(44)));goalCard.addView(goalTop);body.addView(goalCard);
 
     View dataTitle=sectionHeader("数据与迁移",null,null);margin(dataTitle,2,18,0,8);body.addView(dataTitle);
     LinearLayout data=box(SURFACE,15,18);data.setBackground(strokeShape(SURFACE,18,LINE));data.addView(tv("完整备份",16,INK,true));TextView backupDesc=tv("包含学习进度、最近10次记录、收藏、本地修正和内容反馈。安装正式新版前建议先导出。",12,MUTED,false);margin(backupDesc,0,5,0,10);data.addView(backupDesc);LinearLayout dr=new LinearLayout(this);dr.setOrientation(LinearLayout.HORIZONTAL);Button backup=btn("导出备份",TEAL,Color.WHITE),restore=btn("恢复备份",TEAL_SOFT,TEAL_DARK);backup.setOnClickListener(v->exportBackup());restore.setOnClickListener(v->confirmImportBackup());dr.addView(backup,new LinearLayout.LayoutParams(0,dp(46),1));dr.addView(gap(8));dr.addView(restore,new LinearLayout.LayoutParams(0,dp(46),1));data.addView(dr);body.addView(data);
