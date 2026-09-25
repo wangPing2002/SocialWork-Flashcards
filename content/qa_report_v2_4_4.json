@@ -1,0 +1,39 @@
+{
+  "version": "2.4.4",
+  "scope": "UI cleanup and card-level search",
+  "changes": {
+    "library_daily_goal_module_removed": true,
+    "stats_daily_goal_module_removed": true,
+    "home_daily_goal_module_retained": true,
+    "card_level_search": true,
+    "search_fields": [
+      "question",
+      "topic",
+      "kind",
+      "tip",
+      "origin",
+      "bullets",
+      "detail.example",
+      "detail.name",
+      "detail.simple",
+      "detail.essay"
+    ],
+    "filters_combine_with_search": [
+      "全部",
+      "已学习",
+      "未学习",
+      "收藏"
+    ],
+    "search_result_direct_card_rows": true,
+    "search_clear_action": true
+  },
+  "content_unchanged": {
+    "cards_json": true,
+    "details_json": true,
+    "exam_meta_json": true,
+    "exam_answers_json": true
+  },
+  "versionCode": 10,
+  "versionName": "2.4.4",
+  "applicationId": "com.seu.socialworkcards"
+}
