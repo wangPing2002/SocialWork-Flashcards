@@ -1,0 +1,22 @@
+{
+  "version": "2.8.0",
+  "sourceFile": "C001-C2497_东南大学社会工作考研问题库_C2497完成_辅助资料全量复核补强版_C62828.md",
+  "sha256": "ae84a0d3064e87fdb00fef0253d6f2eabf4913a11dcf4c3eb45141f57a6092ba",
+  "cardCount": 2497,
+  "idRange": [
+    "C0001",
+    "C2497"
+  ],
+  "mapping": "one markdown C-card -> one Android card",
+  "answerColor": "#C62828",
+  "generatedAssets": [
+    "app/src/main/assets/cards.json"
+  ],
+  "legacyAssets": [
+    "details.json",
+    "exam_meta.json",
+    "exam_answers.json"
+  ],
+  "note": "Legacy assets are retained as empty JSON objects only for compatibility; card-level data in cards.json is authoritative.",
+  "storedMaster": "content/master/C001-C2497_东南大学社会工作考研问题库_C2497完成_辅助资料全量复核补强版_C62828.md"
+}

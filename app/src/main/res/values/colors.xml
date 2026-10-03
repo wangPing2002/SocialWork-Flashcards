@@ -1,0 +1,11 @@
+<resources>
+    <color name="bg">#F5F6F3</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="ink">#26332D</color>
+    <color name="muted">#7A817D</color>
+    <color name="mint">#44B89F</color>
+    <color name="mint_soft">#E0F5EF</color>
+    <color name="orange">#E6683B</color>
+    <color name="red_soft">#F8E9E4</color>
+    <color name="gold_soft">#F8F2DF</color>
+</resources>

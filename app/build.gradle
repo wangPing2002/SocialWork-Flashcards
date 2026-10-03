@@ -1,0 +1,46 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.seu.socialworkcards'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.seu.socialworkcards'
+        minSdk 24
+        targetSdk 35
+        versionCode 17
+        versionName '2.8.0'
+        manifestPlaceholders = [appLabel: '社会工作闪卡']
+    }
+
+    signingConfigs {
+        release {
+            def storeFilePath = System.getenv('RELEASE_STORE_FILE')
+            if (storeFilePath != null && !storeFilePath.isBlank()) {
+                storeFile file(storeFilePath)
+                storePassword System.getenv('RELEASE_STORE_PASSWORD')
+                keyAlias System.getenv('RELEASE_KEY_ALIAS')
+                keyPassword System.getenv('RELEASE_KEY_PASSWORD')
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix '.dev'
+            versionNameSuffix '-dev'
+            manifestPlaceholders = [appLabel: '社会工作闪卡 Dev']
+        }
+
+        release {
+            manifestPlaceholders = [appLabel: '社会工作闪卡']
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            if (System.getenv('RELEASE_STORE_FILE') != null) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+}

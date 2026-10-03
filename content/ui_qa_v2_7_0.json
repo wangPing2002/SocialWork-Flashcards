@@ -1,0 +1,103 @@
+{
+  "version": "2.7.0",
+  "generatedAt": "2026-10-03",
+  "scope": "UI + mock-exam engine + answer-page frequency/mastery refactor",
+  "assetValidation": {
+    "cardsJsonValid": true,
+    "detailsJsonValid": true,
+    "examMetaJsonValid": true,
+    "examAnswersJsonValid": true,
+    "cardCount": 254,
+    "topicCount": 67,
+    "realExamCardCount": 53,
+    "realExamBySubject": {
+      "437": 20,
+      "331": 33
+    },
+    "inferredQuestionTypeCounts": {
+      "名词解释": 89,
+      "简答题": 90,
+      "论述题": 44,
+      "综合": 1,
+      "案例分析题": 30
+    }
+  },
+  "mockExamBlueprints": {
+    "331": {
+      "sections": [
+        {
+          "type": "名词解释",
+          "count": 5,
+          "scoreEach": 6
+        },
+        {
+          "type": "简答题",
+          "count": 5,
+          "scoreEach": 12
+        },
+        {
+          "type": "论述题",
+          "count": 3,
+          "scoreEach": 20
+        }
+      ],
+      "totalScore": 150
+    },
+    "437": {
+      "sections": [
+        {
+          "type": "名词解释",
+          "count": 3,
+          "scoreEach": 10
+        },
+        {
+          "type": "简答题",
+          "count": 2,
+          "scoreEach": 20
+        },
+        {
+          "type": "材料/案例分析题",
+          "count": 1,
+          "scoreEach": 40
+        },
+        {
+          "type": "论述题",
+          "count": 1,
+          "scoreEach": 40
+        }
+      ],
+      "totalScore": 150
+    }
+  },
+  "candidatePoolSanity": {
+    "nameLike": 89,
+    "shortAnswerLike": 90,
+    "essayOrComprehensiveLike": 75,
+    "caseLike": 31,
+    "sufficientForBlueprints": true
+  },
+  "selectionFactors": [
+    "system/manual frequency",
+    "favorite status",
+    "mastery from recent history",
+    "review difficulty",
+    "same-subject real-exam filtering and priority",
+    "content-range topic weighting",
+    "anti-duplicate topic preference",
+    "random jitter"
+  ],
+  "answerUiChecks": {
+    "coreAnswerUsesFullAnswer": true,
+    "supportsC62828Span": true,
+    "supportsLegacyD32F2FSpan": true,
+    "frequencyEditableHighMediumLow": true,
+    "masteryHighMediumLow": true,
+    "masteryUsesRecent10History": true,
+    "topLeftShowsQuestionType": true,
+    "topLeftShowsRealExamSource": true
+  },
+  "staticChecks": {
+    "javaSyntaxParse": "PASS (javac found no syntax-pattern errors before expected missing Android/org.json dependencies)",
+    "fullAndroidBuild": "BLOCKED LOCALLY: `sh gradlew :app:assembleDebug` reaches the project wrapper, but the wrapper delegates to system `gradle` and this environment has no Gradle installation/Android SDK. GitHub Actions remains configured to install Gradle 8.10.2 and Android SDK 35."
+  }
+}

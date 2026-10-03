@@ -1,0 +1,46 @@
+{
+  "version": "2.8.0",
+  "sourceFile": "C001-C2497_东南大学社会工作考研问题库_C2497完成_辅助资料全量复核补强版_C62828.md",
+  "cards": 2497,
+  "idRange": [
+    "C0001",
+    "C2497"
+  ],
+  "typeCounts": {
+    "名词解释": 234,
+    "简答题": 1784,
+    "论述题": 252,
+    "案例分析题": 188,
+    "材料题": 39
+  },
+  "categoryCounts": {
+    "社会工作原理": 1263,
+    "社区工作": 63,
+    "个案工作": 204,
+    "社会工作实务": 788,
+    "督导与管理": 134,
+    "小组工作": 45
+  },
+  "frequencyCounts": {
+    "中": 1027,
+    "高": 1470
+  },
+  "exactExamCards": 156,
+  "recallThemeCards": 5,
+  "truthLabelCards": 160,
+  "answersWithC62828": 2493,
+  "answerWarningCards": 8,
+  "relatedLinkCount": 9855,
+  "invalidRelatedLinks": 0,
+  "legacyCardIdsRemaining": 0,
+  "checks": {
+    "all2497": true,
+    "allHaveQuestion": true,
+    "allHaveAnswer": true,
+    "allHaveFrequency": true,
+    "uniqueIds": true,
+    "allRelatedIdsResolve": true,
+    "noLegacyMIds": true,
+    "allAnswerMarkupBalanced": true
+  }
+}

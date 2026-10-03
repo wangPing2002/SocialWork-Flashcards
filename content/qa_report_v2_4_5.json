@@ -1,0 +1,49 @@
+{
+  "version": "2.4.5",
+  "scope": "fuzzy card search UX",
+  "features": {
+    "multi_keyword_search": true,
+    "multi_keyword_logic": "AND across all indexed fields",
+    "partial_substring_match": true,
+    "domain_synonyms": [
+      "赋能↔增权",
+      "危机干预↔危机介入",
+      "临终关怀↔安宁疗护",
+      "REBT↔理性情绪治疗",
+      "理性情绪疗法↔理性情绪治疗",
+      "社会支持网络↔社会支持",
+      "韧性↔抗逆力"
+    ],
+    "relevance_sorting": true,
+    "highlight_matches": true,
+    "match_reason": true,
+    "combined_filters": [
+      "全部",
+      "已学习",
+      "未学习",
+      "收藏"
+    ],
+    "aggressive_typo_guessing": false
+  },
+  "indexed_fields": [
+    "question",
+    "topic",
+    "kind",
+    "bullets",
+    "tip",
+    "origin",
+    "detail.example",
+    "detail.name",
+    "detail.simple",
+    "detail.essay"
+  ],
+  "content_unchanged": {
+    "cards_json": true,
+    "details_json": true,
+    "exam_meta_json": true,
+    "exam_answers_json": true
+  },
+  "versionCode": 11,
+  "versionName": "2.4.5",
+  "applicationId": "com.seu.socialworkcards"
+}

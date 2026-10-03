@@ -1,0 +1,3700 @@
+{
+  "ABC理论与理性情绪治疗（REBT）": {
+    "topic": "ABC理论与理性情绪治疗（REBT）",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 3,
+    "explicitQuestionCount": 3,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2016,
+      2017,
+      2020
+    ],
+    "records": [
+      {
+        "year": 2016,
+        "yearLabel": "2016",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "理性情绪疗法",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2017,
+        "yearLabel": "2017",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "ABC理论",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "理性情绪治疗模式",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      }
+    ],
+    "relatedCore": [
+      "个案工作",
+      "危机介入理论/模式",
+      "班杜拉社会学习理论"
+    ],
+    "relatedExtended": [
+      "人类行为与社会环境",
+      "精神分析取向：本我、自我、超我"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "个案工作": {
+    "topic": "个案工作",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 5,
+    "explicitQuestionCount": 6,
+    "inferredQuestionCount": 1,
+    "explicitYears": [
+      2015,
+      2016,
+      2020,
+      2023,
+      2026
+    ],
+    "records": [
+      {
+        "year": 2015,
+        "yearLabel": "2015",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "个案工作",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2016,
+        "yearLabel": "2016",
+        "subject": "331",
+        "type": "简答",
+        "question": "简述个案工作的理论基础。",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "331",
+        "type": "简答",
+        "question": "个案工作的诊断学派和治疗学派的区别和联系",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "简答",
+        "question": "个案工作中接案的注意事项",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "简答",
+        "question": "老年个案工作的原则",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2025,
+        "yearLabel": "2025（顺序推定）",
+        "subject": "331",
+        "type": "简答",
+        "question": "行为治疗个案工作的过程",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序推定"
+      },
+      {
+        "year": 2026,
+        "yearLabel": "2026",
+        "subject": "331",
+        "type": "简答",
+        "question": "社会工作价值体系下对个案工作者的要求",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份明确标注"
+      }
+    ],
+    "relatedCore": [
+      "接案与专业关系",
+      "预估",
+      "计划与介入"
+    ],
+    "relatedExtended": [
+      "任务中心模式",
+      "个案管理"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "个案管理": {
+    "topic": "个案管理",
+    "period": "2015—2026",
+    "frequencyLevel": "低频",
+    "explicitYearCount": 1,
+    "explicitQuestionCount": 1,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2020
+    ],
+    "records": [
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "个案管理",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      }
+    ],
+    "relatedCore": [
+      "个案工作",
+      "社会支持理论",
+      "系统视角与“人在情境中”"
+    ],
+    "relatedExtended": [
+      "医务社会工作中的出院准备服务",
+      "社会救助"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "产出、成效与项目成效评估": {
+    "topic": "产出、成效与项目成效评估",
+    "period": "2015—2026",
+    "frequencyLevel": "低频",
+    "explicitYearCount": 1,
+    "explicitQuestionCount": 1,
+    "inferredQuestionCount": 1,
+    "explicitYears": [
+      2015
+    ],
+    "records": [
+      {
+        "year": 2015,
+        "yearLabel": "2015",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "项目评估",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2025,
+        "yearLabel": "2025（顺序推定）",
+        "subject": "437",
+        "type": "案例",
+        "question": "“朝阳计划”项目：使用成本效益分析进行评估，说明优缺点并设计补充方案",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序推定"
+      }
+    ],
+    "relatedCore": [
+      "社会工作服务项目管理五维框架",
+      "项目过程监测与质量控制",
+      "社会工作研究"
+    ],
+    "relatedExtended": [
+      "量化研究与质性研究",
+      "循证社会工作/以证据为基础的实践"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "人类行为与社会环境": {
+    "topic": "人类行为与社会环境",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 3,
+    "explicitQuestionCount": 4,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2015,
+      2017,
+      2019
+    ],
+    "records": [
+      {
+        "year": 2015,
+        "yearLabel": "2015",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "人类行为",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2015,
+        "yearLabel": "2015",
+        "subject": "331",
+        "type": "简答",
+        "question": "人类行为与社会环境的基本关系",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2017,
+        "yearLabel": "2017",
+        "subject": "331",
+        "type": "简答",
+        "question": "举例说明社会环境对人类行为的影响",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2019,
+        "yearLabel": "2019",
+        "subject": "331",
+        "type": "论述",
+        "question": "儿童发展与社会环境：如何帮助儿童应付成就压力",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      }
+    ],
+    "relatedCore": [
+      "系统视角与“人在情境中”",
+      "儿童社会工作",
+      "青少年社会工作"
+    ],
+    "relatedExtended": [
+      "班杜拉社会学习理论",
+      "社会支持理论"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "任务中心模式": {
+    "topic": "任务中心模式",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 1,
+    "explicitYears": [
+      2021,
+      2022
+    ],
+    "records": [
+      {
+        "year": 2021,
+        "yearLabel": "2021",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "任务中心模式",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2022,
+        "yearLabel": "2022",
+        "subject": "331",
+        "type": "综合",
+        "question": "任务中心模式",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_summary",
+        "sourceLabel": "回忆摘要"
+      },
+      {
+        "year": 2024,
+        "yearLabel": "2024（顺序推定）",
+        "subject": "331",
+        "type": "简答",
+        "question": "任务中心模式解决问题的类别",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序/考试日期推定"
+      }
+    ],
+    "relatedCore": [
+      "个案工作",
+      "接案与专业关系",
+      "计划与介入"
+    ],
+    "relatedExtended": [
+      "评估与结案",
+      "社会工作服务通用过程六阶段"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "企业社会工作服务": {
+    "topic": "企业社会工作服务",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2016,
+      2022
+    ],
+    "records": [
+      {
+        "year": 2016,
+        "yearLabel": "2016",
+        "subject": "437",
+        "type": "简答",
+        "question": "企业社会工作中的“内置”和“外包”模式",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2022,
+        "yearLabel": "2022",
+        "subject": "437",
+        "type": "综合",
+        "question": "企业社会工作",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_summary",
+        "sourceLabel": "回忆摘要"
+      }
+    ],
+    "relatedCore": [
+      "企业社会工作的内置与外包模式",
+      "新就业群体社会工作",
+      "社会支持理论"
+    ],
+    "relatedExtended": [
+      "社会工作服务项目管理五维框架",
+      "志愿服务规范管理"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "企业社会工作的内置与外包模式": {
+    "topic": "企业社会工作的内置与外包模式",
+    "period": "2015—2026",
+    "frequencyLevel": "低频",
+    "explicitYearCount": 1,
+    "explicitQuestionCount": 1,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2016
+    ],
+    "records": [
+      {
+        "year": 2016,
+        "yearLabel": "2016",
+        "subject": "437",
+        "type": "简答",
+        "question": "企业社会工作中的“内置”和“外包”模式",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      }
+    ],
+    "relatedCore": [
+      "企业社会工作服务",
+      "新就业群体社会工作",
+      "社会工作服务项目管理五维框架"
+    ],
+    "relatedExtended": [
+      "社会工作督导",
+      "社会支持理论"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "优势视角": {
+    "topic": "优势视角",
+    "period": "2015—2026",
+    "frequencyLevel": "低频",
+    "explicitYearCount": 1,
+    "explicitQuestionCount": 1,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2021
+    ],
+    "records": [
+      {
+        "year": 2021,
+        "yearLabel": "2021",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "优势视角",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      }
+    ],
+    "relatedCore": [
+      "增权/赋能理论",
+      "社会支持理论",
+      "系统视角与“人在情境中”"
+    ],
+    "relatedExtended": [
+      "预估",
+      "个案工作"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "儿童社会工作": {
+    "topic": "儿童社会工作",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 4,
+    "explicitQuestionCount": 5,
+    "inferredQuestionCount": 2,
+    "explicitYears": [
+      2019,
+      2020,
+      2023,
+      2026
+    ],
+    "records": [
+      {
+        "year": 2019,
+        "yearLabel": "2019",
+        "subject": "437",
+        "type": "案例",
+        "question": "残疾儿童及家庭的困难、需要与介入方案",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "331",
+        "type": "论述",
+        "question": "儿童福利服务基本模式及残疾儿童、农村留守儿童服务措施",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "437",
+        "type": "案例",
+        "question": "住院儿童及家长需要、服务方案与预估",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "论述",
+        "question": "结合社会学理论开展特殊儿童社会救助工作",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2024,
+        "yearLabel": "2024（顺序推定）",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "儿童福利政策",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序/考试日期推定"
+      },
+      {
+        "year": 2024,
+        "yearLabel": "2024（顺序推定）",
+        "subject": "437",
+        "type": "案例",
+        "question": "自闭症儿童家庭：分析困境与各方需求，设计服务方案及家庭群体项目",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序/考试日期推定"
+      },
+      {
+        "year": 2026,
+        "yearLabel": "2026",
+        "subject": "331",
+        "type": "简答",
+        "question": "儿童社会工作的功能",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份明确标注"
+      }
+    ],
+    "relatedCore": [
+      "家庭社会工作",
+      "学校社会工作与校园暴力介入",
+      "社会救助"
+    ],
+    "relatedExtended": [
+      "人类行为与社会环境",
+      "社会支持理论"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "公共卫生社会工作三级预防": {
+    "topic": "公共卫生社会工作三级预防",
+    "period": "2015—2026",
+    "frequencyLevel": "暂无直接命题",
+    "explicitYearCount": 0,
+    "explicitQuestionCount": 0,
+    "inferredQuestionCount": 0,
+    "explicitYears": [],
+    "records": [],
+    "relatedCore": [
+      "医务社会工作与临终关怀",
+      "社会支持理论",
+      "社区工作"
+    ],
+    "relatedExtended": [
+      "社会工作服务项目管理五维框架",
+      "社会工作研究"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "医务社会工作与临终关怀": {
+    "topic": "医务社会工作与临终关怀",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 5,
+    "explicitQuestionCount": 6,
+    "inferredQuestionCount": 2,
+    "explicitYears": [
+      2016,
+      2019,
+      2021,
+      2023,
+      2026
+    ],
+    "records": [
+      {
+        "year": 2016,
+        "yearLabel": "2016",
+        "subject": "437",
+        "type": "案例",
+        "question": "从个案、小组和社区三个层面说明癌症疾病中医务社会工作的常用方法",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2019,
+        "yearLabel": "2019",
+        "subject": "437",
+        "type": "案例",
+        "question": "医务社会工作中的伦理困境与伦理抉择",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2021,
+        "yearLabel": "2021",
+        "subject": "331",
+        "type": "论述",
+        "question": "医务社会工作有关健康理论与社会工作者角色",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "临终关怀",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "临终关怀",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2024,
+        "yearLabel": "2024（顺序推定）",
+        "subject": "331",
+        "type": "论述",
+        "question": "论述医务社会工作如何改善社区居民的心理健康状况",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序/考试日期推定"
+      },
+      {
+        "year": 2025,
+        "yearLabel": "2025（顺序推定）",
+        "subject": "331",
+        "type": "论述",
+        "question": "医务社会工作领域社会工作者的知识基础",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序推定"
+      },
+      {
+        "year": 2026,
+        "yearLabel": "2026",
+        "subject": "331",
+        "type": "简答",
+        "question": "政策与制度层面的医务社会工作内容",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份明确标注"
+      }
+    ],
+    "relatedCore": [
+      "安宁疗护与哀伤辅导",
+      "家庭照护者支持与喘息服务",
+      "医务社会工作中的出院准备服务"
+    ],
+    "relatedExtended": [
+      "社会工作专业价值与伦理",
+      "公共卫生社会工作三级预防"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "医务社会工作中的出院准备服务": {
+    "topic": "医务社会工作中的出院准备服务",
+    "period": "2015—2026",
+    "frequencyLevel": "回忆版有记录",
+    "explicitYearCount": 0,
+    "explicitQuestionCount": 0,
+    "inferredQuestionCount": 1,
+    "explicitYears": [],
+    "records": [
+      {
+        "year": 2025,
+        "yearLabel": "2025（顺序推定）",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "出院安置服务",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序推定"
+      }
+    ],
+    "relatedCore": [
+      "医务社会工作与临终关怀",
+      "个案管理",
+      "社区照顾理论/模式"
+    ],
+    "relatedExtended": [
+      "家庭照护者支持与喘息服务",
+      "社会支持理论"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "危机介入理论/模式": {
+    "topic": "危机介入理论/模式",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2018,
+      2019
+    ],
+    "records": [
+      {
+        "year": 2018,
+        "yearLabel": "2018",
+        "subject": "331",
+        "type": "简答",
+        "question": "危机介入原则",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2019,
+        "yearLabel": "2019",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "危机介入模式",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      }
+    ],
+    "relatedCore": [
+      "预估",
+      "计划与介入",
+      "社会工作服务通用过程六阶段"
+    ],
+    "relatedExtended": [
+      "学校社会工作与校园暴力介入",
+      "接案与专业关系"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "反贫困与农村社会工作": {
+    "topic": "反贫困与农村社会工作",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2020,
+      2022
+    ],
+    "records": [
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "331",
+        "type": "论述",
+        "question": "农村反贫困社会工作的主要策略",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2022,
+        "yearLabel": "2022",
+        "subject": "331",
+        "type": "综合",
+        "question": "农村社会工作价值观",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_summary",
+        "sourceLabel": "回忆摘要"
+      }
+    ],
+    "relatedCore": [
+      "社会救助",
+      "社会福利制度",
+      "社区工作"
+    ],
+    "relatedExtended": [
+      "妇女社会工作",
+      "社会政策与社会福利关系"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "叙事治疗模式": {
+    "topic": "叙事治疗模式",
+    "period": "2015—2026",
+    "frequencyLevel": "低频",
+    "explicitYearCount": 1,
+    "explicitQuestionCount": 1,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2022
+    ],
+    "records": [
+      {
+        "year": 2022,
+        "yearLabel": "2022",
+        "subject": "437",
+        "type": "综合",
+        "question": "叙事治疗模式",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_summary",
+        "sourceLabel": "回忆摘要"
+      }
+    ],
+    "relatedCore": [
+      "个案工作",
+      "实证主义与社会建构主义",
+      "优势视角"
+    ],
+    "relatedExtended": [
+      "家庭社会工作",
+      "社会工作专业价值与伦理"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "增权/赋能理论": {
+    "topic": "增权/赋能理论",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 3,
+    "explicitQuestionCount": 4,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2018,
+      2020,
+      2021
+    ],
+    "records": [
+      {
+        "year": 2018,
+        "yearLabel": "2018",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "增权",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2018,
+        "yearLabel": "2018",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "增权赋能理论",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "增能",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2021,
+        "yearLabel": "2021",
+        "subject": "437",
+        "type": "简答",
+        "question": "赋权理论及如何介入家庭暴力",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      }
+    ],
+    "relatedCore": [
+      "优势视角",
+      "妇女社会工作",
+      "家庭社会工作"
+    ],
+    "relatedExtended": [
+      "社会支持理论",
+      "社会工作专业价值与伦理"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "女性主义社会工作与自由女性主义": {
+    "topic": "女性主义社会工作与自由女性主义",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 4,
+    "explicitQuestionCount": 4,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2016,
+      2020,
+      2021,
+      2026
+    ],
+    "records": [
+      {
+        "year": 2016,
+        "yearLabel": "2016",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "自由女性主义",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "331",
+        "type": "简答",
+        "question": "女性主义社会工作的基本原则",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2021,
+        "yearLabel": "2021",
+        "subject": "331",
+        "type": "论述",
+        "question": "社会性别主流化及妇联/社会工作机构落实",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2026,
+        "yearLabel": "2026",
+        "subject": "331",
+        "type": "论述",
+        "question": "男女平等是我国基本国策：结合男女平等国策基本内涵，论述在数字时代如何推进男女平等",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份明确标注"
+      }
+    ],
+    "relatedCore": [
+      "妇女社会工作",
+      "增权/赋能理论",
+      "社会工作专业价值与伦理"
+    ],
+    "relatedExtended": [
+      "家庭社会工作",
+      "社会政策与社会福利关系"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "妇女社会工作": {
+    "topic": "妇女社会工作",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 4,
+    "explicitQuestionCount": 6,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2015,
+      2017,
+      2023,
+      2026
+    ],
+    "records": [
+      {
+        "year": 2015,
+        "yearLabel": "2015",
+        "subject": "437",
+        "type": "论述",
+        "question": "家庭为本和妇女为本原则",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2017,
+        "yearLabel": "2017",
+        "subject": "437",
+        "type": "案例",
+        "question": "农村留守妇女：从个人、小组、社区三个层面提出干预策略",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "论述",
+        "question": "广义女性社会工作的含义及家庭社会工作中保护女性权益",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "437",
+        "type": "简答",
+        "question": "妇女暴力的干预原则和策略",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "437",
+        "type": "案例",
+        "question": "不孕不育女性：问题困境、服务计划与服务策略",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2026,
+        "yearLabel": "2026",
+        "subject": "331",
+        "type": "论述",
+        "question": "男女平等是我国基本国策：结合男女平等国策基本内涵，论述在数字时代如何推进男女平等",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份明确标注"
+      }
+    ],
+    "relatedCore": [
+      "女性主义社会工作与自由女性主义",
+      "增权/赋能理论",
+      "家庭社会工作"
+    ],
+    "relatedExtended": [
+      "社会工作专业价值与伦理",
+      "社会支持理论"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "学校社会工作与校园暴力介入": {
+    "topic": "学校社会工作与校园暴力介入",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2017,
+      2021
+    ],
+    "records": [
+      {
+        "year": 2017,
+        "yearLabel": "2017",
+        "subject": "437",
+        "type": "案例",
+        "question": "校园暴力：社会工作如何介入",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2021,
+        "yearLabel": "2021",
+        "subject": "437",
+        "type": "案例",
+        "question": "校园暴力原因、社会工作介入与方案设计",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      }
+    ],
+    "relatedCore": [
+      "青少年社会工作",
+      "危机介入理论/模式",
+      "班杜拉社会学习理论"
+    ],
+    "relatedExtended": [
+      "小组工作",
+      "家庭社会工作"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "安宁疗护与哀伤辅导": {
+    "topic": "安宁疗护与哀伤辅导",
+    "period": "2015—2026",
+    "frequencyLevel": "低频",
+    "explicitYearCount": 1,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2023
+    ],
+    "records": [
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "临终关怀",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "临终关怀",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      }
+    ],
+    "relatedCore": [
+      "医务社会工作与临终关怀",
+      "老年社会工作",
+      "家庭社会工作"
+    ],
+    "relatedExtended": [
+      "危机介入理论/模式",
+      "社会工作专业价值与伦理"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "实证主义与社会建构主义": {
+    "topic": "实证主义与社会建构主义",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 4,
+    "explicitQuestionCount": 4,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2015,
+      2017,
+      2019,
+      2023
+    ],
+    "records": [
+      {
+        "year": 2015,
+        "yearLabel": "2015",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "实证主义",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2017,
+        "yearLabel": "2017",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "实证主义",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2019,
+        "yearLabel": "2019",
+        "subject": "331",
+        "type": "简答",
+        "question": "科学主义范式和建构主义范式对社会工作的不同看法",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "社会建构主义",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      }
+    ],
+    "relatedCore": [
+      "社会工作研究",
+      "量化研究与质性研究",
+      "符号互动理论"
+    ],
+    "relatedExtended": [
+      "社会工作的内涵、要素与过程",
+      "人类行为与社会环境"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "家庭抗逆力": {
+    "topic": "家庭抗逆力",
+    "period": "2015—2026",
+    "frequencyLevel": "低频",
+    "explicitYearCount": 1,
+    "explicitQuestionCount": 1,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2023
+    ],
+    "records": [
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "家庭抗逆力",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      }
+    ],
+    "relatedCore": [
+      "家庭社会工作",
+      "优势视角",
+      "社会支持理论"
+    ],
+    "relatedExtended": [
+      "危机介入理论/模式",
+      "家庭照护者支持与喘息服务"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "家庭照护者支持与喘息服务": {
+    "topic": "家庭照护者支持与喘息服务",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2023,
+      2026
+    ],
+    "records": [
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "437",
+        "type": "案例",
+        "question": "家庭看护者压力：问题困境、服务计划与减压",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2026,
+        "yearLabel": "2026",
+        "subject": "437",
+        "type": "简答",
+        "question": "社会工作介入的原则；在帮助肿瘤患者照顾者时如何体现",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份明确标注"
+      }
+    ],
+    "relatedCore": [
+      "家庭社会工作",
+      "老年社会工作",
+      "医务社会工作与临终关怀"
+    ],
+    "relatedExtended": [
+      "社区照顾理论/模式",
+      "社会支持理论"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "家庭社会工作": {
+    "topic": "家庭社会工作",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 4,
+    "explicitQuestionCount": 5,
+    "inferredQuestionCount": 3,
+    "explicitYears": [
+      2018,
+      2021,
+      2023,
+      2026
+    ],
+    "records": [
+      {
+        "year": 2018,
+        "yearLabel": "2018",
+        "subject": "437",
+        "type": "简答",
+        "question": "米纽秦病态家庭结构类型及打破技巧",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2021,
+        "yearLabel": "2021",
+        "subject": "331",
+        "type": "简答",
+        "question": "家庭社会工作的功能（任务）",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "家庭冲突",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "论述",
+        "question": "广义女性社会工作的含义及家庭社会工作中保护女性权益",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2024,
+        "yearLabel": "2024（顺序推定）",
+        "subject": "331",
+        "type": "论述",
+        "question": "家庭结构、婚姻方式、家庭生活方式的变化，以及家庭社会工作发挥什么作用",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序/考试日期推定"
+      },
+      {
+        "year": 2025,
+        "yearLabel": "2025（顺序推定）",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "家庭系统",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序推定"
+      },
+      {
+        "year": 2025,
+        "yearLabel": "2025（顺序推定）",
+        "subject": "437",
+        "type": "简答",
+        "question": "家庭生命周期理论及其优缺点",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序推定"
+      },
+      {
+        "year": 2026,
+        "yearLabel": "2026",
+        "subject": "331",
+        "type": "论述",
+        "question": "家庭社会工作的主要任务是什么？家庭社会工作者应该如何推动家庭的家风、家教建设？",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份明确标注"
+      }
+    ],
+    "relatedCore": [
+      "结构家庭治疗",
+      "家庭抗逆力",
+      "家庭照护者支持与喘息服务"
+    ],
+    "relatedExtended": [
+      "妇女社会工作",
+      "儿童社会工作"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "小组工作": {
+    "topic": "小组工作",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 5,
+    "explicitQuestionCount": 7,
+    "inferredQuestionCount": 3,
+    "explicitYears": [
+      2015,
+      2016,
+      2019,
+      2020,
+      2023
+    ],
+    "records": [
+      {
+        "year": 2015,
+        "yearLabel": "2015",
+        "subject": "331",
+        "type": "简答",
+        "question": "小组工作的主要功能",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2016,
+        "yearLabel": "2016",
+        "subject": "331",
+        "type": "简答",
+        "question": "小组工作中社会目标模式的理论基础及其模式特点。",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2019,
+        "yearLabel": "2019",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "互惠模式小组",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2019,
+        "yearLabel": "2019",
+        "subject": "437",
+        "type": "简答",
+        "question": "社会学习理论及其对小组工作的启示",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "小组动力",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "小组工作的行为模式",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "简答",
+        "question": "小组工作中有效促进沟通的技巧",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2024,
+        "yearLabel": "2024（顺序推定）",
+        "subject": "331",
+        "type": "简答",
+        "question": "小组工作的阶段",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序/考试日期推定"
+      },
+      {
+        "year": 2025,
+        "yearLabel": "2025（顺序推定）",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "学习小组",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序推定"
+      },
+      {
+        "year": 2025,
+        "yearLabel": "2025（顺序推定）",
+        "subject": "331",
+        "type": "论述",
+        "question": "老年社会工作小组工作原则",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序推定"
+      }
+    ],
+    "relatedCore": [
+      "小组工作的四种主要模式",
+      "小组工作四阶段",
+      "小组沟通与冲突处理技巧"
+    ],
+    "relatedExtended": [
+      "班杜拉社会学习理论",
+      "社会支持理论"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "小组工作四阶段": {
+    "topic": "小组工作四阶段",
+    "period": "2015—2026",
+    "frequencyLevel": "回忆版有记录",
+    "explicitYearCount": 0,
+    "explicitQuestionCount": 0,
+    "inferredQuestionCount": 1,
+    "explicitYears": [],
+    "records": [
+      {
+        "year": 2024,
+        "yearLabel": "2024（顺序推定）",
+        "subject": "331",
+        "type": "简答",
+        "question": "小组工作的阶段",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序/考试日期推定"
+      }
+    ],
+    "relatedCore": [
+      "小组工作",
+      "小组工作的四种主要模式",
+      "小组沟通与冲突处理技巧"
+    ],
+    "relatedExtended": [
+      "评估与结案",
+      "社会支持理论"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "小组工作的四种主要模式": {
+    "topic": "小组工作的四种主要模式",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 4,
+    "explicitQuestionCount": 4,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2016,
+      2017,
+      2020,
+      2023
+    ],
+    "records": [
+      {
+        "year": 2016,
+        "yearLabel": "2016",
+        "subject": "331",
+        "type": "简答",
+        "question": "小组工作中社会目标模式的理论基础及其模式特点。",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2017,
+        "yearLabel": "2017",
+        "subject": "331",
+        "type": "简答",
+        "question": "小组互动模式的理论基础和模式特点",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "小组治疗模式和小组中心模式",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "小组工作的行为模式",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      }
+    ],
+    "relatedCore": [
+      "小组工作",
+      "小组工作四阶段",
+      "小组沟通与冲突处理技巧"
+    ],
+    "relatedExtended": [
+      "班杜拉社会学习理论",
+      "任务中心模式"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "小组沟通与冲突处理技巧": {
+    "topic": "小组沟通与冲突处理技巧",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2019,
+      2023
+    ],
+    "records": [
+      {
+        "year": 2019,
+        "yearLabel": "2019",
+        "subject": "437",
+        "type": "案例",
+        "question": "小组冲突类型、影响及领导者干预策略",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "简答",
+        "question": "小组工作中有效促进沟通的技巧",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      }
+    ],
+    "relatedCore": [
+      "小组工作",
+      "小组工作四阶段",
+      "小组工作的四种主要模式"
+    ],
+    "relatedExtended": [
+      "社会支持理论",
+      "社会工作者的角色"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "循证社会工作/以证据为基础的实践": {
+    "topic": "循证社会工作/以证据为基础的实践",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2016,
+      2020
+    ],
+    "records": [
+      {
+        "year": 2016,
+        "yearLabel": "2016",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "以证据为基础的实践",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "437",
+        "type": "简答",
+        "question": "循证社会工作及评价",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      }
+    ],
+    "relatedCore": [
+      "社会工作研究",
+      "量化研究与质性研究",
+      "产出、成效与项目成效评估"
+    ],
+    "relatedExtended": [
+      "社会工作服务项目管理五维框架",
+      "评估与结案"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "志愿服务规范管理": {
+    "topic": "志愿服务规范管理",
+    "period": "2015—2026",
+    "frequencyLevel": "暂无直接命题",
+    "explicitYearCount": 0,
+    "explicitQuestionCount": 0,
+    "inferredQuestionCount": 0,
+    "explicitYears": [],
+    "records": [],
+    "relatedCore": [
+      "社区工作",
+      "社会工作服务项目管理五维框架",
+      "社会工作督导"
+    ],
+    "relatedExtended": [
+      "企业社会工作服务",
+      "防灾减灾救灾社会工作"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "接案与专业关系": {
+    "topic": "接案与专业关系",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2021,
+      2023
+    ],
+    "records": [
+      {
+        "year": 2021,
+        "yearLabel": "2021",
+        "subject": "437",
+        "type": "简答",
+        "question": "专业关系的重要性及建立技巧",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "简答",
+        "question": "个案工作中接案的注意事项",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      }
+    ],
+    "relatedCore": [
+      "个案工作",
+      "社会工作专业价值与伦理",
+      "预估"
+    ],
+    "relatedExtended": [
+      "任务中心模式",
+      "社会工作服务通用过程六阶段"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "新就业群体社会工作": {
+    "topic": "新就业群体社会工作",
+    "period": "2015—2026",
+    "frequencyLevel": "暂无直接命题",
+    "explicitYearCount": 0,
+    "explicitQuestionCount": 0,
+    "inferredQuestionCount": 0,
+    "explicitYears": [],
+    "records": [],
+    "relatedCore": [
+      "企业社会工作服务",
+      "社区工作",
+      "社会支持理论"
+    ],
+    "relatedExtended": [
+      "社会工作专业价值与伦理",
+      "社会救助"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "未成年人司法社会工作与社会观护": {
+    "topic": "未成年人司法社会工作与社会观护",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2016,
+      2026
+    ],
+    "records": [
+      {
+        "year": 2016,
+        "yearLabel": "2016",
+        "subject": "437",
+        "type": "案例",
+        "question": "未成年人观护制度：解释“观护”的涵义，并指出观护工作不当之处及改进方法",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2026,
+        "yearLabel": "2026",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "社会观护",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份明确标注"
+      }
+    ],
+    "relatedCore": [
+      "矫正社会工作",
+      "青少年社会工作",
+      "家庭社会工作"
+    ],
+    "relatedExtended": [
+      "社会工作专业价值与伦理",
+      "社会支持理论"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "机构照顾与社区照顾": {
+    "topic": "机构照顾与社区照顾",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2020,
+      2023
+    ],
+    "records": [
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "331",
+        "type": "简答",
+        "question": "比较我国机构照顾和社区照顾的特点",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "论述",
+        "question": "社区照顾和机构照顾哪个更适合我国养老",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      }
+    ],
+    "relatedCore": [
+      "社区照顾理论/模式",
+      "老年社会工作",
+      "家庭照护者支持与喘息服务"
+    ],
+    "relatedExtended": [
+      "医务社会工作中的出院准备服务",
+      "社区工作"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "标签理论": {
+    "topic": "标签理论",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2018,
+      2021
+    ],
+    "records": [
+      {
+        "year": 2018,
+        "yearLabel": "2018",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "标签理论",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2021,
+        "yearLabel": "2021",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "标签理论",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      }
+    ],
+    "relatedCore": [
+      "符号互动理论",
+      "精神卫生社会工作与去标签化",
+      "未成年人司法社会工作与社会观护"
+    ],
+    "relatedExtended": [
+      "青少年社会工作",
+      "社会工作专业价值与伦理"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "残疾人社会工作": {
+    "topic": "残疾人社会工作",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 4,
+    "explicitQuestionCount": 5,
+    "inferredQuestionCount": 1,
+    "explicitYears": [
+      2019,
+      2020,
+      2022,
+      2026
+    ],
+    "records": [
+      {
+        "year": 2019,
+        "yearLabel": "2019",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "社会康复",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2019,
+        "yearLabel": "2019",
+        "subject": "437",
+        "type": "案例",
+        "question": "残疾儿童及家庭的困难、需要与介入方案",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "331",
+        "type": "论述",
+        "question": "儿童福利服务基本模式及残疾儿童、农村留守儿童服务措施",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2022,
+        "yearLabel": "2022",
+        "subject": "331",
+        "type": "综合",
+        "question": "残疾人社会工作：社会责任论和个人责任论",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_summary",
+        "sourceLabel": "回忆摘要"
+      },
+      {
+        "year": 2024,
+        "yearLabel": "2024（顺序推定）",
+        "subject": "437",
+        "type": "案例",
+        "question": "残障人士就业困难：分析就业问题并为其及父母设计服务方案",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序/考试日期推定"
+      },
+      {
+        "year": 2026,
+        "yearLabel": "2026",
+        "subject": "437",
+        "type": "论述",
+        "question": "残疾人出行无障碍环境设施不足：从相关理论和伦理守则角度分析社会工作如何介入",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份明确标注"
+      }
+    ],
+    "relatedCore": [
+      "社会工作专业价值与伦理",
+      "社会支持理论",
+      "社区工作"
+    ],
+    "relatedExtended": [
+      "社会福利制度",
+      "个案管理"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "班杜拉社会学习理论": {
+    "topic": "班杜拉社会学习理论",
+    "period": "2015—2026",
+    "frequencyLevel": "低频",
+    "explicitYearCount": 1,
+    "explicitQuestionCount": 1,
+    "inferredQuestionCount": 1,
+    "explicitYears": [
+      2017
+    ],
+    "records": [
+      {
+        "year": 2017,
+        "yearLabel": "2017",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "班杜拉社会学习理论",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2024,
+        "yearLabel": "2024（顺序推定）",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "社会学习理论",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序/考试日期推定"
+      }
+    ],
+    "relatedCore": [
+      "小组工作",
+      "青少年社会工作",
+      "学校社会工作与校园暴力介入"
+    ],
+    "relatedExtended": [
+      "人类行为与社会环境",
+      "ABC理论与理性情绪治疗（REBT）"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "矫正社会工作": {
+    "topic": "矫正社会工作",
+    "period": "2015—2026",
+    "frequencyLevel": "低频",
+    "explicitYearCount": 1,
+    "explicitQuestionCount": 1,
+    "inferredQuestionCount": 1,
+    "explicitYears": [
+      2016
+    ],
+    "records": [
+      {
+        "year": 2016,
+        "yearLabel": "2016",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "社区矫正",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2024,
+        "yearLabel": "2024（顺序推定）",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "社区矫正",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序/考试日期推定"
+      }
+    ],
+    "relatedCore": [
+      "未成年人司法社会工作与社会观护",
+      "标签理论",
+      "社会支持理论"
+    ],
+    "relatedExtended": [
+      "增权/赋能理论",
+      "青少年社会工作"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "社会工作专业价值与伦理": {
+    "topic": "社会工作专业价值与伦理",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 8,
+    "explicitQuestionCount": 10,
+    "inferredQuestionCount": 2,
+    "explicitYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2026
+    ],
+    "records": [
+      {
+        "year": 2015,
+        "yearLabel": "2015",
+        "subject": "331",
+        "type": "论述",
+        "question": "社会工作的行为守则",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2016,
+        "yearLabel": "2016",
+        "subject": "331",
+        "type": "简答",
+        "question": "如何理解社会工作是一种道德实践？",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2017,
+        "yearLabel": "2017",
+        "subject": "331",
+        "type": "简答",
+        "question": "社会工作中的伦理决定和伦理困境",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2018,
+        "yearLabel": "2018",
+        "subject": "437",
+        "type": "简答",
+        "question": "社会工作伦理",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2019,
+        "yearLabel": "2019",
+        "subject": "437",
+        "type": "案例",
+        "question": "医务社会工作中的伦理困境与伦理抉择",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "437",
+        "type": "案例",
+        "question": "家庭暴力伦理困境及介入服务计划",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2021,
+        "yearLabel": "2021",
+        "subject": "331",
+        "type": "简答",
+        "question": "社会工作的专业价值",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2021,
+        "yearLabel": "2021",
+        "subject": "437",
+        "type": "案例",
+        "question": "癌症患者知情与治疗意见冲突：伦理困境、解决与介入",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2024,
+        "yearLabel": "2024（顺序推定）",
+        "subject": "331",
+        "type": "简答",
+        "question": "中国社会工作的专业价值",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序/考试日期推定"
+      },
+      {
+        "year": 2025,
+        "yearLabel": "2025（顺序推定）",
+        "subject": "331",
+        "type": "简答",
+        "question": "社会工作伦理对当事人的伦理责任",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序推定"
+      },
+      {
+        "year": 2026,
+        "yearLabel": "2026",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "个别化",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份明确标注"
+      },
+      {
+        "year": 2026,
+        "yearLabel": "2026",
+        "subject": "331",
+        "type": "简答",
+        "question": "社会工作者对社会工作专业的伦理责任",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份明确标注"
+      }
+    ],
+    "relatedCore": [
+      "接案与专业关系",
+      "社会工作者的角色",
+      "医务社会工作与临终关怀"
+    ],
+    "relatedExtended": [
+      "妇女社会工作",
+      "残疾人社会工作"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "社会工作服务通用模式的四个基本系统": {
+    "topic": "社会工作服务通用模式的四个基本系统",
+    "period": "2015—2026",
+    "frequencyLevel": "低频",
+    "explicitYearCount": 1,
+    "explicitQuestionCount": 1,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2018
+    ],
+    "records": [
+      {
+        "year": 2018,
+        "yearLabel": "2018",
+        "subject": "437",
+        "type": "案例",
+        "question": "结合案例列出与社会工作者一起行动的行动系统，并说明直接介入策略",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      }
+    ],
+    "relatedCore": [
+      "系统视角与“人在情境中”",
+      "社会工作服务通用过程六阶段",
+      "预估"
+    ],
+    "relatedExtended": [
+      "计划与介入",
+      "社会工作的内涵、要素与过程"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "社会工作服务通用过程六阶段": {
+    "topic": "社会工作服务通用过程六阶段",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 1,
+    "explicitYears": [
+      2020,
+      2023
+    ],
+    "records": [
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "社会工作的互动过程",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "综合介入",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2025,
+        "yearLabel": "2025（顺序推定）",
+        "subject": "331",
+        "type": "简答",
+        "question": "社会工作过程模式内容",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序推定"
+      }
+    ],
+    "relatedCore": [
+      "接案与专业关系",
+      "预估",
+      "计划与介入"
+    ],
+    "relatedExtended": [
+      "评估与结案",
+      "个案工作"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "社会工作服务项目管理五维框架": {
+    "topic": "社会工作服务项目管理五维框架",
+    "period": "2015—2026",
+    "frequencyLevel": "暂无直接命题",
+    "explicitYearCount": 0,
+    "explicitQuestionCount": 0,
+    "inferredQuestionCount": 0,
+    "explicitYears": [],
+    "records": [],
+    "relatedCore": [
+      "项目过程监测与质量控制",
+      "产出、成效与项目成效评估",
+      "社会工作研究"
+    ],
+    "relatedExtended": [
+      "社会工作督导",
+      "志愿服务规范管理"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "社会工作的内涵、要素与过程": {
+    "topic": "社会工作的内涵、要素与过程",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 1,
+    "explicitYears": [
+      2020,
+      2021
+    ],
+    "records": [
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "社会工作的互动过程",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2021,
+        "yearLabel": "2021",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "社会工作",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2024,
+        "yearLabel": "2024（顺序推定）",
+        "subject": "331",
+        "type": "论述",
+        "question": "结合实例谈社会问题和社会工作实践的关系",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序/考试日期推定"
+      }
+    ],
+    "relatedCore": [
+      "社会工作专业价值与伦理",
+      "社会工作者的角色",
+      "社会工作服务通用过程六阶段"
+    ],
+    "relatedExtended": [
+      "社会福利制度",
+      "人类行为与社会环境"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "社会工作督导": {
+    "topic": "社会工作督导",
+    "period": "2015—2026",
+    "frequencyLevel": "低频",
+    "explicitYearCount": 1,
+    "explicitQuestionCount": 1,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2019
+    ],
+    "records": [
+      {
+        "year": 2019,
+        "yearLabel": "2019",
+        "subject": "437",
+        "type": "简答",
+        "question": "社会工作督导的基本原则与功能",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      }
+    ],
+    "relatedCore": [
+      "社会工作者的角色",
+      "社会工作专业价值与伦理",
+      "社会工作服务项目管理五维框架"
+    ],
+    "relatedExtended": [
+      "志愿服务规范管理",
+      "社会工作研究"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "社会工作研究": {
+    "topic": "社会工作研究",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 1,
+    "explicitYears": [
+      2016,
+      2018
+    ],
+    "records": [
+      {
+        "year": 2016,
+        "yearLabel": "2016",
+        "subject": "331",
+        "type": "简答",
+        "question": "简述量化研究和质性研究的区别。",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2018,
+        "yearLabel": "2018",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "焦点小组",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2024,
+        "yearLabel": "2024（顺序推定）",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "基线测量方法",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序/考试日期推定"
+      }
+    ],
+    "relatedCore": [
+      "量化研究与质性研究",
+      "产出、成效与项目成效评估",
+      "社会工作服务项目管理五维框架"
+    ],
+    "relatedExtended": [
+      "项目过程监测与质量控制",
+      "循证社会工作/以证据为基础的实践"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "社会工作者的角色": {
+    "topic": "社会工作者的角色",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 5,
+    "explicitQuestionCount": 5,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2015,
+      2017,
+      2018,
+      2021,
+      2023
+    ],
+    "records": [
+      {
+        "year": 2015,
+        "yearLabel": "2015",
+        "subject": "331",
+        "type": "简答",
+        "question": "社会工作者的角色",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2017,
+        "yearLabel": "2017",
+        "subject": "331",
+        "type": "简答",
+        "question": "社会工作在专业实践中的角色",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2018,
+        "yearLabel": "2018",
+        "subject": "331",
+        "type": "论述",
+        "question": "结合小组相关理论及实践说明社会工作者在小组中的角色",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2021,
+        "yearLabel": "2021",
+        "subject": "331",
+        "type": "论述",
+        "question": "医务社会工作有关健康理论与社会工作者角色",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "简答",
+        "question": "社区工作者的六个角色",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      }
+    ],
+    "relatedCore": [
+      "社会工作专业价值与伦理",
+      "社区工作",
+      "小组工作"
+    ],
+    "relatedExtended": [
+      "医务社会工作与临终关怀",
+      "社会工作的内涵、要素与过程"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "社会支持理论": {
+    "topic": "社会支持理论",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 3,
+    "inferredQuestionCount": 1,
+    "explicitYears": [
+      2017,
+      2023
+    ],
+    "records": [
+      {
+        "year": 2017,
+        "yearLabel": "2017",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "社会支持和社会资本",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "社会支持理论",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "437",
+        "type": "简答",
+        "question": "社区社会工作提供的社会支持网络",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2024,
+        "yearLabel": "2024（顺序推定）",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "社会支持网络",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序/考试日期推定"
+      }
+    ],
+    "relatedCore": [
+      "优势视角",
+      "增权/赋能理论",
+      "社区工作"
+    ],
+    "relatedExtended": [
+      "家庭社会工作",
+      "医务社会工作与临终关怀"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "社会政策与社会福利关系": {
+    "topic": "社会政策与社会福利关系",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2017,
+      2019
+    ],
+    "records": [
+      {
+        "year": 2017,
+        "yearLabel": "2017",
+        "subject": "331",
+        "type": "论述",
+        "question": "社会福利制度相关理论如何影响社会政策走向，并说明社会工作与社会福利制度关系",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2019,
+        "yearLabel": "2019",
+        "subject": "437",
+        "type": "论述",
+        "question": "结合具体案例，谈社会工作与社会福利政策的关系",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      }
+    ],
+    "relatedCore": [
+      "社会福利制度",
+      "社会救助",
+      "社会工作专业价值与伦理"
+    ],
+    "relatedExtended": [
+      "反贫困与农村社会工作",
+      "社会工作的内涵、要素与过程"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "社会救助": {
+    "topic": "社会救助",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 1,
+    "explicitYears": [
+      2021,
+      2023
+    ],
+    "records": [
+      {
+        "year": 2021,
+        "yearLabel": "2021",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "社会救助",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "论述",
+        "question": "结合社会学理论开展特殊儿童社会救助工作",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2025,
+        "yearLabel": "2025（顺序推定）",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "社会救助",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序推定"
+      }
+    ],
+    "relatedCore": [
+      "社会福利制度",
+      "社会政策与社会福利关系",
+      "反贫困与农村社会工作"
+    ],
+    "relatedExtended": [
+      "儿童社会工作",
+      "个案管理"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "社会福利制度": {
+    "topic": "社会福利制度",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 7,
+    "explicitQuestionCount": 9,
+    "inferredQuestionCount": 3,
+    "explicitYears": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2023
+    ],
+    "records": [
+      {
+        "year": 2015,
+        "yearLabel": "2015",
+        "subject": "331",
+        "type": "简答",
+        "question": "社会福利的内涵",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2015,
+        "yearLabel": "2015",
+        "subject": "331",
+        "type": "论述",
+        "question": "社会福利模式",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2016,
+        "yearLabel": "2016",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "社会福利三分法",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2017,
+        "yearLabel": "2017",
+        "subject": "331",
+        "type": "论述",
+        "question": "社会福利制度相关理论如何影响社会政策走向，并说明社会工作与社会福利制度关系",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2018,
+        "yearLabel": "2018",
+        "subject": "331",
+        "type": "简答",
+        "question": "社会福利的功能",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2019,
+        "yearLabel": "2019",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "发展性社会福利",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2021,
+        "yearLabel": "2021",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "社会福利",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "简答",
+        "question": "古代中国社会福利的思想脉络",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2019,
+        "yearLabel": "2019",
+        "subject": "437",
+        "type": "论述",
+        "question": "结合具体案例，谈社会工作与社会福利政策的关系",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2024,
+        "yearLabel": "2024（顺序推定）",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "社会保障",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序/考试日期推定"
+      },
+      {
+        "year": 2024,
+        "yearLabel": "2024（顺序推定）",
+        "subject": "331",
+        "type": "简答",
+        "question": "社会福利的功能",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序/考试日期推定"
+      },
+      {
+        "year": 2025,
+        "yearLabel": "2025（顺序推定）",
+        "subject": "331",
+        "type": "简答",
+        "question": "社会福利系统各部分功能",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序推定"
+      }
+    ],
+    "relatedCore": [
+      "社会政策与社会福利关系",
+      "社会救助",
+      "社会工作的内涵、要素与过程"
+    ],
+    "relatedExtended": [
+      "反贫困与农村社会工作",
+      "儿童社会工作"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "社区工作": {
+    "topic": "社区工作",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 6,
+    "explicitQuestionCount": 7,
+    "inferredQuestionCount": 1,
+    "explicitYears": [
+      2017,
+      2018,
+      2019,
+      2021,
+      2023,
+      2026
+    ],
+    "records": [
+      {
+        "year": 2017,
+        "yearLabel": "2017",
+        "subject": "331",
+        "type": "论述",
+        "question": "社区定义、社区工作定义及社区工作模式",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2018,
+        "yearLabel": "2018",
+        "subject": "331",
+        "type": "简答",
+        "question": "社区对人的作用",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2019,
+        "yearLabel": "2019",
+        "subject": "437",
+        "type": "简答",
+        "question": "社区领袖及培育社会领袖的策略技巧",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2021,
+        "yearLabel": "2021",
+        "subject": "331",
+        "type": "简答",
+        "question": "社区工作三模式",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "简答",
+        "question": "社区工作者的六个角色",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2025,
+        "yearLabel": "2025（顺序推定）",
+        "subject": "331",
+        "type": "简答",
+        "question": "社区工作的具体目标",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序推定"
+      },
+      {
+        "year": 2026,
+        "yearLabel": "2026",
+        "subject": "331",
+        "type": "论述",
+        "question": "结合社区工作的介入方法，论述如何推动老旧社区向中国式现代化推进",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份明确标注"
+      },
+      {
+        "year": 2026,
+        "yearLabel": "2026",
+        "subject": "437",
+        "type": "案例",
+        "question": "高龄认知障碍老人：分析需求、提出方案，并讨论社区工作者所说服务覆盖程度的成因及改进",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份明确标注"
+      }
+    ],
+    "relatedCore": [
+      "社区照顾理论/模式",
+      "社会支持理论",
+      "社会工作者的角色"
+    ],
+    "relatedExtended": [
+      "防灾减灾救灾社会工作",
+      "社会救助"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "社区照顾理论/模式": {
+    "topic": "社区照顾理论/模式",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 4,
+    "explicitQuestionCount": 5,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2019,
+      2020,
+      2021,
+      2023
+    ],
+    "records": [
+      {
+        "year": 2019,
+        "yearLabel": "2019",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "社区照顾",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "331",
+        "type": "简答",
+        "question": "比较我国机构照顾和社区照顾的特点",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "437",
+        "type": "简答",
+        "question": "居家养老模式及社区照顾策略",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2021,
+        "yearLabel": "2021",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "社区照顾",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "论述",
+        "question": "社区照顾和机构照顾哪个更适合我国养老",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      }
+    ],
+    "relatedCore": [
+      "社区工作",
+      "老年社会工作",
+      "机构照顾与社区照顾"
+    ],
+    "relatedExtended": [
+      "家庭照护者支持与喘息服务",
+      "社会支持理论"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "符号互动理论": {
+    "topic": "符号互动理论",
+    "period": "2015—2026",
+    "frequencyLevel": "低频",
+    "explicitYearCount": 1,
+    "explicitQuestionCount": 1,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2021
+    ],
+    "records": [
+      {
+        "year": 2021,
+        "yearLabel": "2021",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "符号互动理论",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      }
+    ],
+    "relatedCore": [
+      "标签理论",
+      "小组工作",
+      "人类行为与社会环境"
+    ],
+    "relatedExtended": [
+      "实证主义与社会建构主义",
+      "社会支持理论"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "精神分析取向：本我、自我、超我": {
+    "topic": "精神分析取向：本我、自我、超我",
+    "period": "2015—2026",
+    "frequencyLevel": "低频",
+    "explicitYearCount": 1,
+    "explicitQuestionCount": 1,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2018
+    ],
+    "records": [
+      {
+        "year": 2018,
+        "yearLabel": "2018",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "本我、自我、超我",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      }
+    ],
+    "relatedCore": [
+      "个案工作",
+      "ABC理论与理性情绪治疗（REBT）",
+      "人类行为与社会环境"
+    ],
+    "relatedExtended": [
+      "结构家庭治疗",
+      "危机介入理论/模式"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "精神卫生社会工作与去标签化": {
+    "topic": "精神卫生社会工作与去标签化",
+    "period": "2015—2026",
+    "frequencyLevel": "暂无直接命题",
+    "explicitYearCount": 0,
+    "explicitQuestionCount": 0,
+    "inferredQuestionCount": 0,
+    "explicitYears": [],
+    "records": [],
+    "relatedCore": [
+      "标签理论",
+      "社会支持理论",
+      "增权/赋能理论"
+    ],
+    "relatedExtended": [
+      "社区工作",
+      "社会工作专业价值与伦理"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "系统视角与“人在情境中”": {
+    "topic": "系统视角与“人在情境中”",
+    "period": "2015—2026",
+    "frequencyLevel": "暂无直接命题",
+    "explicitYearCount": 0,
+    "explicitQuestionCount": 0,
+    "inferredQuestionCount": 0,
+    "explicitYears": [],
+    "records": [],
+    "relatedCore": [
+      "人类行为与社会环境",
+      "社会工作服务通用模式的四个基本系统",
+      "家庭社会工作"
+    ],
+    "relatedExtended": [
+      "社区工作",
+      "个案管理"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "结构家庭治疗": {
+    "topic": "结构家庭治疗",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 3,
+    "explicitQuestionCount": 3,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2018,
+      2019,
+      2020
+    ],
+    "records": [
+      {
+        "year": 2018,
+        "yearLabel": "2018",
+        "subject": "437",
+        "type": "简答",
+        "question": "米纽秦病态家庭结构类型及打破技巧",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2019,
+        "yearLabel": "2019",
+        "subject": "437",
+        "type": "简答",
+        "question": "结构家庭治疗法的基本假设与介入策略",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "331",
+        "type": "名词解释",
+        "question": "结构理论的家庭治疗",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      }
+    ],
+    "relatedCore": [
+      "家庭社会工作",
+      "家庭抗逆力",
+      "系统视角与“人在情境中”"
+    ],
+    "relatedExtended": [
+      "个案工作",
+      "社会工作专业价值与伦理"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "老年社会工作": {
+    "topic": "老年社会工作",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 4,
+    "explicitQuestionCount": 5,
+    "inferredQuestionCount": 2,
+    "explicitYears": [
+      2016,
+      2017,
+      2020,
+      2023
+    ],
+    "records": [
+      {
+        "year": 2016,
+        "yearLabel": "2016",
+        "subject": "331",
+        "type": "论述",
+        "question": "老年人会经历哪些生理变化？社会工作者如何帮助和照顾失能老人？",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2017,
+        "yearLabel": "2017",
+        "subject": "437",
+        "type": "案例",
+        "question": "评价和改进社区养老政策",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "437",
+        "type": "简答",
+        "question": "居家养老模式及社区照顾策略",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "简答",
+        "question": "老年个案工作的原则",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2023,
+        "yearLabel": "2023",
+        "subject": "331",
+        "type": "论述",
+        "question": "社区照顾和机构照顾哪个更适合我国养老",
+        "yearBasis": "explicit",
+        "sourceForm": "official_exam_layout",
+        "sourceLabel": "官方试卷版式"
+      },
+      {
+        "year": 2025,
+        "yearLabel": "2025（顺序推定）",
+        "subject": "331",
+        "type": "论述",
+        "question": "老年社会工作小组工作原则",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序推定"
+      },
+      {
+        "year": 2025,
+        "yearLabel": "2025（顺序推定）",
+        "subject": "437",
+        "type": "案例",
+        "question": "高龄老人网络直播打赏与家庭关系：设计介入方案，并说明科技发展背景下为老年人服务的可行措施",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序推定"
+      }
+    ],
+    "relatedCore": [
+      "机构照顾与社区照顾",
+      "社区照顾理论/模式",
+      "家庭照护者支持与喘息服务"
+    ],
+    "relatedExtended": [
+      "安宁疗护与哀伤辅导",
+      "医务社会工作与临终关怀"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "计划与介入": {
+    "topic": "计划与介入",
+    "period": "2015—2026",
+    "frequencyLevel": "高频",
+    "explicitYearCount": 3,
+    "explicitQuestionCount": 4,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2018,
+      2019,
+      2026
+    ],
+    "records": [
+      {
+        "year": 2018,
+        "yearLabel": "2018",
+        "subject": "331",
+        "type": "简答",
+        "question": "社会工作实践中的介入策略",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2019,
+        "yearLabel": "2019",
+        "subject": "437",
+        "type": "简答",
+        "question": "结构家庭治疗法的基本假设与介入策略",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2018,
+        "yearLabel": "2018",
+        "subject": "437",
+        "type": "案例",
+        "question": "结合案例列出与社会工作者一起行动的行动系统，并说明直接介入策略",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2026,
+        "yearLabel": "2026",
+        "subject": "437",
+        "type": "简答",
+        "question": "社会工作介入的原则；在帮助肿瘤患者照顾者时如何体现",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份明确标注"
+      }
+    ],
+    "relatedCore": [
+      "预估",
+      "评估与结案",
+      "危机介入理论/模式"
+    ],
+    "relatedExtended": [
+      "社会工作服务通用过程六阶段",
+      "个案工作"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "评估与结案": {
+    "topic": "评估与结案",
+    "period": "2015—2026",
+    "frequencyLevel": "暂无直接命题",
+    "explicitYearCount": 0,
+    "explicitQuestionCount": 0,
+    "inferredQuestionCount": 0,
+    "explicitYears": [],
+    "records": [],
+    "relatedCore": [
+      "计划与介入",
+      "产出、成效与项目成效评估",
+      "社会工作服务通用过程六阶段"
+    ],
+    "relatedExtended": [
+      "个案工作",
+      "个案管理"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "退役军人事务社会工作": {
+    "topic": "退役军人事务社会工作",
+    "period": "2015—2026",
+    "frequencyLevel": "暂无直接命题",
+    "explicitYearCount": 0,
+    "explicitQuestionCount": 0,
+    "inferredQuestionCount": 0,
+    "explicitYears": [],
+    "records": [],
+    "relatedCore": [
+      "社区工作",
+      "社会支持理论",
+      "个案管理"
+    ],
+    "relatedExtended": [
+      "家庭社会工作",
+      "社会救助"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "量化研究与质性研究": {
+    "topic": "量化研究与质性研究",
+    "period": "2015—2026",
+    "frequencyLevel": "低频",
+    "explicitYearCount": 1,
+    "explicitQuestionCount": 1,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2016
+    ],
+    "records": [
+      {
+        "year": 2016,
+        "yearLabel": "2016",
+        "subject": "331",
+        "type": "简答",
+        "question": "简述量化研究和质性研究的区别。",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      }
+    ],
+    "relatedCore": [
+      "社会工作研究",
+      "循证社会工作/以证据为基础的实践",
+      "产出、成效与项目成效评估"
+    ],
+    "relatedExtended": [
+      "项目过程监测与质量控制",
+      "社会工作服务项目管理五维框架"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "防灾减灾救灾社会工作": {
+    "topic": "防灾减灾救灾社会工作",
+    "period": "2015—2026",
+    "frequencyLevel": "低频",
+    "explicitYearCount": 1,
+    "explicitQuestionCount": 1,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2015
+    ],
+    "records": [
+      {
+        "year": 2015,
+        "yearLabel": "2015",
+        "subject": "437",
+        "type": "论述",
+        "question": "灾后救助",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      }
+    ],
+    "relatedCore": [
+      "社区工作",
+      "危机介入理论/模式",
+      "社会支持理论"
+    ],
+    "relatedExtended": [
+      "家庭抗逆力",
+      "志愿服务规范管理"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "青少年社会工作": {
+    "topic": "青少年社会工作",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 4,
+    "explicitYears": [
+      2017,
+      2018
+    ],
+    "records": [
+      {
+        "year": 2017,
+        "yearLabel": "2017",
+        "subject": "331",
+        "type": "简答",
+        "question": "青少年时期特点及相关理论基础",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2018,
+        "yearLabel": "2018",
+        "subject": "437",
+        "type": "案例",
+        "question": "抗逆力理论介入问题少年",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2024,
+        "yearLabel": "2024（顺序推定）",
+        "subject": "331",
+        "type": "简答",
+        "question": "青少年福利需要",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序/考试日期推定"
+      },
+      {
+        "year": 2024,
+        "yearLabel": "2024（顺序推定）",
+        "subject": "437",
+        "type": "简答",
+        "question": "抗逆力理论的主要内容；结合理论帮助面临激烈学业竞争、心理状况异常的高中生",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序/考试日期推定"
+      },
+      {
+        "year": 2025,
+        "yearLabel": "2025（顺序推定）",
+        "subject": "331",
+        "type": "论述",
+        "question": "青少年福利需要及如何促进青少年群体健康发展",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序推定"
+      },
+      {
+        "year": 2025,
+        "yearLabel": "2025（顺序推定）",
+        "subject": "437",
+        "type": "简答",
+        "question": "用行为治疗进行社区青少年矫正",
+        "yearBasis": "inferred",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份按汇编顺序推定"
+      }
+    ],
+    "relatedCore": [
+      "学校社会工作与校园暴力介入",
+      "班杜拉社会学习理论",
+      "小组工作"
+    ],
+    "relatedExtended": [
+      "未成年人司法社会工作与社会观护",
+      "社会支持理论"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "项目过程监测与质量控制": {
+    "topic": "项目过程监测与质量控制",
+    "period": "2015—2026",
+    "frequencyLevel": "暂无直接命题",
+    "explicitYearCount": 0,
+    "explicitQuestionCount": 0,
+    "inferredQuestionCount": 0,
+    "explicitYears": [],
+    "records": [],
+    "relatedCore": [
+      "社会工作服务项目管理五维框架",
+      "产出、成效与项目成效评估",
+      "社会工作研究"
+    ],
+    "relatedExtended": [
+      "社会工作督导",
+      "评估与结案"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  },
+  "预估": {
+    "topic": "预估",
+    "period": "2015—2026",
+    "frequencyLevel": "中频",
+    "explicitYearCount": 2,
+    "explicitQuestionCount": 2,
+    "inferredQuestionCount": 0,
+    "explicitYears": [
+      2020,
+      2026
+    ],
+    "records": [
+      {
+        "year": 2020,
+        "yearLabel": "2020",
+        "subject": "437",
+        "type": "案例",
+        "question": "住院儿童及家长需要、服务方案与预估",
+        "yearBasis": "explicit",
+        "sourceForm": "compiled_transcription",
+        "sourceLabel": "真题汇编明确列题"
+      },
+      {
+        "year": 2026,
+        "yearLabel": "2026",
+        "subject": "437",
+        "type": "名词解释",
+        "question": "预估",
+        "yearBasis": "explicit",
+        "sourceForm": "recall_screenshot",
+        "sourceLabel": "回忆截图·年份明确标注"
+      }
+    ],
+    "relatedCore": [
+      "接案与专业关系",
+      "计划与介入",
+      "系统视角与“人在情境中”"
+    ],
+    "relatedExtended": [
+      "优势视角",
+      "评估与结案"
+    ],
+    "countRule": "考频仅统计与本专题直接对应、且年份在汇编中明确的题目；2024/2025等年份按汇编顺序推定的回忆截图单独展示，不计入主考频。",
+    "source": "《东南大学社会工作考研真题2015-2026年+(1).pdf》"
+  }
+}

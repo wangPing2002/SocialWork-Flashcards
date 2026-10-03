@@ -1,0 +1,15 @@
+{
+  "version": "2.3.0",
+  "cards": 156,
+  "topics": 39,
+  "all_cards_verified_flag": true,
+  "unique_ids": true,
+  "details_cover_all_topics": true,
+  "legacy_ids_reused": 92,
+  "new_ids": 64,
+  "notes": [
+    "2022回忆版真题标记medium confidence",
+    "截图无法确认的题目未进入正式库",
+    "外部核验不替代指定教材口径，仅用于检查概念边界与明显事实错误"
+  ]
+}

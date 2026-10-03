@@ -1,0 +1,28 @@
+{
+  "version": "2.4.0",
+  "cards_total": 254,
+  "topics_total": 67,
+  "new_cards": 98,
+  "new_topics": 28,
+  "revised_existing_topics": [
+    "社会工作的内涵、要素与过程",
+    "小组工作的四种主要模式"
+  ],
+  "unique_ids": true,
+  "all_cards_have_detail": true,
+  "all_cards_verified": true,
+  "empty_questions": 0,
+  "empty_bullets": 0,
+  "kind_counts": {
+    "核心概念": 67,
+    "高频简答": 67,
+    "真题": 53,
+    "辨析/应用": 67
+  },
+  "release_decision": "PASS",
+  "notes": [
+    "未纳入无法确认年份或题干的截图型真题。",
+    "2026人大教材与王思斌教材口径不同处按来源区分，不强行合并为唯一分类。",
+    "网络权威资料用于概念边界交叉核验，不替代东大考试口径与指定教材。"
+  ]
+}
