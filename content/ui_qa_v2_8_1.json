@@ -1,0 +1,12 @@
+{
+  "version": "2.8.1",
+  "scope": "frequency editor hotfix",
+  "issue": "AlertDialog combined setMessage() and setItems(), causing some Android devices to show the explanatory message but not the selectable frequency list.",
+  "fix": [
+    "Replace setMessage()+setItems() with a custom dialog view containing explanatory text and a RadioGroup.",
+    "Provide explicit high/mid/low/follow-system choices and a Save action.",
+    "Persist the per-card override through StudyStore.setFrequencyOverride().",
+    "Refresh the answer page immediately and show the effective frequency in a toast."
+  ],
+  "expected": "User can select high/mid/low or restore system frequency; the value persists and affects mock-exam weighting."
+}

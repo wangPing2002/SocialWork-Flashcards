@@ -213,10 +213,65 @@ int freqColor(String level){return "高".equals(level)?RED:"中".equals(level)?C
 int masteryColor(String level){return "高".equals(level)?TEAL_DARK:"中".equals(level)?Color.rgb(195,139,34):ORANGE;}
 
 void editFrequency(Card c){
-    String sys=repo.systemFrequency(c);String[] items={"高","中","低","跟随系统（"+sys+"）"};
-    new AlertDialog.Builder(this).setTitle("调整本题考频").setMessage("手动考频会参与后续真题模拟的随机组卷权重；熟练度仍由学习记录自动计算。")
-        .setItems(items,(d,which)->{if(which==3)store.setFrequencyOverride(c.id,"");else store.setFrequencyOverride(c.id,items[which]);Toast.makeText(this,"考频已更新",Toast.LENGTH_SHORT).show();showStudy();})
-        .setNegativeButton("取消",null).show();
+    String sys=repo.systemFrequency(c);
+    String over=store.frequencyOverride(c.id);
+    String current=(over==null||over.isEmpty())?sys:over;
+
+    LinearLayout panel=new LinearLayout(this);
+    panel.setOrientation(LinearLayout.VERTICAL);
+    panel.setPadding(dp(22),dp(6),dp(22),0);
+
+    TextView note=tv("手动考频会参与后续真题模拟的随机组卷权重；熟练度仍由学习记录自动计算。",12,MUTED,false);
+    note.setPadding(0,0,0,dp(8));
+    panel.addView(note);
+
+    RadioGroup group=new RadioGroup(this);
+    group.setOrientation(RadioGroup.VERTICAL);
+    String[] values={"高","中","低",""};
+    String[] labels={"高频","中频","低频","跟随系统（当前："+sys+"）"};
+    int checkedId=View.NO_ID;
+    for(int i=0;i<labels.length;i++){
+        RadioButton rb=new RadioButton(this);
+        int id=View.generateViewId();
+        rb.setId(id);
+        rb.setText(labels[i]);
+        rb.setTextSize(14);
+        rb.setTextColor(INK);
+        rb.setTag(values[i]);
+        rb.setPadding(0,dp(5),0,dp(5));
+        group.addView(rb,new RadioGroup.LayoutParams(-1,dp(44)));
+        boolean selected=(i==3&&(over==null||over.isEmpty()))||(i<3&&values[i].equals(current)&&over!=null&&!over.isEmpty());
+        if(selected)checkedId=id;
+    }
+    if(checkedId!=View.NO_ID)group.check(checkedId);
+    panel.addView(group);
+
+    AlertDialog dialog=new AlertDialog.Builder(this)
+        .setTitle("调整本题考频")
+        .setView(panel)
+        .setNegativeButton("取消",null)
+        .setPositiveButton("保存",null)
+        .create();
+
+    dialog.setOnShowListener(x->{
+        Button save=dialog.getButton(AlertDialog.BUTTON_POSITIVE);
+        save.setTextColor(TEAL_DARK);
+        save.setOnClickListener(v->{
+            int id=group.getCheckedRadioButtonId();
+            if(id==View.NO_ID){
+                Toast.makeText(this,"请选择考频",Toast.LENGTH_SHORT).show();
+                return;
+            }
+            RadioButton selected=group.findViewById(id);
+            String value=String.valueOf(selected.getTag());
+            store.setFrequencyOverride(c.id,value);
+            dialog.dismiss();
+            String effective=value.isEmpty()?sys:value;
+            Toast.makeText(this,value.isEmpty()?"已恢复系统考频："+effective:"考频已调整为："+effective,Toast.LENGTH_SHORT).show();
+            showStudy();
+        });
+    });
+    dialog.show();
 }
 
 void startNewSession(){
