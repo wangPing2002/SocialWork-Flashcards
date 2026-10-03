@@ -41,9 +41,9 @@ public class MainActivity extends Activity {
 
 ImageView tapIcon(int resId,int size,int color,View.OnClickListener click){ImageView v=iconView(resId,size,color);v.setClickable(true);v.setFocusable(true);v.setOnClickListener(click);return v;}
 View rateAction(int iconRes,String title,String sub,int bg,int color,View.OnClickListener click){
-    LinearLayout wrap=new LinearLayout(this);wrap.setOrientation(LinearLayout.HORIZONTAL);wrap.setGravity(Gravity.CENTER);wrap.setBackground(shape(bg,18));wrap.setPadding(dp(10),dp(8),dp(10),dp(8));wrap.setOnClickListener(click);
-    wrap.addView(iconView(iconRes,20,color),new LinearLayout.LayoutParams(dp(24),dp(24)));
-    LinearLayout txt=new LinearLayout(this);txt.setOrientation(LinearLayout.VERTICAL);txt.setPadding(dp(7),0,0,0);TextView a=tv(title,14,color,true);TextView b=tv(sub,11,color,false);txt.addView(a);txt.addView(b);wrap.addView(txt);return wrap;
+    LinearLayout wrap=new LinearLayout(this);wrap.setOrientation(LinearLayout.HORIZONTAL);wrap.setGravity(Gravity.CENTER);wrap.setBackground(shape(bg,16));wrap.setPadding(dp(9),dp(6),dp(9),dp(6));wrap.setOnClickListener(click);
+    wrap.addView(iconView(iconRes,18,color),new LinearLayout.LayoutParams(dp(22),dp(22)));
+    LinearLayout txt=new LinearLayout(this);txt.setOrientation(LinearLayout.VERTICAL);txt.setPadding(dp(6),0,0,0);TextView a=tv(title,13,color,true);TextView b=tv(sub,10,color,false);txt.addView(a);txt.addView(b);wrap.addView(txt);return wrap;
 }
 
 View sectionHeader(String title,String action,View.OnClickListener click){
@@ -201,12 +201,12 @@ View frequencyMasteryPanel(Card c){
     String system=repo.systemFrequency(c),over=store.frequencyOverride(c.id),freq=over==null||over.isEmpty()?system:over,mastery=mockEngine.mastery(c);
     LinearLayout f=metricControl("考频",freq,(over==null||over.isEmpty()?"系统判定":"已手动调整")+" · 点击修改",freqColor(freq),v->editFrequency(c));
     LinearLayout m=metricControl("熟练度",mastery,engine.learned(c)?"依据最近10次表现":"尚未学习",masteryColor(mastery),null);
-    wrap.addView(f,new LinearLayout.LayoutParams(0,dp(60),1));wrap.addView(gap(8));wrap.addView(m,new LinearLayout.LayoutParams(0,dp(60),1));return wrap;
+    wrap.addView(f,new LinearLayout.LayoutParams(0,dp(50),1));wrap.addView(gap(7));wrap.addView(m,new LinearLayout.LayoutParams(0,dp(50),1));return wrap;
 }
 
 LinearLayout metricControl(String label,String level,String sub,int color,View.OnClickListener click){
-    LinearLayout b=new LinearLayout(this);b.setOrientation(LinearLayout.HORIZONTAL);b.setGravity(Gravity.CENTER_VERTICAL);b.setBackground(strokeShape(Color.rgb(248,250,249),14,LINE));b.setPadding(dp(11),dp(8),dp(11),dp(8));if(click!=null){b.setClickable(true);b.setOnClickListener(click);}
-    TextView lv=tv(level,20,color,true);lv.setGravity(Gravity.CENTER);b.addView(lv,new LinearLayout.LayoutParams(dp(34),-2));LinearLayout tx=new LinearLayout(this);tx.setOrientation(LinearLayout.VERTICAL);tx.setPadding(dp(7),0,0,0);tx.addView(tv(label,12,INK,true));TextView st=tv(sub,9,MUTED,false);st.setMaxLines(1);tx.addView(st);b.addView(tx,new LinearLayout.LayoutParams(0,-2,1));if(click!=null)b.addView(tv("›",20,MUTED,false));return b;
+    LinearLayout b=new LinearLayout(this);b.setOrientation(LinearLayout.HORIZONTAL);b.setGravity(Gravity.CENTER_VERTICAL);b.setBackground(strokeShape(Color.rgb(248,250,249),13,LINE));b.setPadding(dp(9),dp(5),dp(9),dp(5));if(click!=null){b.setClickable(true);b.setOnClickListener(click);}
+    TextView lv=tv(level,18,color,true);lv.setGravity(Gravity.CENTER);b.addView(lv,new LinearLayout.LayoutParams(dp(30),-2));LinearLayout tx=new LinearLayout(this);tx.setOrientation(LinearLayout.VERTICAL);tx.setPadding(dp(6),0,0,0);tx.addView(tv(label,11,INK,true));TextView st=tv(sub,9,MUTED,false);st.setMaxLines(1);tx.addView(st);b.addView(tx,new LinearLayout.LayoutParams(0,-2,1));if(click!=null)b.addView(tv("›",18,MUTED,false));return b;
 }
 
 int freqColor(String level){return "高".equals(level)?RED:"中".equals(level)?Color.rgb(195,139,34):TEAL_DARK;}
@@ -302,16 +302,16 @@ void showStudy(){
 
     LinearLayout progress=new LinearLayout(this);progress.setOrientation(LinearLayout.VERTICAL);progress.setPadding(dp(2),0,dp(2),dp(2));
     LinearLayout pr=new LinearLayout(this);pr.setGravity(Gravity.CENTER_VERTICAL);TextView pt=tv(mockMode?(mockSubject+" 模拟进度"):"本轮进度",12,MUTED,true);pr.addView(pt,new LinearLayout.LayoutParams(0,-2,1));TextView pos=tv((qIndex+1)+" / "+queue.size(),12,INK,true);pr.addView(pos);progress.addView(pr);
-    ProgressBar pb=new ProgressBar(this,null,android.R.attr.progressBarStyleHorizontal);pb.setMax(Math.max(1,queue.size()));pb.setProgress(Math.min(queue.size(),qIndex+1));pb.getProgressDrawable().setTint(TEAL);margin(pb,0,6,0,8);progress.addView(pb,new LinearLayout.LayoutParams(-1,dp(5)));body.addView(progress);
+    ProgressBar pb=new ProgressBar(this,null,android.R.attr.progressBarStyleHorizontal);pb.setMax(Math.max(1,queue.size()));pb.setProgress(Math.min(queue.size(),qIndex+1));pb.getProgressDrawable().setTint(TEAL);margin(pb,0,4,0,revealed?4:7);progress.addView(pb,new LinearLayout.LayoutParams(-1,dp(4)));body.addView(progress);
 
-    LinearLayout card=box(SURFACE,16,24);card.setBackground(strokeShape(SURFACE,24,LINE));
+    LinearLayout card=box(SURFACE,revealed?13:16,24);card.setBackground(strokeShape(SURFACE,24,LINE));
     LinearLayout.LayoutParams cp=new LinearLayout.LayoutParams(-1,0,1);cp.setMargins(0,0,0,revealed?dp(9):0);card.setLayoutParams(cp);
     LinearLayout metaRow=new LinearLayout(this);metaRow.setGravity(Gravity.CENTER_VERTICAL);
-    TextView kind=tv(repo.questionType(c),10,TEAL_DARK,true);kind.setBackground(shape(TEAL_SOFT,11));kind.setPadding(dp(8),dp(4),dp(8),dp(4));metaRow.addView(kind);
-    TextView sourceBadge=tv(repo.examSourceLabel(c),10,repo.isRealExam(c)?ORANGE:MUTED,true);sourceBadge.setBackground(shape(repo.isRealExam(c)?ORANGE_SOFT:Color.rgb(246,248,247),11));sourceBadge.setPadding(dp(8),dp(4),dp(8),dp(4));LinearLayout.LayoutParams sbp=new LinearLayout.LayoutParams(-2,-2);sbp.setMargins(dp(6),0,0,0);metaRow.addView(sourceBadge,sbp);
+    TextView kind=tv(repo.questionType(c),10,TEAL_DARK,true);kind.setBackground(shape(TEAL_SOFT,11));kind.setPadding(dp(8),dp(3),dp(8),dp(3));metaRow.addView(kind);
+    TextView sourceBadge=tv(repo.examSourceLabel(c),10,repo.isRealExam(c)?ORANGE:MUTED,true);sourceBadge.setBackground(shape(repo.isRealExam(c)?ORANGE_SOFT:Color.rgb(246,248,247),11));sourceBadge.setPadding(dp(8),dp(3),dp(8),dp(3));LinearLayout.LayoutParams sbp=new LinearLayout.LayoutParams(-2,-2);sbp.setMargins(dp(6),0,0,0);metaRow.addView(sourceBadge,sbp);
     TextView topic=tv(c.id+" · "+c.category,11,MUTED,false);topic.setPadding(dp(8),0,0,0);topic.setMaxLines(1);topic.setEllipsize(android.text.TextUtils.TruncateAt.END);metaRow.addView(topic,new LinearLayout.LayoutParams(0,-2,1));
     if(store.isFavorite(c.id)){TextView star=tv("★",17,Color.rgb(222,164,46),true);star.setPadding(0,0,dp(6),0);metaRow.addView(star);}
-    TextView status=tv(engine.learned(c)?"已学习":"新学习",11,engine.learned(c)?TEAL_DARK:ORANGE,true);status.setBackground(shape(engine.learned(c)?TEAL_SOFT:ORANGE_SOFT,12));status.setPadding(dp(9),dp(4),dp(9),dp(4));metaRow.addView(status);
+    TextView status=tv(engine.learned(c)?"已学习":"新学习",10,engine.learned(c)?TEAL_DARK:ORANGE,true);status.setBackground(shape(engine.learned(c)?TEAL_SOFT:ORANGE_SOFT,12));status.setPadding(dp(8),dp(3),dp(8),dp(3));metaRow.addView(status);
     ImageView more=tapIcon(R.drawable.ic_more_vertical,20,MUTED,v->showCardMenu(c,v));more.setPadding(dp(8),dp(8),dp(8),dp(8));metaRow.addView(more,new LinearLayout.LayoutParams(dp(38),dp(38)));card.addView(metaRow);
 
     if(!revealed){
@@ -328,20 +328,20 @@ void showStudy(){
     }
 
     LinearLayout tabs=new LinearLayout(this);tabs.setOrientation(LinearLayout.HORIZONTAL);tabs.setPadding(0,dp(10),0,dp(6));
-    tabs.addView(answerTab("核心答案",0,c),new LinearLayout.LayoutParams(0,dp(42),1));
-    tabs.addView(answerTab("考频与真题",1,c),new LinearLayout.LayoutParams(0,dp(42),1));
-    tabs.addView(answerTab("相关知识点",2,c),new LinearLayout.LayoutParams(0,dp(42),1));card.addView(tabs);
+    tabs.addView(answerTab("核心答案",0,c),new LinearLayout.LayoutParams(0,dp(38),1));
+    tabs.addView(answerTab("考频与真题",1,c),new LinearLayout.LayoutParams(0,dp(38),1));
+    tabs.addView(answerTab("相关知识点",2,c),new LinearLayout.LayoutParams(0,dp(38),1));card.addView(tabs);
 
     ScrollView mid=new ScrollView(this);mid.setFillViewport(true);mid.setVerticalScrollBarEnabled(true);mid.setScrollbarFadingEnabled(true);
-    LinearLayout inner=new LinearLayout(this);inner.setOrientation(LinearLayout.VERTICAL);inner.setPadding(dp(6),dp(8),dp(6),dp(10));
+    LinearLayout inner=new LinearLayout(this);inner.setOrientation(LinearLayout.VERTICAL);inner.setPadding(dp(5),dp(5),dp(5),dp(8));
     if(answerTab==0)renderCoreAnswer(inner,c);else if(answerTab==1)renderExamInfo(inner,c);else renderRelatedKnowledge(inner,c);
     mid.addView(inner,new ScrollView.LayoutParams(-1,-2));card.addView(mid,new LinearLayout.LayoutParams(-1,0,1));
 
     View fm=frequencyMasteryPanel(c);margin(fm,0,dp(5),0,0);card.addView(fm);body.addView(card);
 
     LinearLayout rates=new LinearLayout(this);rates.setOrientation(LinearLayout.HORIZONTAL);
-    rates.addView(rateAction(R.drawable.ic_repeat,"再看看","不清楚",ORANGE_SOFT,ORANGE,v->rate(c,false)),new LinearLayout.LayoutParams(0,dp(64),1));rates.addView(gap(10));
-    rates.addView(rateAction(R.drawable.ic_check,"记住了","熟悉",TEAL_SOFT,TEAL_DARK,v->rate(c,true)),new LinearLayout.LayoutParams(0,dp(64),1));body.addView(rates);
+    rates.addView(rateAction(R.drawable.ic_repeat,"再看看","不清楚",ORANGE_SOFT,ORANGE,v->rate(c,false)),new LinearLayout.LayoutParams(0,dp(56),1));rates.addView(gap(9));
+    rates.addView(rateAction(R.drawable.ic_check,"记住了","熟悉",TEAL_SOFT,TEAL_DARK,v->rate(c,true)),new LinearLayout.LayoutParams(0,dp(56),1));body.addView(rates);
 }
 
 View answerTab(String label,int tab,Card c){
@@ -356,11 +356,29 @@ void renderCoreAnswer(LinearLayout inner,Card c){
     if(c.answerStatus!=null&&!c.answerStatus.isEmpty()&&!c.answerStatus.startsWith("✅")){
         TextView warn=tv("⚠ "+c.answerStatus,11,ORANGE,true);warn.setBackground(shape(ORANGE_SOFT,11));warn.setPadding(dp(10),dp(8),dp(10),dp(8));margin(warn,0,0,0,10);inner.addView(warn);
     }
-    TextView body=tv("",15,INK,false);body.setText(richAnswer(answer));body.setLineSpacing(dp(2),1.18f);inner.addView(body);
+    LinearLayout answerHead=new LinearLayout(this);answerHead.setGravity(Gravity.CENTER_VERTICAL);TextView answerTitle=tv("完整解答",12,INK,true);answerHead.addView(answerTitle,new LinearLayout.LayoutParams(0,-2,1));TextView reader=tv("⛶  全屏阅读",11,TEAL_DARK,true);reader.setGravity(Gravity.CENTER);reader.setBackground(shape(TEAL_SOFT,12));reader.setPadding(dp(10),dp(6),dp(10),dp(6));reader.setOnClickListener(v->showAnswerReader(c));answerHead.addView(reader);margin(answerHead,0,0,0,8);inner.addView(answerHead);
+    TextView body=tv("",16,INK,false);body.setText(richAnswer(answer));body.setLineSpacing(dp(3),1.20f);body.setTextIsSelectable(true);inner.addView(body);
     String srcText="核心教材依据  "+c.origin;
     if(c.sourceLevel!=null&&!c.sourceLevel.isEmpty())srcText+="\n答案来源层级  "+c.sourceLevel;
     TextView src=tv(srcText,10,MUTED,false);src.setBackground(shape(Color.rgb(248,250,249),11));src.setPadding(dp(10),dp(8),dp(10),dp(8));margin(src,0,12,0,7);inner.addView(src);
     TextView scrollHint=tv("上下滑动查看完整解答 · #C62828 红色为核心得分点",10,Color.rgb(151,163,160),false);scrollHint.setGravity(Gravity.CENTER);inner.addView(scrollHint);
+}
+
+void showAnswerReader(Card c){
+    final Dialog dialog=new Dialog(this,android.R.style.Theme_Material_Light_NoActionBar_Fullscreen);
+    LinearLayout page=new LinearLayout(this);page.setOrientation(LinearLayout.VERTICAL);page.setBackgroundColor(BG);applySafeInsets(page);
+
+    LinearLayout head=new LinearLayout(this);head.setGravity(Gravity.CENTER_VERTICAL);head.setPadding(dp(14),dp(8),dp(14),dp(6));
+    ImageView back=tapIcon(R.drawable.ic_arrow_back,22,INK,v->dialog.dismiss());head.addView(back,new LinearLayout.LayoutParams(dp(42),dp(42)));
+    LinearLayout titles=new LinearLayout(this);titles.setOrientation(LinearLayout.VERTICAL);titles.setPadding(dp(8),0,dp(8),0);titles.addView(tv(c.id+" · "+repo.questionType(c),17,INK,true));TextView q=tv(c.question,11,MUTED,false);q.setMaxLines(2);q.setEllipsize(android.text.TextUtils.TruncateAt.END);titles.addView(q);head.addView(titles,new LinearLayout.LayoutParams(0,-2,1));
+    TextView close=tv("关闭",12,TEAL_DARK,true);close.setPadding(dp(8),dp(8),dp(4),dp(8));close.setOnClickListener(v->dialog.dismiss());head.addView(close);page.addView(head);
+
+    ScrollView scroll=new ScrollView(this);scroll.setFillViewport(true);scroll.setVerticalScrollBarEnabled(true);
+    LinearLayout content=new LinearLayout(this);content.setOrientation(LinearLayout.VERTICAL);content.setPadding(dp(20),dp(12),dp(20),dp(24));
+    TextView answer=tv("",17,INK,false);answer.setText(richAnswer(repo.fullAnswer(c)));answer.setLineSpacing(dp(3),1.22f);answer.setTextIsSelectable(true);content.addView(answer);
+    TextView source=tv("核心教材依据  "+c.origin,11,MUTED,false);source.setBackground(shape(Color.rgb(248,250,249),12));source.setPadding(dp(12),dp(10),dp(12),dp(10));margin(source,0,18,0,0);content.addView(source);
+    scroll.addView(content,new ScrollView.LayoutParams(-1,-2));page.addView(scroll,new LinearLayout.LayoutParams(-1,0,1));
+    dialog.setContentView(page);dialog.show();
 }
 
 CharSequence richAnswer(String raw){

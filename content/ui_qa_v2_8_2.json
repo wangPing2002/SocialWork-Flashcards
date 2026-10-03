@@ -1,0 +1,20 @@
+{
+  "version": "2.8.2",
+  "focus": "study answer viewport and control sizing",
+  "changes": [
+    "Reduced revealed-state card padding and answer tab height",
+    "Reduced frequency/mastery panel height from 60dp to 50dp",
+    "Reduced rating action height from 64dp to 56dp",
+    "Increased core answer text from 15sp to 16sp with more readable line spacing",
+    "Added full-screen answer reader with selectable text",
+    "Kept #C62828 scoring-point rendering intact"
+  ],
+  "manual_test": [
+    "Open a long answer and verify the inline answer viewport is visibly taller",
+    "Scroll the full answer without bottom controls moving off-screen",
+    "Open full-screen answer reader and verify back/close works",
+    "Verify frequency and mastery controls remain easy to tap",
+    "Verify two rating buttons remain easy to tap",
+    "Verify #C62828 highlights remain red"
+  ]
+}
