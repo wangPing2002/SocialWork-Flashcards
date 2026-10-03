@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Card {
-    public String id="", topic="", category="", kind="", question="", tip="", origin="";
+    public String id="", topic="", category="", primaryTopic="", secondaryTopic="", kind="", question="", tip="", origin="";
     public String questionType="", fullAnswer="", predictedFrequency="中", predictedFrequencyRaw="";
     public String sourceField="", truthLabel="", truthQuestion="", truthEvidence="", truthRelation="";
     public String answerStatus="", sourceLevel="";
@@ -19,6 +19,7 @@ public class Card {
     public static Card fromJson(JSONObject o) throws Exception {
         Card c = new Card();
         c.id=o.optString("id"); c.topic=o.optString("topic"); c.category=o.optString("category");
+        c.primaryTopic=o.optString("primaryTopic",c.category); c.secondaryTopic=o.optString("secondaryTopic",c.topic);
         c.kind=o.optString("kind"); c.question=o.optString("question"); c.tip=o.optString("tip"); c.origin=o.optString("origin");
         c.questionType=o.optString("questionType"); c.fullAnswer=o.optString("fullAnswer");
         c.predictedFrequency=o.optString("predictedFrequency","中"); c.predictedFrequencyRaw=o.optString("predictedFrequencyRaw",c.predictedFrequency);

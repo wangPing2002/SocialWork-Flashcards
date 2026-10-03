@@ -19,7 +19,7 @@ public class MainActivity extends Activity {
     LinearLayout root,body,nav; List<Card> queue=new ArrayList<>(); int qIndex=0; boolean revealed=false; int answerTab=0;
     boolean mockMode=false; String mockSubject=""; MockExamEngine.Paper mockPaper=null;
     String pendingExport=null; static final int EXPORT_FEEDBACK_REQ=91, EXPORT_BACKUP_REQ=92, IMPORT_BACKUP_REQ=93;
-    String currentScreen="home"; boolean categoryOpenedFromStudy=false;
+    String currentScreen="home"; boolean categoryOpenedFromStudy=false; String activePrimaryTopic="";
 
     @Override public void onCreate(Bundle b){
         super.onCreate(b);
@@ -55,7 +55,15 @@ View masteryRow(String label,int value,int total,int color){
     LinearLayout wrap=new LinearLayout(this);wrap.setOrientation(LinearLayout.VERTICAL);LinearLayout line=new LinearLayout(this);line.setGravity(Gravity.CENTER_VERTICAL);line.addView(tv(label,13,INK,true),new LinearLayout.LayoutParams(0,-2,1));line.addView(tv(String.valueOf(value),12,MUTED,true));wrap.addView(line);
     ProgressBar p=new ProgressBar(this,null,android.R.attr.progressBarStyleHorizontal);p.setMax(Math.max(1,total));p.setProgress(value);p.getProgressDrawable().setTint(color);margin(p,0,6,0,0);wrap.addView(p,new LinearLayout.LayoutParams(-1,dp(5)));return wrap;
 }
-int categoryIconRes(String n){if(n.equals("社会工作原理"))return R.drawable.ic_cat_theory;if(n.equals("社会工作实务"))return R.drawable.ic_cat_practice;if(n.equals("督导与管理"))return R.drawable.ic_cat_management;if(n.equals("个案工作"))return R.drawable.ic_cat_case;if(n.equals("小组工作"))return R.drawable.ic_cat_group;return R.drawable.ic_cat_community;}
+int categoryIconRes(String n){
+    if(n==null)return R.drawable.ic_cat_theory;
+    if(n.equals("个案工作"))return R.drawable.ic_cat_case;
+    if(n.equals("小组工作"))return R.drawable.ic_cat_group;
+    if(n.equals("社区工作"))return R.drawable.ic_cat_community;
+    if(n.contains("行政")||n.contains("督导")||n.contains("研究")||n.contains("政策"))return R.drawable.ic_cat_management;
+    if(n.contains("实务")||n.contains("人群")||n.contains("场域"))return R.drawable.ic_cat_practice;
+    return R.drawable.ic_cat_theory;
+}
 
     // targetSdk 35 在 Android 15+ 默认 edge-to-edge。用系统栏/刘海安全区保护标题、按钮与底部导航。
     void applySafeInsets(View v){
@@ -118,7 +126,7 @@ int learnedCount(){int n=0;for(Card c:repo.cards)if(engine.learned(c))n++;return
 
 
 void showHome(){
-    currentScreen="home";categoryOpenedFromStudy=false;
+    currentScreen="home";categoryOpenedFromStudy=false;activePrimaryTopic="";
     shell("社会工作闪卡","把知识连起来，把理解留下来。","学习");
 
     LinearLayout task=box(SURFACE,16,24);task.setBackground(strokeShape(SURFACE,24,LINE));
@@ -309,7 +317,7 @@ void showStudy(){
     LinearLayout metaRow=new LinearLayout(this);metaRow.setGravity(Gravity.CENTER_VERTICAL);
     TextView kind=tv(repo.questionType(c),10,TEAL_DARK,true);kind.setBackground(shape(TEAL_SOFT,11));kind.setPadding(dp(8),dp(3),dp(8),dp(3));metaRow.addView(kind);
     TextView sourceBadge=tv(repo.examSourceLabel(c),10,repo.isRealExam(c)?ORANGE:MUTED,true);sourceBadge.setBackground(shape(repo.isRealExam(c)?ORANGE_SOFT:Color.rgb(246,248,247),11));sourceBadge.setPadding(dp(8),dp(3),dp(8),dp(3));LinearLayout.LayoutParams sbp=new LinearLayout.LayoutParams(-2,-2);sbp.setMargins(dp(6),0,0,0);metaRow.addView(sourceBadge,sbp);
-    TextView topic=tv(c.id+" · "+c.category,11,MUTED,false);topic.setPadding(dp(8),0,0,0);topic.setMaxLines(1);topic.setEllipsize(android.text.TextUtils.TruncateAt.END);metaRow.addView(topic,new LinearLayout.LayoutParams(0,-2,1));
+    TextView topic=tv(c.id+" · "+c.secondaryTopic,11,MUTED,false);topic.setPadding(dp(8),0,0,0);topic.setMaxLines(1);topic.setEllipsize(android.text.TextUtils.TruncateAt.END);metaRow.addView(topic,new LinearLayout.LayoutParams(0,-2,1));
     if(store.isFavorite(c.id)){TextView star=tv("★",17,Color.rgb(222,164,46),true);star.setPadding(0,0,dp(6),0);metaRow.addView(star);}
     TextView status=tv(engine.learned(c)?"已学习":"新学习",10,engine.learned(c)?TEAL_DARK:ORANGE,true);status.setBackground(shape(engine.learned(c)?TEAL_SOFT:ORANGE_SOFT,12));status.setPadding(dp(8),dp(3),dp(8),dp(3));metaRow.addView(status);
     ImageView more=tapIcon(R.drawable.ic_more_vertical,20,MUTED,v->showCardMenu(c,v));more.setPadding(dp(8),dp(8),dp(8),dp(8));metaRow.addView(more,new LinearLayout.LayoutParams(dp(38),dp(38)));card.addView(metaRow);
@@ -449,7 +457,7 @@ CharSequence richAnswer(String raw){
         ScrollView sv=new ScrollView(this);LinearLayout wrap=new LinearLayout(this);wrap.setOrientation(LinearLayout.VERTICAL);wrap.setPadding(dp(17),dp(8),dp(17),dp(12));
         TextView chip=tv(x.id+" · "+repo.questionType(x),11,TEAL_DARK,true);chip.setBackground(shape(TEAL_SOFT,13));chip.setPadding(dp(9),dp(5),dp(9),dp(5));wrap.addView(chip);
         TextView title=tv(x.question,18,INK,true);margin(title,0,10,0,10);wrap.addView(title);
-        TextView meta=tv(repo.examSourceLabel(x)+" · 考频"+mockEngine.effectiveFrequency(x)+" · "+x.category,11,MUTED,false);wrap.addView(meta);
+        TextView meta=tv(repo.examSourceLabel(x)+" · 考频"+mockEngine.effectiveFrequency(x)+" · "+x.secondaryTopic,11,MUTED,false);wrap.addView(meta);
         TextView hint=tv("当前只预览题目。选择“进入卡片”后可学习完整答案。",11,MUTED,false);hint.setBackground(shape(Color.rgb(246,249,248),12));hint.setPadding(dp(10),dp(9),dp(10),dp(9));margin(hint,0,12,0,0);wrap.addView(hint);sv.addView(wrap);
         AlertDialog dialog=new AlertDialog.Builder(this).setTitle("相关知识点").setView(sv).setNegativeButton("关闭",null).setPositiveButton("进入卡片",null).create();
         dialog.setOnShowListener(z->{Button go=dialog.getButton(AlertDialog.BUTTON_POSITIVE);go.setTextColor(TEAL_DARK);go.setOnClickListener(v->{dialog.dismiss();categoryOpenedFromStudy=true;showCategoryCards(x.id,new ArrayList<>(Collections.singletonList(x)));});});dialog.show();
@@ -501,8 +509,8 @@ CharSequence richAnswer(String raw){
 
 
 void showLibrary(){
-    currentScreen="library";categoryOpenedFromStudy=false;
-    shell("卡片库",repo.cards.size()+" 张卡片 · 搜索与专题","卡片库");
+    currentScreen="library";categoryOpenedFromStudy=false;activePrimaryTopic="";
+    shell("卡片库",repo.cards.size()+" 张卡片 · "+primaryTopics().size()+" 个一级专题 · "+secondaryTopicCount()+" 个二级专题","卡片库");
 
     final String[] mode={"全部"};final TextView[] filterViews=new TextView[4];String[] labels={"全部","已学习","未学习","收藏"};
 
@@ -533,14 +541,20 @@ void showLibrary(){
             for(SearchHit h:matches)list.addView(searchCardRow(h,key));return;
         }
 
-        View section=sectionHeader("学习专题",null,null);margin(section,2,0,0,9);list.addView(section);
-        for(Map.Entry<String,List<Card>> e:categories().entrySet()){
-            List<Card> filtered=new ArrayList<>();
-            for(Card c:e.getValue()){
-                boolean pass="全部".equals(mode[0])||("已学习".equals(mode[0])&&engine.learned(c))||("未学习".equals(mode[0])&&!engine.learned(c))||("收藏".equals(mode[0])&&store.isFavorite(c.id));
-                if(pass){filtered.add(c);total++;}
+        LinkedHashMap<String,List<Card>> allTopics=primaryTopics();
+        for(Map.Entry<String,List<String>> group:topicGroups().entrySet()){
+            boolean headerAdded=false;
+            for(String primary:group.getValue()){
+                List<Card> source=allTopics.get(primary);if(source==null)continue;List<Card> filtered=new ArrayList<>();
+                for(Card c:source){
+                    boolean pass="全部".equals(mode[0])||("已学习".equals(mode[0])&&engine.learned(c))||("未学习".equals(mode[0])&&!engine.learned(c))||("收藏".equals(mode[0])&&store.isFavorite(c.id));
+                    if(pass){filtered.add(c);total++;}
+                }
+                if(!filtered.isEmpty()){
+                    if(!headerAdded){View section=sectionHeader(group.getKey(),null,null);margin(section,2,list.getChildCount()==0?0:10,0,9);list.addView(section);headerAdded=true;}
+                    list.addView(topicRow(primary,filtered));
+                }
             }
-            if(!filtered.isEmpty())list.addView(topicRow(e.getKey(),filtered));
         }
         if(total==0){TextView empty=tv("没有符合条件的卡片",14,MUTED,false);empty.setGravity(Gravity.CENTER);empty.setPadding(0,dp(32),0,dp(32));list.addView(empty);}
     };
@@ -587,6 +601,8 @@ void showLibrary(){
 
             int m=containsAny(c.question,vars);if(m>0){tokenScore=Math.max(tokenScore,120+m);reason="题目";}
             m=containsAny(c.topic,vars);if(m>0&&90+m>tokenScore){tokenScore=90+m;reason="知识点";}
+            m=containsAny(c.primaryTopic,vars);if(m>0&&86+m>tokenScore){tokenScore=86+m;reason="一级专题";}
+            m=containsAny(c.secondaryTopic,vars);if(m>0&&82+m>tokenScore){tokenScore=82+m;reason="二级专题";}
             m=containsAny(c.kind,vars);if(m>0&&45+m>tokenScore){tokenScore=45+m;reason="卡片类型";}
             for(String b:c.bullets){m=containsAny(b,vars);if(m>0&&70+m>tokenScore){tokenScore=70+m;reason="答案要点";}}
             m=containsAny(c.tip,vars);if(m>0&&38+m>tokenScore){tokenScore=38+m;reason="记忆提示";}
@@ -632,13 +648,13 @@ void showLibrary(){
 
         TextView title=tv("",15,INK,true);title.setText(highlightMatches(c.question,key));text.addView(title);
         String state=engine.learned(c)?store.state(c.id).tag:"未学习";
-        TextView topic=tv("",11,MUTED,false);topic.setText(highlightMatches(c.id+" · "+c.category+" · "+c.kind+" · "+state+(store.isFavorite(c.id)?" · ★ 收藏":""),key));margin(topic,0,4,0,0);text.addView(topic);
+        TextView topic=tv("",11,MUTED,false);topic.setText(highlightMatches(c.id+" · "+c.primaryTopic+" · "+c.secondaryTopic+" · "+c.kind+" · "+state+(store.isFavorite(c.id)?" · ★ 收藏":""),key));margin(topic,0,4,0,0);text.addView(topic);
         TextView reason=tv("匹配："+hit.reason,10,TEAL_DARK,true);margin(reason,0,4,0,0);text.addView(reason);
 
         row.addView(text,new LinearLayout.LayoutParams(0,-2,1));
         TextView arrow=tv("›",24,MUTED,false);arrow.setGravity(Gravity.CENTER);row.addView(arrow,new LinearLayout.LayoutParams(dp(30),dp(44)));
         item.addView(row);
-        item.setOnClickListener(v->showCategoryCards(c.id,new ArrayList<>(Collections.singletonList(c))));
+        item.setOnClickListener(v->{activePrimaryTopic="";showCategoryCards(c.id,new ArrayList<>(Collections.singletonList(c)));});
         margin(item,0,0,0,7);
         return item;
     }
@@ -650,11 +666,11 @@ View topicRow(String name,List<Card> cards){
     LinearLayout row=box(SURFACE,13,18);row.setBackground(strokeShape(SURFACE,18,LINE));int learned=0,mast=0,fam=0,fuz=0;for(Card c:cards){String tag=store.state(c.id).tag;if(!tag.equals("未学习"))learned++;if(tag.equals("掌握"))mast++;else if(tag.equals("熟悉"))fam++;else if(tag.equals("模糊"))fuz++;}
     LinearLayout top=new LinearLayout(this);top.setGravity(Gravity.CENTER_VERTICAL);
     LinearLayout iconBox=new LinearLayout(this);iconBox.setGravity(Gravity.CENTER);iconBox.setBackground(shape(categorySoft(name),14));iconBox.addView(iconView(categoryIconRes(name),22,categoryColor(name)),new LinearLayout.LayoutParams(dp(24),dp(24)));top.addView(iconBox,new LinearLayout.LayoutParams(dp(48),dp(48)));
-    LinearLayout txt=new LinearLayout(this);txt.setOrientation(LinearLayout.VERTICAL);txt.setPadding(dp(11),0,0,0);txt.addView(tv(name,17,INK,true));txt.addView(tv("已学习 "+learned+" / "+cards.size(),11,MUTED,false));top.addView(txt,new LinearLayout.LayoutParams(0,-2,1));
+    LinearLayout txt=new LinearLayout(this);txt.setOrientation(LinearLayout.VERTICAL);txt.setPadding(dp(11),0,0,0);TextView title=tv(name,16,INK,true);title.setMaxLines(2);txt.addView(title);txt.addView(tv("已学习 "+learned+" / "+cards.size(),11,MUTED,false));top.addView(txt,new LinearLayout.LayoutParams(0,-2,1));
     String st=fuz>Math.max(2,learned/4)?"模糊较多":learned==0?"待学习":learned==cards.size()?"已学习":"继续学习";TextView status=tv(st,10,st.equals("模糊较多")?ORANGE:TEAL_DARK,true);status.setBackground(shape(st.equals("模糊较多")?ORANGE_SOFT:TEAL_SOFT,12));status.setPadding(dp(8),dp(4),dp(8),dp(4));top.addView(status);row.addView(top);
     ProgressBar pb=new ProgressBar(this,null,android.R.attr.progressBarStyleHorizontal);pb.setMax(Math.max(1,cards.size()));pb.setProgress(learned);pb.getProgressDrawable().setTint(TEAL);margin(pb,dp(59),7,0,4);row.addView(pb,new LinearLayout.LayoutParams(-1,dp(5)));
     String summary=learned==0?"尚未开始 · 共 "+cards.size()+" 张":"掌握 "+mast+"   熟悉 "+fam+"   模糊 "+fuz;
-    TextView small=tv(summary,10,MUTED,false);small.setPadding(dp(59),0,0,0);row.addView(small);row.setOnClickListener(v->showCategoryCards(name,cards));margin(row,0,0,0,8);return row;
+    TextView small=tv(summary,10,MUTED,false);small.setPadding(dp(59),0,0,0);row.addView(small);row.setOnClickListener(v->showPrimaryTopic(name,cards));margin(row,0,0,0,8);return row;
 }
     void openCategory(String name,List<Card> cards){
         List<Card> learned=engine.reviewOnlyQueue(cards,Math.max(store.dailyGoal(),cards.size()));
@@ -663,10 +679,28 @@ View topicRow(String name,List<Card> cards){
         }else{mockMode=false;mockSubject="";mockPaper=null;queue=learned;qIndex=0;revealed=false;store.saveSession(queue,0);store.saveSessionMeta("study","");showStudy();}
     }
 
-    LinkedHashMap<String,List<Card>> categories(){LinkedHashMap<String,List<Card>> m=new LinkedHashMap<>();String[] order={"社会工作原理","社会工作实务","督导与管理","个案工作","小组工作","社区工作"};for(String x:order)m.put(x,new ArrayList<>());for(Card c:repo.cards){String cat=categoryOf(c);if(!m.containsKey(cat))m.put(cat,new ArrayList<>());m.get(cat).add(c);}return m;}
-    String categoryOf(Card c){if(c!=null&&c.category!=null&&!c.category.trim().isEmpty())return c.category;return "社会工作原理";}
-    int categoryColor(String n){if(n.equals("社会工作原理"))return TEAL_DARK;if(n.equals("社会工作实务"))return Color.rgb(36,145,218);if(n.equals("督导与管理"))return Color.rgb(112,100,220);if(n.equals("个案工作"))return Color.rgb(226,139,58);if(n.equals("小组工作"))return Color.rgb(223,95,105);return TEAL;}
-    int categorySoft(String n){if(n.equals("社会工作原理"))return TEAL_SOFT;if(n.equals("社会工作实务"))return BLUE_SOFT;if(n.equals("督导与管理"))return PURPLE_SOFT;if(n.equals("个案工作"))return Color.rgb(255,242,226);if(n.equals("小组工作"))return Color.rgb(255,236,239);return TEAL_SOFT;}
+    LinkedHashMap<String,List<String>> topicGroups(){
+        LinkedHashMap<String,List<String>> g=new LinkedHashMap<>();
+        g.put("核心知识",Arrays.asList("社会工作基础与发展","社会工作价值与伦理","人类行为与社会环境","社会工作理论"));
+        g.put("专业方法",Arrays.asList("通用社会工作实务","个案工作","小组工作","社区工作"));
+        g.put("专业体系",Arrays.asList("社会工作行政、组织与督导","社会工作研究、教育与实习","社会政策、福利与保障"));
+        g.put("实务领域",Arrays.asList("重点人群社会工作","重点场域社会工作"));
+        g.put("综合训练",Arrays.asList("综合应用"));return g;
+    }
+    LinkedHashMap<String,List<Card>> primaryTopics(){
+        LinkedHashMap<String,List<Card>> m=new LinkedHashMap<>();for(List<String> group:topicGroups().values())for(String x:group)m.put(x,new ArrayList<>());
+        for(Card c:repo.cards){String p=(c.primaryTopic==null||c.primaryTopic.trim().isEmpty())?"综合应用":c.primaryTopic;if(!m.containsKey(p))m.put(p,new ArrayList<>());m.get(p).add(c);}return m;
+    }
+    LinkedHashMap<String,List<Card>> secondaryTopics(List<Card> cards){LinkedHashMap<String,List<Card>> m=new LinkedHashMap<>();for(Card c:cards){String x=(c.secondaryTopic==null||c.secondaryTopic.trim().isEmpty())?"其他":c.secondaryTopic;if(!m.containsKey(x))m.put(x,new ArrayList<>());m.get(x).add(c);}return m;}
+    int secondaryTopicCount(){LinkedHashSet<String> s=new LinkedHashSet<>();for(Card c:repo.cards)if(c.secondaryTopic!=null&&!c.secondaryTopic.trim().isEmpty())s.add(c.primaryTopic+"\u0001"+c.secondaryTopic);return s.size();}
+    int categoryColor(String n){
+        if(n==null)return TEAL_DARK;if(n.equals("个案工作"))return Color.rgb(226,139,58);if(n.equals("小组工作"))return Color.rgb(223,95,105);if(n.equals("社区工作"))return TEAL;
+        if(n.contains("行政")||n.contains("研究")||n.contains("政策"))return Color.rgb(112,100,220);if(n.contains("人群")||n.contains("场域")||n.contains("实务"))return Color.rgb(36,145,218);return TEAL_DARK;
+    }
+    int categorySoft(String n){
+        if(n==null)return TEAL_SOFT;if(n.equals("个案工作"))return Color.rgb(255,242,226);if(n.equals("小组工作"))return Color.rgb(255,236,239);if(n.equals("社区工作"))return TEAL_SOFT;
+        if(n.contains("行政")||n.contains("研究")||n.contains("政策"))return PURPLE_SOFT;if(n.contains("人群")||n.contains("场域")||n.contains("实务"))return BLUE_SOFT;return TEAL_SOFT;
+    }
 
 
 void showStats(){
@@ -739,9 +773,24 @@ void showSettings(){
     void showHistory(Card c){StudyStore.State s=store.state(c.id);StringBuilder b=new StringBuilder();int i=1;SimpleDateFormat f=new SimpleDateFormat("MM-dd HH:mm",Locale.getDefault());for(StudyStore.Rec r:s.history)b.append(i++).append(". ").append(r.ok?"熟悉":"不清楚").append("  ").append(f.format(new Date(r.ts))).append("\n");if(s.history.isEmpty())b.append("暂无记录");b.append("\n薄弱度：").append(Math.round(engine.difficulty(c)*100)).append("%");new AlertDialog.Builder(this).setTitle("最近10次 · "+c.topic).setMessage(b.toString()).setPositiveButton("关闭",null).show();}
 
 
+void showPrimaryTopic(String name,List<Card> cards){
+    currentScreen="primary";categoryOpenedFromStudy=false;activePrimaryTopic=name;LinkedHashMap<String,List<Card>> subs=secondaryTopics(cards);
+    shell(name,cards.size()+" 张卡片 · "+subs.size()+" 个二级专题","卡片库");
+    int learned=0;for(Card c:cards)if(engine.learned(c))learned++;
+    LinearLayout summary=box(Color.rgb(240,248,245),14,18);LinearLayout sr=new LinearLayout(this);sr.setGravity(Gravity.CENTER_VERTICAL);LinearLayout st=new LinearLayout(this);st.setOrientation(LinearLayout.VERTICAL);st.addView(tv("一级专题进度",14,TEAL_DARK,true));st.addView(tv("已学习 "+learned+" / "+cards.size(),12,MUTED,false));sr.addView(st,new LinearLayout.LayoutParams(0,-2,1));Button begin=btn(learned==0?"开始专题":"继续专题",TEAL,Color.WHITE);begin.setTextSize(12);begin.setOnClickListener(v->openCategory(name,cards));sr.addView(begin,new LinearLayout.LayoutParams(dp(104),dp(42)));summary.addView(sr);margin(summary,0,0,0,14);body.addView(summary);
+    View header=sectionHeader("二级专题","共 "+subs.size()+" 个",null);margin(header,2,0,0,9);body.addView(header);
+    for(Map.Entry<String,List<Card>> e:subs.entrySet())body.addView(secondaryTopicRow(e.getKey(),e.getValue()));
+}
+
+View secondaryTopicRow(String name,List<Card> cards){
+    LinearLayout row=box(SURFACE,12,16);row.setBackground(strokeShape(SURFACE,16,LINE));int learned=0;for(Card c:cards)if(engine.learned(c))learned++;
+    LinearLayout line=new LinearLayout(this);line.setGravity(Gravity.CENTER_VERTICAL);LinearLayout txt=new LinearLayout(this);txt.setOrientation(LinearLayout.VERTICAL);txt.addView(tv(name,15,INK,true));txt.addView(tv(cards.size()+" 张 · 已学习 "+learned,11,MUTED,false));line.addView(txt,new LinearLayout.LayoutParams(0,-2,1));TextView arrow=tv("›",22,MUTED,false);arrow.setGravity(Gravity.CENTER);line.addView(arrow,new LinearLayout.LayoutParams(dp(28),dp(42)));row.addView(line);row.setOnClickListener(v->showCategoryCards(name,cards));margin(row,0,0,0,7);return row;
+}
+
 void showCategoryCards(String name,List<Card> cards){
-    currentScreen=categoryOpenedFromStudy?"categoryFromStudy":"category";
-    shell(name,cards.size()+" 张卡片 · 查看与学习","卡片库");
+    currentScreen=categoryOpenedFromStudy?"categoryFromStudy":(!activePrimaryTopic.isEmpty()?"secondary":"category");
+    String sub=activePrimaryTopic.isEmpty()?cards.size()+" 张卡片 · 查看与学习":activePrimaryTopic+" · "+cards.size()+" 张卡片";
+    shell(name,sub,"卡片库");
     int learned=0;for(Card c:cards)if(engine.learned(c))learned++;
     LinearLayout summary=box(Color.rgb(240,248,245),14,18);LinearLayout sr=new LinearLayout(this);sr.setGravity(Gravity.CENTER_VERTICAL);LinearLayout st=new LinearLayout(this);st.setOrientation(LinearLayout.VERTICAL);st.addView(tv("专题进度",14,TEAL_DARK,true));st.addView(tv("已学习 "+learned+" / "+cards.size(),12,MUTED,false));sr.addView(st,new LinearLayout.LayoutParams(0,-2,1));Button begin=btn(learned==0?"开始专题":"继续专题",TEAL,Color.WHITE);begin.setTextSize(12);begin.setOnClickListener(v->openCategory(name,cards));sr.addView(begin,new LinearLayout.LayoutParams(dp(104),dp(42)));summary.addView(sr);margin(summary,0,0,0,12);body.addView(summary);
 
@@ -807,7 +856,10 @@ void showCategoryCards(String name,List<Card> cards){
             showHome();
             return;
         }
-        if("category".equals(currentScreen)){
+        if("secondary".equals(currentScreen)){
+            List<Card> cards=primaryTopics().get(activePrimaryTopic);if(cards!=null){showPrimaryTopic(activePrimaryTopic,cards);return;}showLibrary();return;
+        }
+        if("primary".equals(currentScreen)||"category".equals(currentScreen)){
             showLibrary();
             return;
         }

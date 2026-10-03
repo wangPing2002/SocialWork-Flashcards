@@ -170,7 +170,7 @@ for idx,m in enumerate(matches):
         'sourceLevel':meta.get('答案来源层级',''),
         'exactExamSources':exact,
         'recallExamSources':recall,
-        'contentVersion':'2.8.0',
+        'contentVersion':'2.8.3',
         'verified':meta.get('答案状态','').startswith('✅') or bool(answer),
     }
     cards.append(card)
@@ -178,6 +178,21 @@ for idx,m in enumerate(matches):
 assert len(cards)==2497 and len({c['id'] for c in cards})==2497
 assert cards[0]['id']=='C0001' and cards[-1]['id']=='C2497'
 assert all(c['question'] and c['fullAnswer'] for c in cards)
+
+# V2.8.3 two-level learning-topic taxonomy. The taxonomy file is the reviewed
+# C0001-C2497 mapping; importing the markdown must not erase it.
+taxonomy_path=ROOT/'content/card_taxonomy_v2_8_3.json'
+if taxonomy_path.exists():
+    taxonomy=json.loads(taxonomy_path.read_text(encoding='utf-8')).get('cards',{})
+    missing=[]
+    for c in cards:
+        t=taxonomy.get(c['id'])
+        if not t:
+            missing.append(c['id']); continue
+        c['primaryTopic']=t.get('primaryTopic','')
+        c['secondaryTopic']=t.get('secondaryTopic','')
+    if missing:
+        raise RuntimeError('taxonomy missing card ids: '+','.join(missing[:20]))
 
 ASSETS.mkdir(parents=True,exist_ok=True)
 (ASSETS/'cards.json').write_text(json.dumps(cards,ensure_ascii=False,indent=2),encoding='utf-8')
