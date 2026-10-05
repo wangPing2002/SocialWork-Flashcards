@@ -42,10 +42,7 @@ jobs:
           gradle-version: '8.10.2'
 
       - name: Verify Gradle environment
-        run: |
-          gradle --version
-          test ! -e ./gradlew
-          test ! -e ./gradlew.bat
+        run: gradle --version
 
       - name: Validate signing secrets
         env:

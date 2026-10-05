@@ -425,7 +425,7 @@ Android SDK 35
 Build Tools 35.0.0
 ```
 
-> **V2.9.0 采用 GitHub Actions 作为标准测试/构建环境，不使用 Gradle Wrapper。** 仓库不包含 `gradlew`、`gradlew.bat` 或 `gradle/wrapper`；工作流通过 `gradle/actions/setup-gradle@v4` 安装 Gradle 8.10.2，并直接执行 `gradle :app:assembleDebug` / `gradle :app:assembleRelease`。
+> **V2.9.0 采用 GitHub Actions 作为标准测试/构建环境，不使用 Gradle Wrapper。** 工作流通过 `gradle/actions/setup-gradle@v4` 安装 Gradle 8.10.2，并直接执行 `gradle :app:assembleDebug` / `gradle :app:assembleRelease`。本发行包本身不包含 `gradlew`、`gradlew.bat` 或 `gradle/wrapper`；即使覆盖到旧 Git 仓库后仍残留旧 wrapper 文件，CI 也不会调用它们。
 
 ## 8.2 Dev APK
 

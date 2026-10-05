@@ -67,3 +67,9 @@ git push -u origin test/v2.9.0
 ```
 
 在 GitHub → Actions → **Build Android APK** 查看构建结果并下载 Artifact。
+
+## 覆盖旧仓库时的说明
+
+本项目的 GitHub Actions **不会调用 `./gradlew`**。测试与发布均由 `gradle/actions/setup-gradle@v4` 安装 Gradle 8.10.2，然后直接执行 `gradle` 命令。
+
+如果将本压缩包直接覆盖到一个旧工作目录，旧目录中原先存在的 `gradlew` / `gradlew.bat` 可能不会因为“覆盖”操作而自动删除；这不影响当前 CI，因为 workflow 不检查也不调用这些文件。若希望仓库内容也完全清理，可在本地手动删除后再提交。
