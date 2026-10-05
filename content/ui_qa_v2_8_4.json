@@ -1,0 +1,34 @@
+{
+  "version": "2.8.4",
+  "versionCode": 21,
+  "cards": 2497,
+  "realExamCards": 160,
+  "examRelatedKnowledgeCards": 167,
+  "examRelatedOverlapWithRealExam": 0,
+  "frameworkPilot": {
+    "title": "社会工作服务",
+    "cardRange": "C0011-C0033",
+    "count": 23,
+    "nodes": [
+      "要素",
+      "目标",
+      "功能"
+    ]
+  },
+  "navigation": {
+    "topicStudyReturnsToOrigin": true,
+    "relatedKnowledgeUsesOverlay": true,
+    "singleCardFromTopicContinuesSequence": true
+  },
+  "stability": {
+    "searchInitialRenderLimit": 60,
+    "bankInitialRenderLimit": 60,
+    "loadMoreStep": 60,
+    "lastCrashRecorder": true,
+    "diagnosticEntryInSettings": true
+  },
+  "checks": {
+    "allRelatedIdsExist": true,
+    "cardIdsUnique": true
+  }
+}
