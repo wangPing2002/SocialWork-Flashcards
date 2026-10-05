@@ -1,0 +1,32 @@
+{
+  "version": "2.8.5",
+  "cards_total": 2497,
+  "unique_linked_cards": 2497,
+  "coverage_percent": 100.0,
+  "nodes_total": 46,
+  "missing_card_ids": [],
+  "duplicate_ids_within_node": 0,
+  "branches": {
+    "一、社会工作服务的要素": {
+      "core": 922,
+      "related": 953,
+      "total": 1875
+    },
+    "二、社会工作服务的目标": {
+      "core": 328,
+      "related": 1281,
+      "total": 1609
+    },
+    "三、社会工作服务的功能": {
+      "core": 130,
+      "related": 1693,
+      "total": 1823
+    }
+  },
+  "checks": {
+    "all_mapped_ids_exist": true,
+    "answers_modified": false,
+    "questions_modified": false,
+    "framework_is_many_to_many": true
+  }
+}
