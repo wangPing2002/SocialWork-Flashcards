@@ -16,8 +16,9 @@
       "理解例子",
       "记忆口诀"
     ],
-    "nextCardDefaultsToFullAnswer": true,
-    "fullAnswerHighlightPreserved": "#C62828"
+    "fullAnswerHighlightPreserved": "#C62828",
+    "quickMemoryModePersistsAcrossCards": true,
+    "modeChangesOnlyOnExplicitToggle": true
   },
   "dataIntegrity": {
     "master_standard_answers_modified": false,

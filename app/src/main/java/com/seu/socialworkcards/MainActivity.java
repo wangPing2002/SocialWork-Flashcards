@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
     final HashMap<String,Integer> examRelationCounts=new HashMap<>();
     JSONObject serviceFrameworkCache=null; String currentFrameworkNodeId=""; boolean currentFrameworkCoreOnly=false;
     String studyReturnFrameworkNodeId=""; boolean studyReturnFrameworkCoreOnly=false;
-    JSONObject quickMemoryCache=null; boolean quickMemoryMode=false; String quickMemoryCardId="";
+    JSONObject quickMemoryCache=null; boolean quickMemoryMode=false;
     static boolean crashRecorderInstalled=false;
 
     @Override public void onCreate(Bundle b){
@@ -386,7 +386,6 @@ View answerTab(String label,int tab,Card c){
 
 void renderCoreAnswer(LinearLayout inner,Card c){
     if(c==null)return;
-    if(!c.id.equals(quickMemoryCardId)){quickMemoryCardId=c.id;quickMemoryMode=false;}
     String answer=repo.fullAnswer(c);
     if(c.answerStatus!=null&&!c.answerStatus.isEmpty()&&!c.answerStatus.startsWith("✅")){
         TextView warn=tv("⚠ "+c.answerStatus,11,ORANGE,true);warn.setBackground(shape(ORANGE_SOFT,11));warn.setPadding(dp(10),dp(8),dp(10),dp(8));margin(warn,0,0,0,10);inner.addView(warn);
