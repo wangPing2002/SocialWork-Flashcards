@@ -2,7 +2,7 @@
   "version": "2.9.0",
   "versionCode": 25,
   "generatedAt": "2026-10-06",
-  "scope": "UI layout, cold-start performance, search/list rendering, local-cache and restore-flow stability upgrade",
+  "scope": "UI layout, information architecture, cold-start performance, search/list rendering, local-cache and restore-flow stability upgrade",
   "android": {
     "minSdk": 24,
     "targetSdk": 35,
@@ -33,7 +33,11 @@
     "studyViewportSpacingRefined": true,
     "systemBarInsetsPreserved": true,
     "versionCardInSettings": true,
-    "quickMemoryModePersistsAcrossSessions": true
+    "quickMemoryModePersistsAcrossSessions": true,
+    "libraryLearningModulesRemoved": true,
+    "textbookSystemBankMovedToStudy": true,
+    "learningEntryReturnPathsAligned": true,
+    "librarySearchPinnedBelowHeader": true
   },
   "performance": {
     "cardsJsonLoadedOffMainThread": true,

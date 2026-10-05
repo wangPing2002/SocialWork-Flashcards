@@ -216,7 +216,10 @@ void showHome(){
     View trueBank=priorityBankRow("真题题库","优先建立东南大学命题感",homeExamCards.size(),ORANGE,v->showBankCards("真题题库",realExamCards(),"历年真题与回忆主题","examBank"));body.addView(trueBank);margin(trueBank,0,0,0,7);
     View knowledgeBank=priorityBankRow("真题关联知识点","刷完真题后补齐直接相关考点",homeRelatedCards.size(),TEAL_DARK,v->showBankCards("真题关联知识点",examRelatedKnowledgeCards(),"由真题的关联问题自动汇总","relatedBank"));body.addView(knowledgeBank);margin(knowledgeBank,0,0,0,4);
 
-    LinearLayout section=new LinearLayout(this);section.setGravity(Gravity.CENTER_VERTICAL);TextView st=tv("真题模拟",20,INK,true);section.addView(st,new LinearLayout.LayoutParams(0,-2,1));TextView more=tv("题库仍在卡片库  ›",12,MUTED,false);more.setOnClickListener(v->showLibrary());section.addView(more);margin(section,2,18,2,8);body.addView(section);
+    View systemTitle=sectionHeader("教材系统题库","按教材框架建立完整知识体系",null);margin(systemTitle,2,18,2,8);body.addView(systemTitle);
+    View frameworkEntry=priorityBankRow("教材框架 · 社会工作服务","要素 → 目标 → 功能 · 2497 张卡建立多对多知识链接",frameworkUniqueLinkedCount(),Color.rgb(112,100,220),v->showServiceFramework());body.addView(frameworkEntry);margin(frameworkEntry,0,0,0,4);
+
+    LinearLayout section=new LinearLayout(this);section.setGravity(Gravity.CENTER_VERTICAL);TextView st=tv("真题模拟",20,INK,true);section.addView(st,new LinearLayout.LayoutParams(0,-2,1));margin(section,2,18,2,8);body.addView(section);
     TextView simNote=tv("参考2015—2026东南大学真题结构，结合内容范围、考频、收藏与熟练度智能随机组卷。",11,MUTED,false);margin(simNote,2,0,2,10);body.addView(simNote);
     body.addView(mockExamEntry("331","社会工作原理","5 名词解释 · 5 简答 · 3 论述","150 分"));
     body.addView(mockExamEntry("437","社会工作实务","3 名词解释 · 2 简答 · 1 材料/案例 · 1 论述","150 分"));
@@ -591,13 +594,6 @@ void showLibrary(){
     currentScreen="library";categoryOpenedFromStudy=false;activePrimaryTopic="";
     shell("卡片库",repo.cards.size()+" 张卡片 · "+primaryTopics().size()+" 个一级专题 · "+secondaryTopicCount()+" 个二级专题","卡片库");
 
-    List<Card> examCards=realExamCards(),relatedCards=examRelatedKnowledgeCards();
-    View priorityTitle=sectionHeader("优先学习","真题 → 关联知识点",null);margin(priorityTitle,2,0,0,8);body.addView(priorityTitle);
-    View examEntry=priorityBankRow("真题题库","先刷历年真题与回忆主题，建立命题感",examCards.size(),ORANGE,v->showBankCards("真题题库",realExamCards(),"历年真题与回忆主题","examBank"));body.addView(examEntry);margin(examEntry,0,0,0,7);
-    View relatedEntry=priorityBankRow("真题关联知识点","由真题关联问题汇总的小库，按关联强度优先",relatedCards.size(),TEAL_DARK,v->showBankCards("真题关联知识点",examRelatedKnowledgeCards(),"由真题的关联问题自动汇总","relatedBank"));body.addView(relatedEntry);margin(relatedEntry,0,0,0,14);
-    View systemTitle=sectionHeader("教材系统题库","按教材框架与专题刷",null);margin(systemTitle,2,0,0,8);body.addView(systemTitle);
-    View frameworkTrial=priorityBankRow("教材框架 · 社会工作服务","要素 → 目标 → 功能 · 2497 张卡建立多对多知识链接",frameworkUniqueLinkedCount(),Color.rgb(112,100,220),v->showServiceFramework());body.addView(frameworkTrial);margin(frameworkTrial,0,0,0,12);
-
     final String[] mode={"全部"};final TextView[] filterViews=new TextView[4];final int[] searchLimit={60};String[] labels={"全部","已学习","未学习","收藏"};
 
     LinearLayout searchBox=box(SURFACE,10,18);searchBox.setBackground(strokeShape(SURFACE,18,LINE));
@@ -605,9 +601,13 @@ void showLibrary(){
     searchRow.addView(iconView(R.drawable.ic_search,20,MUTED),new LinearLayout.LayoutParams(dp(34),dp(44)));
     EditText search=new EditText(this);search.setHint("搜索题目、知识点或答案");search.setSingleLine(true);search.setTextSize(14);search.setTextColor(INK);search.setHintTextColor(Color.rgb(155,166,162));search.setBackgroundColor(Color.TRANSPARENT);search.setPadding(dp(2),0,dp(8),0);searchRow.addView(search,new LinearLayout.LayoutParams(0,dp(48),1));
     TextView clear=tv("清除",11,MUTED,true);clear.setGravity(Gravity.CENTER);clear.setVisibility(View.GONE);clear.setOnClickListener(v->search.setText(""));searchRow.addView(clear,new LinearLayout.LayoutParams(dp(48),dp(40)));
-    searchBox.addView(searchRow);body.addView(searchBox);
+    searchBox.addView(searchRow);
+    // Keep the library search field pinned below the page header while the card content scrolls.
+    LinearLayout pinnedSearch=new LinearLayout(this);pinnedSearch.setOrientation(LinearLayout.VERTICAL);pinnedSearch.setBackgroundColor(BG);pinnedSearch.setPadding(dp(16),dp(4),dp(16),dp(8));
+    pinnedSearch.addView(searchBox,new LinearLayout.LayoutParams(-1,-2));
+    root.addView(pinnedSearch,1,new LinearLayout.LayoutParams(-1,-2));
 
-    TextView searchTip=tv("支持多关键词与常用同义词",10,MUTED,false);margin(searchTip,4,5,0,10);body.addView(searchTip);
+    TextView searchTip=tv("支持多关键词与常用同义词",10,MUTED,false);margin(searchTip,4,1,0,10);body.addView(searchTip);
 
     LinearLayout filters=new LinearLayout(this);filters.setOrientation(LinearLayout.HORIZONTAL);
     for(int i=0;i<labels.length;i++){final int idx=i;TextView c=chip(labels[i],i==0);filterViews[i]=c;filters.addView(c,new LinearLayout.LayoutParams(0,dp(38),1));if(i<labels.length-1)filters.addView(gap(6));}
@@ -836,7 +836,7 @@ void showLibrary(){
     }
     void addFrameworkChildren(LinearLayout target,JSONArray children){if(children==null)return;for(int i=0;i<children.length();i++){JSONObject n=children.optJSONObject(i);if(n!=null)target.addView(frameworkNodeRow(n,0));}}
     void showServiceFramework(){
-        currentScreen="framework";currentFrameworkNodeId="";currentFrameworkCoreOnly=false;shell("教材框架 · 社会工作服务","要素 → 目标 → 功能 · "+frameworkUniqueLinkedCount()+" / "+repo.cards.size()+" 张已建立链接","卡片库");
+        currentScreen="framework";currentFrameworkNodeId="";currentFrameworkCoreOnly=false;shell("教材框架 · 社会工作服务","要素 → 目标 → 功能 · "+frameworkUniqueLinkedCount()+" / "+repo.cards.size()+" 张已建立链接","学习");
         LinearLayout note=box(Color.rgb(248,250,249),12,14);note.addView(tv("这不是23张卡的章节试点，而是覆盖完整题库的知识关系网。框架节点以教材与思维导图为准；外部资料只用于扩展“某张卡与哪个节点相关”，不改写题目和答案。",12,MUTED,false));margin(note,0,0,0,12);body.addView(note);
         JSONObject fw=serviceFramework();JSONArray branches=fw.optJSONArray("branches");if(branches==null){body.addView(tv("框架数据加载失败",14,RED,true));return;}
         LinearLayout all=box(PURPLE_SOFT,14,16);LinearLayout ar=new LinearLayout(this);ar.setGravity(Gravity.CENTER_VERTICAL);LinearLayout at=new LinearLayout(this);at.setOrientation(LinearLayout.VERTICAL);at.addView(tv("全框架学习",16,INK,true));at.addView(tv("2497张卡至少关联一个框架节点；同一卡可同时出现在要素、目标和功能中。",11,MUTED,false));ar.addView(at,new LinearLayout.LayoutParams(0,-2,1));Button start=btn("开始",Color.rgb(112,100,220),Color.WHITE);start.setTextSize(12);start.setOnClickListener(v->startStudySequence(new ArrayList<>(repo.cards),null));ar.addView(start,new LinearLayout.LayoutParams(dp(86),dp(42)));all.addView(ar);margin(all,0,0,0,14);body.addView(all);
@@ -844,7 +844,7 @@ void showLibrary(){
     }
     void showFrameworkTreeNode(String nodeId){
         JSONObject node=frameworkNodeById(nodeId);if(node==null){showServiceFramework();return;}currentScreen="frameworkTree";currentFrameworkNodeId=nodeId;currentFrameworkCoreOnly=false;
-        String parent=frameworkParentId(nodeId);String crumb=parent.isEmpty()?"教材框架":"上一级";shell(node.optString("title"),node.optInt("totalCount")+" 张关联卡 · 核心 "+node.optInt("coreCount")+" · 拓展 "+node.optInt("relatedCount"),crumb);
+        shell(node.optString("title"),node.optInt("totalCount")+" 张关联卡 · 核心 "+node.optInt("coreCount")+" · 拓展 "+node.optInt("relatedCount"),"学习");
         String noteText=node.optString("note");if(!noteText.isEmpty()){TextView note=tv(noteText,11,MUTED,false);note.setBackground(shape(Color.rgb(248,250,249),12));note.setPadding(dp(10),dp(8),dp(10),dp(8));margin(note,0,0,0,10);body.addView(note);}
         LinearLayout actions=new LinearLayout(this);actions.setOrientation(LinearLayout.HORIZONTAL);Button core=btn("核心考点 "+node.optInt("coreCount"),TEAL_SOFT,TEAL_DARK);core.setTextSize(11);core.setOnClickListener(v->showFrameworkCards(nodeId,true));Button all=btn("全部关联 "+node.optInt("totalCount"),Color.rgb(112,100,220),Color.WHITE);all.setTextSize(11);all.setOnClickListener(v->showFrameworkCards(nodeId,false));actions.addView(core,new LinearLayout.LayoutParams(0,dp(44),1));actions.addView(gap(8));actions.addView(all,new LinearLayout.LayoutParams(0,dp(44),1));margin(actions,0,0,0,12);body.addView(actions);
         JSONArray children=node.optJSONArray("children");if(children!=null&&children.length()>0){body.addView(sectionHeader("下一级知识节点","",null));margin(body.getChildAt(body.getChildCount()-1),0,5,0,8);addFrameworkChildren(body,children);}else{TextView hint=tv("这是末级知识节点。可直接进入“核心考点”或“全部关联”刷题。",11,MUTED,false);body.addView(hint);}
@@ -882,10 +882,11 @@ void showLibrary(){
     }
 
     void showBankCards(String title,List<Card> cards,String subtitle,String screen){
-        currentScreen=screen;categoryOpenedFromStudy=false;activePrimaryTopic="";setActiveList(title,cards);shell(title,cards.size()+" 张 · "+subtitle,"卡片库");
+        currentScreen=screen;categoryOpenedFromStudy=false;activePrimaryTopic="";setActiveList(title,cards);shell(title,cards.size()+" 张 · "+subtitle,"学习");
         int learned=0;for(Card c:cards)if(engine.learned(c))learned++;
         LinearLayout summary=box(Color.rgb(240,248,245),14,18);LinearLayout sr=new LinearLayout(this);sr.setGravity(Gravity.CENTER_VERTICAL);LinearLayout st=new LinearLayout(this);st.setOrientation(LinearLayout.VERTICAL);st.addView(tv("独立学习队列",14,TEAL_DARK,true));st.addView(tv("已学习 "+learned+" / "+cards.size(),12,MUTED,false));sr.addView(st,new LinearLayout.LayoutParams(0,-2,1));Button begin=btn(learned==0?"从头开始":"继续刷题",TEAL,Color.WHITE);begin.setTextSize(12);begin.setOnClickListener(v->openCategory(title,cards));sr.addView(begin,new LinearLayout.LayoutParams(dp(104),dp(42)));summary.addView(sr);body.addView(summary);
-        TextView note=tv("这里与2497张教材系统题库使用同一份卡片内容，但入口、学习序列和返回路径独立，避免维护两份答案。",11,MUTED,false);note.setBackground(shape(Color.rgb(248,250,249),12));note.setPadding(dp(10),dp(8),dp(10),dp(8));margin(note,0,8,0,12);body.addView(note);
+        String queueNote="frameworkBank".equals(screen)?"框架节点直接调用2497张母版卡片，不复制题目或答案；学习记录、快速记忆和熟练度与主学习系统完全共用。":"真题小库与2497张教材系统题库共用同一份母版卡片，但学习序列和返回路径独立，避免重复维护答案。";
+        TextView note=tv(queueNote,11,MUTED,false);note.setBackground(shape(Color.rgb(248,250,249),12));note.setPadding(dp(10),dp(8),dp(10),dp(8));margin(note,0,8,0,12);body.addView(note);
         LinearLayout list=new LinearLayout(this);list.setOrientation(LinearLayout.VERTICAL);body.addView(list);final int[] limit={60};final Runnable[] render=new Runnable[1];render[0]=()->{list.removeAllViews();int n=Math.min(limit[0],cards.size());boolean related="relatedBank".equals(screen);for(int i=0;i<n;i++)list.addView(bankCardRow(cards.get(i),cards,related));if(n<cards.size()){Button more=btn("继续加载（剩余 "+(cards.size()-n)+" 张）",Color.rgb(246,249,248),TEAL_DARK);more.setTextSize(12);more.setOnClickListener(v->{limit[0]=Math.min(cards.size(),limit[0]+60);render[0].run();});list.addView(more,new LinearLayout.LayoutParams(-1,dp(46)));}};render[0].run();
     }
 
@@ -1100,8 +1101,9 @@ void showCategoryCards(String name,List<Card> cards){
         }
         if("frameworkBank".equals(currentScreen)){showFrameworkTreeNode(currentFrameworkNodeId);return;}
         if("frameworkTree".equals(currentScreen)){String parent=frameworkParentId(currentFrameworkNodeId);if(parent.isEmpty())showServiceFramework();else showFrameworkTreeNode(parent);return;}
-        if("framework".equals(currentScreen)){showLibrary();return;}
-        if("primary".equals(currentScreen)||"category".equals(currentScreen)||"examBank".equals(currentScreen)||"relatedBank".equals(currentScreen)){
+        if("framework".equals(currentScreen)){showHome();return;}
+        if("examBank".equals(currentScreen)||"relatedBank".equals(currentScreen)){showHome();return;}
+        if("primary".equals(currentScreen)||"category".equals(currentScreen)){
             showLibrary();
             return;
         }
