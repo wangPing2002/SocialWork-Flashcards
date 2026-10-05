@@ -1,0 +1,28 @@
+{
+  "version": "2.8.8",
+  "versionCode": 24,
+  "baseVersion": "2.8.6",
+  "quickMemoryCards": 2497,
+  "idsContiguous": true,
+  "missingExampleCount": 0,
+  "missingMnemonicCount": 0,
+  "ui": {
+    "fullScreenReaderButtonRemoved": true,
+    "twoStateToggle": [
+      "完整解答",
+      "快速记忆"
+    ],
+    "quickMemoryShows": [
+      "理解例子",
+      "记忆口诀"
+    ],
+    "nextCardDefaultsToFullAnswer": true,
+    "fullAnswerHighlightPreserved": "#C62828"
+  },
+  "dataIntegrity": {
+    "master_standard_answers_modified": false,
+    "master_questions_modified": false,
+    "true_exam_metadata_modified": false,
+    "frequency_modified": false
+  }
+}
