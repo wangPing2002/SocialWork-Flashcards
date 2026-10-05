@@ -25,6 +25,7 @@ public class MainActivity extends Activity {
     final HashMap<String,Integer> examRelationCounts=new HashMap<>();
     JSONObject serviceFrameworkCache=null; String currentFrameworkNodeId=""; boolean currentFrameworkCoreOnly=false;
     String studyReturnFrameworkNodeId=""; boolean studyReturnFrameworkCoreOnly=false;
+    JSONObject quickMemoryCache=null; boolean quickMemoryMode=false;
     static boolean crashRecorderInstalled=false;
 
     @Override public void onCreate(Bundle b){
@@ -384,33 +385,37 @@ View answerTab(String label,int tab,Card c){
 
 
 void renderCoreAnswer(LinearLayout inner,Card c){
+    if(c==null)return;
     String answer=repo.fullAnswer(c);
     if(c.answerStatus!=null&&!c.answerStatus.isEmpty()&&!c.answerStatus.startsWith("✅")){
         TextView warn=tv("⚠ "+c.answerStatus,11,ORANGE,true);warn.setBackground(shape(ORANGE_SOFT,11));warn.setPadding(dp(10),dp(8),dp(10),dp(8));margin(warn,0,0,0,10);inner.addView(warn);
     }
-    LinearLayout answerHead=new LinearLayout(this);answerHead.setGravity(Gravity.CENTER_VERTICAL);TextView answerTitle=tv("完整解答",12,INK,true);answerHead.addView(answerTitle,new LinearLayout.LayoutParams(0,-2,1));TextView reader=tv("⛶  全屏阅读",11,TEAL_DARK,true);reader.setGravity(Gravity.CENTER);reader.setBackground(shape(TEAL_SOFT,12));reader.setPadding(dp(10),dp(6),dp(10),dp(6));reader.setOnClickListener(v->showAnswerReader(c));answerHead.addView(reader);margin(answerHead,0,0,0,8);inner.addView(answerHead);
-    TextView body=tv("",16,INK,false);body.setText(richAnswer(answer));body.setLineSpacing(dp(3),1.20f);body.setTextIsSelectable(true);inner.addView(body);
+
+    LinearLayout answerHead=new LinearLayout(this);answerHead.setGravity(Gravity.CENTER_VERTICAL);
+    TextView answerTitle=tv(quickMemoryMode?"快速记忆":"完整解答",12,INK,true);answerHead.addView(answerTitle,new LinearLayout.LayoutParams(0,-2,1));
+    TextView toggle=tv(quickMemoryMode?"↻  完整解答":"↻  快速记忆",11,TEAL_DARK,true);toggle.setGravity(Gravity.CENTER);toggle.setBackground(shape(TEAL_SOFT,12));toggle.setPadding(dp(10),dp(6),dp(10),dp(6));toggle.setOnClickListener(v->{quickMemoryMode=!quickMemoryMode;showStudy();});answerHead.addView(toggle);
+    margin(answerHead,0,0,0,8);inner.addView(answerHead);
+
+    if(quickMemoryMode){
+        JSONObject memory=quickMemoryFor(c);
+        String example=memory.optString("example","").trim();
+        String mnemonic=memory.optString("mnemonic","").trim();
+
+        LinearLayout exampleBox=box(Color.rgb(239,248,245),12,14);
+        TextView exampleTitle=tv("理解例子",12,TEAL_DARK,true);exampleBox.addView(exampleTitle);
+        TextView exampleBody=tv(example.isEmpty()?"暂无理解例子。":example,15,INK,false);exampleBody.setLineSpacing(dp(3),1.20f);exampleBody.setTextIsSelectable(true);margin(exampleBody,0,7,0,0);exampleBox.addView(exampleBody);inner.addView(exampleBox);
+
+        LinearLayout mnemonicBox=box(Color.rgb(255,247,239),12,14);
+        TextView mnemonicTitle=tv("记忆口诀",12,ORANGE,true);mnemonicBox.addView(mnemonicTitle);
+        TextView mnemonicBody=tv(mnemonic.isEmpty()?"暂无记忆口诀。":mnemonic,15,INK,false);mnemonicBody.setLineSpacing(dp(3),1.20f);mnemonicBody.setTextIsSelectable(true);margin(mnemonicBody,0,7,0,0);mnemonicBox.addView(mnemonicBody);margin(mnemonicBox,0,10,0,0);inner.addView(mnemonicBox);
+    }else{
+        TextView body=tv("",16,INK,false);body.setText(richAnswer(answer));body.setLineSpacing(dp(3),1.20f);body.setTextIsSelectable(true);inner.addView(body);
+    }
+
     String srcText="核心教材依据  "+c.origin;
     if(c.sourceLevel!=null&&!c.sourceLevel.isEmpty())srcText+="\n答案来源层级  "+c.sourceLevel;
     TextView src=tv(srcText,10,MUTED,false);src.setBackground(shape(Color.rgb(248,250,249),11));src.setPadding(dp(10),dp(8),dp(10),dp(8));margin(src,0,12,0,7);inner.addView(src);
-    TextView scrollHint=tv("上下滑动查看完整解答 · #C62828 红色为核心得分点",10,Color.rgb(151,163,160),false);scrollHint.setGravity(Gravity.CENTER);inner.addView(scrollHint);
-}
-
-void showAnswerReader(Card c){
-    final Dialog dialog=new Dialog(this,android.R.style.Theme_Material_Light_NoActionBar_Fullscreen);
-    LinearLayout page=new LinearLayout(this);page.setOrientation(LinearLayout.VERTICAL);page.setBackgroundColor(BG);applySafeInsets(page);
-
-    LinearLayout head=new LinearLayout(this);head.setGravity(Gravity.CENTER_VERTICAL);head.setPadding(dp(14),dp(8),dp(14),dp(6));
-    ImageView back=tapIcon(R.drawable.ic_arrow_back,22,INK,v->dialog.dismiss());head.addView(back,new LinearLayout.LayoutParams(dp(42),dp(42)));
-    LinearLayout titles=new LinearLayout(this);titles.setOrientation(LinearLayout.VERTICAL);titles.setPadding(dp(8),0,dp(8),0);titles.addView(tv(c.id+" · "+repo.questionType(c),17,INK,true));TextView q=tv(c.question,11,MUTED,false);q.setMaxLines(2);q.setEllipsize(android.text.TextUtils.TruncateAt.END);titles.addView(q);head.addView(titles,new LinearLayout.LayoutParams(0,-2,1));
-    TextView close=tv("关闭",12,TEAL_DARK,true);close.setPadding(dp(8),dp(8),dp(4),dp(8));close.setOnClickListener(v->dialog.dismiss());head.addView(close);page.addView(head);
-
-    ScrollView scroll=new ScrollView(this);scroll.setFillViewport(true);scroll.setVerticalScrollBarEnabled(true);
-    LinearLayout content=new LinearLayout(this);content.setOrientation(LinearLayout.VERTICAL);content.setPadding(dp(20),dp(12),dp(20),dp(24));
-    TextView answer=tv("",17,INK,false);answer.setText(richAnswer(repo.fullAnswer(c)));answer.setLineSpacing(dp(3),1.22f);answer.setTextIsSelectable(true);content.addView(answer);
-    TextView source=tv("核心教材依据  "+c.origin,11,MUTED,false);source.setBackground(shape(Color.rgb(248,250,249),12));source.setPadding(dp(12),dp(10),dp(12),dp(10));margin(source,0,18,0,0);content.addView(source);
-    scroll.addView(content,new ScrollView.LayoutParams(-1,-2));page.addView(scroll,new LinearLayout.LayoutParams(-1,0,1));
-    dialog.setContentView(page);dialog.show();
+    TextView scrollHint=tv(quickMemoryMode?"快速记忆用于理解与回忆 · 正式作答仍以完整解答为准":"上下滑动查看完整解答 · #C62828 红色为核心得分点",10,Color.rgb(151,163,160),false);scrollHint.setGravity(Gravity.CENTER);inner.addView(scrollHint);
 }
 
 CharSequence richAnswer(String raw){
@@ -756,6 +761,15 @@ void showLibrary(){
     List<Card> cardsByIdRange(int from,int to){List<Card> out=new ArrayList<>();for(int i=from;i<=to;i++){Card c=repo.byId(String.format(Locale.ROOT,"C%04d",i));if(c!=null)out.add(c);}return out;}
 
     String readAssetText(String name){try{java.io.InputStream in=getAssets().open(name);java.io.ByteArrayOutputStream out=new java.io.ByteArrayOutputStream();byte[] b=new byte[8192];int n;while((n=in.read(b))>0)out.write(b,0,n);in.close();return out.toString("UTF-8");}catch(Exception e){return "";}}
+    JSONObject quickMemory(){
+        if(quickMemoryCache!=null)return quickMemoryCache;
+        try{quickMemoryCache=new JSONObject(readAssetText("quick_memory_v2_8_8.json"));}catch(Exception e){quickMemoryCache=new JSONObject();}
+        return quickMemoryCache;
+    }
+    JSONObject quickMemoryFor(Card c){
+        if(c==null)return new JSONObject();
+        JSONObject x=quickMemory().optJSONObject(c.id);return x==null?new JSONObject():x;
+    }
     JSONObject serviceFramework(){
         if(serviceFrameworkCache!=null)return serviceFrameworkCache;
         try{serviceFrameworkCache=new JSONObject(readAssetText("service_framework_v2_8_5.json"));}catch(Exception e){serviceFrameworkCache=new JSONObject();}

@@ -10,8 +10,8 @@ android {
         applicationId 'com.seu.socialworkcards'
         minSdk 24
         targetSdk 35
-        versionCode 23
-        versionName '2.8.6'
+        versionCode 24
+        versionName '2.8.8'
         manifestPlaceholders = [appLabel: '社会工作闪卡']
     }
 
