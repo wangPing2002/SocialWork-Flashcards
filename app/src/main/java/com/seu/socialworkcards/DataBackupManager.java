@@ -21,7 +21,7 @@ public class DataBackupManager {
             JSONObject root=new JSONObject();
             root.put("backupSchemaVersion",1);
             root.put("app","社会工作闪卡");
-            root.put("appVersion","2.4.1");
+            root.put("appVersion","2.9.0");
             root.put("applicationId","com.seu.socialworkcards");
             root.put("exportedAt",System.currentTimeMillis());
             root.put("study",study.exportJson());

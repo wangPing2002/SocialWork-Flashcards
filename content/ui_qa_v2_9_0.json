@@ -1,0 +1,69 @@
+{
+  "version": "2.9.0",
+  "versionCode": 25,
+  "generatedAt": "2026-10-06",
+  "scope": "UI layout, cold-start performance, search/list rendering, local-cache and restore-flow stability upgrade",
+  "android": {
+    "minSdk": 24,
+    "targetSdk": 35,
+    "compileSdk": 35
+  },
+  "dataIntegrity": {
+    "cards": 2497,
+    "idRange": [
+      "C0001",
+      "C2497"
+    ],
+    "uniqueIds": true,
+    "idsContiguous": true,
+    "missingQuestions": 0,
+    "missingAnswers": 0,
+    "invalidRelatedLinks": 0,
+    "quickMemoryCards": 2497,
+    "quickMemoryMissingIds": 0,
+    "quickMemoryExtraIds": 0,
+    "serviceFrameworkUniqueLinkedCards": 2497,
+    "bundledAssetFilesChangedVsV2_8_8": false,
+    "questionsAnswersExamMetadataModified": false
+  },
+  "ui": {
+    "visualHierarchyUnified": true,
+    "bottomNavigationRefined": true,
+    "homeSinglePrimaryCta": true,
+    "studyViewportSpacingRefined": true,
+    "systemBarInsetsPreserved": true,
+    "versionCardInSettings": true,
+    "quickMemoryModePersistsAcrossSessions": true
+  },
+  "performance": {
+    "cardsJsonLoadedOffMainThread": true,
+    "quickMemoryAndFrameworkPreloadedOffMainThread": true,
+    "cardIdHashIndex": true,
+    "studyStateMemoryCache": true,
+    "contentOverrideMemoryCache": true,
+    "searchDebounceMs": 180,
+    "topicListInitialRenderLimit": 60,
+    "topicListLoadMoreStep": 60,
+    "backupRestoreRepositoryReloadOffMainThread": true,
+    "officialContentRestoreReloadOffMainThread": true
+  },
+  "stability": {
+    "startupLoadingState": true,
+    "startupFailureRetryPage": true,
+    "lastCrashRecorderRetained": true,
+    "streamCloseUsesTryWithResources": true,
+    "activityDestroyedCallbackGuard": true,
+    "backupSchemaChanged": false,
+    "contentDatabaseSchemaChanged": false
+  },
+  "staticValidation": {
+    "resourceXmlWellFormed": true,
+    "missingDrawableReferences": 0,
+    "assetJsonParseErrors": 0,
+    "javaBraceBalance": true,
+    "javaSyntaxLikeDiagnostics": 0,
+    "androidAssembleExecuted": false,
+    "assembleNote": "This container has Java but no Android SDK/Gradle installation. Final APK compilation should run through the repository GitHub Actions workflow (Java 17, Gradle 8.10.2, Android SDK 35)."
+  },
+  "releaseDecision": "SOURCE_QA_PASS_BUILD_PENDING_CI"
+}

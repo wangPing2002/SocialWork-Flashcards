@@ -11,9 +11,11 @@ public class StudyStore {
         public int stage=0; public long due=0; public String tag="未学习"; public final List<Rec> history=new ArrayList<>();
     }
     private final SharedPreferences sp;
+    private final Map<String,State> stateCache=new HashMap<>();
     public StudyStore(Context c){ sp=c.getSharedPreferences("study_v1",Context.MODE_PRIVATE); }
 
     public State state(String id){
+        State cached=stateCache.get(id);if(cached!=null)return cached;
         State s=new State();
         try{
             JSONObject o=new JSONObject(sp.getString("card_"+id,"{}"));
@@ -21,9 +23,13 @@ public class StudyStore {
             JSONArray a=o.optJSONArray("history");
             if(a!=null){ int start=Math.max(0,a.length()-10); for(int i=start;i<a.length();i++){JSONObject r=a.getJSONObject(i);s.history.add(new Rec(r.optBoolean("ok"),r.optLong("ts")));}}
         }catch(Exception ignored){}
+        stateCache.put(id,s);
         return s;
     }
+    public void preloadStates(List<Card> cards){if(cards==null)return;for(Card c:cards)if(c!=null)state(c.id);}
+
     public void save(String id, State s){
+        stateCache.put(id,s);
         try{
             JSONObject o=new JSONObject(); o.put("stage",s.stage);o.put("due",s.due);o.put("tag",s.tag);
             JSONArray a=new JSONArray(); int start=Math.max(0,s.history.size()-10);
@@ -38,6 +44,8 @@ public class StudyStore {
         return Math.max(5,Math.min(300,sp.getInt("reviewGoal",30)));
     }
     public void setDailyGoal(int n){sp.edit().putInt("dailyGoal",Math.max(5,Math.min(300,n))).apply();}
+    public boolean quickMemoryMode(){return sp.getBoolean("quick_memory_mode",false);}
+    public void setQuickMemoryMode(boolean enabled){sp.edit().putBoolean("quick_memory_mode",enabled).apply();}
 
     String today(){return new SimpleDateFormat("yyyy-MM-dd",Locale.getDefault()).format(new Date());}
     String dayKey(Date d){return new SimpleDateFormat("yyyy-MM-dd",Locale.getDefault()).format(d);}
@@ -145,10 +153,11 @@ public class StudyStore {
             }catch(Exception ignored){}
         }
         ed.apply();
+        stateCache.clear();
     }
 
     public void clearAll(){
         // Clear learning/session/settings data but preserve content-level user choices: favorites and manual exam-frequency overrides.
-        SharedPreferences.Editor ed=sp.edit();for(String k:sp.getAll().keySet())if(!k.startsWith("fav_")&&!k.startsWith("freq_"))ed.remove(k);ed.apply();
+        SharedPreferences.Editor ed=sp.edit();for(String k:sp.getAll().keySet())if(!k.startsWith("fav_")&&!k.startsWith("freq_"))ed.remove(k);ed.apply();stateCache.clear();
     }
 }

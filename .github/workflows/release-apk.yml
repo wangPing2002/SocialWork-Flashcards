@@ -41,6 +41,12 @@ jobs:
         with:
           gradle-version: '8.10.2'
 
+      - name: Verify Gradle environment
+        run: |
+          gradle --version
+          test ! -e ./gradlew
+          test ! -e ./gradlew.bat
+
       - name: Validate signing secrets
         env:
           KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
