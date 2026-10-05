@@ -714,6 +714,8 @@ void showLibrary(){
     void clearStudyReturn(){studyReturnScreen="";studyReturnName="";studyReturnPrimary="";studyReturnIds.clear();studyReturnFrameworkNodeId="";studyReturnFrameworkCoreOnly=false;}
     void rememberStudyReturn(String screen,String name,String primary,List<Card> cards){
         studyReturnScreen=screen==null?"":screen;studyReturnName=name==null?"":name;studyReturnPrimary=primary==null?"":primary;studyReturnIds.clear();if(cards!=null)for(Card c:cards)studyReturnIds.add(c.id);
+        // Every new study origin starts from a clean route-specific state.
+        studyReturnFrameworkNodeId="";studyReturnFrameworkCoreOnly=false;
     }
     void rememberCurrentAsStudyReturn(){
         if("primary".equals(currentScreen)){
@@ -721,6 +723,12 @@ void showLibrary(){
         }else if("secondary".equals(currentScreen)||"category".equals(currentScreen)||"examBank".equals(currentScreen)||"relatedBank".equals(currentScreen)||"frameworkBank".equals(currentScreen)){
             rememberStudyReturn(currentScreen,activeListName,activePrimaryTopic,cardsFromIds(activeListIds));
             if("frameworkBank".equals(currentScreen)){studyReturnFrameworkNodeId=currentFrameworkNodeId;studyReturnFrameworkCoreOnly=currentFrameworkCoreOnly;}
+        }else if("frameworkTree".equals(currentScreen)){
+            rememberStudyReturn("frameworkTree","教材框架", "",null);studyReturnFrameworkNodeId=currentFrameworkNodeId;
+        }else if("framework".equals(currentScreen)){
+            rememberStudyReturn("framework","教材框架 · 社会工作服务","",null);
+        }else if("stats".equals(currentScreen)){
+            rememberStudyReturn("stats","学习统计","",null);
         }else if("library".equals(currentScreen)) rememberStudyReturn("library","","",null);
         else clearStudyReturn();
     }
@@ -732,6 +740,9 @@ void showLibrary(){
         if("examBank".equals(screen)){clearStudyReturn();showBankCards("真题题库",realExamCards(),"历年真题与回忆主题","examBank");return;}
         if("relatedBank".equals(screen)){clearStudyReturn();showBankCards("真题关联知识点",examRelatedKnowledgeCards(),"由真题的关联问题自动汇总","relatedBank");return;}
         if("frameworkBank".equals(screen)){String nodeId=studyReturnFrameworkNodeId;boolean coreOnly=studyReturnFrameworkCoreOnly;clearStudyReturn();showFrameworkCards(nodeId,coreOnly);return;}
+        if("frameworkTree".equals(screen)){String nodeId=studyReturnFrameworkNodeId;clearStudyReturn();if(nodeId==null||nodeId.isEmpty())showServiceFramework();else showFrameworkTreeNode(nodeId);return;}
+        if("framework".equals(screen)){clearStudyReturn();showServiceFramework();return;}
+        if("stats".equals(screen)){clearStudyReturn();showStats();return;}
         if("library".equals(screen)){clearStudyReturn();showLibrary();return;}
         clearStudyReturn();showHome();
     }
@@ -889,7 +900,7 @@ void showStats(){
     View weakTitle=sectionHeader("薄弱卡片", "前 10 张", null);margin(weakTitle,2,18,0,8);body.addView(weakTitle);
     List<Card> weak=new ArrayList<>();for(Card x:repo.cards)if(engine.learned(x))weak.add(x);weak.sort((a,b)->Double.compare(engine.difficulty(b),engine.difficulty(a)));
     if(weak.isEmpty()){LinearLayout empty=box(SURFACE,18,18);empty.setBackground(strokeShape(SURFACE,18,LINE));TextView e=tv("完成一些学习后，这里会出现需要优先复习的卡片。",13,MUTED,false);e.setGravity(Gravity.CENTER);empty.addView(e);body.addView(empty);}else{
-        for(int i=0;i<Math.min(10,weak.size());i++){Card x=weak.get(i);LinearLayout wr=box(SURFACE,12,16);wr.setBackground(strokeShape(SURFACE,16,LINE));LinearLayout line=new LinearLayout(this);line.setGravity(Gravity.CENTER_VERTICAL);TextView rank=tv(String.valueOf(i+1),11,i<3?Color.WHITE:MUTED,true);rank.setGravity(Gravity.CENTER);rank.setBackground(shape(i==0?RED:i==1?ORANGE:i==2?Color.rgb(224,164,54):Color.rgb(238,242,240),12));line.addView(rank,new LinearLayout.LayoutParams(dp(28),dp(28)));LinearLayout tx=new LinearLayout(this);tx.setOrientation(LinearLayout.VERTICAL);tx.setPadding(dp(10),0,dp(8),0);TextView qq=tv(x.question,13,INK,true);qq.setMaxLines(2);tx.addView(qq);tx.addView(tv(x.topic,10,MUTED,false));line.addView(tx,new LinearLayout.LayoutParams(0,-2,1));TextView pct=tv(Math.round(engine.difficulty(x)*100)+"%",11,i<3?ORANGE:MUTED,true);line.addView(pct);wr.addView(line);wr.setOnClickListener(v->{mockMode=false;mockSubject="";mockPaper=null;queue=engine.reviewOnlyQueue(Collections.singletonList(x),Math.min(3,store.dailyGoal()));qIndex=0;revealed=false;store.saveSession(queue,0);store.saveSessionMeta("study","");showStudy();});margin(wr,0,0,0,7);body.addView(wr);}
+        for(int i=0;i<Math.min(10,weak.size());i++){Card x=weak.get(i);LinearLayout wr=box(SURFACE,12,16);wr.setBackground(strokeShape(SURFACE,16,LINE));LinearLayout line=new LinearLayout(this);line.setGravity(Gravity.CENTER_VERTICAL);TextView rank=tv(String.valueOf(i+1),11,i<3?Color.WHITE:MUTED,true);rank.setGravity(Gravity.CENTER);rank.setBackground(shape(i==0?RED:i==1?ORANGE:i==2?Color.rgb(224,164,54):Color.rgb(238,242,240),12));line.addView(rank,new LinearLayout.LayoutParams(dp(28),dp(28)));LinearLayout tx=new LinearLayout(this);tx.setOrientation(LinearLayout.VERTICAL);tx.setPadding(dp(10),0,dp(8),0);TextView qq=tv(x.question,13,INK,true);qq.setMaxLines(2);tx.addView(qq);tx.addView(tv(x.topic,10,MUTED,false));line.addView(tx,new LinearLayout.LayoutParams(0,-2,1));TextView pct=tv(Math.round(engine.difficulty(x)*100)+"%",11,i<3?ORANGE:MUTED,true);line.addView(pct);wr.addView(line);wr.setOnClickListener(v->{List<Card> review=engine.reviewOnlyQueue(Collections.singletonList(x),Math.min(3,store.dailyGoal()));if(review.isEmpty())review=new ArrayList<>(Collections.singletonList(x));startStudySequence(review,null);});margin(wr,0,0,0,7);body.addView(wr);}
     }
 }
 
