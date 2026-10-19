@@ -9,9 +9,9 @@
 - `content/metadata/`：题库结构、来源等静态元信息。
 - `content/references/`：2497 题的参考匹配与索引，供下一阶段教材核对使用，不进入 APK。
 - `content/ledger/review_progress.csv`：逐卡答案 SHA-256 和历史证据状态。第一次生成覆盖 2497/2497 张卡。`HISTORICAL_TARGET_HASH_MATCH` 只表示可核对的 Round13—23 清单的目标答案哈希仍与当前答案一致，**不表示重新验证了教材准确性**；其他状态不能认定为未精修。
-- `archive/manifests/`：Round13—23 精修清单，只读历史证据。
-- `archive/qa/`、`archive/reports/`、`archive/reviews/`：历史 QA、专题、精修与验收记录。
-- `archive/legacy_scripts/`：原始逐 Round 写回脚本、旧导入与旧分类脚本留档，**已经退出运行入口**；其历史相对路径未被维护，禁止直接执行。
+- 历史归档已移出当前项目。必要的逐卡验收状态、答案哈希及资料依据由 `content/ledger/` 和 `content/references/` 维护。
+- 原始历史审校资料保存在项目外的独立 ZIP 备份中；已提交的历史文件也可通过 Git 提交记录追溯。
+- 旧版逐 Round 写回脚本已删除；在 Git 历史中仍可追溯原始提交。后续仅允许使用 `scripts/apply_answer_patch.py` 与 `scripts/apply_memory_patch.py`，不得复制批次脚本。
 - `scripts/`：仍维护的工具。任何自动更改答案应通过 `apply_answer_patch.py`，不应直接运行老脚本。
 - `local_backups/`：本机应用安全补丁产生的完整文件备份，已加入 `.gitignore`，不提交 Git。
 
@@ -86,3 +86,7 @@ gradle :app:assembleDebug
 ## 已知验证边界
 
 本包已执行 Python 级静态及题库一致性检查；此环境未配置完整 Android Gradle/SDK 构建环境，**不能声称已经完成 APK 编译和设备运行验收**。Android Java 改动仅涉及资源路径常量，仍需通过 GitHub Actions 或本地 Gradle 构建验收。
+
+## 持续维护
+
+项目结构与批次补丁的永久约束请参阅 [持续维护规范](CONTENT_WORKFLOW.md)。

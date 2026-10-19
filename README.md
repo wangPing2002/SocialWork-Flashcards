@@ -574,16 +574,11 @@ SocialWork-Flashcards/
 │   ├── metadata/                   # 题库来源、分类等元数据
 │   ├── references/                 # 2497 题参考匹配结果
 │   └── ledger/review_progress.csv  # 逐卡 SHA-256 与审校状态
-├── archive/
-│   ├── manifests/                  # 旧版 Round13—23 审校清单
-│   ├── qa/                         # 历史测试输出
-│   ├── reports/                    # 历史构建与评估报告
-│   ├── reviews/                    # 历史人工复核证据
-│   └── legacy_scripts/             # 过时的一次性写回脚本（不可直接运行）
 ├── scripts/
 │   ├── backup_project.py           # 独立 ZIP 源码备份与 SHA-256 校验
 │   ├── verify_repository.py        # 只读题库一致性验证
 │   ├── apply_answer_patch.py       # 严格哈希守卫、母版/App/台账三方同步
+│   ├── apply_memory_patch.py       # 适用于全部批次的快速记忆增量工具
 │   ├── audit_answer_types_v2_9_0.py
 │   ├── build_service_framework_v2_8_5.py
 │   └── create-release-keystore.ps1
@@ -591,9 +586,10 @@ SocialWork-Flashcards/
 ├── docs/
 │   ├── STRUCTURE_AND_MIGRATION.md
 │   └── REFACTOR_REPORT.md
-├── design/
 └── README.md
 ```
+
+后续批次不得再新增 `sync_round*.py` 或 `apply_batchXX.py`。通用流程见 [持续维护规范](docs/CONTENT_WORKFLOW.md)。
 
 本次源码包去除了 `.git` 和 Android 构建缓存，**不等于删除既有 Git 仓库历史**。请参阅 [迁移指南](docs/STRUCTURE_AND_MIGRATION.md) 把整理后的文件合并到已有 Git 工作区。
 
@@ -607,7 +603,7 @@ SocialWork-Flashcards/
 content/master/cards_master_2497.md
 ```
 
-文件名为 Windows / ZIP 兼容的稳定 ASCII 字符，原始正文未改动。**禁止执行 `archive/legacy_scripts` 中的旧母版导入脚本重新覆盖已审校答案。**
+文件名为 Windows / ZIP 兼容的稳定 ASCII 字符，原始正文未改动。**已移除旧版逐 Round 写回脚本；任何新审校补丁均应通过通用工具按 SHA-256 校验后应用。**
 
 ## App 运行数据
 
@@ -623,7 +619,7 @@ app/src/main/assets/service_framework.json
 
 ## 审校证据与逐卡追踪
 
-旧 QA、Round 清单移入 `archive/`，供比对前期验收成果，不再与运行数据混用；主台账为 `content/ledger/review_progress.csv`。可在项目根目录执行：
+历史审校原始资料保存于项目外的独立备份，当前有效的验收状态与答案哈希统一由 content/ledger/ 维护。后续批次通过通用补丁工具更新，不再向项目中增加批次专用脚本。
 
 ```powershell
 python scripts/verify_repository.py

@@ -62,6 +62,14 @@ def validate() -> dict:
     if missing_refs:errors.append(f'Service framework invalid card links: {missing_refs[:10]}')
     for path in ASSETS.glob('*v2_*.json'):
         notices.append(f'Versioned old asset still in live folder: {path.name}')
+    # CI guard: never reintroduce per-Round syncing scripts into the source tree.
+    old_dir = ROOT/'archive'/'legacy_scripts'
+    if old_dir.exists() and any(old_dir.rglob('*.py')):
+        errors.append('Obsolete archive/legacy_scripts/*.py reintroduced; use reusable patch tools')
+    if any(ROOT.glob('scripts/sync_round*_master*.py')):
+        errors.append('Per-round scripts under scripts/ are not allowed')
+    if any(ROOT.glob('scripts/apply_batch*.py')):
+        errors.append('Per-batch apply scripts under scripts/ are not allowed')
     # Historical patch files are archived; app/src assets must stay the Android runtime source.
     return {'ok':not errors,'cards':len(cards),'master_sections':len(regions),
             'master_answer_mismatches':len(mismatch),'quick_memory_items':len(quick),
