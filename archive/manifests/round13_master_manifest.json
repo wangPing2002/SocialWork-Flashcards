@@ -1,0 +1,119 @@
+[
+  {
+    "card_id": "C0242",
+    "question": "某学龄前期服务对象同时出现“家庭教育方式”和“同伴交往”问题。请从个人、家庭与社会环境三个层面进行评估并提出介入重点。",
+    "question_type": "案例分析题",
+    "old_fullanswer_sha256": "763ee4a0197db93ad5bd7986586e3b9ec117f633f4b84536e65a986541b1c2ae",
+    "new_fullanswer_sha256": "6ce6e5ebd89531190aa0d22b2d97f18a284500468b002021c8ce328894488423",
+    "source_field": "2026《社会工作综合能力（中级）》第五章；《社会工作概论》第六章",
+    "review_batch": "round13_template_depth_2026_10"
+  },
+  {
+    "card_id": "C0275",
+    "question": "某成年早期服务对象同时出现“就业与职业适应”和“婚姻与家庭建立”问题。请从个人、家庭与社会环境三个层面进行评估并提出介入重点。",
+    "question_type": "案例分析题",
+    "old_fullanswer_sha256": "70ba88d98f524da6a2d2193b719a3c9b0530e8ee432628ef2ac1add467c25835",
+    "new_fullanswer_sha256": "1fc650cbaa50e168ec1e2dd58f66e9335bdfe9d7d622316d90b0b7ea67e347ce",
+    "source_field": "2026《社会工作综合能力（中级）》第五章；《社会工作概论》第六章",
+    "review_batch": "round13_template_depth_2026_10"
+  },
+  {
+    "card_id": "C0286",
+    "question": "某成年中期服务对象同时出现“更年期与健康变化”和“婚姻与亲子关系变化”问题。请从个人、家庭与社会环境三个层面进行评估并提出介入重点。",
+    "question_type": "案例分析题",
+    "old_fullanswer_sha256": "9996b4b00491497b58f168ce8f516e95df1757afa95c9c38b74c8d410f7e109e",
+    "new_fullanswer_sha256": "481fcaa38f8cbfecec53cc3e44fe2cc5a612c1d214e675ddac3ee9dc4eb53466",
+    "source_field": "2026《社会工作综合能力（中级）》第五章；《社会工作概论》第六章",
+    "review_batch": "round13_template_depth_2026_10"
+  },
+  {
+    "card_id": "C0233",
+    "question": "结合婴幼儿期的发展任务，论述“发展任务—风险—资源—社会工作介入”之间的关系。",
+    "question_type": "论述题",
+    "old_fullanswer_sha256": "4fc18e085fb5d257b5a4392740775c9a2bf3b090b659ee369bf7d343eb7b45e4",
+    "new_fullanswer_sha256": "4ed2f62135457f8df3cd7760b80b5cee698ccb12dcf4715bcd577e78ae0bb18b",
+    "source_field": "2026《社会工作综合能力（中级）》第五章；《社会工作概论》第六章",
+    "review_batch": "round13_template_depth_2026_10"
+  },
+  {
+    "card_id": "C0244",
+    "question": "结合学龄前期的发展任务，论述“发展任务—风险—资源—社会工作介入”之间的关系。",
+    "question_type": "论述题",
+    "old_fullanswer_sha256": "84cad2946274453d211d8c42620707e79cec9428d217f5165e5aec31318541d5",
+    "new_fullanswer_sha256": "c19bdcc40af7109fe97d3c0fa20136f94a544f7c769ce2c0ff7c065e91d62b81",
+    "source_field": "2026《社会工作综合能力（中级）》第五章；《社会工作概论》第六章",
+    "review_batch": "round13_template_depth_2026_10"
+  },
+  {
+    "card_id": "C0255",
+    "question": "结合学龄期的发展任务，论述“发展任务—风险—资源—社会工作介入”之间的关系。",
+    "question_type": "论述题",
+    "old_fullanswer_sha256": "cb07479c76bec1babe4a6d78ca6f1a61124d520a9f69e8322ac718db02fae8b8",
+    "new_fullanswer_sha256": "44cf4e5f7052772394bf9755d90783a52ca459ae297c8e7df056d4f28b806f4d",
+    "source_field": "2026《社会工作综合能力（中级）》第五章；《社会工作概论》第六章",
+    "review_batch": "round13_template_depth_2026_10"
+  },
+  {
+    "card_id": "C0266",
+    "question": "结合青少年期的发展任务，论述“发展任务—风险—资源—社会工作介入”之间的关系。",
+    "question_type": "论述题",
+    "old_fullanswer_sha256": "df55bd8afcfb321fd17c5d31c7731219b13b482da86f990cd9ada80df9efe49d",
+    "new_fullanswer_sha256": "e32fb5ecab89d71b3100d422fb02d0ebbb37e098a320c35b33a784ea9512015e",
+    "source_field": "2026《社会工作综合能力（中级）》第五章；《社会工作概论》第六章",
+    "review_batch": "round13_template_depth_2026_10"
+  },
+  {
+    "card_id": "C0277",
+    "question": "结合成年早期的发展任务，论述“发展任务—风险—资源—社会工作介入”之间的关系。",
+    "question_type": "论述题",
+    "old_fullanswer_sha256": "1186c47b2c67e91bb2a73e80ea76f16adee22ebe67ad6dae8afd82f69de451e4",
+    "new_fullanswer_sha256": "57a80ddeca009549953b1a1b04a472b3489c14889a88181c3b5b8e25a88a88ba",
+    "source_field": "2026《社会工作综合能力（中级）》第五章；《社会工作概论》第六章",
+    "review_batch": "round13_template_depth_2026_10"
+  },
+  {
+    "card_id": "C0288",
+    "question": "结合成年中期的发展任务，论述“发展任务—风险—资源—社会工作介入”之间的关系。",
+    "question_type": "论述题",
+    "old_fullanswer_sha256": "ad01f8644631f9256e445ea674502a01c9864720274f33cd25eadfd1952414e7",
+    "new_fullanswer_sha256": "5129847d0370a145d2035244bf044e10ebde79b17ca3ade1e72e97056e9edb15",
+    "source_field": "2026《社会工作综合能力（中级）》第五章；《社会工作概论》第六章",
+    "review_batch": "round13_template_depth_2026_10"
+  },
+  {
+    "card_id": "C0299",
+    "question": "结合成年晚期的发展任务，论述“发展任务—风险—资源—社会工作介入”之间的关系。",
+    "question_type": "论述题",
+    "old_fullanswer_sha256": "49800f2b053ef26d9334633d99628c482eb3ea49fd2a95b72a67e76661e069dc",
+    "new_fullanswer_sha256": "b05f3749ef9eec78d648df300b882f97fdbbe7c03466722e39bd1b1da3f8581d",
+    "source_field": "2026《社会工作综合能力（中级）》第五章；《社会工作概论》第六章",
+    "review_batch": "round13_template_depth_2026_10"
+  },
+  {
+    "card_id": "C1082",
+    "question": "结合复杂公共服务问题，论述协同治理、服务联动与个案管理如何形成不同层次的协同。",
+    "question_type": "论述题",
+    "old_fullanswer_sha256": "383e6f2eec89fdcee0a6e5b793e2b341accefa7ca816452eb200a9af0fa87f5d",
+    "new_fullanswer_sha256": "59e17573018a1f1e8a2dcc8d7ca4f10d33795300b9ea047febf38335995bed08",
+    "source_field": "《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章",
+    "review_batch": "round13_template_depth_2026_10"
+  },
+  {
+    "card_id": "C1035",
+    "question": "试述督导在专业成长、伦理风险控制和组织责任之间的桥梁作用。",
+    "question_type": "论述题",
+    "old_fullanswer_sha256": "88c3867a0a879eca0e4e473cc24078965e1af8dd8c0e8cbe3826b7d616273aea",
+    "new_fullanswer_sha256": "51fea8ea037840a6ec820a05a3e1b3cf0b9d1a96ac131a71ccba1fcbd078e3be",
+    "source_field": "《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章",
+    "review_batch": "round13_template_depth_2026_10"
+  },
+  {
+    "card_id": "C0029",
+    "question": "某社区社会工作者既为困难家庭提供个案辅导，又协调慈善资源、推动社区议事。请分析其分别扮演了哪些专业角色。",
+    "question_type": "案例分析题",
+    "old_fullanswer_sha256": "9cb1654e797c9c6d32492ab3cdef53b641618662c5d24fcff3e9967af76d4f71",
+    "new_fullanswer_sha256": "a76f8b1be70ebd38ca20677e468d5fe27666f820b95c652e43a12c29fcfdf5cf",
+    "source_field": "《社会工作概论》第一、二章；2026《社会工作综合能力（中级）》第一章；部分通用模式参照《社会工作实务-250纠正》第一章",
+    "review_batch": "round13_template_depth_2026_10"
+  }
+]

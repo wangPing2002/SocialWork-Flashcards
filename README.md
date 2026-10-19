@@ -43,6 +43,8 @@
 - [11. 版本更新记录](#11-版本更新记录)
 - [12. README 维护规则](#12-readme-维护规则)
 
+**项目整理（2026-10-18）：** 目录已按运行资源、母版、参考索引、审校历史分层；2497 张卡、标准答案和快速记忆内容保持不变。迁移与精修流程请见 [项目结构与安全迁移](docs/STRUCTURE_AND_MIGRATION.md)、[结构重构验收报告](docs/REFACTOR_REPORT.md)。
+
 ---
 
 # 1. 项目简介
@@ -85,7 +87,7 @@ V2.9.0 是一次以 **UI、流畅度与稳定性** 为核心的版本升级。�
 ## 2.2 冷启动与运行流畅度优化
 
 - 约 9.3 MB 的 `cards.json` 不再阻塞 UI 主线程：启动时先显示加载页，再在后台完成题库解析；
-- `quick_memory_v2_8_8.json` 与教材框架数据在启动后台预载，减少第一次切换“快速记忆”时的卡顿；
+- `quick_memory.json` 与教材框架数据在启动后台预载，减少第一次切换“快速记忆”时的卡顿；
 - `CardRepository.byId()` 从逐卡线性查找改为 HashMap 索引；
 - SQLite 本地修正与完整答案覆盖增加内存缓存，避免启动、搜索和列表渲染中反复查询数据库；
 - 学习状态增加内存缓存，避免统计、专题进度和组卷时反复解析 SharedPreferences JSON；
@@ -268,19 +270,42 @@ C0001—C2497，共 2497 张卡片
 
 ## 5.2 资料使用原则
 
-题型、考试结构、答案组织方式与考点权重主要参考：
+### 答案内容优先级（2026-10 调整）
 
-- 王思斌《社会工作概论》（第 4 版）相关资料；
-- 东南大学社会工作考研真题 2015—2026。
+**先检索《王思斌〈社会工作概论〉（第 4 版）笔记和课后习题（含考研真题）详解》272 页，再使用教材补足或核对。** 对每一道卡片，按以下顺序处理：
 
-事实性内容优先使用教材与可核验资料，不把真题汇编或 OCR 文本作为唯一事实来源。
+1. **《详解》“考研真题与典型题详解”优先**：先核查是否有同一题目或题意、考查范围、题型基本一致的题。优先吸收该题的定义、核心分点、论证次序和答题层次。区分有明确高校年份的真题与未注明来源的典型题，不混淆真题身份。
+2. **《详解》“课后习题详解”次之**：没有合适的考研真题解析时，优先查找同题或实质等价的课后习题参考答案；“复习笔记”和知识框架仅辅助定位、查漏与理解，不替代完整作答。
+3. **四份指定核心教材用于核验和补强**：上述详解没有对应答案、覆盖不足、存在知识错误或与题意不符时，使用《社会工作概论》《社会工作实务-250纠正》及 2026 年人大版《社会工作综合能力（中级）》上下两部分，补齐概念、机制、步骤、实务技巧和必要案例；对重要冲突回到教材核验，不把辅导书当作高于教材的事实权威。
+4. **东南大学真题与《东南大学——院校分析与真题解读》PPT负责校准**：前者限定本校实际命题要求、考查角度和真题标记；后者校准名词解释的“范畴—定义—多维补充”、简答/论述的“总—分—总”、论证逻辑、得分点突出和案例表达。PPT 的答题模板不是新的事实性知识来源。
+5. **其他参考答案仅作兜底补充**：当《详解》和四份核心教材仍不足以回答时，才参考已提供的其他真题解析与高分答案，提取有依据的补充得分点；不得无证据拼接、虚构内容或改变原题范围。
 
-资料发生冲突时：
+**“优先参考”不等于“逐字照搬”。** 对已完成的 2497 张卡先匹配，再逐卡比较；原答案已完整且与《详解》一致的保留，缺项才增补，结构不佳才重组。原题只问一个维度时，不能因为《详解》有完整大题就扩写到偏题。
 
-- 不静默拼接成一个“看似完整”的答案；
-- 保留教材 / 考试框架的明确口径；
-- 必要时标注差异；
-- 无法确认时宁可暂缓发布。
+### 第七轮新增：简答题“先释义、后分点”的答题校准
+
+依据《东南大学——院校分析与真题解读》PPT 第12、15—17页，简答题采用**总—分—总**：第一段先明确题干涉及的关键专业术语，再引出所问维度；中段按一级得分点清晰展开；结尾用简洁的意义、评价或实务联系收束。PPT是答题结构参照，**不是事实来源**。
+
+- **首段专业定义**：针对题干实际提问，交代所属领域、概念内涵，以及有依据的主体、对象、手段、目标等要素。不得以“这一问题十分重要”“包括以下几个方面”“需要结合本章”充当定义。
+- **比较题**：先分别解释两个（或多个）核心概念，再从题目要求的相同维度比较，避免只定义其中一项。
+- **原理/方法题**：简述模式、机制、原则时，首段界定该模式/机制/原则的独特含义，而不是仅复述“社会工作是专业助人活动”。
+- **实务技巧题**：根据材料或题目界定所用介入模式，再结合对象与情境写明行动主体、具体方法、操作步骤和可观察结果；不以通用术语代替真实措施。若资料不足，不凭经验拼凑新的技巧。
+- **分点与总结**：一级得分点以最具辨识度的核心判断为中心，保留完整论证和自然段；结尾不重复其他题目的通用空话。保留高亮 `#C62828` 的既定规范。
+- **来源冲突时**：优先参照王思斌272页详解中实质对应的真题/习题组织得分点，以核心教材核实概念与细节；不能直接对应时不得强行改写。区分“来源直接对应”“源书同一概念”“仅原答案结构优化”。
+
+**重要区分：**“答题首段应有概念解释”不等于所有题目都要塞入同一套社会工作定义。案例和材料分析题允许先概括情境核心矛盾，再结合适用专业概念展开。
+
+### 统一答案规范（继续有效）
+
+- 名词解释以 250—300 字、简答以 500—700 字、论述/案例约 900 字为目标，保证自然段结构、总—分—总和完整论证；字数服从题目实际要求，不机械凑字。
+- **仅核心结论和真正得分句用 `#C62828` 高亮**，展开解释、机制、例子和过渡文字使用普通颜色；不恢复“30 秒口述版”。
+- 每张修订卡标明具体参考：如“《详解》第 X 章 §X.3，第 Y 页”，并区分“直接匹配、同义匹配、教材补强、参考答案兜底”；保留可追溯的核心教材依据。
+- 修改 `fullAnswer` 时同步检查关键词/得分点、`sourceField`/`origin`、真题证据与问题范围；母版与 `cards.json` 必须同步，不能单独覆盖 App 资源造成内容漂移。
+- 不因在《详解》中出现相近题就擅自新增本校真题标签；真题年份、学校、科目应以明确证据为准。
+
+资料发生冲突时，不静默拼接成一个“看似完整”的答案；明确记录差异并回到核心教材核验，仍无法确认则暂缓内容替换。
+
+> 本节是**后续内容复核/改写规则**。修改规则本身不表示 2497 张现有卡片已按新顺序重新核对或更新，实际修改须有逐卡核验记录。
 
 ## 5.3 正式卡片最低标准
 
@@ -398,7 +423,24 @@ details.json
 - 签名迁移；
 - 手动清除数据后的恢复。
 
-## 7.3 覆盖升级条件
+## 7.3 项目源码备份（独立 ZIP，不使用 Gradle）
+
+项目源码备份与上述 App 内的学习数据备份是两个不同的流程。后者只保存手机上的学习进度与本地修改，前者保护代码、题库和历史审校材料。
+
+```powershell
+# 在项目根目录执行，自动生成项目目录外的独立 ZIP
+python scripts/backup_project.py
+
+# 自定义目标位置
+python scripts/backup_project.py --output 'E:\Backup\SocialWork-Flashcards-source.zip'
+
+# 校验已生成 ZIP 的文件清单与 SHA-256
+python scripts/backup_project.py --verify 'E:\Backup\SocialWork-Flashcards-source.zip'
+```
+
+默认仅保存源码与审校历史，不包括 `.git` 历史、Gradle 缓存、构建产物和签名密钥。若需要离线保留完整 Git 历史，可以加 `--include-git`（ZIP 将显著增大）。**发行签名密钥仍须另行安全备份。** 详细说明见 [结构与迁移指南](docs/STRUCTURE_AND_MIGRATION.md)。Gradle 只用于 APK 构建，**不参与项目备份**。
+
+## 7.4 覆盖升级条件
 
 Android 正常保留 App 私有数据的关键条件：
 
@@ -514,84 +556,84 @@ git push origin v2.9.0
 
 ```text
 SocialWork-Flashcards/
-├── .github/
-│   └── workflows/
-│       ├── android-apk.yml
-│       └── release-apk.yml
+├── .github/workflows/              # 持续集成、APK 构建与签名发布
 ├── app/
 │   ├── build.gradle
 │   └── src/main/
-│       ├── AndroidManifest.xml
 │       ├── assets/
-│       │   ├── cards.json
-│       │   ├── details.json
+│       │   ├── cards.json          # 2497 张 App 卡片：唯一运行数据
+│       │   ├── quick_memory.json   # 快速记忆，不再用版本号命名
+│       │   ├── service_framework.json
+│       │   ├── details.json        # 旧版兼容占位
 │       │   ├── exam_meta.json
 │       │   └── exam_answers.json
 │       ├── java/com/seu/socialworkcards/
-│       │   ├── MainActivity.java
-│       │   ├── Card.java
-│       │   ├── CardRepository.java
-│       │   ├── ReviewEngine.java
-│       │   ├── MockExamEngine.java
-│       │   ├── StudyStore.java
-│       │   ├── ContentFeedbackStore.java
-│       │   └── DataBackupManager.java
 │       └── res/
-│           ├── drawable/
-│           ├── mipmap-*/
-│           └── values/
 ├── content/
-├── design/
+│   ├── master/cards_master_2497.md # 2497 张完整答案母版，修复乱码文件名
+│   ├── metadata/                   # 题库来源、分类等元数据
+│   ├── references/                 # 2497 题参考匹配结果
+│   └── ledger/review_progress.csv  # 逐卡 SHA-256 与审校状态
+├── archive/
+│   ├── manifests/                  # 旧版 Round13—23 审校清单
+│   ├── qa/                         # 历史测试输出
+│   ├── reports/                    # 历史构建与评估报告
+│   ├── reviews/                    # 历史人工复核证据
+│   └── legacy_scripts/             # 过时的一次性写回脚本（不可直接运行）
 ├── scripts/
+│   ├── backup_project.py           # 独立 ZIP 源码备份与 SHA-256 校验
+│   ├── verify_repository.py        # 只读题库一致性验证
+│   ├── apply_answer_patch.py       # 严格哈希守卫、母版/App/台账三方同步
+│   ├── audit_answer_types_v2_9_0.py
+│   ├── build_service_framework_v2_8_5.py
 │   └── create-release-keystore.ps1
-├── LICENSE
-├── README.md
-├── build.gradle
-├── gradle.properties
-└── settings.gradle
+├── patches/example_review_patch.json
+├── docs/
+│   ├── STRUCTURE_AND_MIGRATION.md
+│   └── REFACTOR_REPORT.md
+├── design/
+└── README.md
 ```
+
+本次源码包去除了 `.git` 和 Android 构建缓存，**不等于删除既有 Git 仓库历史**。请参阅 [迁移指南](docs/STRUCTURE_AND_MIGRATION.md) 把整理后的文件合并到已有 Git 工作区。
 
 ---
 
-# 10. 题库文件
+# 10. 题库文件与精修规范
 
-## 唯一母版
+## 唯一标准答案母版
 
 ```text
-content/master/C001-C2497_东南大学社会工作考研问题库_C2497完成_辅助资料全量复核补强版_C62828.md
+content/master/cards_master_2497.md
 ```
 
-V2.8.0 以该文件作为题库唯一母版。可通过：
+文件名为 Windows / ZIP 兼容的稳定 ASCII 字符，原始正文未改动。**禁止执行 `archive/legacy_scripts` 中的旧母版导入脚本重新覆盖已审校答案。**
 
-```bash
-python scripts/import_master_cards.py "<母版.md>"
-```
-
-重新生成 Android 题库资产。
-
-## `cards.json`
-
-路径：
+## App 运行数据
 
 ```text
 app/src/main/assets/cards.json
+app/src/main/assets/quick_memory.json
+app/src/main/assets/service_framework.json
 ```
 
-每张 C 卡一条记录，保存稳定 C 编号、题型、真题化问题、完整标准答案、`#C62828` 核心得分点、题目来源、核心教材依据、预测考频、真题身份、答案状态、关联问题和自动分类等字段。
+`cards.json` 存储 C0001—C2497 全部卡片的标准答案、题型、题目、来源、考频与专题。快速记忆和服务框架资源内容未改，仅改稳定文件名与 Java 引用路径。
 
-## 兼容资产
+`details.json`、`exam_meta.json`、`exam_answers.json` 仍是空 JSON 兼容占位，不作为内容事实来源。
 
-`details.json`、`exam_meta.json`、`exam_answers.json` 在 V2.8.0 中仅保留为空 JSON 对象，用于兼容现有代码路径；不再作为内容事实来源。
+## 审校证据与逐卡追踪
 
-## QA 与来源校验
+旧 QA、Round 清单移入 `archive/`，供比对前期验收成果，不再与运行数据混用；主台账为 `content/ledger/review_progress.csv`。可在项目根目录执行：
 
-```text
-content/ui_qa_v2_8_0.json
-content/ui_qa_v2_9_0.json
-content/card_source_manifest_v2_8_0.json
+```powershell
+python scripts/verify_repository.py
+python scripts/audit_answer_types_v2_9_0.py
 ```
 
-记录卡片总数、题型分布、分类分布、真题标注数量、答案高亮覆盖和母版 SHA-256。
+后续精修依照 [安全补丁流程](docs/STRUCTURE_AND_MIGRATION.md#后续每批答案精修) 同时修改 App 与母版，检查旧版答案哈希和已验收范围，避免历史补丁覆盖新版本。
+
+---
+
 # 11. 版本更新记录
 
 ## V2.9.0 — UI / 流畅度 / 稳定性升级

@@ -1,0 +1,122 @@
+[
+  {
+    "card_id": "C0040",
+    "question_type": "论述题",
+    "question": "如何理解社会工作作为“专业助人活动、社会制度组成部分和实践性学科”的多重属性？",
+    "source_evidence": "《社会工作概论》第一、二章；2026《中级综合》第一章",
+    "source_primary_points": "专业助人活动（价值、过程、方法）／社会福利制度组成／实践性学科（知识、证据）／三属性协同",
+    "old_fullanswer_sha256": "a03b4f3f6dc4149175116f98b53abd38cef14e0704085133611bc0eb4f443d45",
+    "new_fullanswer_sha256": "b4f36f9d9f6247c74f453e01c0e58720ea16fdb789b180052a21fc97ba11ea29",
+    "review_batch": "round21_textbook_boundaries_2026_10"
+  },
+  {
+    "card_id": "C0054",
+    "question_type": "论述题",
+    "question": "试述现代社会工作产生和发展的社会条件，并分析社会工作专业化的历史逻辑。",
+    "source_evidence": "《社会工作概论》第一章；2026《中级综合》第二章",
+    "source_primary_points": "工业化城市化问题／济贫制度与慈善组织／慈善组织会社及睦邻运动区别／训练、教育、知识及伦理",
+    "old_fullanswer_sha256": "9163fc716465b4736742fd578a9e30e7c77d5df43b7b74cb8679743a8bffa57a",
+    "new_fullanswer_sha256": "6588436755efae67627b3873ebac2fcb22e389f01c2b3c6cbeb7e53d5533e6c8",
+    "review_batch": "round21_textbook_boundaries_2026_10"
+  },
+  {
+    "card_id": "C0079",
+    "question_type": "论述题",
+    "question": "新时代社会治理需求对中国社会工作专业发展提出了哪些新要求？",
+    "source_evidence": "《社会工作概论》第一、二章；2026《中级综合》社会工作领域、专业发展相关内容",
+    "source_primary_points": "精准民生服务／基层治理参与和权责边界／制度岗位、督导伦理／中国基层协作",
+    "old_fullanswer_sha256": "de7b4b7d56437cf3f970bf604ce91548ac0ca3d07b39fd7ca6a76210473ebb46",
+    "new_fullanswer_sha256": "67403147c10b6be28cb93d0c1106c6552fec6f29572f41898c0b4ea5c3d1dd57",
+    "review_batch": "round21_textbook_boundaries_2026_10"
+  },
+  {
+    "card_id": "C0092",
+    "question_type": "论述题",
+    "question": "结合社会工作实践，讨论其本土化建构。",
+    "source_evidence": "《社会工作概论》第三章；2026《中级综合》第三、四章",
+    "source_primary_points": "普遍价值与本土文化／传统文化的批判转化／专业伦理不可取消／社区与福利制度中的实践检验",
+    "old_fullanswer_sha256": "909205cf89566209e3b1c42cc790f49f0199d9e14852d65788ab2afe04a8a475",
+    "new_fullanswer_sha256": "0ebb3d024bfe77b2d3fab9bb1f6bf16ad5e02565a97a843ae3c526427d5ee122",
+    "review_batch": "round21_textbook_boundaries_2026_10"
+  },
+  {
+    "card_id": "C0132",
+    "question_type": "论述题",
+    "question": "结合社会工作实践，分析情感劳动与职业耗竭风险。",
+    "source_evidence": "2026《中级综合》第四章道德规范“自我成长与自我关怀”；第十一章专业督导",
+    "source_primary_points": "情感劳动与耗竭区分／压力来源与表现／个人支持及行政、支持性督导／机构责任和服务安全",
+    "old_fullanswer_sha256": "af5cadd003eed68d8a5ee40f24a1581c6f7ff3929866cad18d74824d694a2097",
+    "new_fullanswer_sha256": "009b564447845acef3163205aae010d6a807444153d009f442951e4c5c58affc",
+    "review_batch": "round21_textbook_boundaries_2026_10"
+  },
+  {
+    "card_id": "C0189",
+    "question_type": "论述题",
+    "question": "社会工作者在评估婴幼儿期服务对象时，应如何把生理、心理和社会发展特征结合起来？",
+    "source_evidence": "2026《中级综合》第五章婴幼儿期0—3岁；《社会工作概论》第六章",
+    "source_primary_points": "生理动作、保健与照护／心理语言探索／依恋与照护者回应／年龄适配和转介",
+    "old_fullanswer_sha256": "b652863b2acdce0928c3ee740bc47740e017e134eef6d9f2bd0496d2536ca395",
+    "new_fullanswer_sha256": "7fa7c6614a64297fe4e92b83909777476ef67451b2fc7092e1629534a5c191b3",
+    "review_batch": "round21_textbook_boundaries_2026_10"
+  },
+  {
+    "card_id": "C0194",
+    "question_type": "论述题",
+    "question": "社会工作者在评估学龄前期服务对象时，应如何把生理、心理和社会发展特征结合起来？",
+    "source_evidence": "2026《中级综合》第五章学龄前期发展特征；《社会工作概论》第六章",
+    "source_primary_points": "动作与生活自理／游戏、语言、自我控制／家庭和幼儿园社会化／正常差异与功能损伤",
+    "old_fullanswer_sha256": "5ea52410de1c8e63af69d17564a55a10fc5fddc3a650c7c4bd8ae2cc8f27d782",
+    "new_fullanswer_sha256": "78b6be95f8e4b4fe5aada49e896bec40431695b5701a5ee6833e52c45f985a7f",
+    "review_batch": "round21_textbook_boundaries_2026_10"
+  },
+  {
+    "card_id": "C0199",
+    "question_type": "论述题",
+    "question": "社会工作者在评估学龄期服务对象时，应如何把生理、心理和社会发展特征结合起来？",
+    "source_evidence": "2026《中级综合》第五章学龄期发展特征；《社会工作实务》第九章学校社会工作",
+    "source_primary_points": "身体健康与学习参与／认知与勤奋自卑／师生及同伴影响／学习支持与保护性介入边界",
+    "old_fullanswer_sha256": "421c2fd70880ce3819068961a8181cb0536e1d92fc9b095626b047263e90effc",
+    "new_fullanswer_sha256": "6e0699cd36a64751d5d5a659dc2dd007314e1dd68a05ede6a2bf2f5e32eccd85",
+    "review_batch": "round21_textbook_boundaries_2026_10"
+  },
+  {
+    "card_id": "C0219",
+    "question_type": "论述题",
+    "question": "社会工作者在评估成年晚期服务对象时，应如何把生理、心理和社会发展特征结合起来？",
+    "source_evidence": "2026《中级综合》第五章成年晚期发展；《社会工作概论》第六章",
+    "source_primary_points": "老年生理变化个体差异／生命整合与绝望／退休丧偶角色变化／自主、照护与支持",
+    "old_fullanswer_sha256": "de604884ae9d72fa6dfed803c5726e1e7fd0a5c92c3b6e1e2b0531d9b11ee69f",
+    "new_fullanswer_sha256": "69d1e96545726ed27733baa3f873db7d2246019b19e98f1225c4d0325f912bed",
+    "review_batch": "round21_textbook_boundaries_2026_10"
+  },
+  {
+    "card_id": "C0220",
+    "question_type": "论述题",
+    "question": "比较成年早期、成年中期和成年晚期的核心社会发展任务。",
+    "source_evidence": "2026《中级综合》第五章成年早、中、晚三阶段社会发展特征",
+    "source_primary_points": "早期亲密和角色建立／中期生产关怀与责任协调／晚期整合和角色重构／跨阶段差异",
+    "old_fullanswer_sha256": "dad7a9e6bb2beadcd1c5347b228ff40a6dfd0832634003c0850858aaa6d5470e",
+    "new_fullanswer_sha256": "097dbad83cdb51d8dc742b62a8ea2737b4d369de067f73100614688d085f1541",
+    "review_batch": "round21_textbook_boundaries_2026_10"
+  },
+  {
+    "card_id": "C0222",
+    "question_type": "论述题",
+    "question": "社会工作应如何依据生命周期视角理解服务对象的问题与需要？",
+    "source_evidence": "2026《中级综合》第五章人生发展阶段；《社会工作概论》第六章",
+    "source_primary_points": "阶段特征与发展任务／发展连续性／环境与制度机会／风险保护、个体差异及对应介入",
+    "old_fullanswer_sha256": "74594e9b123690be5f04b68fb5a4e0513219c723f2fd4cc0d41d39018b962a59",
+    "new_fullanswer_sha256": "69388838dedf705ca0b4c037afe38ab66f192f10fd968902f2c95202e6647b44",
+    "review_batch": "round21_textbook_boundaries_2026_10"
+  },
+  {
+    "card_id": "C1323",
+    "question_type": "案例分析题",
+    "question": "某司法社会工作个案同时涉及精神健康、就业、家庭冲突和社区排斥。请说明如何整合多系统资源开展服务。",
+    "source_evidence": "《社会工作实务-250纠正》第七章司法社会工作；2026《中级综合》个案管理、专业伦理",
+    "source_primary_points": "司法委托和权责／心理服务专业界限／就业家庭社区支持／跨部门最少必要信息与转介闭环",
+    "old_fullanswer_sha256": "affba1327c209496115bd22ee971f8a8dcde9f9b7d00555b98183dc632898014",
+    "new_fullanswer_sha256": "a01e05ddc245da0d503709eef3ad5400a773044adee15b264b7a4687c6471de8",
+    "review_batch": "round21_textbook_boundaries_2026_10"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "card_id": "C0084",
+    "question": "结合社会工作实践，论述社会工作价值观如何贯穿接案、预估、计划、介入、评估与结案全过程。",
+    "question_type": "论述题",
+    "source_field": "《社会工作概论》第三章；2026《社会工作综合能力（中级）》第四章",
+    "evidence_location": "王思斌详解 PDF pp.37–39；《社会工作实务-250纠正》接案、评估与结案各节（PDF pp.42–46）",
+    "old_fullanswer_sha256": "9063844b5714339ae6462df8992ddeaf1923ba79bb793525395f36cd4e819094",
+    "new_fullanswer_sha256": "24ea62a12387adc42f389cfea290d9c7912539bb76666395dd04c7e4fdd8bde0",
+    "review_batch": "round15_high_reuse_2026_10"
+  },
+  {
+    "card_id": "C0128",
+    "question": "结合社会工作实践，讨论平等与差别平等的关系。",
+    "question_type": "论述题",
+    "source_field": "《社会工作概论》第三章；2026《社会工作综合能力（中级）》第四章",
+    "evidence_location": "王思斌详解 PDF pp.38–39（平等与公平正义）；题库指定《综合能力》第四章",
+    "old_fullanswer_sha256": "e63e86d5c574b491d00f4cea9dd766a79788fccb4c2f72bf50d8560c6f83d1c1",
+    "new_fullanswer_sha256": "1f53d9fedac095782c0e4c42475b69d951570179cee8cf4ba5c1c9f69e775046",
+    "review_batch": "round15_high_reuse_2026_10"
+  },
+  {
+    "card_id": "C0148",
+    "question": "结合社会工作实践，分析伦理难题产生的原因。",
+    "question_type": "论述题",
+    "source_field": "《社会工作概论》第三章；2026《社会工作综合能力（中级）》第四章",
+    "evidence_location": "王思斌详解 PDF pp.37–42（价值冲突与伦理责任）",
+    "old_fullanswer_sha256": "646bc770caaabb3f19d6aac1751ad465c3cb86a1103b18a7992a6a73260bfaae",
+    "new_fullanswer_sha256": "cf6bd3dd9422b4f7a8c86fdcfac62100d555189646de6d7a0a13a9f80a563114",
+    "review_batch": "round15_high_reuse_2026_10"
+  },
+  {
+    "card_id": "C0152",
+    "question": "结合社会工作实践，讨论公平、责任与服务对象利益的权衡。",
+    "question_type": "论述题",
+    "source_field": "《社会工作概论》第三章；2026《社会工作综合能力（中级）》第四章",
+    "evidence_location": "王思斌详解 PDF pp.38–42（价值、伦理及专业责任）",
+    "old_fullanswer_sha256": "ce27619e696e7e92171470bf59095fd07d2033f73abe415ad81cc0de30eba297",
+    "new_fullanswer_sha256": "919d78370da0b266c0b117fe11a717ae90d72e15582635cf3cf84454742032d0",
+    "review_batch": "round15_high_reuse_2026_10"
+  },
+  {
+    "card_id": "C0323",
+    "question": "一名异地就业青年在城市中缺乏亲友支持并出现明显孤立。请运用社会支持理论分析其需要与介入方向。",
+    "question_type": "案例分析题",
+    "source_field": "《社会工作概论》第四章；2026《社会工作综合能力（中级）》第六章",
+    "evidence_location": "王思斌详解 PDF pp.71–72（人—环境）、pp.168,172（支持与资源）；《综合能力》理论章节",
+    "old_fullanswer_sha256": "5bb067a9aca878eb676695cf7ea663a0c1c1288541ee24f9176d88e65a31fe02",
+    "new_fullanswer_sha256": "6b018a4617382f3bf00a81ab7d8be65892c9b4810e6539f5084b780e522eea3e",
+    "review_batch": "round15_high_reuse_2026_10"
+  },
+  {
+    "card_id": "C0354",
+    "question": "一名长期接受救助的服务对象逐渐形成依赖和无力感。请运用增能视角设计介入方向。",
+    "question_type": "案例分析题",
+    "source_field": "《社会工作概论》第四章；2026《社会工作综合能力（中级）》第六章",
+    "evidence_location": "王思斌详解 PDF p.172（增权、优势）及社会支持章节",
+    "old_fullanswer_sha256": "38c77a4b7c5f398718224e942de7bad3f2d8ccb55c66a984e8f1f9ab3fc8ebd5",
+    "new_fullanswer_sha256": "c56cd684a16f6fd748e0e82e4198015a1c62fc70b45cbce7be435caad3f1bb46",
+    "review_batch": "round15_high_reuse_2026_10"
+  },
+  {
+    "card_id": "C0374",
+    "question": "一名服务对象反复强调“什么都改变不了”。请运用焦点解决取向说明如何开展会谈。",
+    "question_type": "案例分析题",
+    "source_field": "《社会工作概论》第四章；2026《社会工作综合能力（中级）》第六章",
+    "evidence_location": "题库指定《综合能力》认知/模式相关章节；王思斌详解未见焦点解决直接同题解析，技术以既有卡片要点为范围",
+    "old_fullanswer_sha256": "68b085fbf37dd7196f230df355798706e0fa40929a50835f35a26a181c426c92",
+    "new_fullanswer_sha256": "92aac337ae16b2f215ab01441024d5ce43703ed30c7b597f704437f60323aa18",
+    "review_batch": "round15_high_reuse_2026_10"
+  },
+  {
+    "card_id": "C0387",
+    "question": "一名求职失败青年形成“我永远不会成功”的自动化负性想法。请运用认知行为理论分析并提出介入思路。",
+    "question_type": "案例分析题",
+    "source_field": "《社会工作概论》第四章；2026《社会工作综合能力（中级）》第六章",
+    "evidence_location": "王思斌详解 PDF p.50（认知和行为理论概要）；《综合能力》中有关认知行为模式章节",
+    "old_fullanswer_sha256": "c134678a88c215f95c67729933b76484b3f86e15209c2cdd1f5997fbc645b14c",
+    "new_fullanswer_sha256": "57d1d33f46c9747f605e5af68e10d27798410e984442401f9f1cdf8a467df222",
+    "review_batch": "round15_high_reuse_2026_10"
+  },
+  {
+    "card_id": "C0408",
+    "question": "结合一个具体社会问题，说明社会工作者如何从微观服务走向宏观倡导。",
+    "question_type": "论述题",
+    "source_field": "《社会工作概论》第四章；2026《社会工作综合能力（中级）》第六章",
+    "evidence_location": "王思斌详解 PDF p.39（公共福利、公正）与 p.50（宏观视角）；微观—宏观联结为基于教材的应用示例",
+    "old_fullanswer_sha256": "22a447324dc5a43005dce864676b5e7317d895968b030aac247bb027bbe09a8e",
+    "new_fullanswer_sha256": "2628da27e8202ec667dd83777c06fa7fb83490a3dda064704b0df1d8c5b65693",
+    "review_batch": "round15_high_reuse_2026_10"
+  },
+  {
+    "card_id": "C1062",
+    "question": "结合社会工作服务评价，论述“证据—专业判断—服务对象经验”三者之间的关系。",
+    "question_type": "论述题",
+    "source_field": "《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章",
+    "evidence_location": "王思斌详解 PDF 社会工作研究相关章节；《社会工作实务-250纠正》PDF pp.42–44（过程、结果与测量评估）",
+    "old_fullanswer_sha256": "9a191bc5ea4b4eaea69a9b62eb98f96bf8e2167b5e728095efe80c3b11ddf99f",
+    "new_fullanswer_sha256": "d961befbf4b6f4cd2f8d5d7e8e7d19c7fd6f2ef6729f595b311590e9930ea16c",
+    "review_batch": "round15_high_reuse_2026_10"
+  },
+  {
+    "card_id": "C1427",
+    "question": "一群受灾儿童反复谈论灾害并出现害怕、退缩。请设计适合的小组服务。",
+    "question_type": "案例分析题",
+    "source_field": "《社会工作实务-250纠正》第十二章",
+    "evidence_location": "《社会工作实务-250纠正》PDF pp.165–168（灾害不同阶段、心理社会支持）；《综合能力》小组方法",
+    "old_fullanswer_sha256": "d02da787d3deca955f1c318900ec8d1c875edf234f8e58e07f3c1854e1af298d",
+    "new_fullanswer_sha256": "84e56a430fd2a3d4870d2aac24915654435ee987893f98670415340358526c6d",
+    "review_batch": "round15_high_reuse_2026_10"
+  },
+  {
+    "card_id": "C1482",
+    "question": "学生因与教师长期冲突出现厌学。请从师生关系与学校环境角度提出介入。",
+    "question_type": "案例分析题",
+    "source_field": "《社会工作实务-250纠正》第九章",
+    "evidence_location": "《社会工作实务-250纠正》PDF pp.118–120（学校社会工作定义、特点与功能）",
+    "old_fullanswer_sha256": "b38a32d002b036cf17172caba9e5bcb17798bcf7a334264abd46bbc8c7663c0f",
+    "new_fullanswer_sha256": "4e3de4111c7fbc264c62a137856c20c69c2a818527678edd013f658c9ac6c9b2",
+    "review_batch": "round15_high_reuse_2026_10"
+  }
+]

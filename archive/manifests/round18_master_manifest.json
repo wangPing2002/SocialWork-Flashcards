@@ -1,0 +1,92 @@
+[
+  {
+    "card_id": "C0108",
+    "question_type": "论述题",
+    "question": "结合社会工作实践，论述“以服务对象利益为核心”原则的适用边界。",
+    "source_evidence": "《2026社会工作综合能力（中级）》第四章“以服务对象利益为核心／自决／知情同意／隐私保密”；《社会工作概论》第三章",
+    "old_fullanswer_sha256": "8414efdc910ff9313c335487b1235373c1850ae70e3cb3971e17411f74f0a1de",
+    "new_fullanswer_sha256": "0c1f18e2e56c08b404648bcd2cd69a84cbe8b8887d3053c0dfe0e9cca35f242a",
+    "review_batch": "round18_point_boundaries_2026_10"
+  },
+  {
+    "card_id": "C0112",
+    "question_type": "论述题",
+    "question": "结合社会工作实践，论述服务对象决定能力受限时知情同意的专业处理原则。",
+    "source_evidence": "《2026社会工作综合能力（中级）》第四章“知情同意”及“服务对象自决”",
+    "old_fullanswer_sha256": "8b3e5bde4426d02c9617ded4de61f0e43bdca992f0fca68e22d0c5aee5d034e9",
+    "new_fullanswer_sha256": "78623eb01d2776631e2d83b16b9feccec49cd7639391f6a6339ad1114f243c8e",
+    "review_batch": "round18_point_boundaries_2026_10"
+  },
+  {
+    "card_id": "C0136",
+    "question_type": "论述题",
+    "question": "结合社会工作伦理，论述生命安全、服务对象权益、法律责任与机构要求发生冲突时的责任优先顺序。",
+    "source_evidence": "《2026社会工作综合能力（中级）》第四章“道德规范议题／风险管理／隐私保密”",
+    "old_fullanswer_sha256": "162975fe56fb8a26356fedf292ff2d4e2775bcef4c355d218643d27064ca43f3",
+    "new_fullanswer_sha256": "98aa45e9ac4610d4b0192f15f9200f1b83adb1977c6bdef25a891422ac52d77e",
+    "review_batch": "round18_point_boundaries_2026_10"
+  },
+  {
+    "card_id": "C1016",
+    "question_type": "论述题",
+    "question": "结合社会工作项目实践，论述公共问责与专业自主之间的关系。",
+    "source_evidence": "《2026社会工作综合能力（中级）》服务管理和评估相关章节；《社会工作概论》社会行政／社会工作研究有关章节",
+    "old_fullanswer_sha256": "fafe02733331ffe206601f9c28c703b5586977768797ba2ca5037bf8f5c2f8fb",
+    "new_fullanswer_sha256": "6fbac32b6c1bbe0d8b93578b17e1ad84be0faf1106ef9f74ee224917ab562f22",
+    "review_batch": "round18_point_boundaries_2026_10"
+  },
+  {
+    "card_id": "C1321",
+    "question_type": "论述题",
+    "question": "结合司法社会工作实践，论述风险控制、权益保障与社会融入三者之间的关系。",
+    "source_evidence": "《社会工作实务-250纠正》PDF第91—97页司法社会工作、社区矫正和社会融入内容",
+    "old_fullanswer_sha256": "1c97cc39fbc83b63653917eaa2c4aa728d340f8c287490e902d42009ecbad82c",
+    "new_fullanswer_sha256": "01ae1e29ad72ee5b4138bec7bce819f0e372bf181f5d5a9df54e2af92f262d8e",
+    "review_batch": "round18_point_boundaries_2026_10"
+  },
+  {
+    "card_id": "C0596",
+    "question_type": "案例分析题",
+    "question": "一名由学校转介的学生拒绝与社工谈话，认为自己“没有问题”。请说明接案阶段的工作重点。",
+    "source_evidence": "《2026社会工作综合能力（中级）》个案接案和专业关系章节；《社会工作实务-250纠正》PDF第120—123页学校保护性和改善性服务",
+    "old_fullanswer_sha256": "8f3fd09f0afe54959ba3d3165ddd6b0c86018e7872a63715f21fbac99cf902bb",
+    "new_fullanswer_sha256": "5be5385089024e21aaa2a1bb337da077cc69c36196002792664076549c2fcbb9",
+    "review_batch": "round18_point_boundaries_2026_10"
+  },
+  {
+    "card_id": "C1120",
+    "question_type": "案例分析题",
+    "question": "某复杂信访事项涉及住房、医疗、家庭冲突与法律纠纷。请说明如何开展多部门服务联动。",
+    "source_evidence": "《社会工作实务-250纠正》PDF第54—57页信访调研、利益相关方映射、矛盾调解、多方协商",
+    "old_fullanswer_sha256": "7ad1d756916e3684c6d4a91fc0327f5fd414ec2d9de8a7c4660c5534d5d82174",
+    "new_fullanswer_sha256": "a251093d11dbf05f2e2cd799069c3f8a68338b0874452391c9a38b9966a7a42d",
+    "review_batch": "round18_point_boundaries_2026_10"
+  },
+  {
+    "card_id": "C1272",
+    "question_type": "案例分析题",
+    "question": "社区矫正对象表示“我只是被迫来见社工”。请说明接案和关系建立策略。",
+    "source_evidence": "《社会工作实务-250纠正》PDF第91—94页社区矫正社会工作、教育矫正和社会适应性帮扶",
+    "old_fullanswer_sha256": "1e707634895f0d5c7c2d5ea312e78572e557f4a29a4918ecfe7d2f7fa5ceef39",
+    "new_fullanswer_sha256": "78d1069083b42099eb500c979a258732f7c107acd7305b14e4f4acfeb99a38cd",
+    "review_batch": "round18_point_boundaries_2026_10"
+  },
+  {
+    "card_id": "C1471",
+    "question_type": "案例分析题",
+    "question": "教师发现学生疑似遭受家庭暴力，但学生要求社工保密。请分析社会工作者的风险判断和伦理处理。",
+    "source_evidence": "《社会工作实务-250纠正》PDF第120—123页学校保护性服务；《2026社会工作综合能力（中级）》第四章隐私保密例外",
+    "old_fullanswer_sha256": "fe9af2864892901721080c4efa69b16456c1a0fb737783f8f22f7d2924e8ff2d",
+    "new_fullanswer_sha256": "dc44fbf462e26423e84f2b5c852899d69b1bb48c975803fccfe8292250291e44",
+    "review_batch": "round18_point_boundaries_2026_10"
+  },
+  {
+    "card_id": "C1486",
+    "question_type": "案例分析题",
+    "question": "学校发现一批处于高风险但尚未出现严重问题的学生，应如何设计选择性预防服务？",
+    "source_evidence": "《社会工作实务-250纠正》PDF第124—125页预防性服务的全员、选择性和指向性区分",
+    "old_fullanswer_sha256": "a5aa80eb566c1627b3c3aaf7304cc2cadf4748670849c069361dc262b48f8444",
+    "new_fullanswer_sha256": "6817ec4aa5dcf489611100d3876a9507d7fcba0de34532f1f31e3539a9f53120",
+    "review_batch": "round18_point_boundaries_2026_10"
+  }
+]

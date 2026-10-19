@@ -1,0 +1,3529 @@
+[
+  {
+    "id": "W0001",
+    "pdf_page": 11,
+    "chapter": "第一章　社会工作的内涵与工作领域",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述西方社会工作产生的背景。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0002",
+    "pdf_page": 11,
+    "chapter": "第一章　社会工作的内涵与工作领域",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述中国改革开放以来社会工作的发展。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0003",
+    "pdf_page": 12,
+    "chapter": "第一章　社会工作的内涵与工作领域",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社会工作的含义。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0004",
+    "pdf_page": 12,
+    "chapter": "第一章　社会工作的内涵与工作领域",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社会工作的构成要素，并分析其过程结构。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0005",
+    "pdf_page": 13,
+    "chapter": "第一章　社会工作的内涵与工作领域",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社会工作的实践领域。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0006",
+    "pdf_page": 14,
+    "chapter": "第一章　社会工作的内涵与工作领域",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会工作[天津师大2023年研；杭州师大2018年研；北师2016年研；湖北师大2016年研；山东大学2015年研；社科院2015年研；扬州大学2015年研；西南大学2010年研；华中农大2010年研]",
+    "school_year_evidence": [
+      "[天津师大2023年研；杭州师大2018年研；北师2016年研；湖北师大2016年研；山东大学2015年研；社科院2015年研；扬州大学2015年研；西南大学2010年研；华中农大2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0007",
+    "pdf_page": 14,
+    "chapter": "第一章　社会工作的内涵与工作领域",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "里士满",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0008",
+    "pdf_page": 14,
+    "chapter": "第一章　社会工作的内涵与工作领域",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "案主[西南大学2010年研]",
+    "school_year_evidence": [
+      "[西南大学2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0009",
+    "pdf_page": 14,
+    "chapter": "第一章　社会工作的内涵与工作领域",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会保障[青岛大学2015年研]",
+    "school_year_evidence": [
+      "[青岛大学2015年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0010",
+    "pdf_page": 14,
+    "chapter": "第一章　社会工作的内涵与工作领域",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会服务[华科2020年研]",
+    "school_year_evidence": [
+      "[华科2020年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0011",
+    "pdf_page": 15,
+    "chapter": "第一章　社会工作的内涵与工作领域",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会工作价值观[西安交大2023年研；浙江财大2023年研；广州大学2021年研；华中农大2018、2014年研；北京城市学院2014年研；南京理工2011年研]",
+    "school_year_evidence": [
+      "[西安交大2023年研；浙江财大2023年研；广州大学2021年研；华中农大2018、2014年研；北京城市学院2014年研；南京理工2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0012",
+    "pdf_page": 15,
+    "chapter": "第一章　社会工作的内涵与工作领域",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "助人活动[南京理工2011年研]",
+    "school_year_evidence": [
+      "[南京理工2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0013",
+    "pdf_page": 15,
+    "chapter": "第一章　社会工作的内涵与工作领域",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "专业关系[社科院2020年研；广东工业大学2014年研；中山大学2011年研；南京理工2011年研；浙江师范大学2011年研]",
+    "school_year_evidence": [
+      "[社科院2020年研；广东工业大学2014年研；中山大学2011年研；南京理工2011年研；浙江师范大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0014",
+    "pdf_page": 15,
+    "chapter": "第一章　社会工作的内涵与工作领域",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "社会工作的涵义与构成要素。[武汉大学2011年研]",
+    "school_year_evidence": [
+      "[武汉大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0015",
+    "pdf_page": 16,
+    "chapter": "第一章　社会工作的内涵与工作领域",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "伊丽莎白《济贫法》对社会工作发展的意义。[浙江师范大学2011年研]",
+    "school_year_evidence": [
+      "[浙江师范大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0016",
+    "pdf_page": 16,
+    "chapter": "第一章　社会工作的内涵与工作领域",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述社会工作专业关系的基本特点。[吉大2019年研]",
+    "school_year_evidence": [
+      "[吉大2019年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0017",
+    "pdf_page": 17,
+    "chapter": "第一章　社会工作的内涵与工作领域",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "论中国社会工作职业化的路径。[河北大学2016年研；中山大学2011年研]",
+    "school_year_evidence": [
+      "[河北大学2016年研；中山大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0018",
+    "pdf_page": 21,
+    "chapter": "第二章　社会工作的功能",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社会工作的基本要素。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0019",
+    "pdf_page": 21,
+    "chapter": "第二章　社会工作的功能",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社会工作者在社会服务中的角色。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0020",
+    "pdf_page": 22,
+    "chapter": "第二章　社会工作的功能",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社会工作的助人和维护社会秩序的功能。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0021",
+    "pdf_page": 22,
+    "chapter": "第二章　社会工作的功能",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试分析中国专业社会工作的发展前景。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0022",
+    "pdf_page": 23,
+    "chapter": "第二章　社会工作的功能",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试分析转型期中国社会工作发展的特点。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0023",
+    "pdf_page": 25,
+    "chapter": "第二章　社会工作的功能",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会工作者[西南大学2020年研；山东大学2018年研；华中农大2017年研]",
+    "school_year_evidence": [
+      "[西南大学2020年研；山东大学2018年研；华中农大2017年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0024",
+    "pdf_page": 25,
+    "chapter": "第二章　社会工作的功能",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "助人自助[广州大学2021年研；中山大学2012年研；西南大学2010年研]",
+    "school_year_evidence": [
+      "[广州大学2021年研；中山大学2012年研；西南大学2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0025",
+    "pdf_page": 25,
+    "chapter": "第二章　社会工作的功能",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会秩序[华中农大2012年研]",
+    "school_year_evidence": [
+      "[华中农大2012年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0026",
+    "pdf_page": 25,
+    "chapter": "第二章　社会工作的功能",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会制度[石河子大学２０２４年研；复旦大学2019年研]",
+    "school_year_evidence": [
+      "[石河子大学２０２４年研；复旦大学2019年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0027",
+    "pdf_page": 25,
+    "chapter": "第二章　社会工作的功能",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述社会工作者担当的角色。[中央民族大学2020年研；华南理工大学2018年研]",
+    "school_year_evidence": [
+      "[中央民族大学2020年研；华南理工大学2018年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0028",
+    "pdf_page": 26,
+    "chapter": "第二章　社会工作的功能",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述社会制度对实施社会工作的影响。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0029",
+    "pdf_page": 26,
+    "chapter": "第二章　社会工作的功能",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述社会工作者助人过程的特征。[安徽师范大学2018年研]",
+    "school_year_evidence": [
+      "[安徽师范大学2018年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0030",
+    "pdf_page": 27,
+    "chapter": "第二章　社会工作的功能",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "社会工作的目标及功能。[武汉大学2011年研]",
+    "school_year_evidence": [
+      "[武汉大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0031",
+    "pdf_page": 29,
+    "chapter": "第二章　社会工作的功能",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "论述在我国发展社会工作的必要性。[华中农大2010年研]",
+    "school_year_evidence": [
+      "[华中农大2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0032",
+    "pdf_page": 30,
+    "chapter": "第二章　社会工作的功能",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "社会转型、社会发展与社会工作的专业化有什么关系？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0033",
+    "pdf_page": 30,
+    "chapter": "第二章　社会工作的功能",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "请结合当前的社会工作实践，谈谈你对中国社会工作专业化的理解。[首都经贸大学2010年研]",
+    "school_year_evidence": [
+      "[首都经贸大学2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0034",
+    "pdf_page": 35,
+    "chapter": "第三章　社会工作的价值体系",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述价值观对社会工作的意义。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0035",
+    "pdf_page": 35,
+    "chapter": "第三章　社会工作的价值体系",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述西方社会工作的价值体系。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0036",
+    "pdf_page": 37,
+    "chapter": "第三章　社会工作的价值体系",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "社会工作价值体系内部可能存在哪些矛盾？应该怎样看待这些矛盾？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0037",
+    "pdf_page": 37,
+    "chapter": "第三章　社会工作的价值体系",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "你认为中国的社会工作价值体系应包括哪些内容？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0038",
+    "pdf_page": 38,
+    "chapter": "第三章　社会工作的价值体系",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "慈善组织会社[西南大学2020年研]",
+    "school_year_evidence": [
+      "[西南大学2020年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0039",
+    "pdf_page": 38,
+    "chapter": "第三章　社会工作的价值体系",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会工作价值[华中农大2012年研]",
+    "school_year_evidence": [
+      "[华中农大2012年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0040",
+    "pdf_page": 38,
+    "chapter": "第三章　社会工作的价值体系",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "接纳[华科2020年研；华东理工2020年研；河北大学2018年研；华中师范大学2016年研；山东大学2015年研；广东工业大学2014年研；北京城市学院2013年研]",
+    "school_year_evidence": [
+      "[华科2020年研；华东理工2020年研；河北大学2018年研；华中师范大学2016年研；山东大学2015年研；广东工业大学2014年研；北京城市学院2013年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0041",
+    "pdf_page": 38,
+    "chapter": "第三章　社会工作的价值体系",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "自决[社科院2020年研；南航2016年研]、案主自决[云南大学2023年研]、当事人自决[山东大学２０２４年研]",
+    "school_year_evidence": [
+      "[社科院2020年研；南航2016年研]",
+      "[云南大学2023年研]",
+      "[山东大学２０２４年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0042",
+    "pdf_page": 38,
+    "chapter": "第三章　社会工作的价值体系",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "社会工作的价值观包括哪些内容？[中山大学2012年研]",
+    "school_year_evidence": [
+      "[中山大学2012年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0043",
+    "pdf_page": 39,
+    "chapter": "第三章　社会工作的价值体系",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述比斯台克关于社会工作价值体系的基本内容。[西南大学2010年研]",
+    "school_year_evidence": [
+      "[西南大学2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0044",
+    "pdf_page": 40,
+    "chapter": "第三章　社会工作的价值体系",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述社会工作的专业价值。[安徽师范大学2018年研；南航2012年研；武汉大学2010年研]",
+    "school_year_evidence": [
+      "[安徽师范大学2018年研；南航2012年研；武汉大学2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0045",
+    "pdf_page": 40,
+    "chapter": "第三章　社会工作的价值体系",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "怎样理解社会工作专业价值中的“自决”原则？[华中农大2012年研]",
+    "school_year_evidence": [
+      "[华中农大2012年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0046",
+    "pdf_page": 42,
+    "chapter": "第三章　社会工作的价值体系",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试论述西方社会工作的价值体系的基础。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0047",
+    "pdf_page": 43,
+    "chapter": "第三章　社会工作的价值体系",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "英、美慈善组织会社和睦邻组织运动对社会工作的发展有哪些贡献？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0048",
+    "pdf_page": 43,
+    "chapter": "第三章　社会工作的价值体系",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "社会工作价值体系及意义。[浙江师范大学2011年研]",
+    "school_year_evidence": [
+      "[浙江师范大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0049",
+    "pdf_page": 47,
+    "chapter": "第四章　社会工作理论",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "如何看待个人经验与理论知识在社会工作过程中的相互关系？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0050",
+    "pdf_page": 47,
+    "chapter": "第四章　社会工作理论",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述理论在社会工作过程中的具体作用。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0051",
+    "pdf_page": 47,
+    "chapter": "第四章　社会工作理论",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述大卫·豪的社会工作理论结构模型。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0052",
+    "pdf_page": 48,
+    "chapter": "第四章　社会工作理论",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述皮拉利思等人的社会工作理论模型。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0053",
+    "pdf_page": 48,
+    "chapter": "第四章　社会工作理论",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述皮拉利思等人的社会工作理论模型，并将其与大卫·豪的模型相比较。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0054",
+    "pdf_page": 49,
+    "chapter": "第四章　社会工作理论",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "简述本章第三节介绍的各种西方社会工作理论。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0055",
+    "pdf_page": 51,
+    "chapter": "第四章　社会工作理论",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "根据教材表4-3，简述大卫·豪等人划分的四种社会工作理论范式之间的区别。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0056",
+    "pdf_page": 52,
+    "chapter": "第四章　社会工作理论",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "对当代中国社会工作者而言，了解和研究社会工作理论，包括哪两方面的具体任务？谈谈你自己在这两方面的看法与见解。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0057",
+    "pdf_page": 54,
+    "chapter": "第四章　社会工作理论",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会工作理论[北京城市学院2013年研]",
+    "school_year_evidence": [
+      "[北京城市学院2013年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0058",
+    "pdf_page": 54,
+    "chapter": "第四章　社会工作理论",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "标签理论[广州大学2023年研；河北大学2017年研；中山大学2015年研；武汉科技大学2013年研；华中农大2010年研；广西师范大学2010年研]",
+    "school_year_evidence": [
+      "[广州大学2023年研；河北大学2017年研；中山大学2015年研；武汉科技大学2013年研；华中农大2010年研；广西师范大学2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0059",
+    "pdf_page": 54,
+    "chapter": "第四章　社会工作理论",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "社会工作理论具有哪些特点？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0060",
+    "pdf_page": 55,
+    "chapter": "第四章　社会工作理论",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "精神分析学的主要观点是什么？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0061",
+    "pdf_page": 55,
+    "chapter": "第四章　社会工作理论",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "理论在社会工作过程中的功能。[哈尔滨工业大学2021年研；河北大学2017年研；华中农大2012年研]",
+    "school_year_evidence": [
+      "[哈尔滨工业大学2021年研；河北大学2017年研；华中农大2012年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0062",
+    "pdf_page": 56,
+    "chapter": "第四章　社会工作理论",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "论述“标签理论”，并举例说明其在社会工作实务中的应用。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0063",
+    "pdf_page": 56,
+    "chapter": "第四章　社会工作理论",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试述中国本土化社会工作理论的建构之路。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0064",
+    "pdf_page": 59,
+    "chapter": "第五章　社会福利制度",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社会福利的内涵与功能。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0065",
+    "pdf_page": 59,
+    "chapter": "第五章　社会福利制度",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社会政策与社会福利制度的关系。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0066",
+    "pdf_page": 60,
+    "chapter": "第五章　社会福利制度",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述西方工业化进程对社会福利模式变化的影响。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0067",
+    "pdf_page": 60,
+    "chapter": "第五章　社会福利制度",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述新时期中国社会政策与福利制度的变革对社会工作专业发展的意义。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0068",
+    "pdf_page": 62,
+    "chapter": "第五章　社会福利制度",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会福利[中华女子学院2024年研；广州大学2021年研；社科院2020年研；安徽师范大学2018年研；河北大学2016年研；南航2012年研；浙江师范大学2012年研；武汉大学2010年研；华中农大2011、2010年研]",
+    "school_year_evidence": [
+      "[中华女子学院2024年研；广州大学2021年研；社科院2020年研；安徽师范大学2018年研；河北大学2016年研；南航2012年研；浙江师范大学2012年研；武汉大学2010年研；华中农大2011、2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0069",
+    "pdf_page": 62,
+    "chapter": "第五章　社会福利制度",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会福利制度[青岛大学2015年研；浙江师范大学2011年研]",
+    "school_year_evidence": [
+      "[青岛大学2015年研；浙江师范大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0070",
+    "pdf_page": 62,
+    "chapter": "第五章　社会福利制度",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "福利国家[西南大学2020年研；华东理工2011年研]",
+    "school_year_evidence": [
+      "[西南大学2020年研；华东理工2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0071",
+    "pdf_page": 62,
+    "chapter": "第五章　社会福利制度",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "剩余性社会福利[湘潭大学2017年研；中山大学2015年研；武汉科技大学2014年研；社科院2012年研；河北大学2012年研]",
+    "school_year_evidence": [
+      "[湘潭大学2017年研；中山大学2015年研；武汉科技大学2014年研；社科院2012年研；河北大学2012年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0072",
+    "pdf_page": 62,
+    "chapter": "第五章　社会福利制度",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "社会福利的二分法对社会福利是怎样分类的？[华中农大2011年研]",
+    "school_year_evidence": [
+      "[华中农大2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0073",
+    "pdf_page": 63,
+    "chapter": "第五章　社会福利制度",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述几种主要的社会福利模式。[首都经贸大学2011年研]",
+    "school_year_evidence": [
+      "[首都经贸大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0074",
+    "pdf_page": 64,
+    "chapter": "第五章　社会福利制度",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述社会福利的功能。[山东大学2023年研；中央财经大学2021年研]",
+    "school_year_evidence": [
+      "[山东大学2023年研；中央财经大学2021年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0075",
+    "pdf_page": 64,
+    "chapter": "第五章　社会福利制度",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试述社会福利模式对社会工作专业化服务发展的影响。[华中农大2012年研]",
+    "school_year_evidence": [
+      "[华中农大2012年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0076",
+    "pdf_page": 69,
+    "chapter": "第六章　人类行为与社会环境",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述人类行为及其影响因素。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0077",
+    "pdf_page": 69,
+    "chapter": "第六章　人类行为与社会环境",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述马斯洛的需要层次理论。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0078",
+    "pdf_page": 70,
+    "chapter": "第六章　人类行为与社会环境",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社会环境的含义与特点。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0079",
+    "pdf_page": 71,
+    "chapter": "第六章　人类行为与社会环境",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "简述布朗芬布伦纳的发展心理学生态系统理论。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0080",
+    "pdf_page": 71,
+    "chapter": "第六章　人类行为与社会环境",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述人类行为与社会环境的基本关系。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0081",
+    "pdf_page": 72,
+    "chapter": "第六章　人类行为与社会环境",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述“人在环境中”的内涵。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0082",
+    "pdf_page": 72,
+    "chapter": "第六章　人类行为与社会环境",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社会工作处理人与环境关系问题的基本取向。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0083",
+    "pdf_page": 74,
+    "chapter": "第六章　人类行为与社会环境",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "人类行为",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0084",
+    "pdf_page": 74,
+    "chapter": "第六章　人类行为与社会环境",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会环境[南京师范大学2020年研；华东师大2019年研]",
+    "school_year_evidence": [
+      "[南京师范大学2020年研；华东师大2019年研]"
+    ],
+    "answer_is_cross_reference": true
+  },
+  {
+    "id": "W0085",
+    "pdf_page": 74,
+    "chapter": "第六章　人类行为与社会环境",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "无障碍环境",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0086",
+    "pdf_page": 74,
+    "chapter": "第六章　人类行为与社会环境",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "人类行为与社会环境的关系。[华中农业大学2015年研]",
+    "school_year_evidence": [
+      "[华中农业大学2015年研]"
+    ],
+    "answer_is_cross_reference": true
+  },
+  {
+    "id": "W0087",
+    "pdf_page": 74,
+    "chapter": "第六章　人类行为与社会环境",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述人类行为的特点。[武大2010年研]",
+    "school_year_evidence": [
+      "[武大2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0088",
+    "pdf_page": 74,
+    "chapter": "第六章　人类行为与社会环境",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "人的行为与社会环境的理论和观点对社会工作有什么启示？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0089",
+    "pdf_page": 75,
+    "chapter": "第六章　人类行为与社会环境",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "如何结合各社会环境系统来帮助下岗职工及其家庭？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0090",
+    "pdf_page": 76,
+    "chapter": "第六章　人类行为与社会环境",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "人的社会化发展依赖于哪方面的社会主体和条件？如果缺乏会出现哪方面的一些问题？[武汉科技大学2013年研]",
+    "school_year_evidence": [
+      "[武汉科技大学2013年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0091",
+    "pdf_page": 80,
+    "chapter": "第七章　个案工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "什么是个案工作？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0092",
+    "pdf_page": 80,
+    "chapter": "第七章　个案工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "简述个案工作的发展历史。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0093",
+    "pdf_page": 81,
+    "chapter": "第七章　个案工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "论述危机介入模式的工作过程与技巧。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0094",
+    "pdf_page": 82,
+    "chapter": "第七章　个案工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "论述任务中心模式个案工作的工作过程与技巧。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0095",
+    "pdf_page": 82,
+    "chapter": "第七章　个案工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述叙事治疗方法的基本理念。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0096",
+    "pdf_page": 83,
+    "chapter": "第七章　个案工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "简述个案工作专业关系中的拟亲属关系对专业关系的建构和运用原则。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0097",
+    "pdf_page": 84,
+    "chapter": "第七章　个案工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "个案工作的本质[武汉大学2011年研]",
+    "school_year_evidence": [
+      "[武汉大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0098",
+    "pdf_page": 84,
+    "chapter": "第七章　个案工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "心理—社会模式[河北大学2011年研]",
+    "school_year_evidence": [
+      "[河北大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0099",
+    "pdf_page": 84,
+    "chapter": "第七章　个案工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会工作评估[甘肃政法大学2023年；西南大学2020年研]、预估[武汉大学2010年研]",
+    "school_year_evidence": [
+      "[甘肃政法大学2023年；西南大学2020年研]",
+      "[武汉大学2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0100",
+    "pdf_page": 84,
+    "chapter": "第七章　个案工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "评估[武汉大学2010年研]",
+    "school_year_evidence": [
+      "[武汉大学2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0101",
+    "pdf_page": 84,
+    "chapter": "第七章　个案工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "个案管理[石河子大学2024年研；华南师范大学2020年研；深圳大学2020年研；北大2019年研]",
+    "school_year_evidence": [
+      "[石河子大学2024年研；华南师范大学2020年研；深圳大学2020年研；北大2019年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0102",
+    "pdf_page": 84,
+    "chapter": "第七章　个案工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "叙事疗法[深圳大学2016年研]",
+    "school_year_evidence": [
+      "[深圳大学2016年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0103",
+    "pdf_page": 85,
+    "chapter": "第七章　个案工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "接案面谈的主要任务有哪些？[武汉大学2010年研]",
+    "school_year_evidence": [
+      "[武汉大学2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0104",
+    "pdf_page": 85,
+    "chapter": "第七章　个案工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "个案工作过程中如何协助案主体现案主的自决原则？[中山大学2010年研]",
+    "school_year_evidence": [
+      "[中山大学2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0105",
+    "pdf_page": 86,
+    "chapter": "第七章　个案工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述社会个案工作实务的基本程序。[西南大学2011年研]",
+    "school_year_evidence": [
+      "[西南大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0106",
+    "pdf_page": 87,
+    "chapter": "第七章　个案工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述预估的原则。[沈阳师范大学2014年研]",
+    "school_year_evidence": [
+      "[沈阳师范大学2014年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0107",
+    "pdf_page": 87,
+    "chapter": "第七章　个案工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述个案工作结案的过程。[北师2019年研]",
+    "school_year_evidence": [
+      "[北师2019年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0108",
+    "pdf_page": 88,
+    "chapter": "第七章　个案工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "支持性技巧包括什么？[青岛大学2019年研]",
+    "school_year_evidence": [
+      "[青岛大学2019年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0109",
+    "pdf_page": 88,
+    "chapter": "第七章　个案工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "个案工作的涵义与主要模式。[武汉大学2011年研]",
+    "school_year_evidence": [
+      "[武汉大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0110",
+    "pdf_page": 89,
+    "chapter": "第七章　个案工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试述结案阶段的主要任务。[安徽农大2023年；南京师范大学2015年研]",
+    "school_year_evidence": [
+      "[安徽农大2023年；南京师范大学2015年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0111",
+    "pdf_page": 90,
+    "chapter": "第七章　个案工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "结合实例说明个案会谈的支持技巧、引领技巧和影响技巧。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0112",
+    "pdf_page": 94,
+    "chapter": "第八章　小组工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述小组工作的含义。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0113",
+    "pdf_page": 94,
+    "chapter": "第八章　小组工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述小组工作三个基本模式的主要内容。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0114",
+    "pdf_page": 94,
+    "chapter": "第八章　小组工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述卡兰德等人的小组工作的发展阶段。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0115",
+    "pdf_page": 95,
+    "chapter": "第八章　小组工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "为什么要对小组中的互动进行控制？怎样有效地进行控制？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0116",
+    "pdf_page": 95,
+    "chapter": "第八章　小组工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "简述小组工作的实践原则。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0117",
+    "pdf_page": 97,
+    "chapter": "第八章　小组工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "小组凝聚力[华东理工2011年研]",
+    "school_year_evidence": [
+      "[华东理工2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0118",
+    "pdf_page": 97,
+    "chapter": "第八章　小组工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "小组工作的价值观[武汉大学2011年研]",
+    "school_year_evidence": [
+      "[武汉大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0119",
+    "pdf_page": 97,
+    "chapter": "第八章　小组工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "互动治疗[社科院2011年研]",
+    "school_year_evidence": [
+      "[社科院2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0120",
+    "pdf_page": 97,
+    "chapter": "第八章　小组工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简要概述小组工作的内容。[武汉大学2011年研]",
+    "school_year_evidence": [
+      "[武汉大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0121",
+    "pdf_page": 98,
+    "chapter": "第八章　小组工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述小组工作的类型。[广州大学2021年研]",
+    "school_year_evidence": [
+      "[广州大学2021年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0122",
+    "pdf_page": 98,
+    "chapter": "第八章　小组工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "小组工作的社会目标模式。[武汉大学2012年研]",
+    "school_year_evidence": [
+      "[武汉大学2012年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0123",
+    "pdf_page": 99,
+    "chapter": "第八章　小组工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "阐明小组社会工作交互模式的内容和过程。[南开大学2019年研]",
+    "school_year_evidence": [
+      "[南开大学2019年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0124",
+    "pdf_page": 99,
+    "chapter": "第八章　小组工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "怎样做好小组工作的社会控制？[河北大学2012年研]",
+    "school_year_evidence": [
+      "[河北大学2012年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0125",
+    "pdf_page": 100,
+    "chapter": "第八章　小组工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "小组工作的基本原则。[青岛大学2019年研]",
+    "school_year_evidence": [
+      "[青岛大学2019年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0126",
+    "pdf_page": 100,
+    "chapter": "第八章　小组工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述小组工作中有效促进沟通的技巧。[西南大学2011年研]",
+    "school_year_evidence": [
+      "[西南大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0127",
+    "pdf_page": 101,
+    "chapter": "第八章　小组工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述小组冲突的解决办法。[复旦大学2019年研]",
+    "school_year_evidence": [
+      "[复旦大学2019年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0128",
+    "pdf_page": 101,
+    "chapter": "第八章　小组工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "小组动力中的组员“沟通冲突”是指什么？试举例说明社工处理组员“沟通冲突”的正确手法。[中山大学2012年研]",
+    "school_year_evidence": [
+      "[中山大学2012年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0129",
+    "pdf_page": 103,
+    "chapter": "第八章　小组工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试述小组工作中组织会议的技巧及小组工作者的角色。[浙江师范大学2011年研]",
+    "school_year_evidence": [
+      "[浙江师范大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0130",
+    "pdf_page": 106,
+    "chapter": "第九章　社区工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "什么是社区工作？其目标是什么？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0131",
+    "pdf_page": 106,
+    "chapter": "第九章　社区工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述罗斯曼社区工作三模式的基本内容。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0132",
+    "pdf_page": 108,
+    "chapter": "第九章　社区工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述联合国倡导的社区发展的基本原则。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0133",
+    "pdf_page": 108,
+    "chapter": "第九章　社区工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社区工作的介入方法。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0134",
+    "pdf_page": 109,
+    "chapter": "第九章　社区工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社区工作的过程。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0135",
+    "pdf_page": 109,
+    "chapter": "第九章　社区工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试分析我国社区工作的发展状况、成就与不足。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0136",
+    "pdf_page": 111,
+    "chapter": "第九章　社区工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社区工作[贵州师范大学2024年研；南航2012年研；华中农大2011、2010年研；西南大学2011年研；浙江师范大学2011年研；广西师范大学2010年研]",
+    "school_year_evidence": [
+      "[贵州师范大学2024年研；南航2012年研；华中农大2011、2010年研；西南大学2011年研；浙江师范大学2011年研；广西师范大学2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0137",
+    "pdf_page": 111,
+    "chapter": "第九章　社区工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "任务目标[南京理工2011年研]",
+    "school_year_evidence": [
+      "[南京理工2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0138",
+    "pdf_page": 111,
+    "chapter": "第九章　社区工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社区发展[社科院2011年研]",
+    "school_year_evidence": [
+      "[社科院2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0139",
+    "pdf_page": 111,
+    "chapter": "第九章　社区工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "资源整合[河北大学2018年研；南京理工2011年研]",
+    "school_year_evidence": [
+      "[河北大学2018年研；南京理工2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0140",
+    "pdf_page": 111,
+    "chapter": "第九章　社区工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "社区工作的主要模式，阐述地区发展模式的优缺点。[武汉大学2011年研]",
+    "school_year_evidence": [
+      "[武汉大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0141",
+    "pdf_page": 112,
+    "chapter": "第九章　社区工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述社区工作的基础理论。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0142",
+    "pdf_page": 113,
+    "chapter": "第九章　社区工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述社区分析的基本技巧。[华东理工2011年研]",
+    "school_year_evidence": [
+      "[华东理工2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0143",
+    "pdf_page": 113,
+    "chapter": "第九章　社区工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "社区工作过程中如何利用网络社区资源？[中山大学2014年研]",
+    "school_year_evidence": [
+      "[中山大学2014年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0144",
+    "pdf_page": 114,
+    "chapter": "第九章　社区工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "论述社区工作的目标、功能，以及在和谐社区建设中的作用。[社科院2011年研]",
+    "school_year_evidence": [
+      "[社科院2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0145",
+    "pdf_page": 116,
+    "chapter": "第九章　社区工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "结合实际谈谈社区工作对创新社会管理的意义。[南航2012年研]",
+    "school_year_evidence": [
+      "[南航2012年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0146",
+    "pdf_page": 116,
+    "chapter": "第九章　社区工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "如何将社区工作应用到我国当前的社区居委会工作中？[河北大学2011年研]",
+    "school_year_evidence": [
+      "[河北大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0147",
+    "pdf_page": 117,
+    "chapter": "第九章　社区工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "评述社区建设和社区社会工作的共同点。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0148",
+    "pdf_page": 121,
+    "chapter": "第十章　社会行政",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "什么是社会行政？试述宏观社会行政与微观社会行政的内容。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0149",
+    "pdf_page": 121,
+    "chapter": "第十章　社会行政",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社会行政的功能。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0150",
+    "pdf_page": 121,
+    "chapter": "第十章　社会行政",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社会行政的主要过程和内容。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0151",
+    "pdf_page": 122,
+    "chapter": "第十章　社会行政",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社会服务计划的过程模式。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0152",
+    "pdf_page": 123,
+    "chapter": "第十章　社会行政",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试分析全面深化改革背景下我国社会行政体制创新的可能性。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0153",
+    "pdf_page": 124,
+    "chapter": "第十章　社会行政",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会行政[广州大学2021年研； 华科2020年研；西南大学2020年研；中山大学2014年研；南航2012年研；浙江师范大学2012年研；河北大学2011年研]",
+    "school_year_evidence": [
+      "[广州大学2021年研； 华科2020年研；西南大学2020年研；中山大学2014年研；南航2012年研；浙江师范大学2012年研；河北大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0154",
+    "pdf_page": 124,
+    "chapter": "第十章　社会行政",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "微观社会工作行政[社科院2011年研]",
+    "school_year_evidence": [
+      "[社科院2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0155",
+    "pdf_page": 124,
+    "chapter": "第十章　社会行政",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会管理",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0156",
+    "pdf_page": 124,
+    "chapter": "第十章　社会行政",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "社会行政与社会管理、公共行政有什么区别？[西南大学2023年研]",
+    "school_year_evidence": [
+      "[西南大学2023年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0157",
+    "pdf_page": 124,
+    "chapter": "第十章　社会行政",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述社会行政与社会工作的关系。[首都经济贸易大学2011年研]",
+    "school_year_evidence": [
+      "[首都经济贸易大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0158",
+    "pdf_page": 125,
+    "chapter": "第十章　社会行政",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述社会行政的地位和功能。[浙江师范大学2011年研]",
+    "school_year_evidence": [
+      "[浙江师范大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0159",
+    "pdf_page": 126,
+    "chapter": "第十章　社会行政",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试论述社会服务机构评估的意义及方法。[浙江师范大学2012年研]",
+    "school_year_evidence": [
+      "[浙江师范大学2012年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0160",
+    "pdf_page": 129,
+    "chapter": "第十一章　儿童社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "什么是儿童社会工作？它的主要内容是什么？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0161",
+    "pdf_page": 129,
+    "chapter": "第十一章　儿童社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述儿童社会工作的特征与功能。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0162",
+    "pdf_page": 130,
+    "chapter": "第十一章　儿童社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "中国儿童社会工作有什么特点？应如何发展？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0163",
+    "pdf_page": 132,
+    "chapter": "第十一章　儿童社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "儿童社会工作[北京师范大学2023年研]",
+    "school_year_evidence": [
+      "[北京师范大学2023年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0164",
+    "pdf_page": 132,
+    "chapter": "第十一章　儿童社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "儿童福利",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0165",
+    "pdf_page": 132,
+    "chapter": "第十一章　儿童社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "儿童福利政策",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0166",
+    "pdf_page": 132,
+    "chapter": "第十一章　儿童社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述儿童社会工作的基本内容。[赣南师范2014年研；武汉科技大学2013年研]",
+    "school_year_evidence": [
+      "[赣南师范2014年研；武汉科技大学2013年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0167",
+    "pdf_page": 133,
+    "chapter": "第十一章　儿童社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "什么是儿童社会政策？制定儿童社会政策应遵循哪些原则？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0168",
+    "pdf_page": 133,
+    "chapter": "第十一章　儿童社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述儿童社会工作的实施策略。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0169",
+    "pdf_page": 134,
+    "chapter": "第十一章　儿童社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "中国儿童社会工作的发展状况如何？其发展趋势是什么？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0170",
+    "pdf_page": 136,
+    "chapter": "第十一章　儿童社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "案例分析题",
+    "question": "件等等。这些惨烈的儿童伤害事件一再冲击着人们的心理底线。请你从社会工作宏观和微观实务的视角，分析一下儿童伤害问题产生的原因及介入重点。[首都经济贸易大学2014年研]",
+    "school_year_evidence": [
+      "[首都经济贸易大学2014年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0171",
+    "pdf_page": 140,
+    "chapter": "第十二章　青少年社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述青少年概念的含义。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0172",
+    "pdf_page": 140,
+    "chapter": "第十二章　青少年社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述青少年社会工作的含义及功能。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0173",
+    "pdf_page": 140,
+    "chapter": "第十二章　青少年社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述青少年福利政策的基本原则。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0174",
+    "pdf_page": 141,
+    "chapter": "第十二章　青少年社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述青少年社会工作的主要方法。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0175",
+    "pdf_page": 143,
+    "chapter": "第十二章　青少年社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "青少年社会工作[北师大2024年研；西南大学2020年研；南航2016年研]",
+    "school_year_evidence": [
+      "[北师大2024年研；西南大学2020年研；南航2016年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0176",
+    "pdf_page": 143,
+    "chapter": "第十二章　青少年社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "青少年福利",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0177",
+    "pdf_page": 143,
+    "chapter": "第十二章　青少年社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "青少年社会工作者应有怎样的价值取向？[武汉大学2010年研]",
+    "school_year_evidence": [
+      "[武汉大学2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0178",
+    "pdf_page": 144,
+    "chapter": "第十二章　青少年社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "联系实际，论述青少年的行为特征以及当前面临的社会环境问题。[西南大学2010年研]",
+    "school_year_evidence": [
+      "[西南大学2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0179",
+    "pdf_page": 144,
+    "chapter": "第十二章　青少年社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试说明在青少年社会工作实务领域，社会工作可提供的服务及社会工作者的角色。[南京理工2011年研]",
+    "school_year_evidence": [
+      "[南京理工2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0180",
+    "pdf_page": 145,
+    "chapter": "第十二章　青少年社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试述青少年社会工作的内容。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0181",
+    "pdf_page": 150,
+    "chapter": "第十三章　老年社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试说明影响老年社会工作的主要因素。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0182",
+    "pdf_page": 150,
+    "chapter": "第十三章　老年社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "老年社会工作理论对老年社会工作实务有何指导意义？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0183",
+    "pdf_page": 150,
+    "chapter": "第十三章　老年社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "老年个案工作应遵循的基本原则是什么？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0184",
+    "pdf_page": 151,
+    "chapter": "第十三章　老年社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "为什么在我国要大力发展老人社区照顾？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0185",
+    "pdf_page": 152,
+    "chapter": "第十三章　老年社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "活动理论[河北大学2012年研]",
+    "school_year_evidence": [
+      "[河北大学2012年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0186",
+    "pdf_page": 152,
+    "chapter": "第十三章　老年社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社区照顾[北师大2024年研；华东师范大学2023年研；南京理工2011年研]",
+    "school_year_evidence": [
+      "[北师大2024年研；华东师范大学2023年研；南京理工2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0187",
+    "pdf_page": 152,
+    "chapter": "第十三章　老年社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "什么是老年社会工作？其发展经过如何？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0188",
+    "pdf_page": 153,
+    "chapter": "第十三章　老年社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述老年社会工作的理论基础。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0189",
+    "pdf_page": 154,
+    "chapter": "第十三章　老年社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "小组工作如何应用于老年人社会工作？[河北大学2011年研]",
+    "school_year_evidence": [
+      "[河北大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0190",
+    "pdf_page": 155,
+    "chapter": "第十三章　老年社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "试述老年社会工作的目标和原则。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0191",
+    "pdf_page": 156,
+    "chapter": "第十三章　老年社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "独居老人初次家访过程中如何建立工作关系？[中山大学2014年研]",
+    "school_year_evidence": [
+      "[中山大学2014年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0192",
+    "pdf_page": 156,
+    "chapter": "第十三章　老年社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "谈谈你对我国老年社会工作发展前景的认识。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0193",
+    "pdf_page": 160,
+    "chapter": "第十四章　妇女社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "什么是妇女社会工作？试述妇女社会工作与妇女工作的关系。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0194",
+    "pdf_page": 160,
+    "chapter": "第十四章　妇女社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "结合实际，试述如何在社会工作中落实社会性别主流化。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0195",
+    "pdf_page": 160,
+    "chapter": "第十四章　妇女社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述妇女社会工作的方法。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0196",
+    "pdf_page": 161,
+    "chapter": "第十四章　妇女社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "结合实际，试述妇女增权与建立社会支持网络对妇女弱势群体的意义。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0197",
+    "pdf_page": 162,
+    "chapter": "第十四章　妇女社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "针对不同需要的妇女，专业社会工作机构和工作人员分别可以开展哪些工作？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0198",
+    "pdf_page": 164,
+    "chapter": "第十四章　妇女社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "妇女社会工作[福州大学2024年研]",
+    "school_year_evidence": [
+      "[福州大学2024年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0199",
+    "pdf_page": 164,
+    "chapter": "第十四章　妇女社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会性别[云南大学2023研；年中山大学2014年研]",
+    "school_year_evidence": [
+      "[云南大学2023研；年中山大学2014年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0200",
+    "pdf_page": 164,
+    "chapter": "第十四章　妇女社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "女性主义[南航2014年研]",
+    "school_year_evidence": [
+      "[南航2014年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0201",
+    "pdf_page": 164,
+    "chapter": "第十四章　妇女社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "增权[南京师范大学2020年研；社科院2012年研]",
+    "school_year_evidence": [
+      "[南京师范大学2020年研；社科院2012年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0202",
+    "pdf_page": 164,
+    "chapter": "第十四章　妇女社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "女性主义社会工作的局限性是什么？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0203",
+    "pdf_page": 164,
+    "chapter": "第十四章　妇女社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试述女性主义的主要观点和在社会工作实务领域中的意义。[社科院2011年研]",
+    "school_year_evidence": [
+      "[社科院2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0204",
+    "pdf_page": 167,
+    "chapter": "第十五章　残疾人社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "什么是残疾人社会工作？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0205",
+    "pdf_page": 167,
+    "chapter": "第十五章　残疾人社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述残疾的个人责任论和社会责任论的内容及其对残疾人社会工作的影响。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0206",
+    "pdf_page": 167,
+    "chapter": "第十五章　残疾人社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "什么是正常化理论？它对残疾人社会工作有什么意义？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0207",
+    "pdf_page": 168,
+    "chapter": "第十五章　残疾人社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述回归社会论的价值基础及工作模式。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0208",
+    "pdf_page": 168,
+    "chapter": "第十五章　残疾人社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社区康复的意义与方法。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0209",
+    "pdf_page": 169,
+    "chapter": "第十五章　残疾人社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述中国残疾人社会工作发展的特点。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0210",
+    "pdf_page": 170,
+    "chapter": "第十五章　残疾人社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "回归社会论[社科院2012年研]",
+    "school_year_evidence": [
+      "[社科院2012年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0211",
+    "pdf_page": 170,
+    "chapter": "第十五章　残疾人社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会康复[贵州民族大学2023年研；南京师范大学2018年研]",
+    "school_year_evidence": [
+      "[贵州民族大学2023年研；南京师范大学2018年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0212",
+    "pdf_page": 170,
+    "chapter": "第十五章　残疾人社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "残疾人社会工作具有什么社会功能？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0213",
+    "pdf_page": 170,
+    "chapter": "第十五章　残疾人社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述残疾人职业康复的内容。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0214",
+    "pdf_page": 171,
+    "chapter": "第十五章　残疾人社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述我国残疾人社会工作的发展策略。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0215",
+    "pdf_page": 171,
+    "chapter": "第十五章　残疾人社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试论述残疾人社会工作的主要方法。[武汉大学2010年研]",
+    "school_year_evidence": [
+      "[武汉大学2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0216",
+    "pdf_page": 173,
+    "chapter": "第十五章　残疾人社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试论残疾人社区康复模式和社会康复模式的区别与联系。[华南理工2015年研]",
+    "school_year_evidence": [
+      "[华南理工2015年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0217",
+    "pdf_page": 173,
+    "chapter": "第十五章　残疾人社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试述残疾人社会工作的基本内容与三大传统工作方法。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0218",
+    "pdf_page": 175,
+    "chapter": "第十五章　残疾人社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "谈谈你对我国残疾人社会工作发展前景的看法。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0219",
+    "pdf_page": 180,
+    "chapter": "第十六章　家庭社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "什么是家庭社会工作？试述家庭社会工作的重要性。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0220",
+    "pdf_page": 180,
+    "chapter": "第十六章　家庭社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "社会变革使中国的家庭发生了什么变化？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0221",
+    "pdf_page": 180,
+    "chapter": "第十六章　家庭社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "谈谈中国大陆目前家庭社会工作的发展状况及特点。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0222",
+    "pdf_page": 181,
+    "chapter": "第十六章　家庭社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述家庭系统理论、家庭生命周期理论、家庭冲突理论和家庭沟通理论及其在家庭社会工作中的应用。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0223",
+    "pdf_page": 182,
+    "chapter": "第十六章　家庭社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "什么是家庭治疗，试述各流派家庭治疗的共通之处。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0224",
+    "pdf_page": 183,
+    "chapter": "第十六章　家庭社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "家庭社会工作[浙江财经大学2023年研；北京师范大学2022年研；广州大学2021年研；]",
+    "school_year_evidence": [
+      "[浙江财经大学2023年研；北京师范大学2022年研；广州大学2021年研；]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0225",
+    "pdf_page": 183,
+    "chapter": "第十六章　家庭社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "家庭生命周期[河北大学2011年研]",
+    "school_year_evidence": [
+      "[河北大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0226",
+    "pdf_page": 183,
+    "chapter": "第十六章　家庭社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "家庭治疗[河北大学2012年研；武汉大学2010年研]",
+    "school_year_evidence": [
+      "[河北大学2012年研；武汉大学2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0227",
+    "pdf_page": 183,
+    "chapter": "第十六章　家庭社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述萨提亚家庭治疗模式有哪些技巧？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0228",
+    "pdf_page": 183,
+    "chapter": "第十六章　家庭社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "结构家庭治疗法是怎样看待案主的问题的？其介入手法有什么特点？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0229",
+    "pdf_page": 184,
+    "chapter": "第十六章　家庭社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "结合你的社会工作理论与实务经验，试举例说明结构家庭治疗法在婚姻危机中的运用。[南航2014年研]",
+    "school_year_evidence": [
+      "[南航2014年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0230",
+    "pdf_page": 188,
+    "chapter": "第十七章　医务社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "什么是医务社会工作？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0231",
+    "pdf_page": 188,
+    "chapter": "第十七章　医务社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "为什么医务社会工作向健康照顾取向的社会工作转变？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0232",
+    "pdf_page": 188,
+    "chapter": "第十七章　医务社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "医务社会工作者应该和能够扮演什么角色？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0233",
+    "pdf_page": 188,
+    "chapter": "第十七章　医务社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "中国健康照顾服务体系的基本内容和基本特征是什么？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0234",
+    "pdf_page": 189,
+    "chapter": "第十七章　医务社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "医务社会工作健康干预的基本范围与介入领域是什么？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0235",
+    "pdf_page": 191,
+    "chapter": "第十七章　医务社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "医务社会工作[中南大学2023年研]",
+    "school_year_evidence": [
+      "[中南大学2023年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0236",
+    "pdf_page": 191,
+    "chapter": "第十七章　医务社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "试述医疗社会工作的理论基础。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0237",
+    "pdf_page": 191,
+    "chapter": "第十七章　医务社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "概述医疗社会工作的分类及内容。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0238",
+    "pdf_page": 193,
+    "chapter": "第十七章　医务社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试述医疗社会工作的方法及其实施过程。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0239",
+    "pdf_page": 195,
+    "chapter": "第十七章　医务社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "中国医疗社会工作的状况如何？有何特点？如何进一步发展？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0240",
+    "pdf_page": 198,
+    "chapter": "第十七章　医务社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "医务社会工作实务的方法有哪些？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0241",
+    "pdf_page": 201,
+    "chapter": "第十八章　工业社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述工业社会工作的含义。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0242",
+    "pdf_page": 201,
+    "chapter": "第十八章　工业社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述工业社会工作服务的内容。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0243",
+    "pdf_page": 201,
+    "chapter": "第十八章　工业社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社会工作者在员工协助方案中的角色。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0244",
+    "pdf_page": 202,
+    "chapter": "第十八章　工业社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社会工作者在企业社会责任服务中的角色。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0245",
+    "pdf_page": 203,
+    "chapter": "第十八章　工业社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述中国发展工业社会工作的现实意义。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0246",
+    "pdf_page": 204,
+    "chapter": "第十八章　工业社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "谈谈发展工业社会工作的必要性。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0247",
+    "pdf_page": 204,
+    "chapter": "第十八章　工业社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "工业社会工作的基本职责何在？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0248",
+    "pdf_page": 205,
+    "chapter": "第十八章　工业社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "谈谈你对如何发展我国工业社会工作的认识。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0249",
+    "pdf_page": 205,
+    "chapter": "第十八章　工业社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试述工业社会工作的哲学基础。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0250",
+    "pdf_page": 209,
+    "chapter": "第十九章　农村社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "什么是农村社会工作？并谈谈开展农村社会工作服务的重要性。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0251",
+    "pdf_page": 209,
+    "chapter": "第十九章　农村社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述农村社会工作价值观的内容。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0252",
+    "pdf_page": 210,
+    "chapter": "第十九章　农村社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "农村社会工作者如何助力乡村治理创新？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0253",
+    "pdf_page": 211,
+    "chapter": "第十九章　农村社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "在乡村振兴战略实施过程中，社会工作者可以承担哪些角色？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0254",
+    "pdf_page": 212,
+    "chapter": "第十九章　农村社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "农村社会工作[中央民族大学2024年研]",
+    "school_year_evidence": [
+      "[中央民族大学2024年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0255",
+    "pdf_page": 212,
+    "chapter": "第十九章　农村社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "地区发展模式应用[华南师范大学2020年研]",
+    "school_year_evidence": [
+      "[华南师范大学2020年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0256",
+    "pdf_page": 212,
+    "chapter": "第十九章　农村社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "如何发展中国农村社会工作？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0257",
+    "pdf_page": 212,
+    "chapter": "第十九章　农村社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试述我国农村社会工作的任务和特点。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0258",
+    "pdf_page": 215,
+    "chapter": "第二十章　反贫困与社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "什么是贫困？试述中国贫困问题的发展变化。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0259",
+    "pdf_page": 216,
+    "chapter": "第二十章　反贫困与社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "从国际经验来看，反贫困的主要武器是什么？社会工作在反贫困中的作用如何？运用了哪些方法？西方国家反贫困福利政策有哪些新的发展取向？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0260",
+    "pdf_page": 217,
+    "chapter": "第二十章　反贫困与社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述参与式发展与资产为本的社区发展的核心思想及其对中国落后地区社区发展的启示。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0261",
+    "pdf_page": 218,
+    "chapter": "第二十章　反贫困与社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述中国实施扶贫开发和精准扶贫的主要经验。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0262",
+    "pdf_page": 219,
+    "chapter": "第二十章　反贫困与社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试析社会工作在中国反贫困中发挥的作用及其发展方向。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0263",
+    "pdf_page": 221,
+    "chapter": "第二十章　反贫困与社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "相对贫困[北大2020年研]",
+    "school_year_evidence": [
+      "[北大2020年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0264",
+    "pdf_page": 221,
+    "chapter": "第二十章　反贫困与社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会排斥[华科2020年研]",
+    "school_year_evidence": [
+      "[华科2020年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0265",
+    "pdf_page": 221,
+    "chapter": "第二十章　反贫困与社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "相对剥夺",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0266",
+    "pdf_page": 221,
+    "chapter": "第二十章　反贫困与社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述衡量贫困的指标体系。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0267",
+    "pdf_page": 222,
+    "chapter": "第二十章　反贫困与社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "社会工作在贫困治理中有何作用？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0268",
+    "pdf_page": 222,
+    "chapter": "第二十章　反贫困与社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "简述城市贫困的原因。[中国社科院2011年研]",
+    "school_year_evidence": [
+      "[中国社科院2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0269",
+    "pdf_page": 223,
+    "chapter": "第二十章　反贫困与社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试分析当代中国的主要社会问题。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0270",
+    "pdf_page": 227,
+    "chapter": "第二十一章　矫正社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "什么是矫正社会工作？它与矫正工作有何联系和区别？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0271",
+    "pdf_page": 227,
+    "chapter": "第二十一章　矫正社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "矫正社会工作的理论基础和价值理念主要有哪些？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0272",
+    "pdf_page": 228,
+    "chapter": "第二十一章　矫正社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "矫正社会工作通过哪些途径为受助者提供服务？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0273",
+    "pdf_page": 229,
+    "chapter": "第二十一章　矫正社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "简述中国矫正社会工作的发展历程。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0274",
+    "pdf_page": 232,
+    "chapter": "第二十一章　矫正社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社区矫正[中南民族大学2024年研；北大2020年研；兰州大学2020年研]",
+    "school_year_evidence": [
+      "[中南民族大学2024年研；北大2020年研；兰州大学2020年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0275",
+    "pdf_page": 232,
+    "chapter": "第二十一章　矫正社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "矫正社会工作的价值理念。[武汉大学2012年研]",
+    "school_year_evidence": [
+      "[武汉大学2012年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0276",
+    "pdf_page": 232,
+    "chapter": "第二十一章　矫正社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述矫正对象的特点。[武汉大学2010年研]",
+    "school_year_evidence": [
+      "[武汉大学2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0277",
+    "pdf_page": 233,
+    "chapter": "第二十一章　矫正社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述矫正社会工作的介入途径和微观方法。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0278",
+    "pdf_page": 233,
+    "chapter": "第二十一章　矫正社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述社区矫正中的社会工作介入。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0279",
+    "pdf_page": 234,
+    "chapter": "第二十一章　矫正社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "社区矫正的特点和功能是什么？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0280",
+    "pdf_page": 238,
+    "chapter": "第二十二章　民政工作与社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述中国古代的社会福利思想和中国社会福利体制的内容。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0281",
+    "pdf_page": 238,
+    "chapter": "第二十二章　民政工作与社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "简述中国民政工作中的社会工作的理论基础。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0282",
+    "pdf_page": 239,
+    "chapter": "第二十二章　民政工作与社会工作",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "怎样理解社会工作的“民政模式”及其意义？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0283",
+    "pdf_page": 241,
+    "chapter": "第二十二章　民政工作与社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "我国的民政工作中运用的社会工作方法和技巧有哪些？[河北大学2011年研]",
+    "school_year_evidence": [
+      "[河北大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0284",
+    "pdf_page": 241,
+    "chapter": "第二十二章　民政工作与社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试述中国社会福利的思想脉络。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0285",
+    "pdf_page": 242,
+    "chapter": "第二十二章　民政工作与社会工作",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试述民政工作与社会工作的发展。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0286",
+    "pdf_page": 246,
+    "chapter": "第二十三章　社会工作教育",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "怎样理解社会工作教育是社会工作专业体系的重要组成部分？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0287",
+    "pdf_page": 246,
+    "chapter": "第二十三章　社会工作教育",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "社会工作专业目标和社会工作教育目标是怎样统一的？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0288",
+    "pdf_page": 246,
+    "chapter": "第二十三章　社会工作教育",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "在社会工作专业过程中，如何处理服务对象利益与专业人员利益的关系？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0289",
+    "pdf_page": 247,
+    "chapter": "第二十三章　社会工作教育",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "社会工作专业化过程中如何处理普遍性与特殊性的关系？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0290",
+    "pdf_page": 247,
+    "chapter": "第二十三章　社会工作教育",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "应该怎样确定中国社会工作专业发展的道路？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0291",
+    "pdf_page": 248,
+    "chapter": "第二十三章　社会工作教育",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会工作本土化[天津师范大学2023年研；青岛大学2016年研；哈尔滨工程大学2016年研；湘潭大学2016年研；社科院2015年研；河北大学2011年研]",
+    "school_year_evidence": [
+      "[天津师范大学2023年研；青岛大学2016年研；哈尔滨工程大学2016年研；湘潭大学2016年研；社科院2015年研；河北大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0292",
+    "pdf_page": 248,
+    "chapter": "第二十三章　社会工作教育",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "本土性社会工作[福州大学2024年研；南京师范大学2020年研；山东大学2016年研]",
+    "school_year_evidence": [
+      "[福州大学2024年研；南京师范大学2020年研；山东大学2016年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0293",
+    "pdf_page": 248,
+    "chapter": "第二十三章　社会工作教育",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述社会工作专业教育的特性。[南航2012年研；西南大学2010年研]",
+    "school_year_evidence": [
+      "[南航2012年研；西南大学2010年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0294",
+    "pdf_page": 248,
+    "chapter": "第二十三章　社会工作教育",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "怎样看待我国社会工作本土化的任务？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0295",
+    "pdf_page": 249,
+    "chapter": "第二十三章　社会工作教育",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "简要分析社会工作本土化和国际化的关系以及中国社会工作本土化和国际化的路径。[社科院2011年研]",
+    "school_year_evidence": [
+      "[社科院2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0296",
+    "pdf_page": 250,
+    "chapter": "第二十三章　社会工作教育",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "我国社会工作的未来发展如何整合“本土化与创新”？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0297",
+    "pdf_page": 251,
+    "chapter": "第二十三章　社会工作教育",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试论述我国社会工作的发展需要解决的问题。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0298",
+    "pdf_page": 254,
+    "chapter": "第二十四章　社会工作实习与督导",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "社会工作实习在社会工作专业训练中的地位是怎样的？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0299",
+    "pdf_page": 254,
+    "chapter": "第二十四章　社会工作实习与督导",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "社会工作实习的目标是什么？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0300",
+    "pdf_page": 254,
+    "chapter": "第二十四章　社会工作实习与督导",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "比较不同社会工作实习督导模式的优劣。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0301",
+    "pdf_page": 256,
+    "chapter": "第二十四章　社会工作实习与督导",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "专业自我[社科院2020年研；兰州大学2017年研]",
+    "school_year_evidence": [
+      "[社科院2020年研；兰州大学2017年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0302",
+    "pdf_page": 256,
+    "chapter": "第二十四章　社会工作实习与督导",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "社会工作督导[石河子大学2024年研；北京师范大学2023年研；青岛大学2017年研；南京理工2011年研]",
+    "school_year_evidence": [
+      "[石河子大学2024年研；北京师范大学2023年研；青岛大学2017年研；南京理工2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0303",
+    "pdf_page": 256,
+    "chapter": "第二十四章　社会工作实习与督导",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述社会工作督导的功能。[华南师范大学2020年研]",
+    "school_year_evidence": [
+      "[华南师范大学2020年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0304",
+    "pdf_page": 256,
+    "chapter": "第二十四章　社会工作实习与督导",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述教育性督导的内容。[沈阳师范2014年研]",
+    "school_year_evidence": [
+      "[沈阳师范2014年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0305",
+    "pdf_page": 257,
+    "chapter": "第二十四章　社会工作实习与督导",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "社会工作督导的主要模式有哪些？[中山大学2012年研]",
+    "school_year_evidence": [
+      "[中山大学2012年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0306",
+    "pdf_page": 261,
+    "chapter": "第二十五章　社会工作研究",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社会工作研究的含义及功能。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0307",
+    "pdf_page": 261,
+    "chapter": "第二十五章　社会工作研究",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社会工作研究的价值和伦理。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0308",
+    "pdf_page": 262,
+    "chapter": "第二十五章　社会工作研究",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社会工作研究的基本程序。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0309",
+    "pdf_page": 263,
+    "chapter": "第二十五章　社会工作研究",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述社会工作研究的访谈法和个案研究法。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0310",
+    "pdf_page": 263,
+    "chapter": "第二十五章　社会工作研究",
+    "section": "课后习题详解",
+    "question_type": "课后习题",
+    "question": "试述行动研究的内容及其理论基础。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0311",
+    "pdf_page": 266,
+    "chapter": "第二十五章　社会工作研究",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "实证主义方法论[中财2009年研]",
+    "school_year_evidence": [
+      "[中财2009年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0312",
+    "pdf_page": 266,
+    "chapter": "第二十五章　社会工作研究",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "等距抽样[华东师大2019年研]",
+    "school_year_evidence": [
+      "[华东师大2019年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0313",
+    "pdf_page": 266,
+    "chapter": "第二十五章　社会工作研究",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "个案研究[河北大学2022年研]",
+    "school_year_evidence": [
+      "[河北大学2022年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0314",
+    "pdf_page": 266,
+    "chapter": "第二十五章　社会工作研究",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "参与观察[山东大学2023年研；华东师大2019年研；四川大学2019年研]",
+    "school_year_evidence": [
+      "[山东大学2023年研；华东师大2019年研；四川大学2019年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0315",
+    "pdf_page": 266,
+    "chapter": "第二十五章　社会工作研究",
+    "section": "考研真题与典型题详解",
+    "question_type": "概念题",
+    "question": "小组访谈法[人大2005年研]",
+    "school_year_evidence": [
+      "[人大2005年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0316",
+    "pdf_page": 266,
+    "chapter": "第二十五章　社会工作研究",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "如何认识定性研究与定量研究的关系？[河北大学2012年研]",
+    "school_year_evidence": [
+      "[河北大学2012年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0317",
+    "pdf_page": 267,
+    "chapter": "第二十五章　社会工作研究",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "完整的社会研究包括哪些环节？[首经贸2013年研]",
+    "school_year_evidence": [
+      "[首经贸2013年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0318",
+    "pdf_page": 268,
+    "chapter": "第二十五章　社会工作研究",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "问卷设计中，对问题的表达和提问的方式有哪些常用的规则？为什么要尽量简单？",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0319",
+    "pdf_page": 268,
+    "chapter": "第二十五章　社会工作研究",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述抽样的步骤。[青岛大学2019年研]",
+    "school_year_evidence": [
+      "[青岛大学2019年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0320",
+    "pdf_page": 269,
+    "chapter": "第二十五章　社会工作研究",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "研究报告撰写应注意哪些原则？[沈阳师范2014年研]",
+    "school_year_evidence": [
+      "[沈阳师范2014年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0321",
+    "pdf_page": 269,
+    "chapter": "第二十五章　社会工作研究",
+    "section": "考研真题与典型题详解",
+    "question_type": "简答题",
+    "question": "简述文献调查法的优点。[武汉大学2011年研]",
+    "school_year_evidence": [
+      "[武汉大学2011年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0322",
+    "pdf_page": 270,
+    "chapter": "第二十五章　社会工作研究",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "结合社会研究中具体案例，谈谈你对“价值中立”原则的理解。[首经贸2013年研]",
+    "school_year_evidence": [
+      "[首经贸2013年研]"
+    ],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0323",
+    "pdf_page": 270,
+    "chapter": "第二十五章　社会工作研究",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试述社会工作研究的主要方法。",
+    "school_year_evidence": [],
+    "answer_is_cross_reference": false
+  },
+  {
+    "id": "W0324",
+    "pdf_page": 271,
+    "chapter": "第二十五章　社会工作研究",
+    "section": "考研真题与典型题详解",
+    "question_type": "论述题",
+    "question": "试述定量研究和定性研究的区别。两种研究没有优劣之分，你如何理解？[青岛大学2019年研]",
+    "school_year_evidence": [
+      "[青岛大学2019年研]"
+    ],
+    "answer_is_cross_reference": false
+  }
+]

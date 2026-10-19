@@ -2,9 +2,9 @@ import json,re,os
 from collections import OrderedDict, Counter
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CARDS=os.path.join(ROOT,'app','src','main','assets','cards.json')
-OUT=os.path.join(ROOT,'app','src','main','assets','service_framework_v2_8_5.json')
-REPORT=os.path.join(ROOT,'content','service_framework_report_v2_8_5.md')
-QA=os.path.join(ROOT,'content','service_framework_qa_v2_8_5.json')
+OUT=os.path.join(ROOT,'app','src','main','assets','service_framework.json')
+REPORT=os.path.join(ROOT,'archive','reports','service_framework_report_v2_8_5.md')
+QA=os.path.join(ROOT,'archive','qa','service_framework_qa_v2_8_5.json')
 cards=json.load(open(CARDS,encoding='utf-8'))
 byid={c['id']:c for c in cards}
 

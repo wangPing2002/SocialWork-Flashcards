@@ -1,0 +1,42 @@
+[
+  {
+    "card_id": "C0347",
+    "old_fullanswer_sha256": "479c022cd48389d6216eb778c5f0ab1bc02fe671c9f2e9d08b71444ef06bc6d0",
+    "new_fullanswer_sha256": "ac8cf2052c5a411604f58b71ba4a69b55b4b7ca530e597641cbc41d19e535f75"
+  },
+  {
+    "card_id": "C0264",
+    "old_fullanswer_sha256": "081508ce2ed95e2b53e9cb024c1077e894beb3a6e81ffc938865acaf5061e4f9",
+    "new_fullanswer_sha256": "66fd0719950db02f341a0bcef2adcf825feae35e678bc76195f34c7bea80227e"
+  },
+  {
+    "card_id": "C0337",
+    "old_fullanswer_sha256": "1cae73c9f1f93621f055296c22673aa9490df26d491edf19dcad5caf48d0fa51",
+    "new_fullanswer_sha256": "104a8dd744df0fdb389bbd7c6d99a3f0732ba34cd246e7ccdd7c044f06977417"
+  },
+  {
+    "card_id": "C0373",
+    "old_fullanswer_sha256": "046bf6b0b744ba0b4a38393a46ac036c2f626b22483a2b28bd0df1a30c129a83",
+    "new_fullanswer_sha256": "13763e8bd869cfd46d87d0db667c336d561e5eb7db0c7a0df86fdd9a481483b1"
+  },
+  {
+    "card_id": "C1268",
+    "old_fullanswer_sha256": "a4a439324a6b31dabe73427a19e630fd647226362372fc475167db6b2ff12b16",
+    "new_fullanswer_sha256": "2b1c01ce0a5c704004e4805a84ee0e2313b1c9b329e68a0929cf3d90a5a1f63f"
+  },
+  {
+    "card_id": "C1423",
+    "old_fullanswer_sha256": "3f6c2f381c3b872a475224462c2f38a8166332d9c1f2efa2c2f67682fb0ef484",
+    "new_fullanswer_sha256": "1570cf83f20dc66cd5a5329c55a34aab82cda1d9d20750126d666ee53825cdcb"
+  },
+  {
+    "card_id": "C1453",
+    "old_fullanswer_sha256": "fe89bb4ec39e6f7e2f2d4cd8287e7b27115029233cd95bb0a00ede3ab8597d3e",
+    "new_fullanswer_sha256": "241a6e9fe6204587d17982412259c3532505e7635461ab7ab29da36c0811cc15"
+  },
+  {
+    "card_id": "C1509",
+    "old_fullanswer_sha256": "f76caaeeeb387681529a69062adead97e7715f7a00b6e9fddb4ac291f52ebfd7",
+    "new_fullanswer_sha256": "ff1d10e141d02e7def8d344b398fca24655262ff4b3fe512fc3ef2a1d2cfa531"
+  }
+]

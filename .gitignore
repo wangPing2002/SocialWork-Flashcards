@@ -7,3 +7,11 @@ app/build/
 .DS_Store
 *.jks
 *.keystore
+
+# Local answer patch backups, staging, caches, and test artifacts
+local_backups/
+__pycache__/
+*.py[cod]
+*.pending
+.pytest_cache/
+/SNAPSHOT_MANIFEST.json

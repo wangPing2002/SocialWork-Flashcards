@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
     final HashMap<String,Integer> examRelationCounts=new HashMap<>();
     JSONObject serviceFrameworkCache=null; String currentFrameworkNodeId=""; boolean currentFrameworkCoreOnly=false;
     String studyReturnFrameworkNodeId=""; boolean studyReturnFrameworkCoreOnly=false;
-    JSONObject quickMemoryCache=null; boolean quickMemoryMode=false;
+    JSONObject quickMemoryCache=null, quickMemoryV3Cache=null; boolean quickMemoryMode=false;
     static boolean crashRecorderInstalled=false;
     java.util.concurrent.ExecutorService initExecutor;
 
@@ -47,11 +47,13 @@ public class MainActivity extends Activity {
                     CardRepository loadedRepo=new CardRepository(getApplicationContext(),feedback);
                     store.preloadStates(loadedRepo.cards);
                     MockExamEngine loadedMock=new MockExamEngine(loadedRepo,store,engine);
-                    JSONObject loadedQuick;JSONObject loadedFramework;
-                    try{loadedQuick=new JSONObject(readAssetText("quick_memory_v2_8_8.json"));}catch(Exception e){loadedQuick=new JSONObject();}
-                    try{loadedFramework=new JSONObject(readAssetText("service_framework_v2_8_5.json"));}catch(Exception e){loadedFramework=new JSONObject();}
-                    final JSONObject fq=loadedQuick,ff=loadedFramework;
-                    runOnUiThread(()->{if(activityGone())return;repo=loadedRepo;mockEngine=loadedMock;quickMemoryCache=fq;serviceFrameworkCache=ff;showHome();});
+                    JSONObject loadedQuick;JSONObject loadedQuickV3;JSONObject loadedFramework;
+                    try{loadedQuick=new JSONObject(readAssetText("quick_memory.json"));}catch(Exception e){loadedQuick=new JSONObject();}
+                    // Optional structured study data: older project versions may not contain this asset yet.
+                    try{loadedQuickV3=new JSONObject(readAssetText("quick_memory_v3.json"));}catch(Exception e){loadedQuickV3=new JSONObject();}
+                    try{loadedFramework=new JSONObject(readAssetText("service_framework.json"));}catch(Exception e){loadedFramework=new JSONObject();}
+                    final JSONObject fq=loadedQuick,fqv3=loadedQuickV3,ff=loadedFramework;
+                    runOnUiThread(()->{if(activityGone())return;repo=loadedRepo;mockEngine=loadedMock;quickMemoryCache=fq;quickMemoryV3Cache=fqv3;serviceFrameworkCache=ff;showHome();});
                 }catch(Exception e){runOnUiThread(()->{if(activityGone())return;showFatalStartup(e);});}
             });
         }catch(Exception e){showFatalStartup(e);}
@@ -445,24 +447,77 @@ void renderCoreAnswer(LinearLayout inner,Card c){
 
     if(quickMemoryMode){
         JSONObject memory=quickMemoryFor(c);
-        String example=memory.optString("example","").trim();
-        String mnemonic=memory.optString("mnemonic","").trim();
+        JSONObject structured=quickMemoryStudyFor(c);
+        String example=structured.optString("example",memory.optString("example","")).trim();
+        String mnemonic=structured.optString("mnemonic",memory.optString("mnemonic","")).trim();
+        JSONArray framework=structured.optJSONArray("framework");
+        JSONArray cues=structured.optJSONArray("cues");
+        JSONArray recallQuestions=structured.optJSONArray("recallQuestions");
+        boolean hasStructured=(framework!=null&&framework.length()>0)||(cues!=null&&cues.length()>0)||(recallQuestions!=null&&recallQuestions.length()>0);
 
-        LinearLayout exampleBox=box(Color.rgb(239,248,245),12,14);
-        TextView exampleTitle=tv("理解例子",12,TEAL_DARK,true);exampleBox.addView(exampleTitle);
-        TextView exampleBody=tv(example.isEmpty()?"暂无理解例子。":example,15,INK,false);exampleBody.setLineSpacing(dp(3),1.20f);exampleBody.setTextIsSelectable(true);margin(exampleBody,0,7,0,0);exampleBox.addView(exampleBody);inner.addView(exampleBox);
-
-        LinearLayout mnemonicBox=box(Color.rgb(255,247,239),12,14);
-        TextView mnemonicTitle=tv("记忆口诀",12,ORANGE,true);mnemonicBox.addView(mnemonicTitle);
-        TextView mnemonicBody=tv(mnemonic.isEmpty()?"暂无记忆口诀。":mnemonic,15,INK,false);mnemonicBody.setLineSpacing(dp(3),1.20f);mnemonicBody.setTextIsSelectable(true);margin(mnemonicBody,0,7,0,0);mnemonicBox.addView(mnemonicBody);margin(mnemonicBox,0,10,0,0);inner.addView(mnemonicBox);
+        if(hasStructured){
+            addMemoryListSection(inner,"答题骨架",framework,Color.rgb(239,246,250),TEAL_DARK);
+            addMemoryTextSection(inner,"关键词提示",joinMemoryItems(cues,"  ·  "),Color.rgb(245,243,250),Color.rgb(105,82,151));
+            addMemoryTextSection(inner,"理解例子",example,Color.rgb(239,248,245),TEAL_DARK);
+            addMemoryTextSection(inner,"记忆口诀",mnemonic,Color.rgb(255,247,239),ORANGE);
+            addMemoryRecallSection(inner,recallQuestions);
+        }else{
+            // Backward-compatible layout for cards that have not yet received v3 structured memory.
+            addMemoryTextSection(inner,"理解例子",example.isEmpty()?"暂无理解例子。":example,Color.rgb(239,248,245),TEAL_DARK);
+            addMemoryTextSection(inner,"记忆口诀",mnemonic.isEmpty()?"暂无记忆口诀。":mnemonic,Color.rgb(255,247,239),ORANGE);
+        }
     }else{
         TextView body=tv("",16,INK,false);body.setText(richAnswer(answer));body.setLineSpacing(dp(3),1.20f);body.setTextIsSelectable(true);inner.addView(body);
     }
 
     String srcText="核心教材依据  "+c.origin;
     if(c.sourceLevel!=null&&!c.sourceLevel.isEmpty())srcText+="\n答案来源层级  "+c.sourceLevel;
-    TextView src=tv(srcText,10,MUTED,false);src.setBackground(shape(Color.rgb(248,250,249),11));src.setPadding(dp(10),dp(8),dp(10),dp(8));margin(src,0,12,0,7);inner.addView(src);
+    TextView src=tv(srcText,10,MUTED,false);src.setBackground(shape(Color.rgb(248,250,249),11));src.setPadding(dp(10),dp(8),dp(10),dp(8));src.setTextIsSelectable(true);
+    if(srcText.contains("http://")||srcText.contains("https://")){android.text.util.Linkify.addLinks(src,android.text.util.Linkify.WEB_URLS);src.setLinksClickable(true);src.setMovementMethod(android.text.method.LinkMovementMethod.getInstance());}
+    margin(src,0,12,0,7);inner.addView(src);
     TextView scrollHint=tv(quickMemoryMode?"快速记忆用于理解与回忆 · 正式作答仍以完整解答为准":"上下滑动查看完整解答 · #C62828 红色为核心得分点",10,Color.rgb(151,163,160),false);scrollHint.setGravity(Gravity.CENTER);inner.addView(scrollHint);
+}
+
+String joinMemoryItems(JSONArray items,String separator){
+    if(items==null||items.length()==0)return "";
+    StringBuilder out=new StringBuilder();
+    for(int i=0;i<items.length();i++){
+        String value=items.optString(i,"").trim();if(value.isEmpty())continue;
+        if(out.length()>0)out.append(separator);out.append(value);
+    }
+    return out.toString();
+}
+
+void addMemoryTextSection(LinearLayout parent,String title,String bodyText,int backgroundColor,int titleColor){
+    if(bodyText==null||bodyText.trim().isEmpty())return;
+    LinearLayout section=box(backgroundColor,12,14);
+    TextView heading=tv(title,12,titleColor,true);section.addView(heading);
+    TextView bodyTextView=tv(bodyText.trim(),14,INK,false);bodyTextView.setLineSpacing(dp(3),1.18f);bodyTextView.setTextIsSelectable(true);margin(bodyTextView,0,7,0,0);section.addView(bodyTextView);
+    margin(section,0,0,0,8);parent.addView(section);
+}
+
+void addMemoryListSection(LinearLayout parent,String title,JSONArray items,int backgroundColor,int titleColor){
+    if(items==null||items.length()==0)return;
+    LinearLayout section=box(backgroundColor,12,14);
+    TextView heading=tv(title,12,titleColor,true);section.addView(heading);
+    for(int i=0;i<items.length();i++){
+        String value=items.optString(i,"").trim();if(value.isEmpty())continue;
+        TextView item=tv((i+1)+". "+value,14,INK,false);item.setLineSpacing(dp(2),1.15f);item.setTextIsSelectable(true);margin(item,0,5,0,0);section.addView(item);
+    }
+    margin(section,0,0,0,8);parent.addView(section);
+}
+
+void addMemoryRecallSection(LinearLayout parent,JSONArray questions){
+    if(questions==null||questions.length()==0)return;
+    LinearLayout section=box(Color.rgb(247,249,248),12,14);
+    TextView heading=tv("闭卷自测",12,TEAL_DARK,true);section.addView(heading);
+    TextView hint=tv("先闭卷口述，再切换“完整解答”核对。答完一题后可勾选记录。",10,MUTED,false);margin(hint,0,3,0,5);section.addView(hint);
+    for(int i=0;i<questions.length();i++){
+        String q=questions.optString(i,"").trim();if(q.isEmpty())continue;
+        CheckBox check=new CheckBox(this);check.setText((i+1)+". "+q);check.setTextSize(13);check.setTextColor(INK);check.setButtonTintList(android.content.res.ColorStateList.valueOf(TEAL));check.setPadding(0,dp(3),0,dp(3));
+        section.addView(check,new LinearLayout.LayoutParams(-1,-2));
+    }
+    margin(section,0,0,0,8);parent.addView(section);
 }
 
 CharSequence richAnswer(String raw){
@@ -806,16 +861,25 @@ void showLibrary(){
     }
     JSONObject quickMemory(){
         if(quickMemoryCache!=null)return quickMemoryCache;
-        try{quickMemoryCache=new JSONObject(readAssetText("quick_memory_v2_8_8.json"));}catch(Exception e){quickMemoryCache=new JSONObject();}
+        try{quickMemoryCache=new JSONObject(readAssetText("quick_memory.json"));}catch(Exception e){quickMemoryCache=new JSONObject();}
         return quickMemoryCache;
     }
     JSONObject quickMemoryFor(Card c){
         if(c==null)return new JSONObject();
         JSONObject x=quickMemory().optJSONObject(c.id);return x==null?new JSONObject():x;
     }
+    JSONObject quickMemoryStudy(){
+        if(quickMemoryV3Cache!=null)return quickMemoryV3Cache;
+        try{quickMemoryV3Cache=new JSONObject(readAssetText("quick_memory_v3.json"));}catch(Exception e){quickMemoryV3Cache=new JSONObject();}
+        return quickMemoryV3Cache;
+    }
+    JSONObject quickMemoryStudyFor(Card c){
+        if(c==null)return new JSONObject();
+        JSONObject x=quickMemoryStudy().optJSONObject(c.id);return x==null?new JSONObject():x;
+    }
     JSONObject serviceFramework(){
         if(serviceFrameworkCache!=null)return serviceFrameworkCache;
-        try{serviceFrameworkCache=new JSONObject(readAssetText("service_framework_v2_8_5.json"));}catch(Exception e){serviceFrameworkCache=new JSONObject();}
+        try{serviceFrameworkCache=new JSONObject(readAssetText("service_framework.json"));}catch(Exception e){serviceFrameworkCache=new JSONObject();}
         return serviceFrameworkCache;
     }
     int frameworkUniqueLinkedCount(){return serviceFramework().optInt("uniqueLinkedCards",repo.cards.size());}
