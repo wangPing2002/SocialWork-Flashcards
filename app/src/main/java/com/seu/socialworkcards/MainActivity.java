@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
     final HashMap<String,Integer> examRelationCounts=new HashMap<>();
     JSONObject serviceFrameworkCache=null; String currentFrameworkNodeId=""; boolean currentFrameworkCoreOnly=false;
     String studyReturnFrameworkNodeId=""; boolean studyReturnFrameworkCoreOnly=false;
-    JSONObject quickMemoryCache=null, quickMemoryV3Cache=null; boolean quickMemoryMode=false;
+    JSONObject quickMemoryV3Cache=null; boolean quickMemoryMode=false;
     static boolean crashRecorderInstalled=false;
     java.util.concurrent.ExecutorService initExecutor;
 
@@ -47,13 +47,12 @@ public class MainActivity extends Activity {
                     CardRepository loadedRepo=new CardRepository(getApplicationContext(),feedback);
                     store.preloadStates(loadedRepo.cards);
                     MockExamEngine loadedMock=new MockExamEngine(loadedRepo,store,engine);
-                    JSONObject loadedQuick;JSONObject loadedQuickV3;JSONObject loadedFramework;
-                    try{loadedQuick=new JSONObject(readAssetText("quick_memory.json"));}catch(Exception e){loadedQuick=new JSONObject();}
-                    // Optional structured study data: older project versions may not contain this asset yet.
-                    try{loadedQuickV3=new JSONObject(readAssetText("quick_memory_v3.json"));}catch(Exception e){loadedQuickV3=new JSONObject();}
+                    JSONObject loadedQuickV3;JSONObject loadedFramework;
+                    loadedQuickV3=new JSONObject(readAssetText("quick_memory_v3.json"));
+                    if(loadedQuickV3.length()!=2497)throw new IllegalStateException("结构化快速记忆资源不完整："+loadedQuickV3.length()+"/2497");
                     try{loadedFramework=new JSONObject(readAssetText("service_framework.json"));}catch(Exception e){loadedFramework=new JSONObject();}
-                    final JSONObject fq=loadedQuick,fqv3=loadedQuickV3,ff=loadedFramework;
-                    runOnUiThread(()->{if(activityGone())return;repo=loadedRepo;mockEngine=loadedMock;quickMemoryCache=fq;quickMemoryV3Cache=fqv3;serviceFrameworkCache=ff;showHome();});
+                    final JSONObject fqv3=loadedQuickV3,ff=loadedFramework;
+                    runOnUiThread(()->{if(activityGone())return;repo=loadedRepo;mockEngine=loadedMock;quickMemoryV3Cache=fqv3;serviceFrameworkCache=ff;showHome();});
                 }catch(Exception e){runOnUiThread(()->{if(activityGone())return;showFatalStartup(e);});}
             });
         }catch(Exception e){showFatalStartup(e);}
@@ -446,26 +445,17 @@ void renderCoreAnswer(LinearLayout inner,Card c){
     margin(answerHead,0,0,0,8);inner.addView(answerHead);
 
     if(quickMemoryMode){
-        JSONObject memory=quickMemoryFor(c);
         JSONObject structured=quickMemoryStudyFor(c);
-        String example=structured.optString("example",memory.optString("example","")).trim();
-        String mnemonic=structured.optString("mnemonic",memory.optString("mnemonic","")).trim();
+        String example=structured.optString("example","").trim();
+        String mnemonic=structured.optString("mnemonic","").trim();
         JSONArray framework=structured.optJSONArray("framework");
         JSONArray cues=structured.optJSONArray("cues");
         JSONArray recallQuestions=structured.optJSONArray("recallQuestions");
-        boolean hasStructured=(framework!=null&&framework.length()>0)||(cues!=null&&cues.length()>0)||(recallQuestions!=null&&recallQuestions.length()>0);
-
-        if(hasStructured){
-            addMemoryListSection(inner,"答题骨架",framework,Color.rgb(239,246,250),TEAL_DARK);
-            addMemoryTextSection(inner,"关键词提示",joinMemoryItems(cues,"  ·  "),Color.rgb(245,243,250),Color.rgb(105,82,151));
-            addMemoryTextSection(inner,"理解例子",example,Color.rgb(239,248,245),TEAL_DARK);
-            addMemoryTextSection(inner,"记忆口诀",mnemonic,Color.rgb(255,247,239),ORANGE);
-            addMemoryRecallSection(inner,recallQuestions);
-        }else{
-            // Backward-compatible layout for cards that have not yet received v3 structured memory.
-            addMemoryTextSection(inner,"理解例子",example.isEmpty()?"暂无理解例子。":example,Color.rgb(239,248,245),TEAL_DARK);
-            addMemoryTextSection(inner,"记忆口诀",mnemonic.isEmpty()?"暂无记忆口诀。":mnemonic,Color.rgb(255,247,239),ORANGE);
-        }
+        addMemoryListSection(inner,"答题骨架",framework,Color.rgb(239,246,250),TEAL_DARK);
+        addMemoryTextSection(inner,"关键词提示",joinMemoryItems(cues,"  ·  "),Color.rgb(245,243,250),Color.rgb(105,82,151));
+        addMemoryTextSection(inner,"理解例子",example,Color.rgb(239,248,245),TEAL_DARK);
+        addMemoryTextSection(inner,"记忆口诀",mnemonic,Color.rgb(255,247,239),ORANGE);
+        addMemoryRecallSection(inner,recallQuestions);
     }else{
         TextView body=tv("",16,INK,false);body.setText(richAnswer(answer));body.setLineSpacing(dp(3),1.20f);body.setTextIsSelectable(true);inner.addView(body);
     }
@@ -858,15 +848,6 @@ void showLibrary(){
         try(java.io.InputStream in=getAssets().open(name);java.io.ByteArrayOutputStream out=new java.io.ByteArrayOutputStream()){
             byte[] b=new byte[8192];int n;while((n=in.read(b))>0)out.write(b,0,n);return out.toString("UTF-8");
         }catch(Exception e){return "";}
-    }
-    JSONObject quickMemory(){
-        if(quickMemoryCache!=null)return quickMemoryCache;
-        try{quickMemoryCache=new JSONObject(readAssetText("quick_memory.json"));}catch(Exception e){quickMemoryCache=new JSONObject();}
-        return quickMemoryCache;
-    }
-    JSONObject quickMemoryFor(Card c){
-        if(c==null)return new JSONObject();
-        JSONObject x=quickMemory().optJSONObject(c.id);return x==null?new JSONObject():x;
     }
     JSONObject quickMemoryStudy(){
         if(quickMemoryV3Cache!=null)return quickMemoryV3Cache;

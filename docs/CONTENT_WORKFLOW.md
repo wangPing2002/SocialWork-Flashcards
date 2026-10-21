@@ -5,8 +5,8 @@
 | 目录/文件 | 职责 | 是否进入 APK |
 |---|---|---|
 | `app/src/main/assets/cards.json` | 实际卡片、正式答案 | 是 |
-| `app/src/main/assets/quick_memory.json` | 向下兼容的简易快速记忆 | 是 |
-| `app/src/main/assets/quick_memory_v3.json` | 五模块结构化记忆，只有通过审查的 ID 才写入 | 是 |
+| `app/src/main/assets/quick_memory.json` | **已迁移删除；仅保存在独立 ZIP/Git 历史中** | 否 |
+| `app/src/main/assets/quick_memory_v3.json` | 唯一运行时快速记忆资源；2497 张完整覆盖，内容审核状态独立记录 | 是 |
 | `app/src/main/assets/service_framework.json` | 教材框架资源 | 是 |
 | `content/master/cards_master_2497.md` | 2497 张正式答案母版 | 否 |
 | `content/ledger/review_progress.csv` | 逐卡审校状态、正式答案 SHA-256 | 否 |
@@ -18,7 +18,7 @@
 ### 严格的工具准入规则
 
 - 正式答案修订：始终使用 **`scripts/apply_answer_patch.py`**，其本身执行旧答案指纹核验、母版/卡片/台账同步。不得新增 `sync_roundXX_*.py`。
-- 快速记忆修订：始终使用 **`scripts/apply_memory_patch.py`**，支持 B02 及后续统一数据 JSON，要求题干、题型、正式答案 SHA、旧记忆 SHA 全部一致，不覆盖未知的结构化记忆条目。
+- 快速记忆修订：统一使用 `scripts/apply_memory_patch.py` v3 单文件协议，逐卡核验题干、正式答案 SHA、原 v3 记录 SHA。旧双文件补丁不可直接重放。
 - 全库检查：**`scripts/verify_repository.py`**，不修改文件；GitHub Actions 在 APK 构建前调用。
 - 备份：**`scripts/backup_project.py`** 或补丁工具自己的独立 ZIP 备份。不使用 Gradle 备份。
 - 每一批只生成 **审校数据 JSON、审计清单/报告**，不复制一份 Python 脚本，也不把交付中间稿塞到 Git 仓库。
@@ -41,35 +41,33 @@ python "$repo\scripts\verify_repository.py"
 
 **注意：** 本示例中的 B02 第一组仍是候选稿，不表示已通过教材逐题核实或正式内容验收。正式应用应等待 B02 完成最终审阅后再进行。
 
-### 快速记忆数据契约（不需要逐批写脚本）
+### 快速记忆 v3 单文件补丁协议
 
-每个增量包采用以下结构：
+仅允许更新 `app/src/main/assets/quick_memory_v3.json`，旧文件只在 Git 历史和独立备份中保存。以下为样式说明，不含真实卡片：
 
 ```json
 {
-  "schemaVersion": "B02-memory-v1",
-  "batch": "B02-final",
+  "schemaVersion": "SWF-v3-memory-single-v1",
+  "batch": "demo",
   "changes": {
-    "C0168": {
-      "question": "必须与本地题干一致",
+    "C0001": {
+      "question": "与现有题干完全相同",
       "questionType": "简答题",
-      "expectedAnswerSha256": "当前 fullAnswer 的精确 SHA-256（64 位十六进制）",
-      "expectedMemorySha256": "当前旧快速记忆记录的规范 JSON SHA-256",
-      "expectedStudyAbsent": true,
-      "memory": {"example": "例子", "mnemonic": "口诀或逻辑提示"},
+      "expectedAnswerSha256": "真实完整答案 UTF-8 SHA-256",
+      "expectedStudySha256": "修改前本卡 v3 记录的规范 JSON SHA-256",
       "study": {
-        "framework": ["按真实得分点组织的答题骨架"],
-        "cues": ["关键词"],
-        "example": "解释该题的贴题例子",
-        "mnemonic": "口诀或逻辑提示",
-        "recallQuestions": ["具体的闭卷自测问题一", "具体的闭卷自测问题二"]
+        "framework": ["得分点骨架"],
+        "cues": ["提示词"],
+        "example": "与题目贴合的真实情境",
+        "mnemonic": "能逆向还原得分点的口诀",
+        "recallQuestions": ["自测1", "自测2", "自测3"]
       }
     }
   }
 }
 ```
 
-`expectedAnswerSha256` 为 `SHA256(fullAnswer UTF-8 原始字节)`；`expectedMemorySha256` 为规范 JSON（`ensure_ascii=False, sort_keys=True, separators=(',', ':')`）的 SHA-256。**绝不能绕过这些校验强制覆盖现有已审校内容。**
+规范 JSON 哈希采用 `json.dumps(ensure_ascii=False, sort_keys=True, separators=(',', ':'))` 的 UTF-8 字节；历史附加字段如 `reviewStatus`、`reviewNote`、`sourceNote` 必须保留。新版工具在写入之前自动独立 ZIP 备份。批量草稿并不等于内容终审批准。
 
 ## 提交前不变量
 

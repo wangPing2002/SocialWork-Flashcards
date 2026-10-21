@@ -49,9 +49,34 @@ def validate() -> dict:
     if ledger_bad:
         errors.append(f'Review ledger hash drift ({len(ledger_bad)}): {", ".join(ledger_bad[:12])}')
 
-    quick = json.loads((ASSETS/'quick_memory.json').read_text('utf-8-sig'))
+    memory_asset = ASSETS/'quick_memory_v3.json'
+    if not memory_asset.is_file():
+        errors.append('Missing sole runtime memory asset quick_memory_v3.json')
+        quick = {}
+    else:
+        quick = json.loads(memory_asset.read_text('utf-8-sig'))
     if set(quick) != set(expected_ids):
-        errors.append('Quick memory does not cover exactly 2497 card IDs')
+        errors.append('Structured quick memory must cover exactly 2497 card IDs')
+    memory_required = ('framework', 'cues', 'example', 'mnemonic', 'recallQuestions')
+    for cid,entry in quick.items():
+        if cid not in card_by_id:
+            errors.append(f'{cid}: unknown quick-memory ID')
+            continue
+        if not isinstance(entry,dict):
+            errors.append(f'{cid}: quick-memory record must be an object')
+            continue
+        for field in ('framework','cues','recallQuestions'):
+            values=entry.get(field)
+            if not isinstance(values,list) or not values or any(not isinstance(x,str) or not x.strip() for x in values):
+                errors.append(f'{cid}: invalid structured memory {field}')
+        for field in ('example','mnemonic'):
+            if not isinstance(entry.get(field),str) or not entry[field].strip():
+                errors.append(f'{cid}: missing memory {field}')
+        recall=entry.get('recallQuestions')
+        if isinstance(recall,list) and (len(recall)<3 or len(set(recall))!=len(recall)):
+            errors.append(f'{cid}: require three distinct recall questions')
+    if (ASSETS/'quick_memory.json').exists():
+        errors.append('Legacy quick_memory.json is still in Android runtime assets; migrate and remove it')
     framework = json.loads((ASSETS/'service_framework.json').read_text('utf-8-sig'))
     missing_refs = []
     def collect(node):

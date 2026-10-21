@@ -87,7 +87,7 @@ V2.9.0 是一次以 **UI、流畅度与稳定性** 为核心的版本升级。�
 ## 2.2 冷启动与运行流畅度优化
 
 - 约 9.3 MB 的 `cards.json` 不再阻塞 UI 主线程：启动时先显示加载页，再在后台完成题库解析；
-- `quick_memory.json` 与教材框架数据在启动后台预载，减少第一次切换“快速记忆”时的卡顿；
+- `quick_memory_v3.json` 与教材框架数据在启动后台预载，减少第一次切换“快速记忆”时的卡顿；
 - `CardRepository.byId()` 从逐卡线性查找改为 HashMap 索引；
 - SQLite 本地修正与完整答案覆盖增加内存缓存，避免启动、搜索和列表渲染中反复查询数据库；
 - 学习状态增加内存缓存，避免统计、专题进度和组卷时反复解析 SharedPreferences JSON；
@@ -562,7 +562,7 @@ SocialWork-Flashcards/
 │   └── src/main/
 │       ├── assets/
 │       │   ├── cards.json          # 2497 张 App 卡片：唯一运行数据
-│       │   ├── quick_memory.json   # 快速记忆，不再用版本号命名
+│       │   ├── quick_memory_v3.json   # 唯一结构化快速记忆，2497 张全覆盖
 │       │   ├── service_framework.json
 │       │   ├── details.json        # 旧版兼容占位
 │       │   ├── exam_meta.json
@@ -609,7 +609,7 @@ content/master/cards_master_2497.md
 
 ```text
 app/src/main/assets/cards.json
-app/src/main/assets/quick_memory.json
+app/src/main/assets/quick_memory_v3.json
 app/src/main/assets/service_framework.json
 ```
 
