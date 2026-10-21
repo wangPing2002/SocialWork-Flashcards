@@ -369,14 +369,14 @@ C0367,名词解释,6818cdd6899ed93c48ff879bfa594b7e8f68e641ad0b33bbafe1e616a3b49
 C0368,简答题,e11cfc775bf05fd0999a0cb169416d154067affb439ae115c5fef8803c5642a6,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第四章；2026《社会工作综合能力（中级）》第六章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0369,简答题,85c225357e738269a27c7973e0617dccaaeb7012c342f084693f4c4511f60d30,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第四章；2026《社会工作综合能力（中级）》第六章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0370,名词解释,135d204a56512e75d84da35f259a4852d88863fca68acaf22c4a818c5ab0cd92,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第四章；2026《社会工作综合能力（中级）》第六章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0371,简答题,a73fcfa75289e537da6e6c3dd5b702d8acc361cb35db557f8be4146d598da13a,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第四章；2026《社会工作综合能力（中级）》第六章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0372,简答题,84f5349475f4f4cacb9dea699e0830f711d6ce2c7855ec5155c12aae69f0d3eb,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第四章；2026《社会工作综合能力（中级）》第六章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0371,简答题,43dab38a04e54bae892f0c9b4da44c64311ec73c1ff62a2b06b008435fffa5b5,REVIEWED_PATCH_APPLIED,,B03教材论证+题干得分点+原稿冗余段落消除；仅在本地旧稿与已审基线哈希完全一致时写入,《2026年社会工作者〈中级综合〉》第六章：第八节建构取向（C0371/C0372/C0375）；第九节心理取向（C0378）；《社会工作概论》第四章对应理论。,B03_FOUR_ANSWER_REFINEMENTS_20261019,已同步 app 与母版；请以本批教材证据与本地验收记录确认
+C0372,简答题,75e6efbdd3f13da1bc40ac5097de404592694a26f5083ff752102b2b20f5fbb7,REVIEWED_PATCH_APPLIED,,B03教材论证+题干得分点+原稿冗余段落消除；仅在本地旧稿与已审基线哈希完全一致时写入,《2026年社会工作者〈中级综合〉》第六章：第八节建构取向（C0371/C0372/C0375）；第九节心理取向（C0378）；《社会工作概论》第四章对应理论。,B03_FOUR_ANSWER_REFINEMENTS_20261019,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0373,案例分析题,13763e8bd869cfd46d87d0db667c336d561e5eb7db0c7a0df86fdd9a481483b1,HISTORICAL_TARGET_HASH_MATCH,23,,《社会工作概论》第四章；2026《社会工作综合能力（中级）》第六章,,哈希吻合并不等于再次完成教材事实校核
 C0374,案例分析题,92aac337ae16b2f215ab01441024d5ce43703ed30c7b597f704437f60323aa18,HISTORICAL_TARGET_HASH_MATCH,15,,《社会工作概论》第四章；2026《社会工作综合能力（中级）》第六章,,哈希吻合并不等于再次完成教材事实校核
-C0375,简答题,6e45f8de962ccae94455c61c809e48deec3da2d19f7eed081b0f8666d056a8b9,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第四章；2026《社会工作综合能力（中级）》第六章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0375,简答题,8d2682b62bcacc6c3485e203d6aaa2e4a7c59423929d05c09f8aa3db6d309705,REVIEWED_PATCH_APPLIED,,B03教材论证+题干得分点+原稿冗余段落消除；仅在本地旧稿与已审基线哈希完全一致时写入,《2026年社会工作者〈中级综合〉》第六章：第八节建构取向（C0371/C0372/C0375）；第九节心理取向（C0378）；《社会工作概论》第四章对应理论。,B03_FOUR_ANSWER_REFINEMENTS_20261019,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0376,论述题,5a764689852e86d08b6920abe1bbb545557713267ffddf1a19da0004caf12172,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第四章；2026《社会工作综合能力（中级）》第六章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0377,名词解释,779927002aab96e5c77bbbc0271c9a4dfca488feb8c15ecafd98f775183f6381,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第四章；2026《社会工作综合能力（中级）》第六章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0378,简答题,d56c52999473d85238c5446bdc452ff0cadbd698a4cc28fcf9a9a6ab1ec141e1,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第四章；2026《社会工作综合能力（中级）》第六章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0378,简答题,f86928d31f86871ece9878ef1b2585b2a7ed03220618eaa9d40a0f5a31eb817c,REVIEWED_PATCH_APPLIED,,B03教材论证+题干得分点+原稿冗余段落消除；仅在本地旧稿与已审基线哈希完全一致时写入,《2026年社会工作者〈中级综合〉》第六章：第八节建构取向（C0371/C0372/C0375）；第九节心理取向（C0378）；《社会工作概论》第四章对应理论。,B03_FOUR_ANSWER_REFINEMENTS_20261019,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0379,名词解释,df6b1b9aa09f4f127867d23fde23758ea0f105bbe5a8df68c6cc963a3157f07b,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第四章；2026《社会工作综合能力（中级）》第六章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0380,简答题,9bdbc186df7a4c4b212aead7a21510fe1dd38e257a543a2ed06fba7180d2c5e2,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第四章；2026《社会工作综合能力（中级）》第六章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0381,名词解释,00d3472f446cf594bb1dc7922b0e8e512cb5ed4700269ea6022cc5aff9971383,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第四章；2026《社会工作综合能力（中级）》第六章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
@@ -469,17 +469,17 @@ C0467,案例分析题,f22b78e2be9301142afe45024e6b2d3d92401582e9164ec4cb2055c015
 C0468,简答题,b301d7d344bfbf45dedf1100d5442bacda9388c31065962dd3437853447159d0,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0469,简答题,689152c46984d991803d49e07980fbe8b3a044ad8a042b2f9504216ab92c975e,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0470,简答题,fa6f41f15db645b5187322329031fd6d5fcf572e65df5a8ae77e35ca4aff460c,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0471,论述题,fa84b58119d83f8a767fcea1d75cb2d5829ff07b71c7a42360b911ad16846663,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0471,论述题,33532fc60fcae20b2681ccc525ebbbe807ac03470e025a67bff848415cb5f82c,REVIEWED_PATCH_APPLIED,,B03论述题定点内容复核：修复重复序号、删除重复跨题套话、按题干补足实质分析；待B04合并时在最新本地基线重新执行哈希门禁,《社会工作概论》第五章“社会福利制度”“社会工作与社会福利制度的关系”及其中社会工作服务传递、政策倡导内容。,B04_FIFTEEN_TARGETED_FORMAL_REVIEWS,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0472,简答题,a15ef750694447b92df81cc505b93225ec93eb6ab02dd2cc661df62e5d1fd8de,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0473,简答题,4ca45090cc5e83e092a3cc469e4d24346bd4e0df841f386c03c20115ec963be0,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0474,简答题,3a7220fd3c0b60c36b7b5a5d26c0715081643ce62092ec36fda5676689e84a6e,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0475,论述题,deeed624d4f31e5611be305eaae9d9386d65443eea26583a602ea74648d1bec4,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0475,论述题,df8eb8dbc2b5fe50da996934d2acd4d621100899187dccf12d8bda117bc369f8,REVIEWED_PATCH_APPLIED,,B03论述题定点内容复核：修复重复序号、删除重复跨题套话、按题干补足实质分析；待B04合并时在最新本地基线重新执行哈希门禁,《社会工作概论》第五章“社会福利制度”“社会工作与社会福利制度的关系”及其中社会工作服务传递、政策倡导内容。,B04_FIFTEEN_TARGETED_FORMAL_REVIEWS,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0476,简答题,027a4ed913330e2c1b49eccc62d6610902946c6e78b2d72fbf7766bee6559905,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0477,简答题,78fe2266a07e22c7ddbdebdad1c15f31c245d9c7ed1fc4bf0dbbd472b81e2215,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0478,案例分析题,9b8be17441b256478132c02f894afa529cf67c41cbfc9ff50eae4538ac1a469d,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0479,简答题,4352b4d39b95fa9dde44f51f3eb9b6932c2b2b8d72a1a719ae92fb1020ed427e,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0480,简答题,346cb4b9fbd7cd187f6b366b3fb80ad7674b3935d971b9f93f751a49fc9673e1,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0481,论述题,5f8f0e2a84bf436bea91df55900e64e3c9a5b237ce2fce54304a80132c8165ba,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0481,论述题,08666346d75d949bd389e8457c3f4ac400470c00b9c041f0eeadf07a9d8b7ba9,REVIEWED_PATCH_APPLIED,,B03论述题定点内容复核：修复重复序号、删除重复跨题套话、按题干补足实质分析；待B04合并时在最新本地基线重新执行哈希门禁,《社会工作概论》第五章“社会福利制度”“社会工作与社会福利制度的关系”及其中社会工作服务传递、政策倡导内容。,B04_FIFTEEN_TARGETED_FORMAL_REVIEWS,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0482,材料题,962c184ceef72fdf15c5dbfe92b22dbd0a84b49b6c161c4c6741f791053dd7de,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0483,简答题,4134702ab80cfa6176f1fe5434edc57c69d6745c7403800acba231ef7ef3c79c,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0484,论述题,1cc55a66aad25427e2e8e992f9fd300f22a50b518922e1cf920040d87c7387b1,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
@@ -708,12 +708,12 @@ C0706,简答题,7b6bb6cf1368555f5882a5aec4957cc570035078469f580d4a909007c425b0ed
 C0707,简答题,2c400ae36a0d0cfe7de49ee8e456e87e6bdfa11da19f722e03babbf5e6ac0127,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第七章；《社会工作实务-250纠正》第二章相关内容,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0708,案例分析题,5d496c06aaa693b5839514deb82f38f37e0e173f59af0c2e7565bb29936f5309,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第七章；《社会工作实务-250纠正》第二章相关内容,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0709,名词解释,f03babb40853fa59628e84f811f5fb004d90e311dcd6656f8c1d9c5390d477ee,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第七章；《社会工作实务-250纠正》第二章相关内容,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0710,简答题,17ef49381f72972b781d9e611accecce93c39c157f43b963093a78b9fcdab1e4,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第七章；《社会工作实务-250纠正》第二章相关内容,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0711,简答题,79ab2ce3f6c97bd59f54dd28632f46beaa0ed538b821ac720ffcec05b7095a5f,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第七章；《社会工作实务-250纠正》第二章相关内容,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0712,简答题,f8a9a110c25486244d2ea64a2418efa941a7bdfb5f5967eda09b2e40124f6d3f,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第七章；《社会工作实务-250纠正》第二章相关内容,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0713,简答题,618492984fd884aee75f8b15a4c5e41c27bd3689223375664f3d7fa190e758df,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第七章；《社会工作实务-250纠正》第二章相关内容,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0714,简答题,66b7643fbeb8bbee11a510f5f90b83963e1566fe25a662694afdfb9338ef0a0d,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第七章；《社会工作实务-250纠正》第二章相关内容,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0715,案例分析题,a69cf23587dec614ec391e0166071f1f0493ae1be8b8fcaf01d53ea397cf357d,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第七章；《社会工作实务-250纠正》第二章相关内容,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0710,简答题,4fe43190eb5ae3acd04377da52d9374c1fa74f27f4227b73eeb66ddbba16634b,REVIEWED_PATCH_APPLIED,,B04个案记录专题逐题实质精修：去除重复凑字数段落，按题干重建论证并保留规范序号和#C62828核心得分点；候选待合批保护复审,《2026年社会工作者〈社会工作综合能力（中级）〉》第七章第四节“个案社会工作服务技巧”中个案记录的原则、书写要求、形式（过程记录、概要记录、结构化记录）；《社会工作概论》相关专业伦理原则。,B04_FIFTEEN_TARGETED_FORMAL_REVIEWS,已同步 app 与母版；请以本批教材证据与本地验收记录确认
+C0711,简答题,54216cee38f8330d2caff6c080a357df81aa4c28d7dc7ce2481d6952106b50cb,REVIEWED_PATCH_APPLIED,,B04个案记录专题逐题实质精修：去除重复凑字数段落，按题干重建论证并保留规范序号和#C62828核心得分点；候选待合批保护复审,《2026年社会工作者〈社会工作综合能力（中级）〉》第七章第四节“个案社会工作服务技巧”中个案记录的原则、书写要求、形式（过程记录、概要记录、结构化记录）；《社会工作概论》相关专业伦理原则。,B04_FIFTEEN_TARGETED_FORMAL_REVIEWS,已同步 app 与母版；请以本批教材证据与本地验收记录确认
+C0712,简答题,1f4ab52309d363cd87cb76d0bcabd93db5875581b73b2d712c4584a67a3d397d,REVIEWED_PATCH_APPLIED,,B04个案记录专题逐题实质精修：去除重复凑字数段落，按题干重建论证并保留规范序号和#C62828核心得分点；候选待合批保护复审,《2026年社会工作者〈社会工作综合能力（中级）〉》第七章第四节“个案社会工作服务技巧”中个案记录的原则、书写要求、形式（过程记录、概要记录、结构化记录）；《社会工作概论》相关专业伦理原则。,B04_FIFTEEN_TARGETED_FORMAL_REVIEWS,已同步 app 与母版；请以本批教材证据与本地验收记录确认
+C0713,简答题,a78c41241468a944ab81c258243f057089c3374f58cc2239a9466854cf2ca206,REVIEWED_PATCH_APPLIED,,B04个案记录专题逐题实质精修：去除重复凑字数段落，按题干重建论证并保留规范序号和#C62828核心得分点；候选待合批保护复审,《2026年社会工作者〈社会工作综合能力（中级）〉》第七章第四节“个案社会工作服务技巧”中个案记录的原则、书写要求、形式（过程记录、概要记录、结构化记录）；《社会工作概论》相关专业伦理原则。,B04_FIFTEEN_TARGETED_FORMAL_REVIEWS,已同步 app 与母版；请以本批教材证据与本地验收记录确认
+C0714,简答题,caa4e7e2e77272224895b5a6edb173e161e3df18acc50f6030d131d938cd0814,REVIEWED_PATCH_APPLIED,,B04个案记录专题逐题实质精修：去除重复凑字数段落，按题干重建论证并保留规范序号和#C62828核心得分点；候选待合批保护复审,《2026年社会工作者〈社会工作综合能力（中级）〉》第七章第四节“个案社会工作服务技巧”中个案记录的原则、书写要求、形式（过程记录、概要记录、结构化记录）；《社会工作概论》相关专业伦理原则。,B04_FIFTEEN_TARGETED_FORMAL_REVIEWS,已同步 app 与母版；请以本批教材证据与本地验收记录确认
+C0715,案例分析题,90aa4bfa829bf6085e046e3dbd0d278a48c0d10dcef9ecb463ca12288db6d41f,REVIEWED_PATCH_APPLIED,,B04个案记录专题逐题实质精修：去除重复凑字数段落，按题干重建论证并保留规范序号和#C62828核心得分点；候选待合批保护复审,《2026年社会工作者〈社会工作综合能力（中级）〉》第七章第四节“个案社会工作服务技巧”中个案记录的原则、书写要求、形式（过程记录、概要记录、结构化记录）；《社会工作概论》相关专业伦理原则。,B04_FIFTEEN_TARGETED_FORMAL_REVIEWS,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0716,名词解释,25ce61c3e482d9ee8fbe3a67ea931010911c46f9a08ea65d28046e887a009fe3,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第七章；《社会工作实务-250纠正》第二章相关内容,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0717,简答题,90d61d9adaaaf8e3f73ae5bf2c67505830f4731c9146b926db0fbab417b85f00,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第七章；《社会工作实务-250纠正》第二章相关内容,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0718,简答题,690c4b4c8bb40ac067acad06d4ccf92ae607165bca99f60a06d4d2464e23c886,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第七章；《社会工作实务-250纠正》第二章相关内容,,仅表示本次未由Round13-23清单证明，不代表尚未精修
@@ -816,9 +816,9 @@ C0814,简答题,1a10a6146c64919d18430a26b4c0b4429a2d4dfb6615a60be3237d529608626f
 C0815,简答题,4146a8e6fd4a148e7b882b0dc420c1cfad510496bc0badf05187898ad1fc598f,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第九章；2026《社会工作综合能力（中级）》第九章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0816,简答题,8db68394ec39b9ede9d4c0fdf84442c6975271aa8e46d365707e9513d620a11b,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第九章；2026《社会工作综合能力（中级）》第九章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0817,简答题,e399f26c66c3a796e1749492c6c300ed59e59d9a07c39841d622cb411a2b06d1,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第九章；2026《社会工作综合能力（中级）》第九章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0818,简答题,72dc7a5b76cb2158af007561b01448676e4220ba9c579eccc31a3f5be6ea738d,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第九章；2026《社会工作综合能力（中级）》第九章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0818,简答题,8cf68802f3dd2967cdfe7245f001a057c02111e86c7bc22cdb65bb0965d1aa63,REVIEWED_PATCH_APPLIED,,定点剔除跨卡重复且与题干关系弱的通用长段，代之以该题专属解释、实例和可评价标准，保留原有有效得分点与自然段结构。,《社会工作概论》第九章“社区工作”；2026《社会工作综合能力（中级）》第九章“社区社会工作服务方法”。；对照现行题干与教材知识框架定点复核；需本地终审,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0819,简答题,b9479df28a2f80bea7834d1bc08369bde36a01c0abbaad69f333a065f7738d8b,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第九章；2026《社会工作综合能力（中级）》第九章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0820,简答题,4f053761f465d465c823537d18867fb761cc4344aa99b21e05eb4d32f413dca9,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第九章；2026《社会工作综合能力（中级）》第九章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0820,简答题,589257637938ef567d391afd8a2358916600b30eb461ec73ed87b92cefadf252,REVIEWED_PATCH_APPLIED,,定点剔除跨卡重复且与题干关系弱的通用长段，代之以该题专属解释、实例和可评价标准，保留原有有效得分点与自然段结构。,《社会工作概论》第九章“社区工作”；2026《社会工作综合能力（中级）》第九章“社区社会工作服务方法”。；对照现行题干与教材知识框架定点复核；需本地终审,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0821,简答题,66cd4bb177120fa2ed62e3e2ebc341ac065884fd10fea812081956b0353b2a61,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第九章；2026《社会工作综合能力（中级）》第九章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0822,案例分析题,46bbc620825d6cc770e8b8705ef7d19095813d54822b1fea56b900483f8e348b,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第九章；2026《社会工作综合能力（中级）》第九章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0823,简答题,14d069dc1234abf23f5cd31b1b1b6a5a91eeb9d314db5b7c0ae1aa1f33486680,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第九章；2026《社会工作综合能力（中级）》第九章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
@@ -835,11 +835,11 @@ C0833,论述题,8373237bee34a08dc61d76c7f52fd16491711de9d2245be6fddc55715a77c4a2
 C0834,论述题,62a3876474613d0bbe6793daca95dc3b02be1fd7b572ecdfdaf776a4f5a7df09,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第九章；2026《社会工作综合能力（中级）》第九章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0835,论述题,bf3fd509930303d9792c22f1cd2f374d006f8d6ebffdd9819ca3d74f1ac84cd3,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第九章；2026《社会工作综合能力（中级）》第九章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0836,名词解释,2a7890cbc5c2069d3060d92581b64460e0d2da1414489bf27a857453f1c3d744,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0837,简答题,0e44ce49300de19660b4a9a3cdee9fffbaac65565341f53c449da79ce85c3417,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0837,简答题,92801d7995c093649cd0977640f8900cb60077c68eb73f6bc4e3278578c09d73,REVIEWED_PATCH_APPLIED,,定点剔除跨卡重复且与题干关系弱的通用长段，代之以该题专属解释、实例和可评价标准，保留原有有效得分点与自然段结构。,2026《社会工作综合能力（中级）》第十章“社会工作服务的管理”；相关内容参照《社会工作概论》第十章“社会行政”。；对照现行题干与教材知识框架定点复核；需本地终审,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0838,简答题,b791e73bc5ecf5753ce21fc9f3c34bf45dbb6b180a9cad40ed876ee6d15a9ea8,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0839,名词解释,e4a95c6b2a08fee3aaf21425703deabf269d15cdb0f4655eb93fa8ec734d3758,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0840,简答题,5cb54d6e0683268d6a475c0a989f14383b2f0d826acad8e9e0428d944c262fa1,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0841,简答题,e8bba769dda57ac29015f2fc6a2fe6f6ecdb67ba5ba6f8d91b3c10de05578af4,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0840,简答题,7956093d8c13063fb51307d67ca03974fba4640640ddac0397f4cf6747eca937,REVIEWED_PATCH_APPLIED,,定点剔除跨卡重复且与题干关系弱的通用长段，代之以该题专属解释、实例和可评价标准，保留原有有效得分点与自然段结构。,2026《社会工作综合能力（中级）》第十章“社会工作服务的管理”；相关内容参照《社会工作概论》第十章“社会行政”。；对照现行题干与教材知识框架定点复核；需本地终审,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
+C0841,简答题,6ec2f0d129f3b83df7008978ea64220e1526bd8a1559052d5d027ce28897555a,REVIEWED_PATCH_APPLIED,,B04针对性改写：删除跨题通用段落，依据本题核心概念与教材对照重新构建得分点，并保留原有已验收版本的哈希门禁,2026《社会工作综合能力（中级）》第十章“社会工作服务的管理”；相关内容参照《社会工作概论》第十章“社会行政”。,B04_FIFTEEN_TARGETED_FORMAL_REVIEWS,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0842,简答题,7826f1bf202a091a01cb50bb4c139a85265d9d0b1c245dc96c661ed950fc5a4a,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0843,简答题,b47229f5bd90826aac9c1a4b73a1a423cb8aecf4f9c3351cd1737e59c189114a,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0844,简答题,0c79c42bac8c071e9a0e50ee662564d4a85c1fb8f2d438439bf5cd96920a200f,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
@@ -850,7 +850,7 @@ C0848,简答题,d67b6bf90520893397470df88392d7cca76ef6b78cc86b6a45251140b7382569
 C0849,简答题,4953ca782e15d6e446c199910368fa2e0a15f2d760ac21532acdc191e1f87b44,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0850,名词解释,018094fb5b831da600812b5470fb2e4575f53db70d20fe67c704005482cd4277,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0851,名词解释,f9628ebc8038e714e97959d1c8e997cf02cfcc3739ec360ff5e29ad596f04784,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0852,简答题,3a29df65069dc1cafb67d2648eb91ebf3920bd657027833e4a994c9d66e993df,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0852,简答题,d3bb65c8210d756c7260412d483847689e806a1b26ea38570c0b7e183e113f6f,REVIEWED_PATCH_APPLIED,,B04针对性改写：删除跨题通用段落，依据本题核心概念与教材对照重新构建得分点，并保留原有已验收版本的哈希门禁,2026《社会工作综合能力（中级）》第十章“社会工作服务的管理”；相关内容参照《社会工作概论》第十章“社会行政”。,B04_FIFTEEN_TARGETED_FORMAL_REVIEWS,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0853,简答题,b653ccb09e0a7e0da5f771e3dd52903192f839389dac83d0e42e6a2f67af406e,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0854,案例分析题,0ca62f5df30621cf55a5555cee05fa74bd224fb80d5e35a59607cb1e84bd8371,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0855,简答题,212ee4683dd6f9d20e056d86552ae9dd626cfc94d76554e8ff9cf611f034616c,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
@@ -859,7 +859,7 @@ C0857,论述题,82115d74ac4fb1fa2395104092a77b0bcbde5b8a659ec70b9bc46769532ae5a0
 C0858,名词解释,f4830d7f5647111f4848f65d0c9c219f66164f5d74a28b0672416f0f254d46b2,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0859,简答题,54642f5dfd95c29c30a3570e9354e6c31deb0d11a68a2a29fdf9f858cb7972cb,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0860,简答题,664f76472c31e13ec71f9fa5900469c6234eb2744592773d83dd3eec8a0228fc,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0861,简答题,e9e5eb4a49ee743529048f09428942e8ed96a947eb2bc0d755cf0ec93ef6b094,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0861,简答题,3b372ae4cf952d9d899614dee02448e0fa8f5ee945218aa75ea5e422b94da38a,REVIEWED_PATCH_APPLIED,,定点剔除跨卡重复且与题干关系弱的通用长段，代之以该题专属解释、实例和可评价标准，保留原有有效得分点与自然段结构。,2026《社会工作综合能力（中级）》第十章“社会工作服务的管理”；相关内容参照《社会工作概论》第十章“社会行政”。；对照现行题干与教材知识框架定点复核；需本地终审,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0862,简答题,6b8d3e166766392ac15d550d977af12c96ecfd7898eb602c8c375da266c37343,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0863,简答题,778d348c501dde71eeab4b5319db437fe79eca96c13553044c398a1dcf82d87e,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0864,简答题,a060d44b07d27de6acd4747a3656eb6ac56b75a697ae7a4159f70e6d67db2d88,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
@@ -890,7 +890,7 @@ C0888,材料题,8c67854e4b3434835bb8be0f4e9af85f780613e63073f5e37c713e8a0ec692d3
 C0889,论述题,6f698a303ed0027d596dd8989e00eb7fc8ec3c55d07e1ee1fbe07abeee6c9250,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0890,论述题,915fcfbf51da8544e3a9ed61df252100c260197df912179cccc9e41cdf7baf5e,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十章；《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0891,名词解释,c385082e0a023795ea1ef2cb644422e2bd7637a2ef91202853aa13ce540a059a,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十一章；《王思斌〈社会工作概论〉（第4版）笔记和课后习题（含考研真题）详解》PDF第256页（考研真题与典型题详解，W0302）,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0892,简答题,2f763f60075920d385a4cc309b0f83a1045b8eeeb3cd070286a5eda7cf871b7b,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十一章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0892,简答题,2c20ed56871122e1738aa4737faa7146a605c85acafc856457f0e257852750c9,REVIEWED_PATCH_APPLIED,,定点剔除跨卡重复且与题干关系弱的通用长段，代之以该题专属解释、实例和可评价标准，保留原有有效得分点与自然段结构。,2026《社会工作综合能力（中级）》第十一章“社会工作服务督导”；相关内容参照《社会工作概论》第十章“社会行政”中的督导。；对照现行题干与教材知识框架定点复核；需本地终审,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0893,简答题,acc943526c113ac7d00bca42bdce2cd5258cd67ba7c4beb41d5488003de1f69f,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十一章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0894,名词解释,56eaf8291ccb4e3c750990f588a0afe8a8c58c3cb1516972fc93f64bc11fc6a1,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十一章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0895,简答题,e8b8ee20c12ffccd519f25ed995f5ce1fc43373cde570bdf7af0defdef6cdb85,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十一章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
@@ -898,8 +898,8 @@ C0896,名词解释,4b96d4e2cf207be9e0effde19a6d5a71b7967cab4af680be912059690eda7
 C0897,简答题,3be956ad852478edcfe261010e0120389ceb571d4c9c776236c9ff2afc089180,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十一章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0898,名词解释,93f70b17bb10ad4d76da8ab75303ca3f42990485f26325ade8ad9175f975a02b,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十一章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0899,简答题,c3676a767bbc689fb3eddcb31ac3bb975c05f72c93d665f12f195163de676c42,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十一章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0900,简答题,b1ae9720dffc24778ec5cfa9498d98c8ceb26447dc4c991c51fcdddc9f55c86c,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十一章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0901,简答题,ad75d194f2f4ce8272fc76818d7ae603f3900fc42479af28ba1316c759c80e67,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十一章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0900,简答题,20f0fdd16d36661bedb68a8d61da574a75201c815679f3b3683986e730c1844d,REVIEWED_PATCH_APPLIED,,B04针对性改写：删除跨题通用段落，依据本题核心概念与教材对照重新构建得分点，并保留原有已验收版本的哈希门禁,2026《社会工作综合能力（中级）》第十一章“社会工作服务督导”；相关内容参照《社会工作概论》第十章“社会行政”中的督导。,B04_FIFTEEN_TARGETED_FORMAL_REVIEWS,已同步 app 与母版；请以本批教材证据与本地验收记录确认
+C0901,简答题,10322ccda7df33bafcf81ce9bd0d37105bd647962c1b4e133cc7b56a2c022297,REVIEWED_PATCH_APPLIED,,定点剔除跨卡重复且与题干关系弱的通用长段，代之以该题专属解释、实例和可评价标准，保留原有有效得分点与自然段结构。,2026《社会工作综合能力（中级）》第十一章“社会工作服务督导”；相关内容参照《社会工作概论》第十章“社会行政”中的督导。；对照现行题干与教材知识框架定点复核；需本地终审,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0902,简答题,104dec91e581d6d5be27c73c55c1b71b6fa6d4558a8768a06d6c6904ab35299c,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十一章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0903,简答题,537f1ffe7fb371d9cb3317643b52aa93509fca34b18fd4dc6d94447473fa4a0c,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十一章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0904,简答题,cb75869065a3051f7ec07db0d185815f18d3297b3ccc5146d918ffd406a689ca,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十一章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
@@ -939,12 +939,12 @@ C0937,简答题,ab6505b7dac3ed77c6d8affe1882a5f66588adfb215ee35e028b1033f6d4acfd
 C0938,简答题,7347e22c027d84faa40f5b4bcb83b1bf5e1bce58c1d8637e0b6104ff5d211037,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0939,简答题,647b06eb45793a049251b28dabc279156f9d070e817637f5333e4e4c162f6ddc,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0940,简答题,95ee6b8a7000c8ee6f037be377ae3db8171a14d040873f6d140c08ee2f64c105,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0941,案例分析题,0e60ef7ffb8ed2dd36371e252fdf8631732c81f4085ee7ceb28aac33ebf6b51b,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0941,案例分析题,db3c5c3815542976f8f6eb3d1a212c95788241e324a635983b702c4bc7a4d09f,REVIEWED_PATCH_APPLIED,,B04针对性改写：删除跨题通用段落，依据本题核心概念与教材对照重新构建得分点，并保留原有已验收版本的哈希门禁,2026《社会工作综合能力（中级）》第十二章“志愿服务”,B04_FIFTEEN_TARGETED_FORMAL_REVIEWS,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0942,名词解释,3134d309f0fcc0ca64f784fb4a4dea939cb508c1d597b07149213547b46ec60d,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0943,简答题,ab837cd455d3992f110e5e924ad58b0b96d4070e90fabb2a75c0a9b211dd71b6,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0943,简答题,1fd7753a29cde5a6fc9eec0f2f512c61a752d8beee53cd79bcd2125476b46b1e,REVIEWED_PATCH_APPLIED,,定点剔除跨卡重复且与题干关系弱的通用长段，代之以该题专属解释、实例和可评价标准，保留原有有效得分点与自然段结构。,2026《社会工作综合能力（中级）》第十二章“志愿服务”；对照现行题干与教材知识框架定点复核；需本地终审,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0944,简答题,e1af00b13dbb855495134498dbd7472320bee5a922fdd5d11e1fe300a32aed3b,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0945,简答题,c8e2f646ba319d5ad445e93497571086de418a8372bec7fa012591be99be7950,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0946,简答题,579425ef072dc5e74d5c1cbecf5af6f063d078442296c0c5d502705ecde67978,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0946,简答题,fe56d5352a65a6b606155b76067d1058ea8ae76ea94f443def0b9bf98f385d15,REVIEWED_PATCH_APPLIED,,B04针对性改写：删除跨题通用段落，依据本题核心概念与教材对照重新构建得分点，并保留原有已验收版本的哈希门禁,2026《社会工作综合能力（中级）》第十二章“志愿服务”,B04_FIFTEEN_TARGETED_FORMAL_REVIEWS,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0947,简答题,28226d4af28918b46bae41ab78cb6b3dc555d961051b32204667dd180385aef6,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0948,简答题,47bb856e453c2641e7679f772278d5815c3b993a71ef28ea5ef26dde2a9a7499,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0949,简答题,78d6275a759bd2022f2261ce28235597fec58947aa3270f728565c2b87f0c05c,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
@@ -954,11 +954,11 @@ C0952,简答题,fc6057052e207a0e9a83f603d3f968578f90f82b0aa74d91f712848c7ae34291
 C0953,简答题,06012215ec34e235ae8e5a188a2cec7f550a71bf2fa0a4cf54467623ecb40d42,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0954,简答题,cdfbfde2a28a197b8557f68e0454397d35b2e16719bcd87ba1f2883d4fbffbe6,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0955,简答题,0db92fc52cd1abf167bfdcd624a593bcc5f33006052864acead7e57dd04e80ac,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0956,案例分析题,c3f7d1955f9502568a1c1fcdca52f2a49d1a758e657c12cc55a2f1e4fc25409a,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0956,案例分析题,f035d5c01fb9eb91af13576319d5f13e58abc647631960b9fa3a4ef393a5cf9b,REVIEWED_PATCH_APPLIED,,B04针对性改写：删除跨题通用段落，依据本题核心概念与教材对照重新构建得分点，并保留原有已验收版本的哈希门禁,2026《社会工作综合能力（中级）》第十二章“志愿服务”,B04_FIFTEEN_TARGETED_FORMAL_REVIEWS,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0957,论述题,c4a9315645227092e277b8403441c89421de462170b56ced00007fa0b6249444,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0958,材料题,0c1d57b91a3884600ba988185acfa20d580163b655795d25e2b52e87d9be6d83,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0959,论述题,25f262c1faff23a0bec111ea2e08b4f79e986c29b2a0e4033cb0186d2d7f73e0,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0960,论述题,e02867714b053d31ec3b9bfb1a627fd7ab2dec70191c241e379d0a3073893583,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十二章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0959,论述题,1d690e7a6fdbd75223ff83dd03a469f4e432d246ce9514342d13dd2e60e526cd,REVIEWED_PATCH_APPLIED,,按具体题干定点修复单字高亮/重复编号/通用段落，重建自然段与核心得分点；不动非目标已验收答案,2026《社会工作综合能力（中级）》第十二章“志愿服务”；结合对应章节教材知识框架和题干已知材料，逐题内容复核,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
+C0960,论述题,1bb218adcc1bd6c3f2d1509ecad5bdd6c0db96c1a84906fe4016c385ebc9fdf3,REVIEWED_PATCH_APPLIED,,按具体题干定点修复单字高亮/重复编号/通用段落，重建自然段与核心得分点；不动非目标已验收答案,2026《社会工作综合能力（中级）》第十二章“志愿服务”；结合对应章节教材知识框架和题干已知材料，逐题内容复核,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0961,名词解释,0544521e12e8110929d45d6e255a6da216aeadf292f1eea00aee1e6dfffcc152,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章；《王思斌〈社会工作概论〉（第4版）笔记和课后习题（含考研真题）详解》PDF第261页（课后习题详解，W0306）,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0962,简答题,286a6cc2ca178d74bc4d310f6c626b5115f45bf66e39cf6c806a21e6f756d139,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0963,简答题,59543102fbe87f2bff5ca2e3197ce1be1cdbe9a3a7a5d2895f4c64c547489dad,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
@@ -967,7 +967,7 @@ C0965,简答题,792994ec93b4dd34c3300128f63bd2da5e2e192456b6827808c392a0f106fba8
 C0966,简答题,55b0713f863aa593d7b23a137bab20c8dd3690628bba6cc058d5912522a0c998,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0967,简答题,77aabe2fa7319823402a506a9972da359584349c10e251963bc58ce82869f908,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0968,简答题,f270ed854663b780f54095e3ebf719fc6d97c79ea40e913227af50bdded8b9cf,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0969,案例分析题,350a94df4fbeba31a4a5588bc9ae68cd163f7a725b6e5d1a6b8a279c39b89823,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0969,案例分析题,f2852bca5afbe348076c09da98f45e966bf467c0dc16bc912f92e650aba0e723,REVIEWED_PATCH_APPLIED,,以具体材料问题组织案例论证，修复双重编号和单字高亮，删除与题干关系弱的通用结语；重点完善风险评估/三方法互证。,2026《社会工作综合能力（中级）》第十三章研究伦理及社会工作服务研究基本方法；《社会工作概论》社会工作研究相关内容；需用户最新基线验证,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0970,简答题,cb06c6fcff990e5cc3c4a1f4ed60bbbd0330a525007961e7ee7a3918e9af1279,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0971,简答题,33de89a63ed2b90e9f9cc4b4f72a1ba619dc504f209bf4a8e550940fc9100421,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0972,简答题,f64fc4245c43269dbfc2aefd18876607560fd58d801225e8027a09e3b7d5cab8,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
@@ -987,8 +987,8 @@ C0985,名词解释,5417bbddbc30f76c82f799b5ca212ea806be607b6d657630469e42e81171a
 C0986,简答题,f73dff55b25cf8000681d5bd69b3eb73ea7669870c154cc9f859316f1c9d2a74,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0987,名词解释,676ac093e8d4dcfce61fa7845a3ed6828125cb752b7f2ebb2e7777cd5743e8ff,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0988,简答题,a5243982ad11b74b3c287e42ec7fc400ff43e8837791decef375805ccfc011c4,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0989,案例分析题,e87657d74168565498f7af8bddfa179b4b75dbfc995ec1cbe743567a80b9fc79,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0990,论述题,4bb2101e0af4542d365bba727138ded8904f96b63ac585ee2bfacb40d3d22a7b,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0989,案例分析题,cf8af70ef479cfdcabd46a349d247d3deaeccba507f6430ec1cfc6253287f810,REVIEWED_PATCH_APPLIED,,以具体材料问题组织案例论证，修复双重编号和单字高亮，删除与题干关系弱的通用结语；重点完善风险评估/三方法互证。,2026《社会工作综合能力（中级）》第十三章研究伦理及社会工作服务研究基本方法；《社会工作概论》社会工作研究相关内容；需用户最新基线验证,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
+C0990,论述题,3c10b025b649873cc4cb88d136af38ef02406f23de90641421e69acb91279fa7,REVIEWED_PATCH_APPLIED,,按具体题干定点修复单字高亮/重复编号/通用段落，重建自然段与核心得分点；不动非目标已验收答案,2026《社会工作综合能力（中级）》第十三章“社会工作服务研究”；《社会工作概论》第二十五章“社会工作研究”；结合对应章节教材知识框架和题干已知材料，逐题内容复核,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C0991,名词解释,9118afb662003fa473e26984f35c30e55ec394a53ffeb1fb6f41a3cb0f0a9076,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0992,简答题,8ad1a0dbb0f8ec418744509d1af3b194452d4a05d83d5d0d69e6edc5b6a9cdf8,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0993,名词解释,fb51a4df6d8bd5474d292d9cc934aa97004e0b5e2d5d69cfd3d6073e89b0ba44,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
@@ -997,21 +997,21 @@ C0995,简答题,5d3fbfa53662c4b88fbd3d2475f5439aafd1d7a82c378a6f91ee8da63b7e6312
 C0996,简答题,f83c64e1a4976ece967ef7fff589f50ad8616290964acbcb431ed53961803795,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0997,简答题,7ec0db6b173ef726088c24066b882a7f46de21f1078527a97299336284ecf9aa,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C0998,简答题,12bcbd49412360df4cdf43aa4e561fcbbf0b4769cf84773b574728ae2bed9399,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C0999,论述题,3dc399bfbfda715c03b97f8a224186d3453d189d8e9d9a2e21b61cf1a75e1242,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C1000,材料题,13d780ee11e4715d6dafb007e1648e893a671f6f460fcf9d27dbe4973f4725e6,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,2026《社会工作综合能力（中级）》第十三章；《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C0999,论述题,64f35049ff343865c01cd88c55fd9ada5544933555903e70aa37fa1a548a6abd,REVIEWED_PATCH_APPLIED,,按具体题干定点修复单字高亮/重复编号/通用段落，重建自然段与核心得分点；不动非目标已验收答案,2026《社会工作综合能力（中级）》第十三章“社会工作服务研究”；《社会工作概论》第二十五章“社会工作研究”；结合对应章节教材知识框架和题干已知材料，逐题内容复核,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
+C1000,材料题,8881b2381449f56d87b2abc5af5b78d5b5d23ac95769b3e346401f325b93d6f4,REVIEWED_PATCH_APPLIED,,按具体题干定点修复单字高亮/重复编号/通用段落，重建自然段与核心得分点；不动非目标已验收答案,2026《社会工作综合能力（中级）》第十三章“社会工作服务研究”；《社会工作概论》第二十五章“社会工作研究”；结合对应章节教材知识框架和题干已知材料，逐题内容复核,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C1001,简答题,9da44f6fae24003c6cb6ad28f3acaf379032491e0b0f811174657abde3341cb9,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1002,简答题,784d2efd8b0c02540ab439652524389d6d16987fed1666877e668ff3c02d6dba,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C1003,论述题,3cfb292501c8ddade55db518391164981358a92405f22e72139fbabc83ee3ea1,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C1003,论述题,72863dea778f09c1619c03d89abd85263a7e67aa78b08640bb29cd8cd31bd827,REVIEWED_PATCH_APPLIED,,按具体题干定点修复单字高亮/重复编号/通用段落，重建自然段与核心得分点；不动非目标已验收答案,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章；结合对应章节教材知识框架和题干已知材料，逐题内容复核,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C1004,简答题,07ed30d8060feeccc067a03cedc3178dbbeac42f5938abd0168715e1cd42fb9f,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C1005,案例分析题,67b83631abe98e1baa1f1a69e45424b0bec6eafa8ca171a5556f2a7eb8719b30,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C1005,案例分析题,a8335754e74bc9213dac995ad328e3e7a4afc768256bf298849109ce0a1046a2,REVIEWED_PATCH_APPLIED,,按具体题干定点修复单字高亮/重复编号/通用段落，重建自然段与核心得分点；不动非目标已验收答案,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章；结合对应章节教材知识框架和题干已知材料，逐题内容复核,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C1006,简答题,9662a7e4d6dbc8f9178336e66884aa4f2bacbc04e15fb5c7b612ec3708ebf975,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C1007,论述题,e33f3023f196ad2a823435e0251d4e77064a8912db267b71a7d7a682683578c0,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C1007,论述题,97ae948d07b494f6c672537637d67754a9e2414b2e4082c027d87a62aa3ea2e5,REVIEWED_PATCH_APPLIED,,按具体题干定点修复单字高亮/重复编号/通用段落，重建自然段与核心得分点；不动非目标已验收答案,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章；结合对应章节教材知识框架和题干已知材料，逐题内容复核,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C1008,简答题,51a0ff5b1831a823d825216c568d1acab2e95aad372ff300783a8cfac8e35a19,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1009,简答题,02c951e1e8a7bbc850feb997b117e0614b4398730cda5003e37c171e9f9fd33a,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1010,简答题,b62c97ce5655f5fb225e49f7741d8cbe03808a295e1f9fc45d20edd5602588c4,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1011,简答题,d5efa8e463de770fa6ece38fc4ae6e2f355ac8e683dc7ad3d57242f062b0ad7e,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1012,简答题,1c8dd2c8dde8b9d67000adf9e0560cd25c97b6b8933606ac617c3318b33c6e9c,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C1013,案例分析题,6cb3d1d94e16d75ffcf551967c9762372585860546048f8ce2eaca4d47d76962,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C1013,案例分析题,cf775e7c76960750b1d0c198f376b97468c08a4441588a0005d7fa9fac7d74cf,REVIEWED_PATCH_APPLIED,,按具体题干定点修复单字高亮/重复编号/通用段落，重建自然段与核心得分点；不动非目标已验收答案,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章；结合对应章节教材知识框架和题干已知材料，逐题内容复核,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C1014,简答题,73647d651ee0b6ce0c6ed74ea011af35808e4ad4a128326dd30990853cca05b3,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1015,简答题,b01da7c641b344823732a15d81538afb0f9b58128655c57a2c6084ebb56e7af5,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1016,论述题,6fbac32b6c1bbe0d8b93578b17e1ad84be0faf1106ef9f74ee224917ab562f22,HISTORICAL_TARGET_HASH_MATCH,18,,《社会工作概论》第七至十章、第二十五章；2026《社会工作综合能力（中级）》第七至十三章,,哈希吻合并不等于再次完成教材事实校核
@@ -1224,7 +1224,7 @@ C1222,简答题,b452da3e7241d9bd8f7e1adb9efdd701290a4eb21bc0320bf361bdf477828daf
 C1223,简答题,0046673db9a47d5f00696b2081a2b6a01adea176cf26f8c7c59202269894e812,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第六章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1224,简答题,d65843db3794bdbf049c6659a1bb1fb9b6fb8b692c5c859d33e918b9d49b56e5,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第六章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1225,简答题,186b586d07ff75277f8c589eaa0b4fed667eaa76dcd0adfb7b3654101c842ad6,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第六章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C1226,论述题,6c077534c93298a6d647b7d91f6acf784221f9c60d8ae5f89bc01d9e6eafa1da,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第六章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C1226,论述题,07e76ae953bb8a1c12cd8a40ea662767c99513f37453fb13d1ccd704bcd5e94e,REVIEWED_PATCH_APPLIED,,按具体题干定点修复单字高亮/重复编号/通用段落，重建自然段与核心得分点；不动非目标已验收答案,《社会工作实务-250纠正》第六章“社会救助社会工作服务”。；结合对应章节教材知识框架和题干已知材料，逐题内容复核,B05_TWENTY_TARGETED_FORMAL_REVIEWS_20261020,已同步 app 与母版；请以本批教材证据与本地验收记录确认
 C1227,简答题,1a88983b773ba664e7d6969e64c9990aeb6f55b10640e3c167a7cb1a6585abdb,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第六章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1228,简答题,b73902ad4e92d72f009ff8dc8ff712e8843f10d21abbef70e69092c86a467fea,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第六章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1229,案例分析题,1d1b7b58647ca60e5fd730c05ccfdee8a54fdab4cc3b8ee15df7cbb72194fd67,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第六章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
@@ -1718,7 +1718,7 @@ C1716,简答题,22509024d109fff2ede265bb214b170d9ccb97df9cbe950b010aeed76ceaf8c4
 C1717,材料题,56b7df143a17f4462f9cef9b1db1d637d82f2062329ad948a13862a82c6e049e,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第十六章；《社会工作概论》第十四章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1718,名词解释,d2823db8b71f95d3df6e16f69623d6643d1b8cf5b3fa7b667ab8ed819842a453,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第十七章；《社会工作概论》第十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1719,简答题,4d14ea05404ab8212b3bc943e9416027bccfaa3d0fc76eba9bd7ab838d15fcc2,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第十七章；《社会工作概论》第十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C1720,简答题,89bd958ba274b642ef06f7ce40799514d5d473ff5c10aac63bc7999aacc88490,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第十七章；《社会工作概论》第十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C1720,简答题,d4aef6c8f7d6531976bbd33806843aca17e498fcb5938ed8dfdd9ca2f31c6d07,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第十七章；《社会工作概论》第十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1721,简答题,dc30ca3b7753a7fbbc7d8fdc294c65af0e61b985a4d52632c1b16e37ada9a6cc,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第十七章；《社会工作概论》第十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1722,简答题,f3d6b7dcaee2d435cde905de3b557c32901a2d05009726c3843dac1555907b9e,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第十七章；《社会工作概论》第十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1723,论述题,f75d19e7092295ccd0b3c76a59939e4e063605a803109001bb39f1a60a507f3d,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第十七章；《社会工作概论》第十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
@@ -1728,7 +1728,7 @@ C1726,简答题,4a1dfcc34caf03da51d8aa7310a306dc4fd22da425a0a8a0e5ab373904e6f5fb
 C1727,简答题,10946b43bdeafd7a5cce40b806ab2b1ff1e1b3f35ff520a4077d6ca51802ef2b,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第十七章；《社会工作概论》第十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1728,简答题,be49075e0c6f3d1f5dc0c9d292c91514b3699484ff910ac815ef43fa25b76e44,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第十七章；《社会工作概论》第十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1729,简答题,edbecb357b037aa1205ef6a5447a348f202013102ac6f49b4952d06df15d2323,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第十七章；《社会工作概论》第十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C1730,简答题,f0caddcaaca36892ec2f3f15edfa3f24d5b40caf282a40b939b58cc62bfdf21a,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第十七章；《社会工作概论》第十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C1730,简答题,ef9dd052a81b810d69a8f6b458b08e6871e9e43cbdb6baa9e77a1760d62f6eb0,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第十七章；《社会工作概论》第十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1731,案例分析题,feaa669cd952910c9638926f161abfd9a3e6778eb31ec6722c08c7ae238eacad,HISTORICAL_TARGET_HASH_MATCH,19,,《社会工作实务-250纠正》第十七章；《社会工作概论》第十五章,,哈希吻合并不等于再次完成教材事实校核
 C1732,简答题,f8478df4f85ef4880b7cb879ef37dd1715309e95069578a6279792cfb8a7ecf1,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第十七章；《社会工作概论》第十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1733,简答题,eed503d5fb2b5d06a5af123346b3ff6eb77f62e48f2a0e9b85d00be8c0ff3e4c,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作实务-250纠正》第十七章；《社会工作概论》第十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
@@ -1937,7 +1937,7 @@ C1935,简答题,31fee9644d7b0abe4e2d13aeaef3938acd4c1314494dc4886b47363e36975b06
 C1936,名词解释,84e2dd3ef4a11ad12048fd2dd4b81589ca66fa74ec6333df2682de11bc9d5fba,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第十章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1937,简答题,3ca46deabe539e71655a36c162296ce1ab4b9632f496ec5b9c60158aa080bcc5,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第十章；《王思斌〈社会工作概论〉第4版习题与考研真题详解》PDF第121页,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1938,简答题,d1552f7fee58fb2191a30e62fc053a39d69665352860ac699ab73505e1579ae3,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第十章；《王思斌〈社会工作概论〉（第4版）笔记和课后习题（含考研真题）详解》PDF第122页（课后习题详解，W0151）,,仅表示本次未由Round13-23清单证明，不代表尚未精修
-C1939,名词解释,8e9fb96a9c8b91a4ad2bdaab808bc817d4ce6771500fb3e8410e508acb238c92,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第七章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
+C1939,名词解释,a375180ac79c618fb6a70d29f91de528ae82e441d0192ad09262e9246aee76da,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第七章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1940,名词解释,9118afb662003fa473e26984f35c30e55ec394a53ffeb1fb6f41a3cb0f0a9076,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1941,名词解释,fb51a4df6d8bd5474d292d9cc934aa97004e0b5e2d5d69cfd3d6073e89b0ba44,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第二十五章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
 C1942,简答题,e004b2f94fb37d719f84c85c69b4f9127f901dfca234d8f089e46a32257c9798,NOT_EVIDENCED_BY_ROUND13_TO_23_MANIFEST,,,《社会工作概论》第十一章,,仅表示本次未由Round13-23清单证明，不代表尚未精修
