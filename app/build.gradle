@@ -6,12 +6,16 @@ android {
     namespace 'com.seu.socialworkcards'
     compileSdk 35
 
+    buildFeatures {
+        buildConfig true
+    }
+
     defaultConfig {
         applicationId 'com.seu.socialworkcards'
         minSdk 24
         targetSdk 35
-        versionCode 25
-        versionName '2.9.0'
+        versionCode 27
+        versionName '3.0.0-rc1'
         manifestPlaceholders = [appLabel: '社会工作闪卡']
     }
 

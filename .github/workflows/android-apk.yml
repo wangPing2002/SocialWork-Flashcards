@@ -17,6 +17,12 @@ jobs:
       - name: Verify 2497-card content and review ledger
         run: python3 scripts/verify_repository.py
 
+      - name: Verify V3.0.0 case, search and taxonomy integration
+        run: python3 scripts/verify_v30_integrated.py
+
+      - name: Verify enriched case provenance, length and 176 original Q/A hashes
+        run: python3 scripts/verify_case_enrichment_v30.py
+
       - name: Set up Java 17
         uses: actions/setup-java@v5
         with:

@@ -1,6 +1,6 @@
-# V2.9.0 GitHub Actions 测试说明
+# V3.0.0 RC1 GitHub Actions 测试说明
 
-本工程以 GitHub Actions 作为标准 Android 测试/构建环境，**不使用 Gradle Wrapper**。
+本工程以 GitHub Actions 作为标准 Android 测试/构建环境，**不使用 Gradle Wrapper**。离线测试在SDK构建前依次检查2497张母卡与台账、案例主档、题型及知识分类整合、新增86份案例的来源边界和176道旧子问的SHA保护。
 
 ## Debug 测试
 
@@ -60,10 +60,10 @@ ANDROID_KEY_PASSWORD
 ## 推荐测试分支
 
 ```powershell
-git switch -c test/v2.9.0
+git switch -c test/v3.0.0-rc1
 git add -A
-git commit -m "test: v2.9.0 github actions build"
-git push -u origin test/v2.9.0
+git commit -m "test: v3.0.0-rc1 github actions build"
+git push -u origin test/v3.0.0-rc1
 ```
 
 在 GitHub → Actions → **Build Android APK** 查看构建结果并下载 Artifact。

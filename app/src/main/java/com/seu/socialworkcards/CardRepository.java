@@ -10,6 +10,8 @@ public class CardRepository {
     public final JSONObject details;
     public final JSONObject examMeta;
     public final JSONObject examAnswers;
+    public final JSONObject topicTaxonomy;
+    public final JSONObject questionOverlay;
     private final ContentFeedbackStore feedback;
     private final Map<String,Card> byIdMap = new HashMap<>();
     private final Map<String,String> answerOverrideCache = new HashMap<>();
@@ -23,6 +25,14 @@ public class CardRepository {
             cards.add(c);
             byIdMap.put(c.id,c);
         }
+        topicTaxonomy=readOptionalObject(ctx,"topic_taxonomy_v30.json");
+        questionOverlay=readOptionalObject(ctx,"question_overlay_v30.json");
+        JSONObject cardTopics=topicTaxonomy.optJSONObject("cardTopics");
+        if(cardTopics!=null)for(Card c:cards){JSONObject t=cardTopics.optJSONObject(c.id);if(t!=null){
+            String primary=t.optString("primaryTopic","");String secondary=t.optString("secondaryTopic","");
+            if(!primary.isEmpty())c.primaryTopic=primary;
+            if(!secondary.isEmpty())c.secondaryTopic=secondary;
+        }}
         details=readOptionalObject(ctx,"details.json");
         examMeta=readOptionalObject(ctx,"exam_meta.json");
         examAnswers=readOptionalObject(ctx,"exam_answers.json");
@@ -45,6 +55,15 @@ public class CardRepository {
     public JSONObject examMeta(String key){return examMeta.optJSONObject(key);}
     public JSONObject examAnswer(String key){return key==null||key.isEmpty()?null:examAnswers.optJSONObject(key);}
 
+    public String displayQuestion(Card c){
+        if(c==null)return "";
+        JSONObject o=questionOverlay.optJSONObject(c.id);
+        if(o==null||!o.optString("baselineQuestion","").equals(c.question))return c.question;
+        if(!c.exactExamSources.isEmpty()||!c.recallExamSources.isEmpty())return c.question;
+        String training=o.optString("trainingQuestion","").trim();
+        return training.isEmpty()?c.question:training;
+    }
+    public boolean hasTrainingRewrite(Card c){return c!=null&&!displayQuestion(c).equals(c.question);}
     public boolean isExactExam(Card c){return c!=null&&!c.exactExamSources.isEmpty();}
     public boolean isRecallExam(Card c){return c!=null&&!c.recallExamSources.isEmpty();}
     public boolean isRealExam(Card c){return isExactExam(c)||isRecallExam(c);}
@@ -58,7 +77,7 @@ public class CardRepository {
         if(c==null)return "模拟题";
         List<String> src=!c.exactExamSources.isEmpty()?c.exactExamSources:c.recallExamSources;
         if(src.isEmpty())return "模拟题";
-        String prefix=!c.exactExamSources.isEmpty()?"真题·":"真题主题·";
+        String prefix=!c.exactExamSources.isEmpty()?"真题关联·原卷待核·":"回忆考点·原题待核·";
         return prefix+src.get(0)+(src.size()>1?" +"+(src.size()-1):"");
     }
     public String questionType(Card c){return c==null?"题目":normalizeType(c.questionType==null||c.questionType.isEmpty()?c.kind:c.questionType);}
