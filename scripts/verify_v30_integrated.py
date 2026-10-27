@@ -14,7 +14,8 @@ cards=asset('cards.json'); ids={x['id']:x for x in cards}
 verify(len(cards)==2497 and len(ids)==2497,'G1: 2497 unique card identities')
 for i in range(1,2498):verify(f'C{i:04d}' in ids,'G1: sequential ids')
 oldhash=json.loads((DOC/'answer_sha256_original.json').read_text(encoding='utf-8'))
-for cid,c in ids.items():verify(hashlib.sha256(c.get('fullAnswer','').encode()).hexdigest()==oldhash.get(cid),f'G7: official answer changed: {cid}')
+currenthash=json.loads((DOC/'V32_active_answers_sha256.json').read_text(encoding='utf-8'))
+for cid,c in ids.items():verify(hashlib.sha256(c.get('fullAnswer','').encode()).hexdigest()==currenthash.get(cid),f'G7: active selected answer changed: {cid}')
 quick=asset('quick_memory_v3.json');verify(set(quick)==set(ids),'G1: memory alignment')
 for cid,q in quick.items():
     verify(bool(q.get('framework')) and bool(q.get('cues')) and bool(q.get('mnemonic')), f'memory schema missing {cid}')

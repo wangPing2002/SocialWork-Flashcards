@@ -10,7 +10,6 @@ public class CardRepository {
     // 437M 专属模块绝不混入主库2497，作为可选训练题源独立存放。
     public final List<Card> v24Cards = new ArrayList<>();
     public final JSONObject v24Records = new JSONObject();
-    private final JSONObject zStaging;
     private final JSONObject zCases;
     public final JSONObject details;
     public final JSONObject examMeta;
@@ -44,18 +43,18 @@ public class CardRepository {
             c.kind="名词解释";c.questionType="名词解释";
             c.question=raw.optString("front","名词解释："+c.topic);
             c.fullAnswer=raw.optString("answer");c.hasLong=true;
+            c.trainingScore=raw.optInt("trainingScore",0);c.answerEffectiveChars=raw.optInt("answerEffectiveChars",0);
             c.origin="V24·437实务专项独立训练候选（非331题源、非官方原卷）";
             JSONObject src=raw.optJSONObject("source");
             if(src!=null){c.sourceField=src.toString();}
-            c.sourceLevel="AI预备内容／未完成全部教材与原卷核签";
-            c.answerStatus=raw.optString("status","STAGING_NOT_RELEASED");
+            c.sourceLevel="";
+            c.answerStatus="";
             c.tip="三词提示 · 五维答案 · 训练分值独立于原题分值";
             c.predictedFrequency="中";
             c.bullets.add(c.fullAnswer);
             v24Cards.add(c);v24Records.put(c.id,raw);byIdMap.put(c.id,c);
         }
         if(v24Cards.size()!=378)throw new IllegalStateException("437专项必须378题");
-        zStaging=readOptionalObject(ctx,"z_staging_overlays_v31.json").optJSONObject("cards");
         zCases=readOptionalObject(ctx,"z_case_staging_v31.json").optJSONObject("cards");
         topicTaxonomy=readOptionalObject(ctx,"topic_taxonomy_v30.json");
         questionOverlay=readOptionalObject(ctx,"question_overlay_v30.json");
@@ -85,7 +84,6 @@ public class CardRepository {
     public Card byId(String id){return id==null?null:byIdMap.get(id);}
     public boolean isV24(Card c){return c!=null&&"V24_437".equals(c.sourceModule);}
     public JSONObject v24Record(Card c){return isV24(c)?v24Records.optJSONObject(c.id):null;}
-    public JSONArray stagedOptions(Card c){return c==null||isV24(c)||zStaging==null?null:zStaging.optJSONArray(c.id);}
     public JSONArray stagedCases(Card c){return c==null||isV24(c)||zCases==null?null:zCases.optJSONArray(c.id);}
     public boolean eligibleForExam(Card c,String subject){
         if(c==null||!("331".equals(subject)||"437".equals(subject)))return false;

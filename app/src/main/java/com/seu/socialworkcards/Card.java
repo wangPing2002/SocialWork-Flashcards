@@ -10,6 +10,7 @@ public class Card {
     public String questionType="", fullAnswer="", predictedFrequency="中", predictedFrequencyRaw="";
     public String sourceField="", truthLabel="", truthQuestion="", truthEvidence="", truthRelation="";
     public String answerStatus="", sourceLevel="";
+    public int trainingScore=0, answerEffectiveChars=0;
     public boolean hasExample, hasLong;
     // 永久隔离的独立题源；331不得引入437M。
     public String sourceModule="BASE", examSubjectScope="331,437";
@@ -29,6 +30,7 @@ public class Card {
         c.sourceField=o.optString("sourceField"); c.truthLabel=o.optString("truthLabel"); c.truthQuestion=o.optString("truthQuestion");
         c.truthEvidence=o.optString("truthEvidence"); c.truthRelation=o.optString("truthRelation");
         c.answerStatus=o.optString("answerStatus"); c.sourceLevel=o.optString("sourceLevel");
+        c.trainingScore=o.optInt("trainingScore",0); c.answerEffectiveChars=o.optInt("answerEffectiveChars",0);
         c.hasExample=o.optBoolean("hasExample"); c.hasLong=o.optBoolean("hasLong",true);
         readArray(o.optJSONArray("bullets"),c.bullets);
         readArray(o.optJSONArray("relatedIds"),c.relatedIds);

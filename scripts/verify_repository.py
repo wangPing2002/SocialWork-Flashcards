@@ -34,20 +34,18 @@ def validate() -> dict:
     regions = master_regions(text)
     if set(regions) != set(expected_ids):
         errors.append('Mother Markdown is missing or duplicating card sections')
-    mismatch = []
-    for cid, c in card_by_id.items():
-        if cid not in regions or regions[cid][2] != c['fullAnswer'].strip():
-            mismatch.append(cid)
-    if mismatch:
-        errors.append(f'Mother Markdown vs app fullAnswer mismatch ({len(mismatch)}): {", ".join(mismatch[:12])}')
+    # V32: historic master remains an archival snapshot, no longer the displayed answer.
+    active_hash=json.loads((ROOT/'docs/V32_active_answers_sha256.json').read_text('utf-8'))
+    mismatch = [cid for cid,c in card_by_id.items() if cid not in active_hash or answer_sha(c['fullAnswer'])!=active_hash[cid]]
+    if mismatch:errors.append(f'Current selected answer hash mismatch ({len(mismatch)}): {", ".join(mismatch[:12])}')
 
     with LEDGER.open(encoding='utf-8-sig', newline='') as f:
         ledger = list(csv.DictReader(f))
     if [e['card_id'] for e in ledger] != expected_ids:
         errors.append('Review ledger does not cover the 2497 IDs in order')
-    ledger_bad = [e['card_id'] for e in ledger if e['card_id'] not in card_by_id or e['answer_sha256'] != answer_sha(card_by_id[e['card_id']]['fullAnswer'])]
+    ledger_bad = [e['card_id'] for e in ledger if e['card_id'] not in regions or e['answer_sha256'] != answer_sha(regions[e['card_id']][2])]
     if ledger_bad:
-        errors.append(f'Review ledger hash drift ({len(ledger_bad)}): {", ".join(ledger_bad[:12])}')
+        errors.append(f'Historical review ledger/master hash drift ({len(ledger_bad)}): {", ".join(ledger_bad[:12])}')
 
     memory_asset = ASSETS/'quick_memory_v3.json'
     if not memory_asset.is_file():

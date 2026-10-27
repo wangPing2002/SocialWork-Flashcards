@@ -1,3 +1,4 @@
+# Android / Gradle / IDE
 .gradle/
 .idea/
 local.properties
@@ -8,10 +9,23 @@ app/build/
 *.jks
 *.keystore
 
-# Local answer patch backups, staging, caches, and test artifacts
-local_backups/
+# Development caches & temporary patches
 __pycache__/
 *.py[cod]
-*.pending
 .pytest_cache/
+local_backups/
+*.pending
+*.bak
+*.tmp
+*.orig
+*.rej
+
+# Generated QA reports (scripts recreate them during local or CI checks)
+docs/v30_validation_result.json
+docs/case_enrichment_validation.json
+docs/case_enrichment_item_audit.csv
+
+# Local archive and local install-only files
 /SNAPSHOT_MANIFEST.json
+/V3*_OVERLAY_MANIFEST.json
+/V3*_cleanup_backup_*/

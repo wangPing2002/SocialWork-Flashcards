@@ -1,0 +1,25 @@
+{
+  "schema": "V32_ACTIVE_CONTENT",
+  "cards": 2497,
+  "selected_current_by": "highest Z00-Z08 section number with non-empty answer",
+  "sections_selected": {
+    "Z01": 251,
+    "Z06": 179,
+    "Z04": 147,
+    "Z03": 234,
+    "Z05": 1017,
+    "Z02": 224,
+    "Z00": 41,
+    "Z07": 275,
+    "Z08": 129
+  },
+  "previous_answers_shipped_in_app": false,
+  "new_answers_shipped_in_app": true,
+  "original_question_identity_untouched": true,
+  "trainingScore_policy": "only independent explicit card training score used; absent remains unknown",
+  "effective_char_count": "汉字、英文单词和数字组各算一字；不计标点空格换行和HTML Markdown样式",
+  "v24_independent": true,
+  "subject_331_v24_forbidden": true,
+  "professional_review_status": "candidate; no unsupported claims of expert certification",
+  "reminder": "prior local copy automatically backed up before patch; archive can be kept outside APK"
+}
