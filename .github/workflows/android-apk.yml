@@ -14,11 +14,28 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Verify 2497-card content and review ledger
+        run: python3 scripts/verify_repository.py
+
+      - name: Verify V3.0.0 case, search and taxonomy integration
+        run: python3 scripts/verify_v30_integrated.py
+
+      - name: Verify enriched case provenance, length and 176 original Q/A hashes
+        run: python3 scripts/verify_case_enrichment_v30.py
+
+      - name: Verify V3.1 standalone 437 module and staged Z00-Z08 boundaries
+        run: python3 scripts/verify_v31_integrated.py
+
       - name: Set up Java 17
         uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: '17'
+      - name: Verify Java source grammar and mock exam subject isolation
+        run: |
+          javac -d /tmp scripts/SyntaxCheck.java
+          java -cp /tmp SyntaxCheck app/src/main/java/com/seu/socialworkcards/*.java
+          python3 scripts/test_mock_exam_scope.py
       - name: Locate Android SDK
         run: |
           echo "ANDROID_HOME=$ANDROID_HOME"

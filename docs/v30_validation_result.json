@@ -1,0 +1,88 @@
+{
+  "status": "PASS (offline only)",
+  "checks": 16065,
+  "sourceCards": 2497,
+  "sourceMemory": 2497,
+  "questionOverlays": 918,
+  "trainingRewrites": 109,
+  "cases": 86,
+  "subquestions": 182,
+  "caseSources": {
+    "Z01": 3,
+    "Z03": 30,
+    "Z04": 14,
+    "Z06": 8,
+    "Z07": 19,
+    "Z08": 10,
+    "EXT-OFFICIAL": 2
+  },
+  "taxonomyGroups": 6,
+  "taxonomyTopics": 22,
+  "draftRatingModelSteps": 1200,
+  "apkBuildExecuted": false,
+  "AndroidRuntimeExecuted": false,
+  "officialPaperSigned": false,
+  "independentProfessionalReviewPassed": false,
+  "unresolved": [
+    {
+      "source": "Z01",
+      "caseId": "SEU-2024-437-CASE-01",
+      "linkedCardIds": [],
+      "reason": "无可显示的完整训练材料"
+    },
+    {
+      "source": "Z01",
+      "caseId": "SEU-2024-437-CASE-02",
+      "linkedCardIds": [],
+      "reason": "无可显示的完整训练材料"
+    },
+    {
+      "source": "Z01",
+      "caseId": "TRAIN-Z01-C0029",
+      "linkedCardIds": [
+        "C0029"
+      ],
+      "reason": "无可显示的完整训练材料"
+    },
+    {
+      "source": "Z01",
+      "caseId": "TRAIN-Z01-C0078",
+      "linkedCardIds": [
+        "C0078"
+      ],
+      "reason": "无可显示的完整训练材料"
+    },
+    {
+      "source": "Z01",
+      "caseId": "TRAIN-Z01-C0577",
+      "linkedCardIds": [
+        "C0577"
+      ],
+      "reason": "无可显示的完整训练材料"
+    },
+    {
+      "source": "Z08",
+      "caseId": "SEU-C2044",
+      "linkedCardIds": [
+        "C2044"
+      ],
+      "reason": "无可显示的完整训练材料"
+    },
+    {
+      "source": "Z08",
+      "caseId": "SEU-C2046",
+      "linkedCardIds": [
+        "C2046"
+      ],
+      "reason": "无可显示的完整训练材料"
+    },
+    {
+      "source": "Z08",
+      "caseId": "SEU-C2108",
+      "linkedCardIds": [
+        "C2108"
+      ],
+      "reason": "无可显示的完整训练材料"
+    }
+  ]
+}

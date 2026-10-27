@@ -11,6 +11,8 @@ public class Card {
     public String sourceField="", truthLabel="", truthQuestion="", truthEvidence="", truthRelation="";
     public String answerStatus="", sourceLevel="";
     public boolean hasExample, hasLong;
+    // 永久隔离的独立题源；331不得引入437M。
+    public String sourceModule="BASE", examSubjectScope="331,437";
     public final List<String> bullets = new ArrayList<>();
     public final List<String> relatedIds = new ArrayList<>();
     public final List<String> exactExamSources = new ArrayList<>();
@@ -18,6 +20,7 @@ public class Card {
 
     public static Card fromJson(JSONObject o) throws Exception {
         Card c = new Card();
+        c.sourceModule=o.optString("sourceModule","BASE"); c.examSubjectScope=o.optString("examSubjectScope","331,437");
         c.id=o.optString("id"); c.topic=o.optString("topic"); c.category=o.optString("category");
         c.primaryTopic=o.optString("primaryTopic",c.category); c.secondaryTopic=o.optString("secondaryTopic",c.topic);
         c.kind=o.optString("kind"); c.question=o.optString("question"); c.tip=o.optString("tip"); c.origin=o.optString("origin");

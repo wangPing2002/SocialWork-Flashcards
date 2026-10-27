@@ -35,9 +35,16 @@ public class MockExamEngine {
     }
     private Set<String> ids(Paper p){Set<String>s=new HashSet<>();for(Section sec:p.sections)for(Card c:sec.cards){s.add(c.id);if(c.category!=null)s.add("cat:"+c.category);}return s;}
     private void fill(Section sec,int count,String subject,Set<String> used){
-        List<Card> pool=new ArrayList<>();for(Card c:repo.cards)if(typeCompatible(c,sec.targetType))pool.add(c);
+        List<Card> scoped=new ArrayList<>(repo.cards);
+        if("437".equals(subject)&&"名词解释".equals(sec.targetType))scoped.addAll(repo.v24Cards);
+        List<Card> pool=new ArrayList<>();
+        for(Card c:scoped)if(repo.matchesExamSubject(c,subject)&&typeCompatible(c,sec.targetType))pool.add(c);
         while(sec.cards.size()<count&&!pool.isEmpty()){Card pick=weightedPick(pool,subject,used);if(pick==null)break;sec.cards.add(pick);pool.remove(pick);used.add(pick.id);if(pick.category!=null)used.add("cat:"+pick.category);}
-        if(sec.cards.size()<count){List<Card> fallback=new ArrayList<>(repo.cards);while(sec.cards.size()<count&&!fallback.isEmpty()){Card pick=weightedPick(fallback,subject,used);if(pick==null)break;sec.cards.add(pick);fallback.remove(pick);used.add(pick.id);if(pick.category!=null)used.add("cat:"+pick.category);}}
+        if(sec.cards.size()<count){
+            // 仅回退到已核准科目+相同题型池，不得因缺题跨科或跨题型补齐。
+            List<Card> fallback=new ArrayList<>();
+            for(Card c:scoped)if(repo.matchesExamSubject(c,subject)&&typeCompatible(c,sec.targetType)&&!used.contains(c.id))fallback.add(c);
+            while(sec.cards.size()<count&&!fallback.isEmpty()){Card pick=weightedPick(fallback,subject,used);if(pick==null)break;sec.cards.add(pick);fallback.remove(pick);used.add(pick.id);if(pick.category!=null)used.add("cat:"+pick.category);}}
     }
     private boolean typeCompatible(Card c,String target){
         String t=repo.questionType(c);if("名词解释".equals(target))return t.contains("名词");if("简答题".equals(target))return t.contains("简答");
@@ -46,9 +53,10 @@ public class MockExamEngine {
     private Card weightedPick(List<Card> pool,String subject,Set<String> used){
         List<Card> candidates=new ArrayList<>();List<Double> weights=new ArrayList<>();double total=0;
         for(Card c:pool){
-            if(used.contains(c.id))continue;if(repo.isRealExam(c)&&!repo.matchesExamSubject(c,subject))continue;
+            if(used.contains(c.id)||!repo.matchesExamSubject(c,subject))continue;
             double w=1.0;if(c.category!=null&&used.contains("cat:"+c.category))w*=.78;String freq=effectiveFrequency(c);w*=freq.equals("高")?4.0:freq.equals("中")?2.3:1.15;
             if(store.isFavorite(c.id))w*=1.45;String mastery=mastery(c);w*=mastery.equals("低")?1.65:mastery.equals("中")?1.20:.82;w*=1.0+review.difficulty(c)*1.35;
+            if(repo.isV24(c))w*=1.8; // 仅作为437名解训练候选，非已核真题
             if(repo.isExactExam(c))w*=2.8;else if(repo.isRecallExam(c))w*=2.0;else w*=1.10;
             if("437".equals(subject)){if(isPractice(c))w*=1.65;else if("社会工作原理".equals(c.category))w*=.72;}
             else {if("社会工作原理".equals(c.category))w*=1.48;else if(isMethod(c))w*=1.15;else if("社会工作实务".equals(c.category))w*=.76;}

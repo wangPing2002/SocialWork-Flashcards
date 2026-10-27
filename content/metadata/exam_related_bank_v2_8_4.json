@@ -1,0 +1,675 @@
+{
+  "version": "2.8.4",
+  "definition": "真题卡 relatedIds 的非真题去重集合；底层复用 C 卡内容，不复制答案。",
+  "count": 167,
+  "cards": [
+    {
+      "id": "C0300",
+      "linkedExamCount": 17
+    },
+    {
+      "id": "C0081",
+      "linkedExamCount": 10
+    },
+    {
+      "id": "C0589",
+      "linkedExamCount": 8
+    },
+    {
+      "id": "C0743",
+      "linkedExamCount": 4
+    },
+    {
+      "id": "C0785",
+      "linkedExamCount": 3
+    },
+    {
+      "id": "C1756",
+      "linkedExamCount": 3
+    },
+    {
+      "id": "C0005",
+      "linkedExamCount": 2
+    },
+    {
+      "id": "C0381",
+      "linkedExamCount": 2
+    },
+    {
+      "id": "C0397",
+      "linkedExamCount": 2
+    },
+    {
+      "id": "C0399",
+      "linkedExamCount": 2
+    },
+    {
+      "id": "C0402",
+      "linkedExamCount": 2
+    },
+    {
+      "id": "C0522",
+      "linkedExamCount": 2
+    },
+    {
+      "id": "C0524",
+      "linkedExamCount": 2
+    },
+    {
+      "id": "C0738",
+      "linkedExamCount": 2
+    },
+    {
+      "id": "C0828",
+      "linkedExamCount": 2
+    },
+    {
+      "id": "C1159",
+      "linkedExamCount": 2
+    },
+    {
+      "id": "C1532",
+      "linkedExamCount": 2
+    },
+    {
+      "id": "C1669",
+      "linkedExamCount": 2
+    },
+    {
+      "id": "C1754",
+      "linkedExamCount": 2
+    },
+    {
+      "id": "C1931",
+      "linkedExamCount": 2
+    },
+    {
+      "id": "C1947",
+      "linkedExamCount": 2
+    },
+    {
+      "id": "C1953",
+      "linkedExamCount": 2
+    },
+    {
+      "id": "C1957",
+      "linkedExamCount": 2
+    },
+    {
+      "id": "C0002",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0008",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0041",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0042",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0045",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0078",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0125",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0149",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0160",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0162",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0175",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0176",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0223",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0253",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0319",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0321",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0339",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0341",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0348",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0350",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0358",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0360",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0370",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0378",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0380",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0383",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0385",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0390",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0395",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0401",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0411",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0413",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0414",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0415",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0419",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0435",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0445",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0449",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0451",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0464",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0466",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0471",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0480",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0484",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0485",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0487",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0503",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0506",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0508",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0528",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0530",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0536",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0538",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0539",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0544",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0546",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0551",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0553",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0571",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0573",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0641",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0647",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0650",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0703",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0715",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0717",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0719",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0735",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0737",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0740",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0748",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0750",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0762",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0769",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0777",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0783",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0786",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0804",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0853",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0893",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C0978",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1004",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1005",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1007",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1050",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1072",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1125",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1146",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1173",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1247",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1258",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1271",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1298",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1382",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1396",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1399",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1444",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1457",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1491",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1506",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1508",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1509",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1528",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1530",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1564",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1582",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1597",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1605",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1607",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1621",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1629",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1638",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1646",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1662",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1664",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1666",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1676",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1677",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1691",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1716",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1718",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1731",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1765",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1776",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1778",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1791",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1841",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1868",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1896",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1899",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1916",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1917",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1918",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1948",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1951",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1962",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1970",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1974",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1978",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1981",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1985",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1989",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1990",
+      "linkedExamCount": 1
+    },
+    {
+      "id": "C1992",
+      "linkedExamCount": 1
+    }
+  ]
+}
