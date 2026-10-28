@@ -41,7 +41,11 @@ public class CardRepository {
             c.topic=raw.optString("term");c.category="437实务生僻名词专项";
             c.primaryTopic="437实务生僻名词专项";c.secondaryTopic="生僻名词解释";
             c.kind="名词解释";c.questionType="名词解释";
-            c.question=raw.optString("front","名词解释："+c.topic);
+            // 仅统一前台显示术语，原始V24的front/source仍原样留存在v24Records中。
+            // 378条front全部为“名词解释：术语”；类型已由questionType独立展示，不重复。
+            String rawFront=raw.optString("front",c.topic).trim();
+            c.question=rawFront.replaceFirst("^名词解释\\s*[：:]\\s*","");
+            if(c.question.trim().isEmpty())c.question=c.topic;
             c.fullAnswer=raw.optString("answer");c.hasLong=true;
             c.trainingScore=raw.optInt("trainingScore",0);c.answerEffectiveChars=raw.optInt("answerEffectiveChars",0);
             c.origin="V24·437实务专项独立训练候选（非331题源、非官方原卷）";

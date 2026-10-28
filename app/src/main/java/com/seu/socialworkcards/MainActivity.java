@@ -217,17 +217,7 @@ void showHome(){
     }
     body.addView(task);
 
-    View priority=sectionHeader("优先刷题","真题 → 关联知识点",null);margin(priority,2,18,2,8);body.addView(priority);
-    List<Card> homeExamCards=realExamCards(),homeRelatedCards=examRelatedKnowledgeCards();
-    View trueBank=priorityBankRow("真题题库","优先建立东南大学命题感",homeExamCards.size(),ORANGE,v->showBankCards("真题题库",realExamCards(),"历年真题与回忆主题","examBank"));body.addView(trueBank);margin(trueBank,0,0,0,7);
-    View knowledgeBank=priorityBankRow("真题关联知识点","刷完真题后补齐直接相关考点",homeRelatedCards.size(),TEAL_DARK,v->showBankCards("真题关联知识点",examRelatedKnowledgeCards(),"由真题的关联问题自动汇总","relatedBank"));body.addView(knowledgeBank);margin(knowledgeBank,0,0,0,4);
-
-    View systemTitle=sectionHeader("教材系统题库","按教材框架建立完整知识体系",null);margin(systemTitle,2,18,2,8);body.addView(systemTitle);
-    View frameworkEntry=priorityBankRow("教材框架 · 社会工作服务","要素 → 目标 → 功能 · 2497 张卡建立多对多知识链接",frameworkUniqueLinkedCount(),Color.rgb(112,100,220),v->showServiceFramework());body.addView(frameworkEntry);margin(frameworkEntry,0,0,0,4);
-
-    View specialHeader=sectionHeader("437 专项独立模块","V24 · 不属于331题源",null);margin(specialHeader,2,20,2,8);body.addView(specialHeader);
-    View specialEntry=priorityBankRow("437实务 · 生僻名词378题","独立训练 · 完整解答与快速记忆",repo.v24Cards.size(),ORANGE,v->showV24Module());
-    body.addView(specialEntry);
+    // 学习页只负责今日学习、继续学习和模拟考试；题库浏览统一在“卡片库”。
 
     LinearLayout section=new LinearLayout(this);section.setGravity(Gravity.CENTER_VERTICAL);TextView st=tv("真题模拟",20,INK,true);section.addView(st,new LinearLayout.LayoutParams(0,-2,1));margin(section,2,18,2,8);body.addView(section);
     TextView simNote=tv("参考2015—2026东南大学真题结构，结合内容范围、考频、收藏与熟练度智能随机组卷。",11,MUTED,false);margin(simNote,2,0,2,10);body.addView(simNote);
@@ -442,19 +432,7 @@ void showStudy(){
         TextView hint=tv("答案揭晓后再评价熟悉程度",11,Color.rgb(150,161,157),false);hint.setGravity(Gravity.CENTER);margin(hint,0,7,0,0);card.addView(hint);body.addView(card);return;
     }
 
-    // Both answer actions remain visible at the top; same layout for BASE and V24.
-    LinearLayout modeBar=new LinearLayout(this);
-    modeBar.setOrientation(LinearLayout.HORIZONTAL);
-    modeBar.setGravity(Gravity.CENTER_VERTICAL);
-    modeBar.setPadding(dp(2),dp(11),dp(2),dp(4));
-    TextView fullMode=answerModeButton("完整解答",!quickMemoryMode,v->{quickMemoryMode=false;store.setQuickMemoryMode(false);answerTab=0;showStudy();});
-    TextView fastMode=answerModeButton("快速记忆",quickMemoryMode,v->{quickMemoryMode=true;store.setQuickMemoryMode(true);answerTab=0;showStudy();});
-    LinearLayout.LayoutParams fullModeLp=new LinearLayout.LayoutParams(0,dp(46),1);
-    LinearLayout.LayoutParams fastModeLp=new LinearLayout.LayoutParams(0,dp(46),1);
-    fastModeLp.setMargins(dp(10),0,0,0);
-    modeBar.addView(fullMode,fullModeLp);
-    modeBar.addView(fastMode,fastModeLp);
-    card.addView(modeBar);
+    // 延用 V3.1 原版：切换控件置于核心答案区域内部，不单独占据一整行。
     LinearLayout tabs=new LinearLayout(this);tabs.setOrientation(LinearLayout.HORIZONTAL);tabs.setPadding(0,dp(6),0,dp(6));
     LinearLayout.LayoutParams tp1=new LinearLayout.LayoutParams(0,dp(42),1);tp1.setMargins(0,0,dp(5),0);
     LinearLayout.LayoutParams tp2=new LinearLayout.LayoutParams(0,dp(42),1);tp2.setMargins(dp(2),0,dp(3),0);
@@ -479,16 +457,6 @@ void showStudy(){
     rates.addView(rateAction(R.drawable.ic_check,"记住了","熟悉",TEAL_SOFT,TEAL_DARK,v->rate(c,true)),new LinearLayout.LayoutParams(0,dp(56),1));body.addView(rates);
 }
 
-TextView answerModeButton(String label,boolean active,View.OnClickListener listener){
-    TextView b=tv(label,14,active?Color.WHITE:TEAL_DARK,true);
-    b.setGravity(Gravity.CENTER);b.setSingleLine(true);
-    b.setEllipsize(android.text.TextUtils.TruncateAt.END);
-    b.setPadding(dp(8),dp(7),dp(8),dp(7));
-    b.setBackground(rippleShape(active?TEAL:TEAL_SOFT,13));
-    b.setMinHeight(dp(44));b.setOnClickListener(listener);
-    return b;
-}
-
 View answerTab(String label,int tab,Card c){
     boolean active=answerTab==tab;LinearLayout wrap=new LinearLayout(this);wrap.setOrientation(LinearLayout.VERTICAL);wrap.setGravity(Gravity.CENTER);wrap.setOnClickListener(x->{answerTab=tab;showStudy();});
     TextView v=tv(label,11,active?TEAL_DARK:MUTED,active);v.setSingleLine(true);v.setEllipsize(android.text.TextUtils.TruncateAt.END);v.setPadding(dp(3),0,dp(3),0);v.setGravity(Gravity.CENTER);wrap.addView(v,new LinearLayout.LayoutParams(-1,0,1));
@@ -496,9 +464,24 @@ View answerTab(String label,int tab,Card c){
 }
 
 
-void renderCoreAnswer(LinearLayout inner,Card c){renderCoreAnswer(inner,c,quickMemoryMode);}
-void renderCoreAnswer(LinearLayout inner,Card c,boolean showMemory){
+void renderCoreAnswer(LinearLayout inner,Card c){
+    renderCoreAnswer(inner,c,quickMemoryMode,v->{
+        quickMemoryMode=!quickMemoryMode;
+        store.setQuickMemoryMode(quickMemoryMode);
+        showStudy();
+    });
+}
+void renderCoreAnswer(LinearLayout inner,Card c,boolean showMemory,View.OnClickListener toggleAction){
     if(c==null)return;
+    // 完全恢复 V3.1 核心答案内的紧凑标题/轻量切换，不新增两个大按钮。
+    LinearLayout answerHead=new LinearLayout(this);answerHead.setGravity(Gravity.CENTER_VERTICAL);
+    TextView answerTitle=tv(showMemory?"快速记忆":"完整解答",12,INK,true);
+    answerHead.addView(answerTitle,new LinearLayout.LayoutParams(0,-2,1));
+    TextView toggle=tv(showMemory?"↻  完整解答":"↻  快速记忆",11,TEAL_DARK,true);
+    toggle.setGravity(Gravity.CENTER);toggle.setSingleLine(true);
+    toggle.setBackground(shape(TEAL_SOFT,12));toggle.setPadding(dp(10),dp(6),dp(10),dp(6));
+    toggle.setOnClickListener(toggleAction);answerHead.addView(toggle);
+    margin(answerHead,0,0,0,8);inner.addView(answerHead);
     if(showMemory){
         // No full-answer paragraphs or score metadata are shown in the mnemonic tab.
         JSONObject structured=quickMemoryStudyFor(c);
@@ -703,24 +686,17 @@ CharSequence richAnswer(String raw){
         ScrollView scroll=new ScrollView(this);scroll.setFillViewport(true);LinearLayout content=new LinearLayout(this);content.setOrientation(LinearLayout.VERTICAL);content.setPadding(dp(18),dp(10),dp(18),dp(22));
         TextView q=tv(x.question,20,INK,true);q.setBackground(shape(Color.WHITE,16));q.setPadding(dp(14),dp(12),dp(14),dp(12));content.addView(q);
         TextView meta=tv(repo.examSourceLabel(x)+" · 考频"+mockEngine.effectiveFrequency(x)+" · "+x.primaryTopic+" / "+x.secondaryTopic,11,MUTED,false);margin(meta,0,8,0,12);content.addView(meta);
-        // Preview uses exactly the same current-answer / quick-memory renderer as study cards.
-        LinearLayout mode=new LinearLayout(this);mode.setOrientation(LinearLayout.HORIZONTAL);
-        mode.setPadding(0,dp(10),0,dp(10));
+        // 关联知识点弹窗同样使用原版紧凑切换；局部状态不影响正在学习的卡片。
         LinearLayout result=new LinearLayout(this);result.setOrientation(LinearLayout.VERTICAL);
         final boolean[] previewMemory={false};
         final Runnable[] redraw={null};
-        final View.OnClickListener fullAction=v->{previewMemory[0]=false;redraw[0].run();};
-        final View.OnClickListener memAction=v->{previewMemory[0]=true;redraw[0].run();};
         redraw[0]=()->{
-            mode.removeAllViews();
-            TextView full=answerModeButton("完整解答",!previewMemory[0],fullAction);
-            TextView quick=answerModeButton("快速记忆",previewMemory[0],memAction);
-            mode.addView(full,new LinearLayout.LayoutParams(0,dp(46),1));
-            LinearLayout.LayoutParams second=new LinearLayout.LayoutParams(0,dp(46),1);
-            second.setMargins(dp(10),0,0,0);mode.addView(quick,second);
-            result.removeAllViews();renderCoreAnswer(result,x,previewMemory[0]);
+            result.removeAllViews();
+            renderCoreAnswer(result,x,previewMemory[0],v->{
+                previewMemory[0]=!previewMemory[0];redraw[0].run();
+            });
         };
-        content.addView(mode);content.addView(result);redraw[0].run();
+        content.addView(result);redraw[0].run();
         scroll.addView(content,new ScrollView.LayoutParams(-1,-2));page.addView(scroll,new LinearLayout.LayoutParams(-1,0,1));
 
         LinearLayout rates=new LinearLayout(this);rates.setPadding(dp(16),dp(7),dp(16),dp(12));rates.setOrientation(LinearLayout.HORIZONTAL);
@@ -785,7 +761,25 @@ void showLibrary(){
     pinnedSearch.addView(searchBox,new LinearLayout.LayoutParams(-1,-2));
     root.addView(pinnedSearch,1,new LinearLayout.LayoutParams(-1,-2));
 
-    View v24Row=priorityBankRow("437实务 · 378生僻名词专项","V24独立入口；不纳入331原理题库",repo.v24Cards.size(),ORANGE,v->showV24Module());
+    // 浏览类入口只出现在卡片库：三枚轻量快捷标签，避免重新堆叠大型卡片。
+    HorizontalScrollView shortcuts=new HorizontalScrollView(this);
+    shortcuts.setHorizontalScrollBarEnabled(false);
+    LinearLayout shortcutRow=new LinearLayout(this);shortcutRow.setOrientation(LinearLayout.HORIZONTAL);
+    String[] shortcutLabels={"历年真题","真题关联","教材框架"};
+    for(int i=0;i<shortcutLabels.length;i++){
+        final int index=i;
+        TextView shortcut=chip(shortcutLabels[i],false);
+        shortcut.setPadding(dp(14),0,dp(14),0);
+        LinearLayout.LayoutParams slp=new LinearLayout.LayoutParams(-2,dp(44));
+        slp.setMargins(0,0,dp(8),0);shortcutRow.addView(shortcut,slp);
+        shortcut.setOnClickListener(v->{
+            if(index==0)showBankCards("真题题库",realExamCards(),"历年真题与回忆主题","examBank");
+            else if(index==1)showBankCards("真题关联知识点",examRelatedKnowledgeCards(),"由真题关联问题汇总","relatedBank");
+            else showServiceFramework();
+        });
+    }
+    shortcuts.addView(shortcutRow);margin(shortcuts,0,0,0,10);body.addView(shortcuts);
+    View v24Row=priorityBankRow("437实务 · 378生僻名词专项","独立卡片库 · 不进入331模拟",repo.v24Cards.size(),ORANGE,v->showV24Module());
     body.addView(v24Row);margin(v24Row,0,0,0,13);
     TextView searchTip=tv("支持多关键词与常用同义词",10,MUTED,false);margin(searchTip,4,1,0,10);body.addView(searchTip);
 
@@ -1058,7 +1052,7 @@ void showLibrary(){
     }
     void addFrameworkChildren(LinearLayout target,JSONArray children){if(children==null)return;for(int i=0;i<children.length();i++){JSONObject n=children.optJSONObject(i);if(n!=null)target.addView(frameworkNodeRow(n,0));}}
     void showServiceFramework(){
-        currentScreen="framework";currentFrameworkNodeId="";currentFrameworkCoreOnly=false;shell("教材框架 · 社会工作服务","要素 → 目标 → 功能 · "+frameworkUniqueLinkedCount()+" / "+repo.cards.size()+" 张已建立链接","学习");
+        currentScreen="framework";currentFrameworkNodeId="";currentFrameworkCoreOnly=false;shell("教材框架 · 社会工作服务","要素 → 目标 → 功能 · "+frameworkUniqueLinkedCount()+" / "+repo.cards.size()+" 张已建立链接","卡片库");
         LinearLayout note=box(Color.rgb(248,250,249),12,14);note.addView(tv("这不是23张卡的章节试点，而是覆盖完整题库的知识关系网。框架节点以教材与思维导图为准；外部资料只用于扩展“某张卡与哪个节点相关”，不改写题目和答案。",12,MUTED,false));margin(note,0,0,0,12);body.addView(note);
         JSONObject fw=serviceFramework();JSONArray branches=fw.optJSONArray("branches");if(branches==null){body.addView(tv("框架数据加载失败",14,RED,true));return;}
         LinearLayout all=box(PURPLE_SOFT,14,16);LinearLayout ar=new LinearLayout(this);ar.setGravity(Gravity.CENTER_VERTICAL);LinearLayout at=new LinearLayout(this);at.setOrientation(LinearLayout.VERTICAL);at.addView(tv("全框架学习",16,INK,true));at.addView(tv("2497张卡至少关联一个框架节点；同一卡可同时出现在要素、目标和功能中。",11,MUTED,false));ar.addView(at,new LinearLayout.LayoutParams(0,-2,1));Button start=btn("开始",Color.rgb(112,100,220),Color.WHITE);start.setTextSize(12);start.setOnClickListener(v->startStudySequence(new ArrayList<>(repo.cards),null));ar.addView(start,new LinearLayout.LayoutParams(dp(86),dp(42)));all.addView(ar);margin(all,0,0,0,14);body.addView(all);
@@ -1066,7 +1060,7 @@ void showLibrary(){
     }
     void showFrameworkTreeNode(String nodeId){
         JSONObject node=frameworkNodeById(nodeId);if(node==null){showServiceFramework();return;}currentScreen="frameworkTree";currentFrameworkNodeId=nodeId;currentFrameworkCoreOnly=false;
-        shell(node.optString("title"),node.optInt("totalCount")+" 张关联卡 · 核心 "+node.optInt("coreCount")+" · 拓展 "+node.optInt("relatedCount"),"学习");
+        shell(node.optString("title"),node.optInt("totalCount")+" 张关联卡 · 核心 "+node.optInt("coreCount")+" · 拓展 "+node.optInt("relatedCount"),"卡片库");
         String noteText=node.optString("note");if(!noteText.isEmpty()){TextView note=tv(noteText,11,MUTED,false);note.setBackground(shape(Color.rgb(248,250,249),12));note.setPadding(dp(10),dp(8),dp(10),dp(8));margin(note,0,0,0,10);body.addView(note);}
         LinearLayout actions=new LinearLayout(this);actions.setOrientation(LinearLayout.HORIZONTAL);Button core=btn("核心考点 "+node.optInt("coreCount"),TEAL_SOFT,TEAL_DARK);core.setTextSize(11);core.setOnClickListener(v->showFrameworkCards(nodeId,true));Button all=btn("全部关联 "+node.optInt("totalCount"),Color.rgb(112,100,220),Color.WHITE);all.setTextSize(11);all.setOnClickListener(v->showFrameworkCards(nodeId,false));actions.addView(core,new LinearLayout.LayoutParams(0,dp(44),1));actions.addView(gap(8));actions.addView(all,new LinearLayout.LayoutParams(0,dp(44),1));margin(actions,0,0,0,12);body.addView(actions);
         JSONArray children=node.optJSONArray("children");if(children!=null&&children.length()>0){body.addView(sectionHeader("下一级知识节点","",null));margin(body.getChildAt(body.getChildCount()-1),0,5,0,8);addFrameworkChildren(body,children);}else{TextView hint=tv("这是末级知识节点。可直接进入“核心考点”或“全部关联”刷题。",11,MUTED,false);body.addView(hint);}
@@ -1130,7 +1124,7 @@ void showLibrary(){
 }
 
 void showBankCards(String title,List<Card> cards,String subtitle,String screen){
-        currentScreen=screen;categoryOpenedFromStudy=false;activePrimaryTopic="";setActiveList(title,cards);shell(title,cards.size()+" 张 · "+subtitle,"学习");
+        currentScreen=screen;categoryOpenedFromStudy=false;activePrimaryTopic="";setActiveList(title,cards);shell(title,cards.size()+" 张 · "+subtitle,"卡片库");
         int learned=0;for(Card c:cards)if(engine.learned(c))learned++;
         LinearLayout summary=box(Color.rgb(240,248,245),14,18);LinearLayout sr=new LinearLayout(this);sr.setGravity(Gravity.CENTER_VERTICAL);LinearLayout st=new LinearLayout(this);st.setOrientation(LinearLayout.VERTICAL);st.addView(tv("独立学习队列",14,TEAL_DARK,true));st.addView(tv("已学习 "+learned+" / "+cards.size(),12,MUTED,false));sr.addView(st,new LinearLayout.LayoutParams(0,-2,1));Button begin=btn(learned==0?"从头开始":"继续刷题",TEAL,Color.WHITE);begin.setTextSize(12);begin.setOnClickListener(v->openCategory(title,cards));sr.addView(begin,new LinearLayout.LayoutParams(dp(104),dp(42)));summary.addView(sr);body.addView(summary);
         String queueNote="frameworkBank".equals(screen)?"框架节点直接调用2497张母版卡片，不复制题目或答案；学习记录、快速记忆和熟练度与主学习系统完全共用。":"真题小库与2497张教材系统题库共用同一份母版卡片，但学习序列和返回路径独立，避免重复维护答案。";
@@ -1480,8 +1474,8 @@ void showCategoryCards(String name,List<Card> cards){
         }
         if("frameworkBank".equals(currentScreen)){showFrameworkTreeNode(currentFrameworkNodeId);return;}
         if("frameworkTree".equals(currentScreen)){String parent=frameworkParentId(currentFrameworkNodeId);if(parent.isEmpty())showServiceFramework();else showFrameworkTreeNode(parent);return;}
-        if("framework".equals(currentScreen)){showHome();return;}
-        if("examBank".equals(currentScreen)||"relatedBank".equals(currentScreen)){showHome();return;}
+        if("framework".equals(currentScreen)){showLibrary();return;}
+        if("examBank".equals(currentScreen)||"relatedBank".equals(currentScreen)){showLibrary();return;}
         if("v24Module".equals(currentScreen)){showLibrary();return;}
         if("primary".equals(currentScreen)||"category".equals(currentScreen)){
             showLibrary();
