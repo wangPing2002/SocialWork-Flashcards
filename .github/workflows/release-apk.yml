@@ -32,6 +32,12 @@ jobs:
 
       - name: Verify Z00 R10 newly incorporated exam cards
         run: python3 scripts/verify_r10_integrated.py
+      - name: Verify v3.2.1 consolidated exam UI and training metadata
+        run: python3 scripts/verify_v321_exam_consistency.py
+
+      - name: Verify v3.2.1 release version and CI gates
+        run: python3 scripts/verify_v321_release_ready.py
+
 
       - name: Set up Java 17
         uses: actions/setup-java@v5

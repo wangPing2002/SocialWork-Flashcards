@@ -47,7 +47,7 @@ activity=(R/'app/src/main/java/com/seu/socialworkcards/MainActivity.java').read_
 casebank=(R/'app/src/main/java/com/seu/socialworkcards/CaseBank.java').read_text(encoding='utf-8')
 for s in ('r10ExamCards','r10MockAllowed','subject.equals(c.examSubjectScope)','z00_r10_exam_cards.json','isR10('):assert s in repo,s
 assert 'scoped.addAll(repo.r10ExamCards)' in mock
-for s in ('quickMemoryStudyFor','r10Bank','new ArrayList<>','新题补录') :assert s in activity
+for s in ('quickMemoryStudyFor','realExamCards()','new ArrayList<>','训练分值：','String[] shortcutLabels={"历年真题","真题关联","教材框架"}') :assert s in activity
 assert 'z00_r10_exam_cases.json' in casebank
 print(json.dumps({'ok':True,'main':len(main),'v24':len(v24['cards']),
  'r10QuestionCards':len(cards),'r10SubquestionAnswers':len(subs),'r10TotalAnswerUnits':52+len(subs),

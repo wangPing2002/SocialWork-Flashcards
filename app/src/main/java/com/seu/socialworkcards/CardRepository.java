@@ -34,6 +34,19 @@ public class CardRepository {
             cards.add(c);
             byIdMap.put(c.id,c);
         }
+        // 主库仅增加可追溯的训练分值建议映射，不改2497张原题、答案与ID。
+        JSONObject trainingRoot=new JSONObject(readAsset(ctx,"training_score_suggestions_v321.json"));
+        JSONObject trainingScores=trainingRoot.getJSONObject("scores");
+        if(cards.size()!=2497||trainingScores.length()!=2497)throw new IllegalStateException("2497题训练分值映射不完整");
+        for(Card c:cards){
+            JSONObject item=trainingScores.optJSONObject(c.id);
+            if(item==null)throw new IllegalStateException("训练分值缺失: "+c.id);
+            int training=item.optInt("trainingScore",0), effective=item.optInt("answerEffectiveChars",0);
+            if(effective!=c.answerEffectiveChars||training<=0||effective<25*training||effective>30*training)
+                throw new IllegalStateException("训练分值与答案有效字数不一致: "+c.id);
+            c.trainingScore=training;
+            c.trainingScoreSuggested=true;
+        }
         JSONObject v24=new JSONObject(readAsset(ctx,"v24_437_378_cards.json"));
         JSONArray v24Items=v24.getJSONArray("cards");
         if(v24Items.length()!=378)throw new IllegalStateException("437专项不完整: "+v24Items.length());
@@ -72,6 +85,7 @@ public class CardRepository {
             Card c=Card.fromJson(raw);
             if(!c.id.matches("R10-\\d{3}")||byIdMap.containsKey(c.id))throw new IllegalStateException("R10题号冲突: "+c.id);
             if(!"Z00_R10".equals(c.sourceModule)||!("331".equals(c.examSubjectScope)||"437".equals(c.examSubjectScope)))throw new IllegalStateException("R10题源科目非法: "+c.id);
+            c.trainingScoreSuggested="AI_PROPOSED_NOT_SIGNED".equals(raw.optString("trainingScoreGate",""));
             r10ExamCards.add(c);r10Records.put(c.id,raw);byIdMap.put(c.id,c);
             if(raw.optBoolean("mockEligible",false))r10MockAllowed.add(c.id);
         }
@@ -122,15 +136,21 @@ public class CardRepository {
     public JSONObject examMeta(String key){return examMeta.optJSONObject(key);}
     public JSONObject examAnswer(String key){return key==null||key.isEmpty()?null:examAnswers.optJSONObject(key);}
 
+    // 原题仍保存在原始记录中，仅去除 R10 展示序号。
+    public String cleanR10DisplayNumber(String raw){
+        if(raw==null)return "";
+        return raw.replaceFirst("^\\s*(?:[0-9]{1,2}[.．、)）]|[(（][0-9]{1,2}[)）]|[一二三四五六七八九十]{1,3}[、.．])\\s*", "").trim();
+    }
     public String displayQuestion(Card c){
         if(c==null)return "";
+        if(isR10(c))return cleanR10DisplayNumber(c.question);
         JSONObject o=questionOverlay.optJSONObject(c.id);
         if(o==null||!o.optString("baselineQuestion","").equals(c.question))return c.question;
         if(!c.exactExamSources.isEmpty()||!c.recallExamSources.isEmpty())return c.question;
         String training=o.optString("trainingQuestion","").trim();
         return training.isEmpty()?c.question:training;
     }
-    public boolean hasTrainingRewrite(Card c){return c!=null&&!displayQuestion(c).equals(c.question);}
+    public boolean hasTrainingRewrite(Card c){return c!=null&&!isR10(c)&&!displayQuestion(c).equals(c.question);}
     public boolean isExactExam(Card c){return c!=null&&!c.exactExamSources.isEmpty();}
     public boolean isRecallExam(Card c){return c!=null&&!c.recallExamSources.isEmpty();}
     public boolean isRealExam(Card c){return isR10(c)||isExactExam(c)||isRecallExam(c);}

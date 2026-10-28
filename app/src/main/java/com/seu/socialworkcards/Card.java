@@ -11,6 +11,7 @@ public class Card {
     public String sourceField="", truthLabel="", truthQuestion="", truthEvidence="", truthRelation="";
     public String answerStatus="", sourceLevel="";
     public int trainingScore=0, answerEffectiveChars=0;
+    public boolean trainingScoreSuggested=false; // 仅为训练字数推算/候选值；绝非原卷分值
     public boolean hasExample, hasLong;
     // 永久隔离的独立题源；331不得引入437M。
     public String sourceModule="BASE", examSubjectScope="331,437";

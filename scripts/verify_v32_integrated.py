@@ -30,6 +30,9 @@ for obsolete in ('V31_OVERLAY_MANIFEST.json','scripts/Apply-V31-Overlay.ps1',
 test(all(x['fullAnswer'].strip() and hashlib.sha256(x['fullAnswer'].encode('utf8')).hexdigest()==record.get(x['id']) for x in base),'active answer SHA mismatch')
 test(all(x['bullets']==[x['fullAnswer']] for x in base),'old bullet answers still live')
 test(all(x.get('answerEffectiveChars',0)>0 for x in base),'missing effective-word-count')
+training=json.loads((A/'training_score_suggestions_v321.json').read_text('utf-8'))['scores']
+test(set(training)==set(ids),'training score suggestions do not cover all main cards')
+test(all(training[x['id']]['answerEffectiveChars']==x['answerEffectiveChars'] and 25*training[x['id']]['trainingScore']<=x['answerEffectiveChars']<=30*training[x['id']]['trainingScore'] for x in base),'training scores not within SOP training band')
 test(all(set(['framework','cues','example','mnemonic','recallQuestions']).issubset(q) for q in quick.values()),'quick memory schema invalid')
 test(all(x['trainingScore']==10 and all(x['fiveDimensions'].get(k) for k in ['概念','特征','案例','评价','社工关联']) for x in v24),'V24 five dimensions or score invalid')
 test(set(case).issubset(set(ids)),'case link missing')
@@ -40,7 +43,7 @@ engine=(ROOT/'app/src/main/java/com/seu/socialworkcards/MockExamEngine.java').re
 test('card.addView(modeBar);' not in code and 'TextView answerModeButton(' not in code,'bulky answer mode bar returned')
 test('TextView toggle=tv(showMemory?' in code and 'renderCoreAnswer(result,x,previewMemory[0],v->' in code,'V3.1 compact answer/memory toggle missing')
 test('View priority=sectionHeader("优先刷题"' not in code and 'View specialHeader=sectionHeader("437 专项独立模块"' not in code,'duplicated browser sections still on study home')
-test('String[] shortcutLabels={"历年真题","新题补录","真题关联","教材框架"}' in code or 'String[] shortcutLabels={"历年真题","真题关联","教材框架"}' in code,'library shortcuts were lost')
+test('String[] shortcutLabels={"历年真题","真题关联","教材框架"}' in code and 'String[] shortcutLabels={"历年真题","新题补录"' not in code,'library shortcuts repeated R10 entrance')
 # Z00 R10附加门禁；只在R10资源已并入工程时运行，旧版V3.2单独检查不受影响。
 if (A/'z00_r10_exam_cards.json').is_file():
     import subprocess
