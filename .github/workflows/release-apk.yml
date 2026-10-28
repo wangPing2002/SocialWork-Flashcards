@@ -27,6 +27,12 @@ jobs:
       - name: Verify V3.2 unified card design and current answer assets
         run: python3 scripts/verify_v32_integrated.py
 
+      - name: Verify RC2 compact UI and study-page deduplication
+        run: python3 scripts/verify_v32_ui_rc2.py
+
+      - name: Verify Z00 R10 newly incorporated exam cards
+        run: python3 scripts/verify_r10_integrated.py
+
       - name: Set up Java 17
         uses: actions/setup-java@v5
         with:
@@ -38,6 +44,7 @@ jobs:
           javac -d /tmp scripts/SyntaxCheck.java
           java -cp /tmp SyntaxCheck app/src/main/java/com/seu/socialworkcards/*.java
           python3 scripts/test_mock_exam_scope.py
+          python3 scripts/test_mock_r10_scope.py
       - name: Locate Android SDK
         run: |
           "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager" --version
