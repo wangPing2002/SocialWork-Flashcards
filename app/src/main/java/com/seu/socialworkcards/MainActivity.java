@@ -28,6 +28,7 @@ public class MainActivity extends Activity {
     JSONObject quickMemoryV3Cache=null; boolean quickMemoryMode=false;
     String caseReturnScreen="study";
     final HashSet<String> visibleCaseAnswers=new HashSet<>();
+    final HashSet<String> visibleCaseHints=new HashSet<>();
     final HashSet<String> originalCaseMaterialViews=new HashSet<>();
     boolean wholeCaseMode=false;
     static boolean crashRecorderInstalled=false;
@@ -482,6 +483,10 @@ void renderCoreAnswer(LinearLayout inner,Card c,boolean showMemory,View.OnClickL
     toggle.setBackground(shape(TEAL_SOFT,12));toggle.setPadding(dp(10),dp(6),dp(10),dp(6));
     toggle.setOnClickListener(toggleAction);answerHead.addView(toggle);
     margin(answerHead,0,0,0,8);inner.addView(answerHead);
+    if(!showMemory&&repo.isR10Case(c)){
+        TextView m=tv("本题为汇编材料题组，请打开案例主档，按原文所列小问分别训练并揭晓参考解析。",14,TEAL_DARK,false);
+        m.setPadding(dp(12),dp(12),dp(12),dp(12));m.setBackground(shape(TEAL_SOFT,12));inner.addView(m);return;
+    }
     if(showMemory){
         // No full-answer paragraphs or score metadata are shown in the mnemonic tab.
         JSONObject structured=quickMemoryStudyFor(c);
@@ -499,7 +504,7 @@ void renderCoreAnswer(LinearLayout inner,Card c,boolean showMemory,View.OnClickL
     }else{
         // The score is independent from the historic exam score. Never invent one.
         String answer=repo.fullAnswer(c);
-        int effective=effectiveAnswerChars(answer);
+        int effective=repo.isR10(c)&&c.answerEffectiveChars>0?c.answerEffectiveChars:effectiveAnswerChars(answer);
         String score=(c.trainingScore>0?"训练分值："+c.trainingScore+"  ·  ":"")+"有效字："+effective;
         TextView metric=tv(score,12,TEAL_DARK,true);
         metric.setPadding(dp(12),dp(9),dp(12),dp(9));
@@ -635,7 +640,7 @@ CharSequence richAnswer(String raw){
         TextView title=tv("真题身份",14,INK,true);margin(title,0,14,0,7);inner.addView(title);
         LinearLayout truth=box(Color.rgb(248,250,249),12,15);truth.setBackground(strokeShape(Color.rgb(248,250,249),15,LINE));
         if(repo.isRealExam(c)){
-            TextView tag=tv(repo.isExactExam(c)?"✓ 历年真题":"◫ 回忆版真题主题",12,repo.isExactExam(c)?TEAL_DARK:ORANGE,true);truth.addView(tag);
+            TextView tag=tv(repo.isR10(c)?"◫ 汇编题文 · 原卷待核":repo.isExactExam(c)?"✓ 历年真题":"◫ 回忆版真题主题",12,repo.isExactExam(c)?TEAL_DARK:ORANGE,true);truth.addView(tag);
             String label=c.truthLabel==null?"":c.truthLabel.replace("✅ ","").replace("🟨 ","");
             if(!label.isEmpty()){TextView l=tv(label,13,INK,true);margin(l,0,7,0,0);truth.addView(l);}
             if(c.truthQuestion!=null&&!c.truthQuestion.isEmpty()){TextView q=tv("原题/主题："+c.truthQuestion,13,INK,false);margin(q,0,7,0,0);truth.addView(q);}
@@ -765,7 +770,7 @@ void showLibrary(){
     HorizontalScrollView shortcuts=new HorizontalScrollView(this);
     shortcuts.setHorizontalScrollBarEnabled(false);
     LinearLayout shortcutRow=new LinearLayout(this);shortcutRow.setOrientation(LinearLayout.HORIZONTAL);
-    String[] shortcutLabels={"历年真题","真题关联","教材框架"};
+    String[] shortcutLabels={"历年真题","新题补录","真题关联","教材框架"};
     for(int i=0;i<shortcutLabels.length;i++){
         final int index=i;
         TextView shortcut=chip(shortcutLabels[i],false);
@@ -773,8 +778,9 @@ void showLibrary(){
         LinearLayout.LayoutParams slp=new LinearLayout.LayoutParams(-2,dp(44));
         slp.setMargins(0,0,dp(8),0);shortcutRow.addView(shortcut,slp);
         shortcut.setOnClickListener(v->{
-            if(index==0)showBankCards("真题题库",realExamCards(),"历年真题与回忆主题","examBank");
-            else if(index==1)showBankCards("真题关联知识点",examRelatedKnowledgeCards(),"由真题关联问题汇总","relatedBank");
+            if(index==0)showBankCards("真题题库",realExamCards(),"含Z00 R10新补录，官方原卷待核","examBank");
+            else if(index==1)showBankCards("新题补录",repo.r10ExamCards,"Z00 R10 · 56道题文 · 4份材料题组","r10Bank");
+            else if(index==2)showBankCards("真题关联知识点",examRelatedKnowledgeCards(),"由真题关联问题汇总","relatedBank");
             else showServiceFramework();
         });
     }
@@ -963,7 +969,7 @@ void showLibrary(){
     void rememberCurrentAsStudyReturn(){
         if("primary".equals(currentScreen)){
             List<Card> cards=primaryTopics().get(activePrimaryTopic);rememberStudyReturn("primary",activePrimaryTopic,activePrimaryTopic,cards);
-        }else if("secondary".equals(currentScreen)||"category".equals(currentScreen)||"examBank".equals(currentScreen)||"relatedBank".equals(currentScreen)||"frameworkBank".equals(currentScreen)||"v24Module".equals(currentScreen)){
+        }else if("secondary".equals(currentScreen)||"category".equals(currentScreen)||"examBank".equals(currentScreen)||"relatedBank".equals(currentScreen)||"frameworkBank".equals(currentScreen)||"v24Module".equals(currentScreen)||"r10Bank".equals(currentScreen)){
             rememberStudyReturn(currentScreen,activeListName,activePrimaryTopic,cardsFromIds(activeListIds));
             if("frameworkBank".equals(currentScreen)){studyReturnFrameworkNodeId=currentFrameworkNodeId;studyReturnFrameworkCoreOnly=currentFrameworkCoreOnly;}
         }else if("frameworkTree".equals(currentScreen)){
@@ -980,7 +986,8 @@ void showLibrary(){
         String screen=studyReturnScreen,name=studyReturnName,primary=studyReturnPrimary;List<Card> cards=cardsFromIds(studyReturnIds);
         if("primary".equals(screen)){clearStudyReturn();List<Card> p=primaryTopics().get(primary);if(p!=null){showPrimaryTopic(primary,p);return;}}
         if("secondary".equals(screen)||"category".equals(screen)){clearStudyReturn();activePrimaryTopic=primary;showCategoryCards(name,cards);return;}
-        if("examBank".equals(screen)){clearStudyReturn();showBankCards("真题题库",realExamCards(),"历年真题与回忆主题","examBank");return;}
+        if("examBank".equals(screen)){clearStudyReturn();showBankCards("真题题库",realExamCards(),"含Z00 R10新补录，官方原卷待核","examBank");return;}
+        if("r10Bank".equals(screen)){clearStudyReturn();showBankCards("新题补录",repo.r10ExamCards,"Z00 R10 · 56道题文 · 4份材料题组","r10Bank");return;}
         if("relatedBank".equals(screen)){clearStudyReturn();showBankCards("真题关联知识点",examRelatedKnowledgeCards(),"由真题的关联问题自动汇总","relatedBank");return;}
         if("v24Module".equals(screen)){clearStudyReturn();showV24Module();return;}
         if("frameworkBank".equals(screen)){String nodeId=studyReturnFrameworkNodeId;boolean coreOnly=studyReturnFrameworkCoreOnly;clearStudyReturn();showFrameworkCards(nodeId,coreOnly);return;}
@@ -1011,6 +1018,7 @@ void showLibrary(){
     }
     JSONObject quickMemoryStudyFor(Card c){
         if(c==null)return new JSONObject();
+        if(repo.isR10(c)){JSONObject r=repo.r10Record(c);JSONObject mem=r==null?null:r.optJSONObject("memory");return mem==null?new JSONObject():mem;}
         if(repo.isV24(c)){
             JSONObject data=repo.v24Record(c);
             JSONObject m=data==null?null:data.optJSONObject("mnemonic");
@@ -1069,11 +1077,11 @@ void showLibrary(){
         JSONObject node=frameworkNodeById(nodeId);if(node==null){showServiceFramework();return;}currentFrameworkNodeId=nodeId;currentFrameworkCoreOnly=coreOnly;List<Card> cards=frameworkCards(node,coreOnly);showBankCards(node.optString("title"),cards,coreOnly?"框架核心考点":"框架核心 + 应用拓展","frameworkBank");
     }
 
-    List<Card> realExamCards(){List<Card> out=new ArrayList<>();for(Card c:repo.cards)if(repo.isRealExam(c))out.add(c);return out;}
-    void ensureExamRelationCounts(){if(!examRelationCounts.isEmpty())return;for(Card c:repo.cards)if(repo.isRealExam(c))for(String id:c.relatedIds)examRelationCounts.put(id,examRelationCounts.getOrDefault(id,0)+1);}
+    List<Card> realExamCards(){List<Card> out=new ArrayList<>();for(Card c:repo.cards)if(repo.isRealExam(c))out.add(c);out.addAll(repo.r10ExamCards);return out;}
+    void ensureExamRelationCounts(){if(!examRelationCounts.isEmpty())return;for(Card c:realExamCards())for(String id:c.relatedIds)examRelationCounts.put(id,examRelationCounts.getOrDefault(id,0)+1);}
     int relatedExamCount(Card target){if(target==null)return 0;ensureExamRelationCounts();return examRelationCounts.getOrDefault(target.id,0);}
     List<Card> examRelatedKnowledgeCards(){
-        ensureExamRelationCounts();LinkedHashSet<String> ids=new LinkedHashSet<>();for(Card c:repo.cards)if(repo.isRealExam(c))for(String id:c.relatedIds){Card x=repo.byId(id);if(x!=null&&!repo.isRealExam(x))ids.add(id);}List<Card> out=cardsFromIds(new ArrayList<>(ids));
+        ensureExamRelationCounts();LinkedHashSet<String> ids=new LinkedHashSet<>();for(Card c:realExamCards())for(String id:c.relatedIds){Card x=repo.byId(id);if(x!=null&&!repo.isRealExam(x))ids.add(id);}List<Card> out=cardsFromIds(new ArrayList<>(ids));
         out.sort((a,b)->{int d=Integer.compare(examRelationCounts.getOrDefault(b.id,0),examRelationCounts.getOrDefault(a.id,0));if(d!=0)return d;String fa=repo.systemFrequency(a),fb=repo.systemFrequency(b);int ra="高".equals(fa)?2:"中".equals(fa)?1:0,rb="高".equals(fb)?2:"中".equals(fb)?1:0;d=Integer.compare(rb,ra);return d!=0?d:a.id.compareTo(b.id);});return out;
     }
 
@@ -1094,7 +1102,7 @@ void showLibrary(){
         if(relatedBank){int n=relatedExamCount(c);meta=c.id+" · 关联真题 "+n+" 道 · 考频"+mockEngine.effectiveFrequency(c)+" · "+c.secondaryTopic;}
         TextView m=tv(meta,10,MUTED,false);margin(m,0,4,0,0);tx.addView(m);line.addView(tx,new LinearLayout.LayoutParams(0,-2,1));
         TextView state=tv(engine.learned(c)?store.state(c.id).tag:"未学习",10,engine.learned(c)?TEAL_DARK:ORANGE,true);state.setBackground(shape(engine.learned(c)?TEAL_SOFT:ORANGE_SOFT,11));state.setPadding(dp(7),dp(3),dp(7),dp(3));line.addView(state);item.addView(line);
-        item.setOnClickListener(v->startStudySequence(cards,c));margin(item,0,0,0,7);return item;
+        item.setOnClickListener(v->{if(repo.isR10Case(c))openCaseFromCard(c);else startStudySequence(cards,c);});margin(item,0,0,0,7);return item;
     }
 
     void showV24Module(){
@@ -1126,8 +1134,8 @@ void showLibrary(){
 void showBankCards(String title,List<Card> cards,String subtitle,String screen){
         currentScreen=screen;categoryOpenedFromStudy=false;activePrimaryTopic="";setActiveList(title,cards);shell(title,cards.size()+" 张 · "+subtitle,"卡片库");
         int learned=0;for(Card c:cards)if(engine.learned(c))learned++;
-        LinearLayout summary=box(Color.rgb(240,248,245),14,18);LinearLayout sr=new LinearLayout(this);sr.setGravity(Gravity.CENTER_VERTICAL);LinearLayout st=new LinearLayout(this);st.setOrientation(LinearLayout.VERTICAL);st.addView(tv("独立学习队列",14,TEAL_DARK,true));st.addView(tv("已学习 "+learned+" / "+cards.size(),12,MUTED,false));sr.addView(st,new LinearLayout.LayoutParams(0,-2,1));Button begin=btn(learned==0?"从头开始":"继续刷题",TEAL,Color.WHITE);begin.setTextSize(12);begin.setOnClickListener(v->openCategory(title,cards));sr.addView(begin,new LinearLayout.LayoutParams(dp(104),dp(42)));summary.addView(sr);body.addView(summary);
-        String queueNote="frameworkBank".equals(screen)?"框架节点直接调用2497张母版卡片，不复制题目或答案；学习记录、快速记忆和熟练度与主学习系统完全共用。":"真题小库与2497张教材系统题库共用同一份母版卡片，但学习序列和返回路径独立，避免重复维护答案。";
+        LinearLayout summary=box(Color.rgb(240,248,245),14,18);LinearLayout sr=new LinearLayout(this);sr.setGravity(Gravity.CENTER_VERTICAL);LinearLayout st=new LinearLayout(this);st.setOrientation(LinearLayout.VERTICAL);st.addView(tv("独立学习队列",14,TEAL_DARK,true));st.addView(tv("已学习 "+learned+" / "+cards.size(),12,MUTED,false));sr.addView(st,new LinearLayout.LayoutParams(0,-2,1));Button begin=btn(learned==0?"从头开始":"继续刷题",TEAL,Color.WHITE);begin.setTextSize(12);begin.setOnClickListener(v->{List<Card> studyList=new ArrayList<>();for(Card c:cards)if(!repo.isR10Case(c))studyList.add(c);openCategory(title,studyList);});sr.addView(begin,new LinearLayout.LayoutParams(dp(104),dp(42)));summary.addView(sr);body.addView(summary);
+        String queueNote="r10Bank".equals(screen)?"新增题文来自汇编/回忆资料，非官方原卷核签；2024摘要材料题不进入模拟组卷。材料题点击进入分问训练。":"frameworkBank".equals(screen)?"框架节点直接调用2497张母版卡片，不复制题目或答案；学习记录、快速记忆和熟练度与主学习系统完全共用。":"真题题库原卡与Z00 R10补录并存；原主库2497和437专项378题未被覆盖。";
         TextView note=tv(queueNote,11,MUTED,false);note.setBackground(shape(Color.rgb(248,250,249),12));note.setPadding(dp(10),dp(8),dp(10),dp(8));margin(note,0,8,0,12);body.addView(note);
         LinearLayout list=new LinearLayout(this);list.setOrientation(LinearLayout.VERTICAL);body.addView(list);final int[] limit={60};final Runnable[] render=new Runnable[1];render[0]=()->{list.removeAllViews();int n=Math.min(limit[0],cards.size());boolean related="relatedBank".equals(screen);for(int i=0;i<n;i++)list.addView(bankCardRow(cards.get(i),cards,related));if(n<cards.size()){Button more=btn("继续加载（剩余 "+(cards.size()-n)+" 张）",Color.rgb(246,249,248),TEAL_DARK);more.setTextSize(12);more.setOnClickListener(v->{limit[0]=Math.min(cards.size(),limit[0]+60);render[0].run();});list.addView(more,new LinearLayout.LayoutParams(-1,dp(46)));}};render[0].run();
     }
@@ -1269,7 +1277,7 @@ void showSettings(){
     }
     void showCase(String caseId,boolean reset){
         JSONObject record=caseBank==null?null:caseBank.get(caseId);if(record==null){Toast.makeText(this,"案例数据缺失",Toast.LENGTH_LONG).show();return;}
-        if(reset){visibleCaseAnswers.clear();wholeCaseMode=false;}
+        if(reset){visibleCaseAnswers.clear();visibleCaseHints.clear();wholeCaseMode=false;}
         currentScreen="case";
         JSONArray questions=record.optJSONArray("subquestions");
         int total=questions==null?0:questions.length();
@@ -1296,7 +1304,7 @@ void showSettings(){
             margin(switchMaterial,0,4,0,7);
             intro.addView(switchMaterial,new LinearLayout.LayoutParams(-1,dp(48)));
         }
-        addCaseText(intro,showSourceText?"一、收录材料（未据此推定卷面完整）":"一、完整训练情境（可长按复制）",15,TEAL_DARK,true);
+        addCaseText(intro,"Z00_R10".equals(record.optString("sourceBatch"))?"一、汇编收录材料（2024两案仅摘要，原卷未核）":showSourceText?"一、收录材料（未据此推定卷面完整）":"一、完整训练情境（可长按复制）",15,TEAL_DARK,true);
         String displayText=showSourceText?record.optString("originalMaterial",record.optString("material"))
                 :hasTrainingExpansion?record.optString("trainingExpandedMaterial"):record.optString("material");
         TextView material=tv(displayText,15,INK,false);
@@ -1331,6 +1339,21 @@ void showSettings(){
                 public void afterTextChanged(android.text.Editable e){}
             });
             margin(draft,0,5,0,8);section.addView(draft);
+            // R10材料题仅在用户主动点击时展开三词提示，避免把答案预先泄露。
+            JSONObject caseMemory="Z00_R10".equals(record.optString("sourceBatch"))?q.optJSONObject("memory"):null;
+            if(caseMemory!=null){
+                TextView hintLink=tv(visibleCaseHints.contains(qid)?"▴ 收起三词提示":"▾ 三词提示（点击展开）",12,TEAL_DARK,true);
+                hintLink.setPadding(dp(5),dp(6),dp(5),dp(6));
+                hintLink.setOnClickListener(v->{drafts.edit().putString(qid,draft.getText().toString()).apply();
+                    if(!visibleCaseHints.add(qid))visibleCaseHints.remove(qid);showCase(caseId,false);});
+                margin(hintLink,0,0,0,4);section.addView(hintLink);
+                if(visibleCaseHints.contains(qid)){
+                    JSONArray cues=caseMemory.optJSONArray("cues");
+                    TextView hintText=tv(joinMemoryItems(cues," · "),13,INK,false);
+                    hintText.setPadding(dp(10),dp(9),dp(10),dp(9));hintText.setBackground(shape(PURPLE_SOFT,11));
+                    margin(hintText,0,0,0,6);section.addView(hintText);
+                }
+            }
             Button save=btn("保存草稿",Color.rgb(245,248,247),TEAL_DARK);save.setTextSize(12);
             save.setOnClickListener(v->{drafts.edit().putString(qid,draft.getText().toString()).apply();Toast.makeText(this,"草稿已保存",Toast.LENGTH_SHORT).show();});
             section.addView(save,new LinearLayout.LayoutParams(-1,dp(42)));
@@ -1340,8 +1363,13 @@ void showSettings(){
                 reveal.setOnClickListener(v->{drafts.edit().putString(qid,draft.getText().toString()).apply();if(!visibleCaseAnswers.add(qid))visibleCaseAnswers.remove(qid);showCase(caseId,false);});
             }
             if(visibleCaseAnswers.contains(qid)){
-                addCaseText(section,q.optString("answerStatus"),11,ORANGE,true);
-                addCaseText(section,q.optString("answer","尚无经核对的参考解析。"),14,INK,false);
+                if(!"Z00_R10".equals(record.optString("sourceBatch")))addCaseText(section,q.optString("answerStatus"),11,ORANGE,true);
+                if("Z00_R10".equals(record.optString("sourceBatch"))){
+                    TextView answerText=tv("",14,INK,false);
+                    answerText.setText(richAnswer(q.optString("answerDisplayHtml",q.optString("answer","尚无参考解析。"))));
+                    answerText.setTextIsSelectable(true);answerText.setLineSpacing(dp(2),1.17f);
+                    margin(answerText,0,6,0,8);section.addView(answerText);
+                }else addCaseText(section,q.optString("answer","尚无经核对的参考解析。"),14,INK,false);
                 JSONArray sources=q.optJSONArray("externalSources");
                 if(sources!=null&&sources.length()>0){
                     addCaseText(section,"专业参考来源（非原卷证据）",12,TEAL_DARK,true);
@@ -1456,7 +1484,10 @@ void showCategoryCards(String name,List<Card> cards){
 
     @Override public void onBackPressed(){
         if("case".equals(currentScreen)){
-            if("study".equals(caseReturnScreen))showStudy();else showLibrary();return;
+            if("study".equals(caseReturnScreen))showStudy();
+            else if("r10Bank".equals(caseReturnScreen))showBankCards("新题补录",repo.r10ExamCards,"Z00 R10 · 56道题文 · 4份材料题组","r10Bank");
+            else if("examBank".equals(caseReturnScreen))showBankCards("真题题库",realExamCards(),"含Z00 R10新补录，官方原卷待核","examBank");
+            else showLibrary();return;
         }
         if("categoryFromStudy".equals(currentScreen)){
             categoryOpenedFromStudy=false;
@@ -1475,7 +1506,7 @@ void showCategoryCards(String name,List<Card> cards){
         if("frameworkBank".equals(currentScreen)){showFrameworkTreeNode(currentFrameworkNodeId);return;}
         if("frameworkTree".equals(currentScreen)){String parent=frameworkParentId(currentFrameworkNodeId);if(parent.isEmpty())showServiceFramework();else showFrameworkTreeNode(parent);return;}
         if("framework".equals(currentScreen)){showLibrary();return;}
-        if("examBank".equals(currentScreen)||"relatedBank".equals(currentScreen)){showLibrary();return;}
+        if("examBank".equals(currentScreen)||"relatedBank".equals(currentScreen)||"r10Bank".equals(currentScreen)){showLibrary();return;}
         if("v24Module".equals(currentScreen)){showLibrary();return;}
         if("primary".equals(currentScreen)||"category".equals(currentScreen)){
             showLibrary();

@@ -40,7 +40,15 @@ engine=(ROOT/'app/src/main/java/com/seu/socialworkcards/MockExamEngine.java').re
 test('card.addView(modeBar);' not in code and 'TextView answerModeButton(' not in code,'bulky answer mode bar returned')
 test('TextView toggle=tv(showMemory?' in code and 'renderCoreAnswer(result,x,previewMemory[0],v->' in code,'V3.1 compact answer/memory toggle missing')
 test('View priority=sectionHeader("优先刷题"' not in code and 'View specialHeader=sectionHeader("437 专项独立模块"' not in code,'duplicated browser sections still on study home')
-test('String[] shortcutLabels={"历年真题","真题关联","教材框架"}' in code,'library shortcuts were lost')
+test('String[] shortcutLabels={"历年真题","新题补录","真题关联","教材框架"}' in code or 'String[] shortcutLabels={"历年真题","真题关联","教材框架"}' in code,'library shortcuts were lost')
+# Z00 R10附加门禁；只在R10资源已并入工程时运行，旧版V3.2单独检查不受影响。
+if (A/'z00_r10_exam_cards.json').is_file():
+    import subprocess
+    for check_script in ('verify_r10_integrated.py','test_mock_r10_scope.py'):
+        proc=subprocess.run([sys.executable,'-X','utf8',str(ROOT/'scripts'/check_script)],
+            cwd=ROOT,capture_output=True,text=True,encoding='utf-8',errors='replace')
+        test(proc.returncode==0,'R10附加回归检查失败 '+check_script+': '+(proc.stderr or proc.stdout)[-350:])
+
 test('c.question=rawFront.replaceFirst(' in repo and 'c.kind="名词解释"' in repo,'437 term display prefix not normalized')
 test('void renderCoreAnswer(LinearLayout inner,Card c)' in code and 'effectiveAnswerChars(answer)' in code,'unified active answer renderer missing')
 test('if(repo.isV24(c))' in code and 'fiveDimensions' in code,'V24 not rendered through common answer component')

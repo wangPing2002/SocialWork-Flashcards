@@ -9,6 +9,11 @@ public class CardRepository {
     public final List<Card> cards = new ArrayList<>();
     // 437M 专属模块绝不混入主库2497，作为可选训练题源独立存放。
     public final List<Card> v24Cards = new ArrayList<>();
+    // R10来源为汇编题文，非已核签原卷。与C主库和437M专项完全隔离。
+    public final List<Card> r10ExamCards = new ArrayList<>();
+    public final JSONObject r10Records = new JSONObject();
+    private final Set<String> r10MockAllowed = new HashSet<>();
+
     public final JSONObject v24Records = new JSONObject();
     private final JSONObject zCases;
     public final JSONObject details;
@@ -59,6 +64,19 @@ public class CardRepository {
             v24Cards.add(c);v24Records.put(c.id,raw);byIdMap.put(c.id,c);
         }
         if(v24Cards.size()!=378)throw new IllegalStateException("437专项必须378题");
+        JSONObject r10=new JSONObject(readAsset(ctx,"z00_r10_exam_cards.json"));
+        JSONArray r10Items=r10.getJSONArray("cards");
+        if(r10Items.length()!=56)throw new IllegalStateException("R10题文登记数量不符: "+r10Items.length());
+        for(int i=0;i<r10Items.length();i++){
+            JSONObject raw=r10Items.getJSONObject(i);
+            Card c=Card.fromJson(raw);
+            if(!c.id.matches("R10-\\d{3}")||byIdMap.containsKey(c.id))throw new IllegalStateException("R10题号冲突: "+c.id);
+            if(!"Z00_R10".equals(c.sourceModule)||!("331".equals(c.examSubjectScope)||"437".equals(c.examSubjectScope)))throw new IllegalStateException("R10题源科目非法: "+c.id);
+            r10ExamCards.add(c);r10Records.put(c.id,raw);byIdMap.put(c.id,c);
+            if(raw.optBoolean("mockEligible",false))r10MockAllowed.add(c.id);
+        }
+        if(r10ExamCards.size()!=56||r10MockAllowed.size()!=54)throw new IllegalStateException("R10学习/模拟题源数量异常");
+
         zCases=readOptionalObject(ctx,"z_case_staging_v31.json").optJSONObject("cards");
         topicTaxonomy=readOptionalObject(ctx,"topic_taxonomy_v30.json");
         questionOverlay=readOptionalObject(ctx,"question_overlay_v30.json");
@@ -87,11 +105,16 @@ public class CardRepository {
     }
     public Card byId(String id){return id==null?null:byIdMap.get(id);}
     public boolean isV24(Card c){return c!=null&&"V24_437".equals(c.sourceModule);}
+    public boolean isR10(Card c){return c!=null&&"Z00_R10".equals(c.sourceModule);}
+    public boolean isR10Case(Card c){return isR10(c)&&r10Records.optJSONObject(c.id)!=null&&r10Records.optJSONObject(c.id).optBoolean("isCaseGroup",false);}
+    public JSONObject r10Record(Card c){return isR10(c)?r10Records.optJSONObject(c.id):null;}
+
     public JSONObject v24Record(Card c){return isV24(c)?v24Records.optJSONObject(c.id):null;}
     public JSONArray stagedCases(Card c){return c==null||isV24(c)||zCases==null?null:zCases.optJSONArray(c.id);}
     public boolean eligibleForExam(Card c,String subject){
         if(c==null||!("331".equals(subject)||"437".equals(subject)))return false;
         if(isV24(c))return "437".equals(subject); // 永远不进入331题池
+        if(isR10(c))return subject.equals(c.examSubjectScope)&&r10MockAllowed.contains(c.id); // 真题补录绝不跨科，摘要案例不进入模拟卷
         return c.examSubjectScope==null||c.examSubjectScope.isEmpty()||Arrays.asList(c.examSubjectScope.split(",")).contains(subject);
     }
 
@@ -110,9 +133,10 @@ public class CardRepository {
     public boolean hasTrainingRewrite(Card c){return c!=null&&!displayQuestion(c).equals(c.question);}
     public boolean isExactExam(Card c){return c!=null&&!c.exactExamSources.isEmpty();}
     public boolean isRecallExam(Card c){return c!=null&&!c.recallExamSources.isEmpty();}
-    public boolean isRealExam(Card c){return isExactExam(c)||isRecallExam(c);}
+    public boolean isRealExam(Card c){return isR10(c)||isExactExam(c)||isRecallExam(c);}
     public boolean matchesExamSubject(Card c,String subject){
         if(!eligibleForExam(c,subject))return false;
+        if(isR10(c))return true; // R10科目/完整题文门禁已在eligibleForExam核查
         if(!isRealExam(c))return true;
         for(String x:c.exactExamSources)if(x.endsWith(" "+subject))return true;
         for(String x:c.recallExamSources)if(x.endsWith(" "+subject))return true;
@@ -121,6 +145,7 @@ public class CardRepository {
     public String examSourceLabel(Card c){
         if(c==null)return "模拟题";
         if(isV24(c))return "437专项训练·非原卷";
+        if(isR10(c)){JSONObject r=r10Record(c);return (r==null?"":r.optInt("year")+"·"+r.optString("subject")+" ")+"汇编题文·原卷待核";}
         List<String> src=!c.exactExamSources.isEmpty()?c.exactExamSources:c.recallExamSources;
         if(src.isEmpty())return "模拟题";
         String prefix=!c.exactExamSources.isEmpty()?"真题关联·原卷待核·":"回忆考点·原题待核·";

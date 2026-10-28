@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "schemaVersion": "Z00_R10_APP_1",
+    "source": "Z00_R10_64条未匹配真题_62份候选答案交接包",
+    "sourceCategory": "非校方原卷的汇编/回忆来源，题目原文保留",
+    "registered": 64,
+    "sourceQuestionRecords": 56,
+    "singleCardRecords": 52,
+    "caseGroupRecords": 4,
+    "caseSubquestionAnswerUnits": 10,
+    "independentAnswerUnits": 62,
+    "unresolvedQuestionSlots": 7,
+    "nonExamRecallRecords": 1,
+    "originalMainCardsUnchanged": 2497,
+    "v24SeparateModuleUnchanged": 378,
+    "scorePolicy": "独立的AI建议训练分值×25–30有效字；历史原题分值独立记录",
+    "sourceOriginalVerified": false,
+    "professionalFinalVerified": false,
+    "appReleaseEligible": false
+  },
+  "bySubject": {
+    "331": 37,
+    "437": 19
+  },
+  "sourceHashes": {
+    "cards_json": "fc5cf65cfaea19ceaa759b1e78784cf07d5839f44f4bbbf081d62072c97c5518",
+    "v24_437_378_cards_json": "4111c73ef2e74c309ed463030acea955d876aedc543c6c58eb794f88e1941972",
+    "case_bank_v30_json": "427598af1f4c401a5b5424b0f1d3c16c6fe89dac60a53329e96032cc5d4794ff",
+    "r10_source_zip": "93c0d2fa4f98687afbd66ca818bba15f46326faad62665843f9aed87ebbb1e49"
+  },
+  "sourceQuestionHashChecks": 64,
+  "answerLengthChecks": 62,
+  "legacyReportedEffectiveCharsMismatch": [
+    {
+      "id": "R10-047-Q2",
+      "reported": 531,
+      "recalculated": 525
+    }
+  ],
+  "sourceReviewIssues": [
+    "2024年两份案例只含摘要，不能作为完整原卷材料",
+    "64条未匹配来源并不等于64道新原卷真题",
+    "62份答案为AI备考拟稿，尚无教材逐页签认或真实专家签名"
+  ],
+  "mockScopeRules": "R10 331仅331；R10 437仅437；2024材料摘要不进入模拟；437M只437；全部回退仍须按科目和题型",
+  "apkBuilt": false,
+  "deviceUiVerified": false,
+  "displayHighlight": "#C62828 第一核心判断句（标签仅作用于显示，历史纯文本另存）",
+  "sourceAnswersPreservedWithoutMarkup": 62
+}

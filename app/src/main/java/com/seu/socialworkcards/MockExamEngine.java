@@ -36,6 +36,8 @@ public class MockExamEngine {
     private Set<String> ids(Paper p){Set<String>s=new HashSet<>();for(Section sec:p.sections)for(Card c:sec.cards){s.add(c.id);if(c.category!=null)s.add("cat:"+c.category);}return s;}
     private void fill(Section sec,int count,String subject,Set<String> used){
         List<Card> scoped=new ArrayList<>(repo.cards);
+        // R10只在明确匹配科目/题型且题文足够完整时进入模拟训练。
+        scoped.addAll(repo.r10ExamCards);
         if("437".equals(subject)&&"名词解释".equals(sec.targetType))scoped.addAll(repo.v24Cards);
         List<Card> pool=new ArrayList<>();
         for(Card c:scoped)if(repo.matchesExamSubject(c,subject)&&typeCompatible(c,sec.targetType))pool.add(c);
